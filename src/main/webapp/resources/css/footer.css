@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* footer.jsp */
+
+footer {
+  margin: 0 auto;
+  background: #bd8f4d;
+  margin-top: 100px;
+}
+
+footer .footer_in {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items:center;
+	width: 800px;
+	margin-left: 200px;
+}
+
+footer .footer_in > ul {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 50px;
+    padding: 0;
+}
+
+footer .footer_in img {
+    width: 100px;
+	height: 100px;
+}

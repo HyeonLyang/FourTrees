@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.rank_detail{
+	background-color: #F9F2E4;
+	width: 1000px;
+	text-align: center;
+}
+.rank_detail_main{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.rank_detail_board{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.rank_detail_res{
+	background-color: #F6DC9B;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	width: 160px;
+	position: relative;
+}
+.rank_detail_medal{
+	position: absolute;
+	top: -5px;
+	left: 0;
+	z-index: 100;
+}
+.rank_detail_topRes{
+	text-decoration: none;
+	color: black;
+}
+.rank_detail_img{
+	width: 150px;
+	height: 150px;
+}
+.rank_detail_rating{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.rank_detail_rate_back{
+	display:flex;
+	background: url(../../img/rank/star01.png) no-repeat;
+	width: 80px;
+	height: 16px;
+	position: relative;
+}
+.rank_detail_rate_front{
+	position: absolute;
+	background: url(../../img/rank/star02.png);
+	width: auto;
+	height: 16px;
+}
+.rank_detail_toArea{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e1cb88;
+	height: 50px;
+	width: 400px;
+	font-size: 20px;
+	margin-bottom: 80px;
+	margin-top: 50px;
+}
+.rank_detail_toArea:hover {
+	background-color: #A38A58;
+}
+
+

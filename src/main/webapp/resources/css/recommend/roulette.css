@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+.roulette {
+	width: 1400px;
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.roul_back {
+	display: flex;
+	flex-direction: row;
+}
+@keyframes sparkle {
+    0% { color: #FFD700; }
+    50% { color: #FFF; } /* 흰색으로 바뀌면서 반짝임 효과 */
+    100% { color: #FFD700; }
+}
+.roul_back1 {
+	background-color: #B6B4B7;	/* 은색 배경 */
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 15px solid #A2A1A3;
+	border-top-left-radius: 15%;
+	border-top-right-radius: 15%;
+	box-sizing: border-box;
+}
+.roul_back2 {
+	background-color: #ffcc33;	/* 금색 배경 */
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	border-radius: 15%;
+	box-sizing: border-box;
+	border: 15px solid #E8BA2E;
+}
+.roul_back2 h1 {
+	transform: translateY(-50px);
+	text-align: center;
+	margin: 0;
+}
+.roul_back3 {
+	background-color: #C93847;	/* 붉은 배경 */
+	padding: 30px;
+	border-radius: 10%;
+}
+.roul_starter {
+	width: 70px;
+	height: 500px;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	
+}
+.roul_starter img:nth-child(1) {
+	height: 100px;
+	widows: 40px;
+	margin-top: 180px;
+}
+#stick {
+	width: 50px;
+	height: 230px;
+	margin: 0;
+	cursor: pointer;
+	transform: translateX(-12px);  
+}
+#stick:active {
+	transform-origin: center bottom;
+	transform: translateX(-12px) rotateX(180deg);
+	transition: transform 0.3s ease;
+}
+
+
+/* 룰렛 컨테이너 높이 = 100px -> 슬라이더 컨테이너 */
+.roul_container {
+	width: 600px;
+	height: 100px;
+ 	background-color: ivory;
+	overflow: hidden;
+	border-radius: 10%;
+	
+	display: flex;
+	justify-content: center;
+}
+.roul_game {
+	width:200px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	font: normal bold 200% "궁서체";
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+.roul_game li {
+	width:300px;
+	height: 100px;
+	padding: 0 10px;
+	border: 1px solid white;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: linear-gradient(to bottom, #D6D6D6, #ffffff 50%, #D6D6D6);
+}
+.roul_input {
+	width: 400px;
+	height: 500px;
+	background-color: #228b2233;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	gap: 10px;
+	border-radius: 15px;
+	padding: 10px;
+}
+.roul_input * {
+	margin: 0;
+}
+#roul_click {
+	transform: translateX(-33px);
+	animation: sparkle 0.5s ease infinite; /* 반짝이는 애니메이션 적용 */
+}
+.roul_input button{
+	background-color: #ffcc3350;
+	width: 55px;
+	height: 40px;
+	text-align: center;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #FFE881;
+}
+#roul_setting {
+	display: flex;
+	gap: 5px;
+}
+.roul_input ol {
+	padding: 0;
+	text-align: left;
+	margin: 0 auto;
+}
+.roul_input li {
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 200px;
+}
+.roul_input li:hover {
+	background-color: gray;
+}
+#roul_options {
+	background-color: white;
+	margin: 0 auto;
+	width: 280px;
+	padding: 20px;
+	box-sizing: border-box;
+}

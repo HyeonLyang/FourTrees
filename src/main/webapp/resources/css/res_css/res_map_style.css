@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body{
+	width: 1000px;
+	margin: 0 auto;
+}
+.res_detail_info{
+	height: 240px;
+}
+.res_detail_resName1 {
+	font-size: 40px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+.res_detail_resName2{
+	display: inline-block;
+	margin-top: 0;
+	margin-left: 20px;
+}
+.res_detail_re{
+	display: flex;
+	align-items: center;
+}
+.res_detail_rate_back{
+	background: url(../../img/star01.png) no-repeat;
+	width: 250px;
+	height: 50px;
+	position: relative;
+}
+.res_detail_rate_front{
+	position: absolute;
+	background: url(../../img/star02.png);
+	width: auto;
+	height: 50px;
+}
+.res_detail_score{
+	margin-left: 5px;
+	display: inline-block;
+}
+.res_detail_re > p{
+	font-size: 45px;
+	margin: 0;
+}
+.res_detail_re > h5{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	transform: translateY(-10px);
+}
+.res_detail_simIn{
+	display: inline-block;
+	margin: 5px;
+}
+.res_detail_simInT{
+	display: inline-block;
+	margin: 5px;
+}
+.res_detail_menu{
+	height: 90px;
+	display: flex;
+}
+.res_detail_menu > p {
+	border-collapse: collapse;
+	border: 1px solid #e1cb88;
+	width: 250px;
+	height: 100%; 
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.res_detail_menu > p:hover{
+	background-color: #e1cb88;
+}
+/*↑ 세부페이지 공통 css*/
+/*----------------------------------------*/
+.res_map_main{
+	/*background-color: aqua;
+	height: 1000px;*/
+	width: 1000px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.res_map_con{
+	/*background-color: pink;
+	height: 90%;*/
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: 0;
+}
+aside{
+	background-color: gold;
+	height: 90%;
+	width: 25%;
+	
+}
+.res_map_map{
+	/*background-color: khaki;*/
+	width: 100%;
+	height: 700px;
+	border: 2px solid #e1cb88;
+}
+.res_map_txt{
+	border-collapse: collapse;
+	display: flex;
+	width: 100%;
+	height: 200px;
+	align-items: center;
+}
+.res_map_txt th, .res_map_txt td{
+	border: 2px solid #e1cb88;
+	justify-content: space-between;
+	width: 700px;
+	height: 150px;
+}
+ .res_map_txt td{
+ 	padding-left: 5px;
+ }
+
+

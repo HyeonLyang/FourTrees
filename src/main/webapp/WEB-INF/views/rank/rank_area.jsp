@@ -1,0 +1,127 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="../header.jsp" %>
+<link href="${cpath }/resources/css/rank_css/rank_area_de_style.css" rel="stylesheet">
+<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
+
+<section class="rank_detail">
+	<h1>서울 맛집 TOP10</h1>
+	<section class="rank_detail_main">
+		
+		<ol class="rank_detail_board">
+		<c:forEach var="res" items="${res_seoul }">
+			<li class="rank_detail_res">
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<a href="#" class="rank_detail_topRes">
+					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p>${res.name }</p>
+					<p>${res.category }</p>
+					<div class="rank_detail_rating">
+						<div class="rank_detail_rate_back">
+						<!-- db연결 후 width: 별점 -->
+				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
+				    	</div>
+						<b>${res.score }</b>
+					</div>
+				</a>
+			</li>
+		</c:forEach>
+		</ol>
+		<p class="rank_detail_toArea" 
+			OnClick="location.href ='#'" 
+			style="cursor:pointer">
+			지도에서 맛집 찾기 →
+		</p>
+	</section>
+	
+	<h1>부산 맛집 TOP10</h1>
+	<section class="rank_detail_main">
+		
+		<ol class="rank_detail_board">
+		<c:forEach var="res" items="${res_busan }">
+			<li class="rank_detail_res">
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<a href="#" class="rank_detail_topRes">
+					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p>${res.name }</p>
+					<p>${res.category }</p>
+					<div class="rank_detail_rating">
+						<div class="rank_detail_rate_back">
+						<!-- db연결 후 width: 별점 -->
+				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
+				    	</div>
+						<b>${res.score }</b>
+					</div>
+				</a>
+			</li>
+		</c:forEach>
+		</ol>
+		<p class="rank_detail_toArea" 
+			OnClick="location.href ='#'" 
+			style="cursor:pointer">
+			지도에서 맛집 찾기 →
+		</p>
+	</section>
+	
+	<h1>강원 맛집 TOP10</h1>
+	<section class="rank_detail_main">
+		
+		<ol class="rank_detail_board">
+		<c:forEach var="res" items="${res_kangwon }">
+			<li class="rank_detail_res">
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<a href="#" class="rank_detail_topRes">
+					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p>${res.name }</p>
+					<p>${res.category }</p>
+					<div class="rank_detail_rating">
+						<div class="rank_detail_rate_back">
+						<!-- db연결 후 width: 별점 -->
+				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
+				    	</div>
+						<b>${res.score }</b>
+					</div>
+				</a>
+			</li>
+		</c:forEach>
+		</ol>
+		<p class="rank_detail_toArea" 
+			OnClick="location.href ='#'" 
+			style="cursor:pointer">
+			지도에서 맛집 찾기 →
+		</p>
+	</section>
+	
+	<h1>제주 맛집 TOP10</h1>
+	<section class="rank_detail_main">
+		
+		<ol class="rank_detail_board">
+		<c:forEach var="res" items="${res_jeju }">
+			<li class="rank_detail_res">
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<a href="#" class="rank_detail_topRes">
+					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p>${res.name }</p>
+					<p>${res.category }</p>
+					<div class="rank_detail_rating">
+						<div class="rank_detail_rate_back">
+						<!-- db연결 후 width: 별점 -->
+				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
+				    	</div>
+						<b>${res.score }</b>
+					</div>
+				</a>
+			</li>
+		</c:forEach>
+		</ol>
+		<p class="rank_detail_toArea" 
+			OnClick="location.href ='#'" 
+			style="cursor:pointer">
+			지도에서 맛집 찾기 →
+		</p>
+	</section>
+	
+</section>
+	
+</body>
+</html>

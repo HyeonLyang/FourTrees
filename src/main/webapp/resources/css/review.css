@@ -1,0 +1,315 @@
+@charset "UTF-8";
+body {
+	width: 1000px;
+	margin: 0 auto;
+}
+a {
+ 	color: inherit;	
+ 	text-decoration: none;
+}
+.review {
+	margin-bottom: 100px;
+}
+/* 리뷰 및 음식 사진 올리기 */
+.re_title {
+	display: flex;
+	margin: 0;
+	justify-content: space-between;
+}
+.review_textarea {
+	display: flex;
+}
+.review_textarea h4 {
+	margin-right: 15px;
+}
+.review_textarea h4:nth-child(2)  {
+	color: grey;
+}
+.re_title img {
+	width: 50px;
+	height: 50px;
+}
+/* 이미지 모이는 곳 */
+.img_collection {
+	width: 1000px;	
+	overflow: hidden;
+}
+.img_collection_title {
+	display: flex;	
+}
+.img_collection_title button{
+	height: 20px;
+	margin:0 5px;
+	margin-top: 20px;	
+}
+.food_img {
+	display: flex;
+	width: 1000px;	
+}
+/* 모아놓은 이미지 */
+.food_img img{
+	width: 192px;
+	height: 150px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.slider_more {
+	position: absolute;
+	top: 50%;
+	left: 191%;
+	width: 192px;
+	height: 151px;
+	transform: translate( -50%, -50% );
+    font-size: 20px;
+    font-family: 'ypseo';
+    text-align:center;
+    background-color: rgba(6,84,113,0.05);
+}
+.slider_more .more {
+	color: white;
+	margin-top: 55px;
+	margin-right: 10px; 
+}
+.more i {
+	font-size: 70%;
+}
+.re_main {
+	width: 900px;
+	margin: 0 auto;		
+}
+/* 로고 넣는 곳  */
+
+/* 별점 나타내주는 css (span의 width 퍼센트로 별점을 최대 5개까지 줄 수 있다) */
+.rate {
+	background: url(https://aldo814.github.io/jobcloud/html/images/user/star_bg02.png) no-repeat;
+	width: 121px;
+	height: 20px;
+	position: relative;	
+}
+.rate span {
+	position: absolute;
+	background: url(https://aldo814.github.io/jobcloud/html/images/user/star02.png);
+	width: auto;
+	height: 20px;	
+}
+/* 로고 넣는 곳  */
+.main {
+	display: flex;
+	justify-content: space-between;	
+	width: 100%;	
+	padding: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+}
+.main img:nth-child(1) {	
+	width: 10%;		
+	width: 60px;
+	height: 60px;
+}
+.main ul {
+	list-style: none;
+	padding: 0;
+	margin-right: 250px;
+}
+.main ul div {
+	width: 121px;
+}
+.main ul li:nth-child(2) {
+	display: flex;
+	justify-content: flex-start;
+}
+.main ul li:nth-child(2) b {
+	margin: 0 10px;
+	color: orange;
+}
+.main ul li:nth-child(4) {
+	margin-top: 20px;
+	color: grey;
+}
+.main ul li:nth-child(4) a {
+	margin-right: 10px;
+	text-decoration: underline; 
+}
+
+/* 음식 사진 */
+.main img {
+	width: 200px; 
+	height: 175px;	
+}
+.re_paging {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+.re_paging li {
+	margin: 0 10px;
+}
+
+
+/* 리뷰의 위치에서 가까운 맛집 리스트 review_area.jsp */
+.review_map {
+	width: 1000px;
+	margin: 0 auto;
+}
+.review_map img {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 10px;
+}
+.near_res {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;	
+	flex-flow: wrap;
+	justify-content: space-between;	
+	margin-bottom: 50px;
+}
+.res_item {
+	width: 250px;
+	height: 400px;
+	margin: 20px 0;
+}
+.res_img {
+	margin-bottom: 10px;
+}
+.res_img img{
+	width: 200px;
+	height: 170px;
+	margin: 0 25px;
+}
+.res_info1 {
+	display: flex;
+	justify-content: space-between;	
+}
+.res_name {
+	width: 200px;
+	height: 52px;
+}
+.res_name b {
+	font-size: 120%;
+	white-space: pre-line;
+	overflow: hidden;	
+}
+.res_address {
+	font-size: 80%;
+	height: 34px;
+}
+/* 주차 가능 여부 */
+.res_info1 h5:nth-child(1) {	
+	color: white;
+	margin: 0;
+	padding: 5px;
+	justify-content: flex-start;
+}
+.res_category {
+	white-space: pre-line;
+	overflow: hidden;	
+}
+.res_holiday {
+	margin: 10px 0;
+}
+.res_holiday b {
+	padding: 5px;
+	color: white;
+}
+.res_icon {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+.res_icon img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.res_icon h5 {
+	font-size: 70%; 
+}
+.res_icon div {
+	margin-right: 10px;
+}
+/* 조회수 */
+.res_view {
+	display: flex;
+	justify-content: space-around;	
+	margin-bottom: 100px;
+}
+.res_view h5 {
+	margin-bottom: 20px;
+	margin: 0;
+}
+/* 별점을 준 사람 카운트 */
+.res_star {
+	display: flex;
+	justify-content: space-around;
+}
+.res_star h5 {
+	margin-bottom: 20px;
+	margin: 0;
+}
+/* 등록된 사람 카운트 */
+.res_phone {
+	display: flex;
+	justify-content: space-around;
+}
+.res_phone h5 {
+	margin-bottom: 20px;
+	margin: 0;
+}
+.paging {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+.paging li {
+	margin: 0 10px;
+}
+
+.frame4{
+	width: 1200px;
+	height: 2700px;
+	position: absolute;
+	left: 120px;
+	top: 75px;
+	z-index: -1;
+}
+
+/* 여기서부터 리뷰쓰는 css */
+.review_write_main {
+	width: 1000px;
+	margin: 0 auto;
+}
+.review_table {
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+.review_table input {
+	width: 100%;
+	min-height: 20px;
+}
+.review_table th,.review_table td {
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+.review_table textarea {
+	width: 400px;
+	min-height: 200px;
+}
+
+.sqare6 {
+	width: 80%;
+	height: 185%;
+	margin: 10px auto;
+	border: 5px double #bd8f4d;
+	position: absolute;
+	opacity: 80%;
+	display: block;
+	left: 50%;
+	top: 150px;
+    padding: 25px 0;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}

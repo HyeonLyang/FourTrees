@@ -1,0 +1,103 @@
+@charset "UTF-8";
+body{
+	width: 1000px;
+	margin: 0;
+	display: flex;
+}
+.rank_main_top{
+	background-color: #D8D8D8;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+.rank_main_options{
+	width: 33.3333333333%;
+	height: 100%;
+	margin: 0;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.rank_main_top :nth-child(1) {
+	background-image: url("../../img/ex01.jpg");	/* resources/img/ex01.jpg 라서 경로 변경했습니다 */
+	background-size: cover;	
+	background-position: center;
+	opacity: 0.5;
+}
+.rank_main_top :nth-child(1):hover{
+	opacity: 1;
+}
+.rank_main_top :nth-child(2) {
+	background-image: url("../../img/ex02.png");
+	background-size: cover;	
+	background-position: center;
+	opacity: 0.5;
+}
+.rank_main_top :nth-child(2):hover{
+	opacity: 1;
+}
+.rank_main_top :nth-child(3) {
+	background-image: url("../../img/ex03.jpg");
+	background-size: cover;	
+	background-position: center;
+	opacity: 0.5;
+}
+.rank_main_top :nth-child(3):hover{
+	opacity: 1;
+}
+.rank_main_mid{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.rank_main_issue{
+	width: 950px;
+	display: flex;
+	justify-content: center;
+}
+.rank_main_mid button{
+	border: none;
+	border-radius: 30px;
+	min-width: 120px; 
+	font-size: 20px;
+}
+.rank_main_bot{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.rank_main_container{
+	display: flex;
+}
+.rank_main_reImg{
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+}
+.rank_main_reImg:hover {
+	opacity: 0.5;
+}
+.rank_main_re{
+	display: flex;
+	flex-direction: column;
+}
+.rank_main_writer{
+	background-color: #D8D8D8;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
