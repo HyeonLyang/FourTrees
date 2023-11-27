@@ -13,9 +13,9 @@ public interface AccountDAO {
 			+ "where userid = #{userid} and userpw = #{userpw}")
 	AccountVo selectOne(AccountVo input);
 
-	@Insert("insert into account(userid, userpw, nick, email, status, "
+	@Insert("insert into account(userid, userpw, nick, email, "
 			+ "birth, phone, foreigner, gender, area) values("
-			+ "#{userid}, #{userpw}, #{nick}, #{email}, #{status}, #{birth}, "
+			+ "#{userid}, #{userpw}, #{nick}, #{email}, #{birth}, "
 			+ "#{phone}, #{foreigner}, #{gender}, #{area})")
 	int insert(AccountVo input);
 

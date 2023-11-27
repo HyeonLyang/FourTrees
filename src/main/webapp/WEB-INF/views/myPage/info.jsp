@@ -14,15 +14,6 @@
         </div>
     <hr>
 </article>
-<%-- <section class="info">
-	<nav class="myPage_menu">
-		<ul>
-			<li><a href="${cpath }/myPage/password" style="color: #87553d;">내 정보</a></li>			
-			<li><a href="${cpath }/myPage/bookmark">찜한 맛집</a></li>
-			<li><a href="${cpath }/myPage/myReply">내가 댓글 단 맛집</a></li>
-		</ul>
-	</nav>--%>
-		
 	<form class="myPage_UD" method="POST">
 		<h3>내정보</h3>
 		<table class="boards" style="width: 100%;" >

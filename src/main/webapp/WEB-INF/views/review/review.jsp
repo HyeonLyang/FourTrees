@@ -7,15 +7,15 @@
 	<p>　</p>
 </div>
 </article>
-<div class="sqare6">
-</div>
-<section>
+<img class="frame4" src="${cpath }/resources/img/frame.png">
+<section class="review_main">
 	<!-- 리뷰 갯수 작성 -->
 	<article class="re_title">	
 		<div class="review_textarea">
 			<h4>리뷰(${p.totalRestaurant })</h4>
 			<h4>고객님들의 직접 작성하신 따끈한 후기와 평가를 들어보세요</h4>
 		</div>
+		
 		<div>
 			<a href="${cpath }/review/review_write">			
 				<img src="${cpath }/resources/img/review/review_write.png">
@@ -30,19 +30,19 @@
 		<div class="img_collection_title">		
 			<h4>이미지 모아보기</h4>
 						
-			<button>&lt;</button>
-			<button>&gt;</button>			
+			<button class="left">&lt;</button>
+			<button class="right">&gt;</button>			
 		</div>
 		
 		<div class="food_img">			
-			<c:forEach var="i" begin="1" end="10">
+			<c:forEach var="row" items="${list }">
 				<div class="slider">				
-					<img src="${cpath }/resources/img/review/중식.jfif">								
+					<img src="${cpath }/resources/img/review/${row.img }">								
 				</div>				
 				<div class="slider_more">				
 				<div class="more">
-					<a href="#none" onclick="openPopup('${cpath}')">				
-						<b>1,313</b><br>
+					<a href="${cpath }/review/img_popup">				
+						<b>${p.totalRestaurant }</b><br>
 						<i>더보기></i>
 					</a>
 				</div>
@@ -70,9 +70,9 @@
 					</li>
 					<li>${row.content }</li>
 					<li>
-						강릉 짬뽕 순두부 동화가든						
-						<a href="${cpath }/review/review_area">
-							<b>강원 동해시</b>
+						${row.res_name }						
+						<a href="${cpath }/review/review_area?address=${row.res_address}">
+							<b>${row.res_address }</b>
 						</a> 
 					</li>
 				</ul>
@@ -94,18 +94,6 @@
 		</c:if>
 	</ul>	
 	</article>
-	
-	<!-- 최상단으로 올라가는 버튼 어느 정도 내려야 버튼이 생성됨 -->
-	<button class="go-top">
-		<svg xmlns="http://www.w3.org/2000/svg" 
-			width="38" height="38" fill="currentColor"
-	  		class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-		<path fill-rule="evenodd"
-		    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 
-		    0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 
-		    .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
-		</svg>
-	</button>
 </section>
 <script src="${cpath }/resources/js/img_move.js"></script>
 </body>

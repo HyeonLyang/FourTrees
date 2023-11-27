@@ -17,12 +17,26 @@
             	<div class="logo">
                     <a href="${cpath }"><img src="${cpath }/resources/img/logo_yellow.png"></a>
                 </div>
-                <div class="top-menu1">
-                	<a href="${cpath }"><img src="${cpath }/resources/img/signup.png"> signUp</a>
-                </div>
-                <div class="top-menu2">
-                <a href="${cpath }"><img src="${cpath }/resources/img/login.png"> logIn</a>
-                </div>
+                <c:if test="${empty user }">				
+					<div class="top-menu1">
+						<a href="${cpath }/account/signUp">
+						<img src="${cpath }/resources/img/signup.png"> signUp</a>
+					</div>
+					<div class="top-menu2">
+						<a href="${cpath }/account/login">
+						<img src="${cpath }/resources/img/login.png"> logIn</a>
+					</div>
+				</c:if>
+				 <c:if test="${not empty user }">                
+	                <div class="top-menu1">
+						<a href="${cpath }/myPage/bookmark">
+						<img src="${cpath }/resources/img/signup.png"> ${user.nick }</a>
+					</div>
+					<div class="top-menu2">
+						<a href="${cpath }/account/logout">
+						<img src="${cpath }/resources/img/login.png"> logout</a>
+					</div>
+                </c:if>
             </section>
             
             <section class="header-bottom">
