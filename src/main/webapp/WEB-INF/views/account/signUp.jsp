@@ -34,29 +34,29 @@
 		</p>
 		<p class="signup_pw">
 			<img src="${cpath }/resources/img/signup_icon6.png">
-			<input name="phone" placeholder="전화번호" required>
+			<input name="phone" type="tel" placeholder="전화번호" required>
 		</p>
 		<p class="signup_pw">
 			<img src="${cpath }/resources/img/signup_icon7.png">
-			<input name="foreigner" placeholder="내/외국인" required>
+			<select name="foreigner">
+				<option value="">국적</option>
+				<option value="내국인">내국인</option>
+				<option value="외국인">외국인</option>
+			</select>
 		</p>
 		<p class="signup_pw">
 			<img src="${cpath }/resources/img/signup_icon8.png">
-			<input name="gender" placeholder="성별" required>
-		</p>
-		<p class="signup_pw">
-			<img src="${cpath }/resources/img/signup_icon9.png">
-			<input name="area" placeholder="주소" required>
+			<select name="gender">	
+				<option value="">성별 선택</option>
+				<option value="남">남</option>
+				<option value="여">여</option>
+			</select>
 		</p>		
 				
 		<button>가입</button>
 	</form>
 </article>
-
-<article>
 	<div class="blank">
 	<p>　</p>
 </div>
 <%@ include file="../footer.jsp" %>
-</body>
-</html>

@@ -14,9 +14,9 @@ public interface AccountDAO {
 	AccountVo selectOne(AccountVo input);
 
 	@Insert("insert into account(userid, userpw, nick, email, "
-			+ "birth, phone, foreigner, gender, area) values("
+			+ "birth, phone, foreigner, gender) values("
 			+ "#{userid}, #{userpw}, #{nick}, #{email}, #{birth}, "
-			+ "#{phone}, #{foreigner}, #{gender}, #{area})")
+			+ "#{phone}, #{foreigner}, #{gender})")
 	int insert(AccountVo input);
 
 	@Delete("delete from account where idx = #{idx}")

@@ -58,7 +58,7 @@ public class MyPageController {
 	}
 	
 	// 정보 삭제
-	@GetMapping("/delete")
+	@GetMapping("/delete/{idx}")
 	public ModelAndView delete(@PathVariable int idx) {
 		ModelAndView mav = new ModelAndView("redirect:/account/logout");			
 		

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="${cpath }/resources/css/review.css">
 
 <article class="review_map">
-	<h3>청담동 근처 맛집 (${p.totalRestaurant })</h3>
+	<h3>청담동 근처 맛집 (6)</h3>
 
 	<img src="${cpath }/resources/img/review/map.png">
 
@@ -72,21 +72,6 @@
 			</div>
 		</c:forEach>				
 	</div>
-	
-	<!-- 식당 테이블 데이터 페이징 하는 곳 -->
-	<ul class="paging">
-		<c:if test="${p.prev }">			
-			<li><a href="${cpath }/area?page=${p.begin - 1 }">이전</a></li>
-		</c:if>
-			
-		<c:forEach var="i" begin="${p.begin }" end="${p.end }">
-			<li><a href="${cpath }/area?page=${i }">${i }</a></li>
-		</c:forEach>
-			
-		<c:if test="${p.next }">			
-			<li><a href="${cpath }/area?page=${p.end + 1 }">다음</a></li>
-		</c:if>
-	</ul>
 	
 	<!-- 최상단으로 올라가는 버튼 어느 정도 내려야 버튼이 생성됨 -->
 	<button class="go-top">

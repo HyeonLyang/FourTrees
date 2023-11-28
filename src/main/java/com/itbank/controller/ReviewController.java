@@ -36,13 +36,10 @@ public class ReviewController {
 	}
 
 	@GetMapping("/review_area")
-	public ModelAndView area(@RequestParam(value = "page", defaultValue = "1") int page) {
+	public ModelAndView area() {
 		ModelAndView mav = new ModelAndView("review/review_area");
 
-		Map<String, Object> result = rs.getRestaurants(page);
-
-		mav.addObject("list", result.get("list"));
-		mav.addObject("p", result.get("p"));
+		mav.addObject("list", rs.getRestaurants());
 
 		return mav;
 	}
