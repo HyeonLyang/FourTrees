@@ -35,7 +35,7 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:mapper/restaurant.xml</value>
-<!-- 				<value>classpath:mapper/search.xml</value> -->
+				<value>classpath:mapper/search.xml</value>
 			</list>
 		</property>
 	</bean>

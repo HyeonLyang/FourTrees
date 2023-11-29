@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbank.model.SearchDAO">
+
+	<select id="searchAll" resultType="com.itbank.model.vo.RestaurantVO">
+<!--      SELECT * FROM restaurant  -->
+<!--    		WHERE address LIKE '%' || #{address} || '%'  -->
+<!--       and category like '%' || #{category} || '%' -->
+      
+      		SELECT * FROM restaurant
+		WHERE
+		<if test="address != null and address != ''">
+			address LIKE '%' || #{address} || '%'
+		</if>
+		<if test="category != null and category != ''">
+			<if test="address != null and address != ''"> AND </if>
+			category LIKE '%' || #{category} || '%'
+		</if>
+	</select>
+	
+</mapper>
