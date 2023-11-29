@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.itbank.model.ReviewDAO;
 import com.itbank.model.vo.ReviewVO;
 import com.itbank.service.RestaurantService;
 import com.itbank.service.ReviewService;
@@ -19,18 +20,20 @@ import com.itbank.service.ReviewService;
 @RequestMapping("/review")
 public class ReviewController {
 
-	@Autowired RestaurantService rs;
-	@Autowired ReviewService rvs;
+	@Autowired private RestaurantService rs;
+	@Autowired private ReviewService rvs;
+	@Autowired private ReviewDAO dao;
 
 	// 리뷰 페이지로 이동
 	@GetMapping("/review")
 	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page) {
-		ModelAndView mav = new ModelAndView();
+		ModelAndView mav = new ModelAndView("review/review");
 		
 		Map<String, Object> result = rvs.getReview(page);
 		
 		mav.addObject("list", result.get("list"));
 		mav.addObject("p", result.get("p"));
+		mav.addObject("img_list", dao.selectImg());
 		
 		return mav;
 	}
@@ -52,7 +55,11 @@ public class ReviewController {
 	
 	@PostMapping("/review_write")
 	public ModelAndView write(ReviewVO input,String score) throws IOException {
-		ModelAndView mav = new ModelAndView("redirect:/");
+		ModelAndView mav = new ModelAndView("redirect:/review/review");
+		
+		if (score == null) {
+			score = "0";
+		}
 		double num = Double.parseDouble(score);
 		
 		input.setScore(num);

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Paging {
 	private int reqPage,totalRestaurant;
-	private int perCount = 9, perRestaurant = 10;
+	private int perCount = 10;
 	private int totalPage, offset;
 	private int section, begin, end;
 	private boolean prev, next;
@@ -18,9 +18,9 @@ public class Paging {
 		totalPage = totalRestaurant / perCount;
 		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
 		
-		section = (reqPage - 1) / perRestaurant;
-		begin = section * perRestaurant + 1;
-		end = (section + 1) * perRestaurant;
+		section = (reqPage - 1) / perCount;
+		begin = section * perCount + 1;
+		end = (section + 1) * perCount;
 		end = (end > totalPage) ? totalPage : end;
 		
 		prev = (section != 0);

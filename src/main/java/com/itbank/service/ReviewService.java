@@ -25,8 +25,7 @@ public class ReviewService {
 	
 	@Autowired private ReviewDAO dao;
 	
-	@Value("file:C:\\Users\\하준우\\Desktop\\MZ\\"
-			+ "MZ_test\\FourTrees\\src\\main\\webapp\\resources\\img\\review")
+	@Value("file:C:\\img")
 	private Resource dir;
 
 	public int addReview(ReviewVO input) throws IOException {
@@ -34,9 +33,19 @@ public class ReviewService {
 		input.setImg(file.getOriginalFilename());
 		
 		int row = dao.insert(input);
+		String idx = dao.selectidx();
 		
-		File dest = new File(dir.getFile(), file.getOriginalFilename());
-		file.transferTo(dest);				
+		File newDir = new File(dir.getFile(), idx);
+		
+		if (newDir.exists() == false) {			
+			newDir.mkdir();
+			File dest = new File(newDir, file.getOriginalFilename());
+			file.transferTo(dest);
+		}				
+		else {
+			File dest = new File(newDir, file.getOriginalFilename());
+			file.transferTo(dest);
+		}
 		
 		return row;
 	}

@@ -34,9 +34,9 @@
 		</div>
 		
 		<div class="food_img">			
-			<c:forEach var="row" items="${list }">
+			<c:forEach var="row" items="${img_list }">
 				<div class="slider">				
-					<img src="${cpath }/resources/img/review/${row.img }">								
+					<img src="${cpath }/img/${row.res_idx }/${row.img }">								
 				</div>				
 				<div class="slider_more">				
 				<div class="more">
@@ -75,21 +75,21 @@
 						</a> 
 					</li>
 				</ul>
-			<img src="${cpath }/resources/img/review/${row.img }">
+			<img src="${cpath }/img/${row.res_idx }/${row.img }">
 		</div>	
 	</c:forEach>
 	<!-- 식당 테이블 데이터 페이징 하는 곳 -->
 	<ul class="re_paging">
 		<c:if test="${p.prev }">			
-			<li><a href="${cpath }/area?page=${p.begin - 1 }">이전</a></li>
+			<li><a href="${cpath }/review/review?page=${p.begin - 1 }">이전</a></li>
 		</c:if>
 			
 		<c:forEach var="i" begin="${p.begin }" end="${p.end }">
-			<li><a href="${cpath }/area?page=${i }">${i }</a></li>
+			<li><a href="${cpath }/review/review?page=${i }">${i }</a></li>
 		</c:forEach>
 			
 		<c:if test="${p.next }">			
-			<li><a href="${cpath }/area?page=${p.end + 1 }">다음</a></li>
+			<li><a href="${cpath }/review/review?page=${p.end + 1 }">다음</a></li>
 		</c:if>
 	</ul>	
 	</article>

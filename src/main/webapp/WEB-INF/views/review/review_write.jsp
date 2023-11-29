@@ -7,7 +7,7 @@
 		<table class="review_table">
 			<tr>
 				<th><label for="writer">작성자</label></th>
-				<td><input name="writer" id="writer" required></td>				
+				<td><input name="writer" id="writer" value="${user.nick }" required></td>				
 			</tr>
 			<tr>
 				<th><label for="visit_date">방문일</label></th>				
