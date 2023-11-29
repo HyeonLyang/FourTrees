@@ -26,7 +26,7 @@ public class ReviewService {
 	@Autowired private ReviewDAO dao;
 	
 	@Value("file:C:\\Users\\하준우\\Desktop\\MZ\\"
-			+ "fourtreesTest\\src\\main\\webapp\\resources\\img\\review")
+			+ "MZ_test\\FourTrees\\src\\main\\webapp\\resources\\img\\review")
 	private Resource dir;
 
 	public int addReview(ReviewVO input) throws IOException {
