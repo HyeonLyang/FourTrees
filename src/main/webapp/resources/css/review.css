@@ -364,16 +364,18 @@ a {
 
 /* 여기서부터 리뷰쓰는 css */
 .review_write_main {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 }
 .review_table {
 	border-collapse: collapse;
-	margin-bottom: 10px;
+	margin: 25px 0 10px;
 }
 .review_table input {
-	width: 100%;
+	width: 90%;
 	min-height: 20px;
+	padding: 0 5px;
+	font-size: 110%;
 }
 .review_table th,.review_table td {
 	border: 1px solid black;
