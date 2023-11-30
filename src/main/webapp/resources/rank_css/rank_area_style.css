@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body{
+	width: 1000px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+.rank_area{
+	/*background-color: #D8D8D8;*/
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+.rank_area_top{
+	display:flex;
+	width: 100%;
+	height: 50%;
+}
+.rank_area_bot{
+	display:flex;
+	width: 100%;
+	height: 50%;
+}
+.rank_area_seoul{
+	/*background-color: cyan;*/
+	background-image: url("../img/seoul.jpg");
+	width: 50%;
+	height: 100%;
+	background-size: cover;	
+	background-position: center;
+	opacity: 0.8;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.rank_area_seoul:hover{
+	opacity: 1;
+}
+.rank_area_busan{
+	/*background-color: pink;*/
+	background-image: url("../img/busan.jpg");
+	width: 50%;
+	height: 100%;
+	background-size: cover;	
+	background-position: center;
+	opacity: 0.8;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.rank_area_busan:hover{
+	opacity: 1;
+}
+.rank_area_kangwon{
+	/*background-color: pink;*/
+	background-image: url("../img/kangwon.jpg");
+	width: 50%;
+	height: 100%;
+	background-size: cover;	
+	background-position: center;
+	opacity: 0.8;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.rank_area_kangwon:hover{
+	opacity: 1;
+}
+.rank_area_jeju{
+	/*background-color: cyan;*/
+	background-image: url("../img/jeju.jpg");
+	width: 50%;
+	height: 100%;
+	background-size: cover;	
+	background-position: center;
+	opacity: 0.8;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.rank_area_jeju:hover{
+	opacity: 1;
+}
+
+
+
+
+
+
+
