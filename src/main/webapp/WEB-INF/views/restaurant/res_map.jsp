@@ -19,7 +19,7 @@
 		<p OnClick="location.href ='${cpath }/restaurant/res_review/${res.idx }'" style="cursor:pointer">
 			리뷰
 		</p>
-		<p style="background-color: #e1cb88">
+		<p style="background-color: #bd8f4d">
 			<a>확대지도</a>
 		</p>
 

@@ -28,8 +28,8 @@
 }
 .rank_total_medal{
 	position: absolute;
-	top: -5px;
-	left: 0;
+	top: -3px;
+	left: -10px;
 	z-index: 100;
 }
 .rank_total_topRes{
