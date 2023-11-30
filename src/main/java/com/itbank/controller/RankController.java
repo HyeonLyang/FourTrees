@@ -1,5 +1,8 @@
 package com.itbank.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +22,13 @@ public class RankController {
 	
 	@GetMapping("/rank_total")
 	public String rank_total(Model model) {
+		List<Integer> rank_list = new ArrayList<>();
+		
+		for(int i = 1; i <= 10; i++) {
+			rank_list.add(i);
+		}
+		
+		model.addAttribute("rank", rank_list);
 		model.addAttribute("res_list", rs.getTotalRank());
 		
 		return "rank/rank_total";
@@ -26,6 +36,13 @@ public class RankController {
 	
 	@GetMapping("/rank_category")
 	public String rank_category(Model model) {
+		List<Integer> rank_list = new ArrayList<>();
+		
+		for(int i = 1; i <= 10; i++) {
+			rank_list.add(i);
+		}
+		
+		model.addAttribute("rank", rank_list);
 		model.addAttribute("res_list1", rs.getCateRank1());		// 카테고리 랭크 위쪽
 		model.addAttribute("res_list2", rs.getCateRank2());		// 카테고리 랭크 아래쪽
 		
@@ -34,6 +51,13 @@ public class RankController {
 	
 	@GetMapping("/rank_area")
 	public String rank_area(Model model) {
+		List<Integer> rank_list = new ArrayList<>();
+		
+		for(int i = 1; i <= 10; i++) {
+			rank_list.add(i);
+		}
+		
+		model.addAttribute("rank", rank_list);
 		model.addAttribute("res_seoul", rs.getSeoulRank());
 		model.addAttribute("res_busan", rs.getBusanRank());
 		model.addAttribute("res_kangwon", rs.getKangwonRank());
@@ -41,17 +65,6 @@ public class RankController {
 		
 		return "rank/rank_area";
 	}
-	
-	@GetMapping("/areaRank/rank_seoul")
-	public void rank_seoul() {	}
-	
-	@GetMapping("/areaRank/rank_busan")
-	public void rank_busan() {}
-	
-	@GetMapping("/areaRank/rank_kangwon")
-	public void rank_kangwon() {}
-	
-	@GetMapping("/areaRank/rank_jeju")
-	public void rank_jeju() {}
+
 	
 }

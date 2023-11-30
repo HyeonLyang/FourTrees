@@ -1,13 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="cpath" value="${pageContext.request.contextPath }"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MZ(맛집) in Korea</title>
 <link href="${cpath }/resources/css/rank_css/rank_main_style.css" rel="stylesheet">
+<script src="${cpath }/resources/js/BacktoTop.js"></script>
+</head>
+<body>
 						<!-- rank하위 파일 4개의 css 경로 수정했습니다 -->
-<style>
-body {
-	padding-top: 112px;	/* 겹치는거 방지 */
-}
-</style>
+
 
 <section class="rank_main">
 
