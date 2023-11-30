@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-body {
-	padding-top: 110px;
-}
 .sc_detail {
 	width: 100%;
 	display: flex;
@@ -16,12 +13,48 @@ body {
 /* 좌측 영역, 테이블 크기 */
 .de_left {
 	width: 40%;
-	height: 600px;
 	padding: 0;
 }
 .de_left table {
 	width: 100%;
-	border-collapse: collapse;
+}
+/* 좌측, 상세 검색결과 테이블 설정 */
+.de_left .sc_list td {
+	border: 1px solid;
+	box-sizing: border-box;
+	border: 3px solid #E5E5E570;
+}
+.sc_list .row_photo, .sc_list img {
+	width: 150px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.sc_list p {
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+}
+.sc_list p:nth-child(1) {
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #E5E5E5;
+}
+.sc_list a {
+	font-size: 18px;
+	color: #2C42F6;
+}
+.sc_list a:nth-child(1):hover {
+	color: orange;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 18px;
+}
+.sc_list td:hover {
+	border: 3px solid orange;
+	box-sizing: border-box;
+	margin-bottom: 3px;
 }
 /* 우측 영역, 지도 크기 */
 .de_right {

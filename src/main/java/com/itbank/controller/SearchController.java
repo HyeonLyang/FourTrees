@@ -23,20 +23,24 @@ public class SearchController {
 		
 	}
 	
+//    @GetMapping("/sc_detail")
+//    public ModelAndView sc_detail(@RequestParam("address") String address) {
+//    	ModelAndView mav = new ModelAndView();
+//		List<RestaurantVO> list = ss.search(address);
+//        mav.addObject("list", list);
+//        mav.setViewName("search/sc_detail");
+//        return mav;
+//    }
+    
     @GetMapping("/sc_detail")
-    public ModelAndView sc_detail(@RequestParam("address") String address) {
-    	ModelAndView mav = new ModelAndView();
-		List<RestaurantVO> list = ss.search(address);
+    public ModelAndView sc_detail(
+    	@RequestParam(value = "address", required = false) String address,
+        @RequestParam(value = "category", required = false) String category
+    ) {
+        ModelAndView mav = new ModelAndView();
+        List<RestaurantVO> list = ss.search(address, category);
         mav.addObject("list", list);
         mav.setViewName("search/sc_detail");
-        return mav;
-    }
-    @GetMapping("/sc_category")
-    public ModelAndView sc_category(@RequestParam("category") String category) {
-    	ModelAndView mav = new ModelAndView();
-		List<RestaurantVO> list = ss.searchcate(category);
-        mav.addObject("list", list);
-        mav.setViewName("search/sc_category");
         return mav;
     }
 }

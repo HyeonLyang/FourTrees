@@ -57,7 +57,7 @@
 	height: 100%;
 	transition: filter;
 }
-.sc_main li:hover {
+.sc_main li:hover{
 	cursor: pointer;
 	border: 3px solid gold;
 }
@@ -73,18 +73,17 @@
 }
 
 /* sc_main 상단 검색 총합 표시 부분 */
-.ad_back .sc_total {
+.ad_back {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	box-sizing: border-box;
 }
-.sc_total li {
-	padding: 5px 10px;
-	border-left: 1px solid;
+.sc_total td {
 	box-sizing: border-box;
+	padding: 5px 10px;
 }
 .sc_total span {
 	color: red;
