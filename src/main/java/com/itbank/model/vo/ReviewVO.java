@@ -15,11 +15,12 @@ import org.springframework.web.multipart.MultipartFile;
 	IMG                 VARCHAR2(100) 
 */
 public class ReviewVO {
-	private int idx, good;
+	private int idx, good, res_idx;
 	private double score;
 	private String writer, content, img;
 	private Date visit_date, write_date;
 	private MultipartFile upload;
+	private String res_name, res_address;
 	
 	public int getIdx() {
 		return idx;
@@ -75,4 +76,22 @@ public class ReviewVO {
 	public void setUpload(MultipartFile upload) {
 		this.upload = upload;
 	}
+	public String getRes_name() {
+		return res_name;
+	}
+	public void setRes_name(String res_name) {
+		this.res_name = res_name;
+	}
+	public String getRes_address() {
+		return res_address;
+	}
+	public void setRes_address(String res_address) {
+		this.res_address = res_address;
+	}
+	public int getRes_idx() {
+		return res_idx;
+	}
+	public void setRes_idx(int res_idx) {
+		this.res_idx = res_idx;
+	}		
 }

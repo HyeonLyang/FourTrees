@@ -14,16 +14,6 @@
         </div>
     <hr>
 </article>
-<%--<section class="bookmark">
-	<!-- mypage 내의 네비게이션 바 -->
-	<nav class="myPage_menu">
-		<ul>
-			<li><a href="${cpath }/myPage/password">내 정보</a></li>			
-			<li><a href="${cpath }/myPage/bookmark">찜한 맛집</a></li>
-			<li><a href="${cpath }/myPage/myReply">내가 댓글 단 맛집</a></li>
-		</ul>
-	</nav> --%>
-	
 	<article class="myPage_art">
 		<h3>북마크</h3>
 		<table class="boards">

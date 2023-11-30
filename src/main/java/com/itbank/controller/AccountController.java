@@ -23,13 +23,12 @@ public class AccountController {
 	
 	@PostMapping("/login")
 	public ModelAndView login(AccountVo input, HttpSession session) {
-		ModelAndView mav = new ModelAndView("account/LoginMsg");
+		ModelAndView mav = new ModelAndView("redirect:/");
 		
 		input = as.login(input);
 		
 		if (input != null) {			
-			session.setAttribute("user", input);
-			mav.addObject("message", "로그인 완료");
+			session.setAttribute("user", input);			
 		}
 		
 		return mav;
@@ -37,10 +36,9 @@ public class AccountController {
 	
 	@GetMapping("/logout")
 	public ModelAndView logout(HttpSession session) {
-		ModelAndView mav = new ModelAndView("account/LoginMsg");
+		ModelAndView mav = new ModelAndView("redirect:/");
 		
-		session.removeAttribute("user");
-		mav.addObject("message", "로그아웃 되었습니다");
+		session.removeAttribute("user");		
 		
 		return mav;
 	}
@@ -50,11 +48,9 @@ public class AccountController {
 	
 	@PostMapping("/signUp")
 	public ModelAndView signUp(AccountVo input) {
-		ModelAndView mav = new ModelAndView("account/MyPageMsg");
+		ModelAndView mav = new ModelAndView("redirect:/");
 		
-		mav.addObject("row", as.addAccount(input));
-		mav.addObject("message", "가입을 축하드립니다!!!");
-		mav.addObject("location", "account/login");
+		as.addAccount(input);
 		
 		return mav;
 	}
