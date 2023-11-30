@@ -13,18 +13,9 @@
             <p><a href="${cpath }/support/QNA">고객센터</a></p>
         </div>
     <hr>
-</article>
-<%-- <section class="myReply">
-	<nav class="myPage_menu">
-		<ul>
-			<li><a href="${cpath }/myPage/password">내 정보</a></li>			
-			<li><a href="${cpath }/myPage/bookmark">찜한 맛집</a></li>
-			<li><a href="${cpath }/myPage/myReply">내가 댓글 단 맛집</a></li>
-		</ul>
-	</nav>--%>
-	
+</article>	
 	<article class="myPage_art">
-		<h3>내가 댓글 단 맛집</h3>
+		<h3>리뷰한 맛집</h3>
 		<table class="boards">
 			<tr>		
 				<th>댓글 번호</th>

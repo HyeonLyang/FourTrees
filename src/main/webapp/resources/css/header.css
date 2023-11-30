@@ -89,16 +89,17 @@ header {
 }
 
 .top-menu1 > a > img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 .top-menu1 > a {
     color: white;
     padding-left: 330px;
     padding-top: 20px;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace, Courier, monospace;
+    /* background-color: black;*/
 }
 
 .top-menu2 {
@@ -106,14 +107,14 @@ header {
 }
 
 .top-menu2 > a > img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 .top-menu2 > a {
     color: white;
     padding-right: 220px;
     padding-top: 20px;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace, Courier, monospace;
 }
@@ -206,6 +207,7 @@ header {
 	justify-content: flex-end;
 	overflow: hidden;
 	gap:3px;
+	
     
 }
 .search input {
@@ -271,7 +273,7 @@ header {
 .menu_back {
 	background-color: #efdb96;
 	width: 280px;
-	height: 400px;
+	height: 330px;
 	border-radius: 15px;
 	padding: 10px;
 }

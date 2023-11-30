@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .login {
-	width: 1000px;
+	width: 100%;
 	margin: 10px auto;
 	padding-left: 30px;	
 }
@@ -8,23 +8,26 @@
 	margin: 0 auto;	
 	padding: 10px;
 	width: 50%;
-	text-align: center;
-	
+	text-align: center;		
 }
-
+.login_form fieldset {
+	width: 80%;
+}
 .login_form > p {
 	font-weight: bolder;
 	font-size: 22px;
 }
 .login_form input {
 	width: 70%;
-	padding: 10px 0;
+	padding: 10px;
 	border: none;
 	border-bottom: 1px solid black;
+	font-size: 80%;
 }
 .login_form input[name=login_check] {
 	width: 10%;
 	padding: 0;
+	padding-left: 10px;
 }
 .login_form button {
 	width: 80%;
@@ -35,7 +38,18 @@
 	color: white;
 	border-color: white;
 }
-
+.login_form select {
+	width: 20%;
+	font-size: 80%;
+}
+.signup_pw:nth-child(8) {
+	text-align: left;
+	margin-left: 105px;
+}
+.signup_pw:nth-child(9) {
+	text-align: left;
+	margin-left: 105px;
+}
 .sqare4 {
 	width: 45%;
 	height: 35%;

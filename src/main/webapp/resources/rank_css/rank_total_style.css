@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body{
+	display: flex;
+	justify-content: center;
+}
+.rank_total{
+	background-color: #F6DC9B;
+	width: 1000px;
+	text-align: center;
+}
+.rank_total_main{
+	display: flex;
+	justify-content: center
+}
+.rank_total_board{
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+.rank_total_res{
+	background-color: #FBF3DD;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 160px;
+	position: relative;
+}
+.rank_total_medal{
+	position: absolute;
+	top: -5px;
+	left: 0;
+	z-index: 100;
+}
+.rank_total_topRes{
+	text-decoration: none;
+	color: black;
+}
+.rank_total_img{
+	width: 150px;
+	height: 150px;
+}
+.rank_total_rating{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.rank_total_star{
+	height: 30px;
+	width: 80px;
+}
+

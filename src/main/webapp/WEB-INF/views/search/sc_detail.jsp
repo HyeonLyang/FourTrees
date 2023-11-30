@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>
+<%@ include file="../header2.jsp" %>
 <link rel="stylesheet" href="${cpath }/resources/css/search_css/sc_detail.css">
+<c:set var="imgPath" value="${cpath }/resources/img/search"></c:set>
 
 <section class="sc_detail">
 	<article class="de_left">
@@ -12,27 +13,31 @@
 				<% 
 					String address = request.getParameter("address"); 
 					if (address==null) {
-						address = "서울";
+						address = "";
 					}
 				%>
-				<td><input value="<%=address %>" placeholder="지역, 장소 검색"></td>
+				<td>
+					<input name="address" value="<%=address %>" placeholder="지역, 장소 검색">
+				</td>
 			</tr>
 			<tr>
 				<td>장르</td>
 				<% 
 					String category = request.getParameter("category"); 
 					if (category==null) {
-						category = "백반";
+						category = "";
 					} 
 				%>
-				<td><input value="<%=category %>" placeholder="백반,죽,국수"></td>
+				<td>
+					<input name="category" value="<%=category %>" placeholder="백반,죽,국수">
+				</td>
 			</tr>
 			<tr>
 				<td>가격대</td>
 				<td> $0 <input type="range"> $1,000</td>
 			</tr>
 			<tr>
-				<td colspan="2"><button>상세검색</button>⬆️⬇️ <button>정렬</button>표준</td>
+				<td colspan="2"><button onclick="search()">상세검색</button></td>
 			</tr>
 		</table>
 	</div>
@@ -40,9 +45,22 @@
 		<table>
 			<c:forEach var="row" items="${list }">
 				<tr>
-				<td>${row.idx }</td>
-				<td>${row.name }</td>
-				<td>${row.address }</td>
+					<c:choose>
+						<c:when test="${not empty row.photo}">
+							<td class="row_photo"><img src="${row.photo}"></td>
+						</c:when>
+						<c:otherwise>
+							<td class="row_photo"><img src="${imgPath}/이미지없음.jpg"></td>
+						</c:otherwise>
+					</c:choose>
+					<td>
+						<p><a href="${cpath }/restaurant/res_detail/${row.idx}">${row.name }</a>　${row.category }</p>
+						<p><hr></p>
+						<p>별점 ${row.score }</p>
+						<p>가격대  ${row.price }</p>
+						<p>주소 ${row.address }</p>
+						<p>휴일 ${row.holiday }</p>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>
@@ -68,5 +86,24 @@
 	
 
 </section>
+
+<script>
+    function search() {
+        var address = document.getElementsByName('address')[0].value;
+        var category = document.getElementsByName('category')[0].value;
+        
+        var url = "${cpath}/search/sc_detail?";
+        
+        if (address) {
+            url += "address=" + encodeURIComponent(address) + "&";
+        }
+        
+        if (category) {
+            url += "category=" + encodeURIComponent(category);
+        }
+        
+        window.location.href = url;
+    }
+</script>
 </body>
 </html>
