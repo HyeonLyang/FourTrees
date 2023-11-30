@@ -22,7 +22,7 @@
 			<img class="res_detail_bookmark" src="${cpath }/resources/img/restaurant/bookmark1.png">
 			<h5 class="res_detail_bookmark">22755 명</h5>
 		</div>
-		<hr>
+		<hr class="res_detail_hr">
 		<div class="res_detail_simpleInfo">
 			<h5 class="res_detail_simIn">${res.address} |</h5>
 			<h5 class="res_detail_simIn">${res.category }</h5>

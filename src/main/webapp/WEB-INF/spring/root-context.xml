@@ -12,16 +12,12 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
 	<!-- Root Context: defines shared resources visible to all other web components -->
-	<context:component-scan
-		base-package="com.itbank.service" />
-	<mybatis-spring:scan
-		base-package="com.itbank.model" />
+	<context:component-scan base-package="com.itbank.service" />
+	<mybatis-spring:scan base-package="com.itbank.model" />
 
 	<bean id="hc" class="com.zaxxer.hikari.HikariConfig">
-		<property name="driverClassName"
-			value="oracle.jdbc.driver.OracleDriver" />
-		<property name="jdbcUrl"
-			value="jdbc:oracle:thin:@192.168.1.100:1521:xe" />
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.1.100:1521:xe" />
 		<property name="username" value="c##fourtrees" />
 		<property name="password" value="it" />
 	</bean>
@@ -35,7 +31,8 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:mapper/restaurant.xml</value>
-<!-- 				<value>classpath:mapper/search.xml</value> -->
+ 				<value>classpath:mapper/search.xml</value>
+				<value>classpath:mapper/review.xml</value>
 			</list>
 		</property>
 	</bean>

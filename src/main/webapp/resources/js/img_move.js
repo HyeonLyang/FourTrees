@@ -1,7 +1,8 @@
-let btns = document.querySelectorAll('button');
-	let img = document.querySelectorAll('.food_img')[0];
+let left = document.querySelectorAll('.left')[0];
+let right = document.querySelectorAll('.right')[0];
+let img = document.querySelectorAll('.food_img')[0];
 	
-	btns[1].onclick = () => {		
+	left.onclick = () => {		
 		img.animate(
 		{			
 			transform: [
@@ -16,7 +17,7 @@ let btns = document.querySelectorAll('button');
 		);
 	}
 	
-	btns[2].onclick = () => {		
+	right.onclick = () => {		
 		img.animate(
 		{			
 			transform: [				
@@ -29,11 +30,4 @@ let btns = document.querySelectorAll('button');
 	       easing: 'ease' // 가속도 종류
 	    }
 		);
-	}
-	
-function openPopup(cpath) {
-	window.open(cpath + '/review/img_popup', 
-				"new", 
-				"toolbar=no, menubar=no, scrollbars=yes, resizable=no, " +
-				"width=800, height=850, left=300, top=30" );
-}	
+	}	

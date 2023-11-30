@@ -13,10 +13,10 @@ public interface AccountDAO {
 			+ "where userid = #{userid} and userpw = #{userpw}")
 	AccountVo selectOne(AccountVo input);
 
-	@Insert("insert into account(userid, userpw, nick, email, status, "
-			+ "birth, phone, foreigner, gender, area) values("
-			+ "#{userid}, #{userpw}, #{nick}, #{email}, #{status}, #{birth}, "
-			+ "#{phone}, #{foreigner}, #{gender}, #{area})")
+	@Insert("insert into account(userid, userpw, nick, email, "
+			+ "birth, phone, foreigner, gender) values("
+			+ "#{userid}, #{userpw}, #{nick}, #{email}, #{birth}, "
+			+ "#{phone}, #{foreigner}, #{gender})")
 	int insert(AccountVo input);
 
 	@Delete("delete from account where idx = #{idx}")

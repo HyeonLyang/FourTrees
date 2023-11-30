@@ -9,9 +9,9 @@
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
-		<c:forEach var="res" items="${res_seoul }">
+		<c:forEach var="res" items="${res_seoul }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
 					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
 					<p>${res.name }</p>
@@ -38,9 +38,9 @@
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
-		<c:forEach var="res" items="${res_busan }">
+		<c:forEach var="res" items="${res_busan }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
 					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
 					<p>${res.name }</p>
@@ -67,9 +67,9 @@
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
-		<c:forEach var="res" items="${res_kangwon }">
+		<c:forEach var="res" items="${res_kangwon }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
 					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
 					<p>${res.name }</p>
@@ -96,9 +96,9 @@
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
-		<c:forEach var="res" items="${res_jeju }">
+		<c:forEach var="res" items="${res_jeju }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
 					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
 					<p>${res.name }</p>

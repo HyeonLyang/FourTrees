@@ -17,8 +17,8 @@ import java.sql.Date;
 	JOIN_DATE          DATE
 */
 public class AccountVo {
-	private int idx, status;
-	private String userid, userpw, nick, email;
+	private int idx;
+	private String userid, userpw, nick, email, status;
 	private String phone, foreigner, gender, area;
 	private Date birth, join_date;
 	
@@ -27,11 +27,11 @@ public class AccountVo {
 	}
 	public void setIdx(int idx) {
 		this.idx = idx;
-	}
-	public int getStatus() {
+	}	
+	public String getStatus() {
 		return status;
 	}
-	public void setStatus(int status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
 	public String getUserid() {

@@ -14,25 +14,13 @@
         </div>
     <hr>
 </article>
-<%-- <section class="info">
-	<nav class="myPage_menu">
-		<ul>
-			<li><a href="${cpath }/myPage/password" style="color: #87553d;">내 정보</a></li>			
-			<li><a href="${cpath }/myPage/bookmark">찜한 맛집</a></li>
-			<li><a href="${cpath }/myPage/myReply">내가 댓글 단 맛집</a></li>
-		</ul>
-	</nav>--%>
-		
+<article>
 	<form class="myPage_UD" method="POST">
 		<h3>내정보</h3>
-		<table class="boards" style="width: 100%;" >
-			<tr>
-				<th>회원번호</th>
-				<td>202215</td>
-			</tr>
+		<table class="boards" style="width: 100%;" >			
 			<tr>
 				<th>아이디</th>
-				<td>test1</td>
+				<td>${user.userid }</td>
 			</tr>
 			<tr>
 				<th>패스워드</th>
@@ -40,24 +28,24 @@
 			</tr>
 			<tr>
 				<th>닉네임</th>
-				<td>아무거나 1123</td>
+				<td>${user.nick }</td>
 			</tr>
 			<tr>
 				<th>이메일</th>
-				<td><input name="email" type="email" value="test1@gmail.com" required></td>
+				<td>${user.email }</td>
 			</tr>
 			<tr>
 				<th>가입날짜</th>
-				<td>2005-12-02</td>
+				<td>${user.join_date }</td>
 			</tr>
 		</table>
 		
 		<p>
 			<button>회원수정</button>
-			<button type="button" onclick="isDelete(1001, '${cpath }')">회원탈퇴</button> 
+			<button type="button" onclick="isDelete(${user.idx }, '${cpath }')">회원탈퇴</button> 
 		</p>
 	</form>
-</section>    
+</article>    
 
 <script>
 	/* 삭제할 시 한번 더 묻기 */
@@ -65,7 +53,7 @@
 		let del = confirm('탈퇴 하시겠습니까?');
 		
 		if (del) {
-			location.href = cpath + '/myPage/delete' + idx;
+			location.href = cpath + '/myPage/delete/' + idx;
 		}
 	}
 </script>

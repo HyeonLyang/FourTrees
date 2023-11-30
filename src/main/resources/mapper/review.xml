@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbank.model.ReviewDAO">
+	<insert id="insert"
+			parameterType="com.itbank.model.vo.ReviewVO">
+		insert into review (writer, content, visit_date, score, img, res_idx)
+			values (#{writer}, #{content}, #{visit_date}, #{score}, #{img}, #{res_idx})		
+	</insert>
+	
+	<select id="selectAll"
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="com.itbank.components.Paging">
+		select r.*, b.name as res_name, b.address as res_address from review r
+			inner join restaurant b
+			on r.res_idx = b.idx
+			offset #{offset} rows
+			fetch first #{perCount} rows only		
+	</select>
+	
+	<select id="getTotalReview"
+			resultType="int">
+		select count(*) from review
+	</select>
+	
+	<select id="selectReviews"
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="int">
+		select * from review 
+			where res_idx = #{idx} order by idx desc		
+	</select>
+	
+	<select id="selectidx"
+			resultType="String">
+		select res_idx from review 
+			order by idx desc 
+			fetch first rows only
+	</select>
+	
+	<select id="selectImg"
+			resultType="com.itbank.model.vo.ReviewVO">
+		select * from review
+		    order by idx
+		    fetch first 10 rows only
+	</select>
+</mapper>
