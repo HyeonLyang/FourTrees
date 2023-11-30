@@ -9,9 +9,9 @@
 	<section class="rank_category_main">
 		
 		<ol class="rank_category_board">
-		<c:forEach var="res" items="${res_list1 }">
+		<c:forEach var="res" items="${res_list1 }" varStatus="status">
 			<li class="rank_category_res">
-				<div><img class="rank_category_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_category_topRes">
 					<p><img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"></p>
 					<p>${res.name }</p>

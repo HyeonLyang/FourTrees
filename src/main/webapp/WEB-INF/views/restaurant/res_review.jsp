@@ -17,7 +17,7 @@
 		<p OnClick="location.href ='${cpath }/restaurant/res_img/${res.idx }'" style="cursor:pointer">
 			사진
 		</p>
-		<p style="background-color: #e1cb88">
+		<p style="background-color: #bd8f4d">
 			<a>리뷰</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_map/${res.idx }'" style="cursor:pointer">
@@ -30,6 +30,12 @@
 	
 	<section class="res_review_main">
 		<section class="res_review_con">
+			
+			<p OnClick="location.href ='${cpath }/review/review/${res.idx }'" 
+				style="cursor:pointer" class="res_review_goTo">
+				리뷰 모아보기 ->
+			</p>
+			
 			<c:if test="${empty reviews }">
 				<p>등록된 리뷰가 없습니다</p>	
 			</c:if>

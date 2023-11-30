@@ -11,9 +11,9 @@
 	<section class="rank_total_main">
 		
 		<ol class="rank_total_board">
-		<c:forEach var="res" items="${res_list }">
+		<c:forEach var="res" items="${res_list }" varStatus="status">
 			<li class="rank_total_res">
-				<div><img class="rank_total_medal" src="${cpath }/resources/img/bookmark.PNG"></div>
+				<div><img class="rank_total_medal" src="${cpath }/resources/img/rank/medal${rank[status.index] }.png"></div>
 				<a href="#" class="rank_total_topRes">
 					<p><img class="rank_total_img" src="${cpath }/resources/img/ex05.jpg"></p>
 					<p>${res.name }</p>

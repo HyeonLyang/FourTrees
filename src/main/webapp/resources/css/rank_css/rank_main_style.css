@@ -1,8 +1,6 @@
 @charset "UTF-8";
 body{
-	width: 1000px;
-	margin: 0;
-	display: flex;
+	margin: 0;	
 }
 .rank_main_top{
 	background-color: #D8D8D8;
@@ -47,51 +45,7 @@ body{
 .rank_main_top :nth-child(3):hover{
 	opacity: 1;
 }
-.rank_main_mid{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-.rank_main_issue{
-	width: 950px;
-	display: flex;
-	justify-content: center;
-}
-.rank_main_mid button{
-	border: none;
-	border-radius: 30px;
-	min-width: 120px; 
-	font-size: 20px;
-}
-.rank_main_bot{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-.rank_main_container{
-	display: flex;
-}
-.rank_main_reImg{
-	height: 200px;
-	width: 200px;
-	border-radius: 10px;
-}
-.rank_main_reImg:hover {
-	opacity: 0.5;
-}
-.rank_main_re{
-	display: flex;
-	flex-direction: column;
-}
-.rank_main_writer{
-	background-color: #D8D8D8;
-	text-decoration: none;
-	color: black;
-	border-radius: 10px;
-	height: 50px;
-	text-align: center;
-	line-height: 50px;
-}
+
 
 
 

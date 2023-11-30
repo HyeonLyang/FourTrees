@@ -13,7 +13,7 @@
 		<p OnClick="location.href ='${cpath }/restaurant/res_detail/${res.idx }'" style="cursor:pointer">
 			TOP
 		</p>
-		<p style="background-color: #e1cb88">
+		<p style="background-color: #bd8f4d">
 			<a>사진</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_review/${res.idx }'" style="cursor:pointer">
@@ -54,7 +54,7 @@
 					<p class="res_img_writer">(by 꿀꺽)</p>
 				</div>
 			</section>
-			<p OnClick="location.href ='#'" style="cursor:pointer" class="res_img_toImgBoard">
+			<p OnClick="location.href ='${cpath}/photo/photo_main'" style="cursor:pointer" class="res_img_toImgBoard">
 				사진 전체보기 ->
 			</p>
 		</section>

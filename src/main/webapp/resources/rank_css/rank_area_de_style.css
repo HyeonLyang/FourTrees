@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body{
+	display: flex;
+	justify-content: center;
+	
+}
+.rank_detail{
+	background-color: #F6DC9B;
+	width: 1000px;
+	text-align: center;
+}
+.rank_detail_main{
+	display: flex;
+	justify-content: center
+}
+.rank_detail_board{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.rank_detail_res{
+	background-color: #FBF3DD;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 160px;
+	position: relative;
+}
+.rank_detail_medal{
+	position: absolute;
+	top: -5px;
+	left: 0;
+	z-index: 100;
+}
+.rank_detail_topRes{
+	text-decoration: none;
+	color: black;
+}
+.rank_detail_img{
+	width: 150px;
+	height: 150px;
+}
+.rank_detail_rating{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.rank_detail_star{
+	height: 30px;
+	width: 80px;
+}
+
