@@ -16,6 +16,7 @@
 			<h4>리뷰(${p.totalRestaurant })</h4>
 			<h4>고객님들의 직접 작성하신 따끈한 후기와 평가를 들어보세요</h4>
 		</div>
+		
 		<div>
 			<a href="${cpath }/review/review_write">			
 				<img src="${cpath }/resources/img/review/review_write.png">
