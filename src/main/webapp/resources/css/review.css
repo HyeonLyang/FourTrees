@@ -99,7 +99,7 @@ a {
 /* 로고 넣는 곳  */
 .main {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	width: 100%;	
 	padding: 10px;
 	border-bottom: 1px solid black;
@@ -125,6 +125,9 @@ a {
 .main ul li:nth-child(2) b {
 	margin: 0 10px;
 	color: orange;
+}
+.name_address {
+	width: 300px;
 }
 .main ul li:nth-child(4) {
 	margin-top: 20px;
@@ -231,6 +234,7 @@ a {
 	height: 1px;
 	overflow:hidden;
 }
+
 
 
 /* 리뷰의 위치에서 가까운 맛집 리스트 review_area.jsp */
@@ -343,14 +347,9 @@ a {
 	margin-bottom: 20px;
 	margin: 0;
 }
-.paging {
-	list-style: none;
-	display: flex;
-	padding: 0;
-	justify-content: center;
-}
-.paging li {
-	margin: 0 10px;
+.more_see {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .frame4{

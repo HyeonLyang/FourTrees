@@ -87,10 +87,7 @@
 		var star = document.querySelectorAll('.starpoint_bg')[0].clientWidth;
 		
 		score.value = star / 24;
-	}	
-			
-		
-	
+	}							
 </script>
 </body>
 </html>
