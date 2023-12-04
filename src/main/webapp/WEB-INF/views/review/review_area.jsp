@@ -73,6 +73,14 @@
 		</c:forEach>				
 	</div>
 	
+	<div class="more_see">
+		<p>
+			<a href="${cpath }/search/sc_detail?address=서울">
+				>>더보기
+			</a>
+		</p>
+	</div>
+	
 	<!-- 최상단으로 올라가는 버튼 어느 정도 내려야 버튼이 생성됨 -->
 	<button class="go-top">
 		<svg xmlns="http://www.w3.org/2000/svg" 

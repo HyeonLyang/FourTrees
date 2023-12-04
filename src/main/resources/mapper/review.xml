@@ -13,6 +13,7 @@
 		select r.*, b.name as res_name, b.address as res_address from review r
 			inner join restaurant b
 			on r.res_idx = b.idx
+			order by r.idx desc
 			offset #{offset} rows
 			fetch first #{perCount} rows only		
 	</select>
