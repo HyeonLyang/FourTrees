@@ -9,7 +9,8 @@
 	padding: 10px;
 	width: 50%;
 	text-align: center;	
-	border: 7px double #ff7f50;	
+	border: 4px double #ff7f50;	
+	border-width: 20px 10px;
 }
 .login_form fieldset {
 	width: 80%;

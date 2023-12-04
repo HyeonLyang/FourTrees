@@ -365,24 +365,38 @@ a {
 .review_write_main {
 	width: 100%;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 .review_table {
 	border-collapse: collapse;
-	margin: 25px 0 10px;
+	margin: 25px 0 20px;
 }
 .review_table input {
-	width: 90%;
+	width: 99%;
 	min-height: 20px;
 	padding: 0 5px;
 	font-size: 110%;
 }
 .review_table th,.review_table td {
-	border: 1px solid black;
+	border: 7px double #ff7f50;
 	padding: 5px 10px;
 }
 .review_table textarea {
 	width: 400px;
 	min-height: 200px;
+}
+
+.review_write_main button {
+	width: 95%;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #ff7f50;
+	font-size: 17px;
+}
+
+.review_write_main button:hover {
+	cursor: pointer;
+	border: 3px solid blue;
 }
 
 .sqare6 {
