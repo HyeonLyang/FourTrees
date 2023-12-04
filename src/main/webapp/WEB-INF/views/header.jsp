@@ -83,7 +83,7 @@
 					<tr>
 						<td><a href="${cpath }/account/login"><img src="${cpath }/resources/img/icon7.png"></a></td>
 						<td><a href="${cpath }/account/signUp"><img src="${cpath }/resources/img/icon8.png"></a></td>
-						<td><a href="#"><img src="${cpath }/resources/img/icon9.png"></a></td>
+						<td><a href="${cpath }/mbti/mbti_main"><img src="${cpath }/resources/img/icon9.png"></a></td>
 					</tr>
 					<tr>
 						<td><a href="#"><img src="${cpath }/resources/img/icon10.png"></a></td>
