@@ -11,7 +11,7 @@
 
 	<section class="res_detail_menu">
 
-		<p class="res_detail_menu_cu" style="background-color: #bd8f4d">
+		<p class="res_detail_menu_cu" style="background-color: #FF7F50">
 			<a>TOP</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_img/${res.idx }'" style="cursor:pointer">
@@ -63,7 +63,12 @@
 		</tr>
 		<tr>
 			<th>주소</th>
-			<td>${res.address }</td>
+			<td>
+				${res.address }
+				<div id="res_detail_map" OnClick="location.href ='${cpath }/restaurant/res_map/${res.idx }'" style="cursor:pointer">
+				
+				</div>
+			</td>
 		</tr>
 		<tr>
 			<th>영업시간</th>
@@ -85,5 +90,41 @@
 	
 	</section>
 </section>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=365d0574c8cc82de6a9be6716f6556f0&libraries=services"></script>
+<script>
+var mapContainer = document.getElementById('res_detail_map'), // 지도를 표시할 div 
+mapOption = {
+    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+    level: 2 // 지도의 확대 레벨
+};  
+
+//지도를 생성합니다    
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+//주소-좌표 변환 객체를 생성합니다
+var geocoder = new kakao.maps.services.Geocoder();
+
+//주소로 좌표를 검색합니다
+geocoder.addressSearch('${res.address}', function(result, status) {
+
+// 정상적으로 검색이 완료됐으면 
+ if (status === kakao.maps.services.Status.OK) {
+
+    var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+    // 결과값으로 받은 위치를 마커로 표시합니다
+    var marker = new kakao.maps.Marker({
+        map: map,
+        position: coords
+    });
+
+
+    // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+    map.setCenter(coords);
+} 
+});    
+</script>
+
 </body>
 </html>

@@ -12,12 +12,20 @@
 	padding-bottom: 20px;
 }
 .res_img_con{
-	border: 1px solid #bd8f4d;
+	border: 1px solid #FF7F50;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 75%;
 	margin-left: 0;
+}
+.res_img_title{
+	padding: 10px 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #FFDACC;
+	margin-bottom: 8px;
 }
 .res_img_list{
 	/*background-color: pink;*/
@@ -49,7 +57,7 @@
 }
 .res_img_toImgBoard{
 	padding: 10px 20px;
-	background-color: #bd8f4d;
+	background-color: #FFDACC;
 	border-radius: 20px;
 	
 }
