@@ -7,13 +7,14 @@ body{
 	height: 240px;
 }
 .res_detail_resName1 {
-	font-size: 40px;
+	font-size: 2.15em;
 	display: inline-block;
 	margin-top: 20px;
 	margin-left: 5px;
 	margin-bottom: 10px;
 }
 .res_detail_resName2{
+	font-size: 1em;
 	display: inline-block;
 	margin-top: 0;
 	margin-left: 20px;

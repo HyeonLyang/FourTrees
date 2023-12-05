@@ -36,7 +36,10 @@
 			<table class="res_map_txt">
 				<tr>
 					<th>주소</th>
-					<td>부산 해운대구 센텀2로 25</td>
+					<td>
+						<p>${res.name }</p>
+						<p class="res_map_romAdd">${res.rom_name }</p>
+					</td>
 				</tr>
 			</table>
 		</section>

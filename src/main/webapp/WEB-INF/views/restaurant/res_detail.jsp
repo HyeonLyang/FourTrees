@@ -51,7 +51,10 @@
 	<table class="res_detail_information">
 		<tr>
 			<th>가게 이름</th>
-			<td>${res.name }</td>
+			<td>
+				<p>${res.name }</p>
+				<p class="res_detail_romName">${res.rom_name }</p>
+			</td>
 		</tr>
 		<tr>
 			<th>카테고리</th>
@@ -64,7 +67,8 @@
 		<tr>
 			<th>주소</th>
 			<td>
-				${res.address }
+				<p>${res.address }</p>
+				<p>${res.rom_address }</p>
 				<div id="res_detail_map" OnClick="location.href ='${cpath }/restaurant/res_map/${res.idx }'" style="cursor:pointer">
 				
 				</div>

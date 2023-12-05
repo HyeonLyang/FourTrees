@@ -68,6 +68,13 @@
 .res_detail_information th{
 	background-color: #FFDACC;
 }
+.res_detail_information p{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.res_detail_romName{
+	font-size: 12px;
+}
 #res_detail_map{
 	width: 70%;
 	height: 150px;
