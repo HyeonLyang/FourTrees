@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .rank_total{
-	background-color: #F9F2E4;
+	background-color: #FFE9E0;
 	width: 1000px;
 	text-align: center;
 }
@@ -19,12 +19,13 @@
 	justify-content: center;
 }
 .rank_total_res{
-	background-color: #F6DC9B;
+	background-color: #FFD0BF;
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 15px;
 	width: 160px;
 	position: relative;
+	border-radius: 6px;
 }
 .rank_total_medal{
 	position: absolute;
@@ -58,19 +59,25 @@
 	width: auto;
 	height: 16px;
 }
+.rank_total_title{
+	margin: 0;
+	padding-bottom: 15px;
+	padding-top: 30px;
+}
 .rank_total_toArea{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #e1cb88;
+	background-color: #FFAB8C;
 	height: 50px;
 	width: 400px;
 	font-size: 20px;
 	margin-bottom: 80px;
 	margin-top: 50px;
+	border-radius: 15px;
 }
 .rank_total_toArea:hover {
-	background-color: #A38A58;
+	background-color: #FF8F66;
 }
 
 
