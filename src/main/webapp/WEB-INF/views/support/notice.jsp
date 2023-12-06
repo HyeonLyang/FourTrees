@@ -3,8 +3,7 @@
 <%@ include file="../header.jsp" %>
 <%@ include file="sup_main.jsp" %>
 
-<div class="sqare1">
-</div>
+
 <section class="notice" id="support">
 
 	<div class="notice_con">

@@ -3,8 +3,7 @@
 <%@ include file="../header.jsp" %>
 <%@ include file="sup_main.jsp" %>
 
-<div class="sqare3">
-</div>
+
 <section class="qna" id="support">
 	<fieldset>
 		<table>
