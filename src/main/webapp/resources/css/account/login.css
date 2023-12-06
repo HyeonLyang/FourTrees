@@ -45,6 +45,16 @@
 	width: 72%;
 	font-size: 80%;
 }
+.find_info {
+	display: flex;
+	margin: 10px 0;
+}
+.find_info p {
+	margin: 0 auto;
+}
+.find_info a {
+	color: grey;
+}
 .signup_pw {
 	width: 100%;
 }
