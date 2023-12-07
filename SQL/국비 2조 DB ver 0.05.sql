@@ -69,8 +69,12 @@ create table restaurant (
     view_count      number          default 0,
     price           varchar2(100)   default 0,
     link            varchar2(200),    
+    area_idx	    number,
     
     constraint res_idx_pk primary key(idx),
+
+    constraint res_area_idx_fk FOREIGN key (area_idx) REFERENCES area(idx),
+
     -- 주차는 가능하면 1 불가능하면 2로 설정
     constraint res_park_ck check (park_area >=1 and  park_area <=2)  
 );	
@@ -176,3 +180,20 @@ create table img (
     constraint img_idx_pk primary key (idx)
 );
 -------------------------------------------------------------------
+
+drop sequence area_seq;
+drop table area;
+
+create sequence area_seq
+    start with 101
+    increment by 1
+    minvalue 101
+    maxvalue 999
+    nocache;
+    
+create table area (
+    idx     number          default area_seq.nextval,
+    name    VARCHAR2(50)    not null,
+    
+    constraint area_idx_pk PRIMARY key (idx)
+);    
