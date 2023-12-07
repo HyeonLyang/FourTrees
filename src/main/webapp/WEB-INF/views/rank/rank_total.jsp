@@ -7,7 +7,7 @@
 
 
 <section class="rank_total">
-	<h1>평점 높은 전국 맛집 TOP10</h1>
+	<h1 class="rank_total_title">평점 높은 전국 맛집 TOP10</h1>
 	<section class="rank_total_main">
 		
 		<ol class="rank_total_board">
@@ -29,7 +29,7 @@
 			</li>
 		</c:forEach>
 		</ol>
-		<p class="rank_detail_toArea" 
+		<p class="rank_total_toArea" 
 			OnClick="location.href ='#'" 
 			style="cursor:pointer">
 			지도에서 맛집 찾기 →

@@ -19,17 +19,17 @@
 	margin-left: 0;
 }
 .res_review_goTo{
-	width: 100%;
+	width: 30%;
 	text-align: center;
 	padding-bottom: 20px;
 	padding-top: 20px;
-	background-color: #a98b60;
+	background-color: #FF7F50;
 	border-radius: 20px;
 }
 .res_review_list{
 	width: 100%;
 	height: auto;
-	border: 2px solid #bd8f4d;
+	border: 2px solid #FFDACC;
 }
 .res_review_pro {
 	width: 100%;
@@ -42,7 +42,7 @@
 	align-content: center;
 	margin-bottom: 0;
 	padding-top: 5px;
-	background-color: #bd8f4d;
+	background-color: #FFDACC;
 }
 .res_review_pro img {
 	width: 50px;
@@ -55,7 +55,7 @@
 	font-size: 40px;
 	justify-content: center;
 	align-items: center;
-	background-color: #bd8f4d;
+	background-color: #FFDACC;
 }
 .res_review_rate_back{
 	background: url(../../img/star01.png) no-repeat;

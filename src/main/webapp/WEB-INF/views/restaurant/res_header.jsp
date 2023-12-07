@@ -9,7 +9,7 @@
 	<section class="res_detail_info">
 		<div class="res_detail_basicInfo">
 			<p class="res_detail_resName1">${res.name }</p>
-			<p class="res_detail_resName2">starbucks</p>
+			<p class="res_detail_resName2">${res.rom_name }</p>
 		</div>
 		<div class="res_detail_re">
 			<div class="res_detail_rate_back">
