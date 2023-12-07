@@ -30,8 +30,26 @@ public class RestaurantVO {
 	    private int view_count;    
 	    private String price;      
 	    private String link;     
+	    private String rom_address;
+	    private String rom_name;
+	    
+	    public String getRom_name() {
+			return rom_name;
+		}
 
-	    public int getIdx() {
+		public void setRom_name(String rom_name) {
+			this.rom_name = rom_name;
+		}
+
+		public String getRom_address() {
+			return rom_address;
+		}
+
+		public void setRom_address(String rom_address) {
+			this.rom_address = rom_address;
+		}
+
+		public int getIdx() {
 	        return idx;
 	    }
 
