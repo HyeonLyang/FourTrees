@@ -13,7 +13,7 @@
 		<p OnClick="location.href ='${cpath }/restaurant/res_detail/${res.idx }'" style="cursor:pointer">
 			TOP
 		</p>
-		<p style="background-color: #bd8f4d">
+		<p style="background-color: #FF7F50">
 			<a>사진</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_review/${res.idx }'" style="cursor:pointer">
@@ -27,7 +27,7 @@
 	
 	<section class="res_img_main">
 		<section class="res_img_con">
-			<nav>최근 리뷰의 사진</nav>
+			<h4 class="res_img_title">최근 리뷰의 사진</h4>
 			<section class="res_img_list">
 				<div>
 					<img src="${cpath }/resources/img/reImg1.png">

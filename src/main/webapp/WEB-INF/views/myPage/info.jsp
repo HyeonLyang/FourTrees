@@ -3,21 +3,29 @@
 <%@ include file="../header.jsp" %>	
 <link rel="stylesheet" href="${cpath }/resources/css/account/myPage.css">
 
-<article>
-    <hr>
-        <div class="headline">
-            <p><a href="${cpath }">홈</a></p>
-            <p><a href="${cpath }/myPage/password" style="color: #87553d;">내 정보</a></p>
-            <p><a href="${cpath }/myPage/bookmark">북마크</a></p>
-            <p><a href="${cpath }/myPage/myReply">댓글</a></p>
-            <p><a href="${cpath }/support/QNA">고객센터</a></p>
-        </div>
-    <hr>
-</article>
-<article>
+<article class="myPage_art">
+	<div class="profile">
+		<div class="pro_img">
+			<img src="${cpath }/resources/img/review/기본 프로필.jpg">
+			<div class="nick">			
+				<h3>${user.nick }</h3>
+				<h4>${user.nick }님 환영합니다</h4>
+			</div>
+		</div>				
+	</div>
+	
+    
 	<form class="myPage_UD" method="POST">
+	    <div class="headline">
+	    	<button>회원정보변경</button>
+			
+			<button type="button" onclick="isDelete(${user.idx }, '${cpath }')">
+				회원탈퇴
+			</button>        
+	    </div>
+
 		<h3>내정보</h3>
-		<table class="boards" style="width: 100%;" >			
+		<table class="boards" style="width: 60%; font-size: 120%;">			
 			<tr>
 				<th>아이디</th>
 				<td>${user.userid }</td>
@@ -38,12 +46,7 @@
 				<th>가입날짜</th>
 				<td>${user.join_date }</td>
 			</tr>
-		</table>
-		
-		<p>
-			<button>회원수정</button>
-			<button type="button" onclick="isDelete(${user.idx }, '${cpath }')">회원탈퇴</button> 
-		</p>
+		</table>				
 	</form>
 </article>    
 

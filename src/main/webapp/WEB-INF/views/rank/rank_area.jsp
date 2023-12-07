@@ -5,7 +5,7 @@
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 
 <section class="rank_detail">
-	<h1>서울 맛집 TOP10</h1>
+	<h1 class="rank_detail_title">서울 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">

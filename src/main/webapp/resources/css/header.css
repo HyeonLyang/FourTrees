@@ -315,7 +315,7 @@ header.scrolled, .header.scrolled {
   background: transparent;
   cursor: pointer;
   z-index: 9999;
-  color: #3F51B5; /* 색상변경*/
+  color: #ff7f50; /* 색상변경*/
 }
 
 /* support의 프레임

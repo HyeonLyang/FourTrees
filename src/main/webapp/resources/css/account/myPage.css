@@ -66,9 +66,8 @@
   color: white;
 }
 .myPage_UD {	
-	width: 40%;
-	margin: 0 auto;
-	padding-top: 50px;
+	width: 100%;
+	margin: 0 auto;	
 }
 .myPage_UD p {
 	margin: 20px auto;
@@ -76,35 +75,86 @@
 }
 
 /* myPage/bookmark.jsp */
+.profile {
+	width: 100%;		
+	display: flex;
+	justify-content: space-between;
+}
+.pro_img {
+	width: 25%;
+    display: flex;
+    justify-content: space-between;    
+}
+.pro_img img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	margin: 15px 0 0;
+}
+.pro_img h3 {
+	text-align: left;
+}
+.pro_img h4 {
+	color: grey;
+}
+.profile_modify img {
+	margin: 15px 0 0;
+}
+.headline {
+    display: flex;
+    height: 4%;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 50px 0 0;
+    font-size: medium;
+    font-weight: bold;
+    width: 100%;    
+    border-top:1px solid #ff7f50;
+    border-bottom: 1px solid #ff7f50;
+}
+
+.headline > p > a {
+    text-decoration: none;
+    color: black
+}
 
 .bookmark {
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
 }
-.boards {
-	margin: 40px auto;
-	width: 1000px;
-	border-collapse: collapse;
-	padding-top: 50px;
-	
-}
-
-
-.boards th, .boards td {
-	border: 2px solid #f0cf90;;
-	padding: 20px 20px;
-    box-sizing: border-box;
-    mix-blend-mode: overlay;
-}
 
 .myPage_art {
-	margin: 10px auto;
+	margin: 0 auto;
 	text-align: center;
 	width : 70%;
 	padding: 50px;
 	padding-bottom: 100px;
 }
+.headline button {
+	width: 50%;
+	height: 50px;
+	margin: 0 10px 0 0;
+	font-size: 110%;
+}
+.headline button:hover {
+	background-color: black;
+	color: yellow;
+}
+.boards {
+	margin: 40px auto;
+	width: 100%;
+	border-collapse: collapse;
+	padding-top: 50px;
+	
+}
+.boards th, .boards td {
+	border: 2px solid #ff7f50;
+	padding: 20px 20px;
+    box-sizing: border-box;
+    mix-blend-mode: overlay;
+}
+
 
 /* myPage/myReply.jsp */
 
@@ -115,24 +165,4 @@
 }
 .myReply .boards {
 	width: 700px;
-}
-
-/* myPage fixed 11.26 */
-
-.headline {
-    display: flex;
-    height: 4%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1%;
-    margin: 0;
-    font-size: medium;
-    font-weight: bold;
-    width: 55%;
-    padding-left: 20px;
-}
-
-.headline > p > a {
-    text-decoration: none;
-    color: black
 }
