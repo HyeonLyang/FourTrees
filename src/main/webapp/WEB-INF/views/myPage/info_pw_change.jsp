@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>	
+<%@ include file="../header.jsp" %>
 <link rel="stylesheet" href="${cpath }/resources/css/account/myPage.css">
 
 <article class="myPage_art">
@@ -16,36 +16,35 @@
 	
     
     <div class="headline">	    	
-		<p><a href="${cpath }/myPage/info" style="color: #ff7f50;">회원정보변경</a></p>
-		<p><a href="${cpath }/myPage/info_pw_change">비밀번호변경</a></p>
+		<p><a href="${cpath }/myPage/info">회원정보변경</a></p>
+		<p><a href="${cpath }/myPage/info_pw_change" style="color: #ff7f50;">비밀번호변경</a></p>
 		<p><a href="${cpath }/myPage/info_delete">회원탈퇴</a></p>     
     </div>
 
 	<form class="myPage_UD" method="POST">
-
-		<h3>내정보</h3>
-		
+	
+		<h3>비밀번호 변경</h3>
+	
 		<div class="user_info">
 			<table class="board">
 				<tr>
-					<th>회원코드</th>
-					<td><input name="idx" value="${user.idx }" readonly="readonly"
-						style="background-color: #d7d7d7;"></td>										
+					<th>현재 비밀번호</th>
+					<td><input name="pw" type="password" value="${user.userpw }" 
+						style="background-color: #d7d7d7;" readonly></td>										
 				</tr>
 				
 				<tr>
-					<th>이메일</th>					
+					<th>새 비밀번호</th>					
 					<td>
-						<input name="email" type="email" placeholder="이메일을 입력하세요" required>
-						<i class="email_msg"></i>					
+						<input name="userpw" type="password" placeholder="변경하실 새 비밀번호를 입력하세요" required>				
 					</td>					
 				</tr>
 				
 				<tr>
-					<th>전화번호</th>
+					<th>새 비밀번호 확인</th>
 					<td>
-						<input name="phone" placeholder="휴대폰 번호를 입력해주세요" required>
-						<i class="phone_msg"></i>		
+						<input name="pw_check" type="password" placeholder="새 비밀번호를 다시 한 번 입력하세요" 
+						required>		
 					</td>
 				</tr>
 			</table>					
@@ -56,13 +55,7 @@
 			<button>저장</button>
 		</div>
 	</form>
-</article>    
-
-<script>
-	function back(cpath) {
-		location.href = cpath + '/myPage/bookmark';
-	}
-</script>
+</article> 
 <%@ include file="../footer.jsp" %>
 </body>
 </html>

@@ -57,6 +57,14 @@ public class MyPageController {
 		return mav;
 	}
 	
+	// 비밀번호 변경
+	@GetMapping("/info_pw_change")
+	public void info_pw_change() {}
+	
+	// 삭제 전 주의사항 페이지
+	@GetMapping("/info_delete")
+	public void info_delete() {}
+	
 	// 정보 삭제
 	@GetMapping("/delete/{idx}")
 	public ModelAndView delete(@PathVariable int idx) {
