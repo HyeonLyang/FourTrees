@@ -22,15 +22,6 @@ public class SearchController {
 	public void sc_main() {
 		
 	}
-	
-//    @GetMapping("/sc_detail")
-//    public ModelAndView sc_detail(@RequestParam("address") String address) {
-//    	ModelAndView mav = new ModelAndView();
-//		List<RestaurantVO> list = ss.search(address);
-//        mav.addObject("list", list);
-//        mav.setViewName("search/sc_detail");
-//        return mav;
-//    }
     
     @GetMapping("/sc_detail")
     public ModelAndView sc_detail(

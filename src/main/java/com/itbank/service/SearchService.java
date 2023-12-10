@@ -13,13 +13,11 @@ public class SearchService {
 
 	@Autowired private SearchDAO dao;
 	
-//	public List<RestaurantVO> search(String address) {
-////		 System.out.println("SearchService - search method called with address: " + address);
-//	        return dao.searchAll(address);
-//	    }
 	public List<RestaurantVO> search(String address, String category) {
 	    return dao.searchAll(address, category);
 	}
 
-	
+	public List<RestaurantVO> searchHeader(String search) {
+		return dao.searchHeader(search);
+	}
 }

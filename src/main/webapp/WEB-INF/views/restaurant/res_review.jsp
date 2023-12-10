@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>	<!-- 헤더 추가 -->
+<%@ include file="../header2.jsp" %>	<!-- 헤더 추가 -->
 <link href="${cpath }/resources/css/res_css/res_review_style.css" rel="stylesheet"> <!-- css적용 -->
 <c:set var="parking" value="${res.park_area  == 1 ? '주차가능' : '주차불가'}"/>
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
