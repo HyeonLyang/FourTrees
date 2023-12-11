@@ -1,13 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp"%>
+<%@ include file="../header2.jsp"%>
 <link rel="stylesheet" href="${cpath }/resources/css/review.css">
 
 <article class="review_map">
 	<h3>청담동 근처 맛집 (6)</h3>
 
-	<img src="${cpath }/resources/img/review/map.png">
+	<div id="map" style="width:1000px; height:400px;"></div>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bc60e67620768f95cb992d64536023b"></script>
+		<script>
+			var container = document.getElementById('map');
+			var options = {
+				center: new kakao.maps.LatLng(35.166966, 129.132976),
+				level: 3
+			};
+	
+			var map = new kakao.maps.Map(container, options);
+			
+			// 마커가 표시될 위치입니다 
+			var markerPosition  = new kakao.maps.LatLng(35.166966, 129.132976); 
 
+			// 마커를 생성합니다
+			var marker = new kakao.maps.Marker({
+			    position: markerPosition
+			});
+
+			// 마커가 지도 위에 표시되도록 설정합니다
+			marker.setMap(map);
+
+			// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+			// marker.setMap(null);   
+		</script>
 	<!-- 여긴 식당의 정보를 나타내는 곳 -->
 	<div class="near_res">
 		<c:forEach var="row" items="${list }">

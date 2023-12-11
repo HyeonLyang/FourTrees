@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>	<!-- 헤더 추가 -->
+<%@ include file="../header2.jsp" %>	<!-- 헤더 추가 -->
 <link href="${cpath }/resources/css/res_css/res_img_style.css" rel="stylesheet"> <!-- css적용 -->
 	
 <section class="res_img">
