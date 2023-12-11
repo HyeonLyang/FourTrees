@@ -19,6 +19,7 @@
 				<td>
 					<input name="address" value="<%=address %>" placeholder="지역, 장소 검색">
 				</td>
+				<td rowspan="3"><button onclick="search()">상세검색</button></td>
 			</tr>
 			<tr>
 				<td>장르</td>
@@ -33,12 +34,26 @@
 				</td>
 			</tr>
 			<tr>
-				<td>가격대</td>
-				<td> $0 <input type="range"> $1,000</td>
+				<td>필터</td>
+				<td>
+					<label for="sort">정렬</label>
+					<select>
+						<option value="sort">기본</option>
+						<option value="sort_view">조회수 순</option>
+						<option value="sort_rp">댓글순</option>
+						<option value="sort_star">별점순</option>
+						<option value="sort_book">별점순</option>
+					</select>
+					
+				    <label>주차장</label>
+				    <select>
+				        <option value="parking">전체</option>
+				        <option value="can-pk">주차 가능</option>
+				        <option value="cant-pk">주차 불가능</option>
+				    </select>
+			    </td>
 			</tr>
-			<tr>
-				<td colspan="2"><button onclick="search()">상세검색</button></td>
-			</tr>
+				
 		</table>
 	</div>
 	<div class="sc_list">
@@ -75,13 +90,13 @@
 			<li>5</li>
 			<li>다음></li>
 		</ul>
-		
 		<p>1-20 of 5106</p>
 	</div>
+	
 	</article>
 	
 	<article class="de_right">
-		<div id="map" style="width:900px; height:500px; position: absolute; right: 10px; bottom: 10px;"></div>
+		<div id="map" style="width:900px; height:800px; position: absolute; right: 10px; bottom: 10px;"></div>
 		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bc60e67620768f95cb992d64536023b"></script>
 		<script>
 			var container = document.getElementById('map');
@@ -91,6 +106,30 @@
 			};
 	
 			var map = new kakao.maps.Map(container, options);
+			
+			// 장소 검색 객체를 생성합니다
+			var ps = new kakao.maps.services.Places(); 
+
+			// 키워드로 장소를 검색합니다
+			ps.keywordSearch('센텀', placesSearchCB); 
+
+			// 키워드 검색 완료 시 호출되는 콜백함수 입니다
+			function placesSearchCB (data, status, pagination) {
+			    if (status === kakao.maps.services.Status.OK) {
+
+			        // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+			        // LatLngBounds 객체에 좌표를 추가합니다
+			        var bounds = new kakao.maps.LatLngBounds();
+
+			        for (var i=0; i<data.length; i++) {
+			            displayMarker(data[i]);    
+			            bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
+			        }       
+
+			        // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
+			        map.setBounds(bounds);
+			    } 
+			}
 			
 			// 마커가 표시될 위치입니다 
 			var markerPosition  = new kakao.maps.LatLng(35.166966, 129.132976); 
