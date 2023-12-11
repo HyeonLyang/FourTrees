@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>	
+<%@ include file="../header2.jsp" %>	
 <link rel="stylesheet" href="${cpath }/resources/css/account/myPage.css">
 
 <article class="myPage_art">
