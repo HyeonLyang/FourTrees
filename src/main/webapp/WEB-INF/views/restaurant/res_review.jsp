@@ -17,7 +17,7 @@
 		<p OnClick="location.href ='${cpath }/restaurant/res_img/${res.idx }'" style="cursor:pointer">
 			사진
 		</p>
-		<p style="background-color: #FF7F50">
+		<p style="background-color: #FFDACC">
 			<a>리뷰</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_map/${res.idx }'" style="cursor:pointer">

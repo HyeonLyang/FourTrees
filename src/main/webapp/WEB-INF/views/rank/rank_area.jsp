@@ -5,6 +5,13 @@
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 
 <section class="rank_detail">
+	
+	<section class="rank_detail_btns">
+		<p>부산</p>
+		<p>강원도</p>
+		<p>제주</p>
+	</section>
+	
 	<h1 class="rank_detail_title">서울 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
@@ -122,6 +129,12 @@
 	</section>
 	
 </section>
+
+<script>
+	
+	
+	
+</script>
 	
 </body>
 </html>

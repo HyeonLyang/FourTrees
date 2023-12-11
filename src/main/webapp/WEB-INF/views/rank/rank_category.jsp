@@ -5,6 +5,11 @@
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 	<!-- css 폴더안에 정리해주세요 -->
 <section class="rank_category">
+
+	<section>
+		
+	</section>
+	
 	<h1 class="rank_category_title">디저트 맛집 TOP10</h1>
 	<section class="rank_category_main">
 		

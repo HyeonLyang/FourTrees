@@ -1,8 +1,18 @@
 @charset "UTF-8";
 .rank_detail{
-	background-color: #FFE9E0;
+	/*background-color: #FFE9E0;*/
 	width: 1000px;
 	text-align: center;
+}
+.rank_detail_btns{
+	display: flex;
+	margin: 10px;
+}
+.rank_detail_btns p{
+	border: solid #FFDACC 1px;
+	padding: 9px;
+	margin: 10px;
+	border-radius: 20px;
 }
 .rank_detail_title{
 	margin: 0;
