@@ -23,8 +23,12 @@ public class AccountService {
 		return dao.delete(idx);
 	}
 
-	public int updteAccount(AccountVo input) {		
+	public int updateAccount(AccountVo input) {		
 		return dao.update(input);
+	}
+
+	public int updatePW(AccountVo input) {
+		return dao.updatePW(input);
 	}
 	
 }

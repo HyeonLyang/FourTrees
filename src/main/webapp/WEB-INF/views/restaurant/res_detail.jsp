@@ -11,7 +11,7 @@
 
 	<section class="res_detail_menu">
 
-		<p class="res_detail_menu_cu" style="background-color: #FF7F50">
+		<p class="res_detail_menu_cu" style="background-color: #FFDACC">
 			<a>TOP</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_img/${res.idx }'" style="cursor:pointer">

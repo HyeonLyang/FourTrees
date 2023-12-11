@@ -76,3 +76,32 @@
 	height: 1132px;
 	box-sizing: border-box;
 }
+.search_main {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+.search_main > h1 {
+    color: #333;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.search_main div {
+    padding: 20px;
+    background-color: #F3E2CC;
+    border-radius: 30px;
+    margin: 30px;
+    
+}
+
+.search_main .button {
+    padding: 20px;
+    margin: 30px;
+}
+
+.search_main .result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+

@@ -23,12 +23,16 @@ public interface AccountDAO {
 	int delete(int idx);
 
 	@Update("update account "
-				+ "set "
-				+ "userid = #{userid}, "
-				+ "userpw = #{userpw}, "
-				+ "nick = #{nick}, "
-				+ "email = #{email} "
-		  + "where idx = #{idx}")
+				+ "set "											
+				+ "email = #{email}, "
+				+ "phone = #{phone} "
+		  + "where userid = #{userid}")
 	int update(AccountVo input);
+
+	@Update("update account "
+				+ "set "
+				+ "userpw = #{userpw} "
+			+ "where userid = #{userid}")
+	int updatePW(AccountVo input);
 
 }
