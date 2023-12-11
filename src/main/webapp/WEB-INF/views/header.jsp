@@ -40,16 +40,16 @@
             </section>
             
             <section class="header-bottom">
-            	<p></p>
                 <p>"한국의 맛집여행, 레스토랑 가이드"</p>
-                <div>
-                </div>
-                <!-- 메뉴-검색창 -->
+                <div><!-- 빈칸 space betweend 용 --></div>
                 <div class="menu">
-                    <div class="search">
-                        <input name="search" placeholder="위치를 입력하세요.">
-                        <button>검색</button>
-                    </div>
+                	<!-- 메뉴-검색창 -->
+					<form action="${cpath }/header/search" method="get">
+					    <div class="search">
+					        <input name="search" placeholder="위치나 카테고리를 입력하세요.">
+					        <button>검색</button>
+					    </div>
+					</form>
             		<!-- 번역아이콘 -->
                     <div class="language-container">
                         <ul class="language">

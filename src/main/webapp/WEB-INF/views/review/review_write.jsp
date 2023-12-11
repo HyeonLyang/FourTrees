@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>
+<%@ include file="../header2.jsp" %>
 <script src="https://cdn.tiny.cloud/1/bmpz83s4yqa4fgfuozripnlgp9hjdztmwwmpnqkfnjhs8r39/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <link rel="stylesheet" href="${cpath }/resources/css/review.css">
 <section class="review_write_main">

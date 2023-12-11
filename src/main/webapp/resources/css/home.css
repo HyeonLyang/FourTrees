@@ -295,5 +295,5 @@ header {
   
 /* header 색상변화(800px 아래로 스크롤하면 색상 바뀜) */
 header.scrolled, .header.scrolled {
-	background-color: #bd8f4d;	/* 색상 변경해주세요 */
+	background-color: #ff7518;	/* 색상 변경해주세요 */
 }

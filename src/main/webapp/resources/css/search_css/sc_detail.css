@@ -18,6 +18,11 @@
 .de_left table {
 	width: 100%;
 }
+.de_option button {
+	width: 50px;
+	height: 50px;
+	background-color: #ff8517;
+}
 /* 좌측, 상세 검색결과 테이블 설정 */
 .de_left .sc_list td {
 	border: 1px solid;
@@ -84,6 +89,7 @@
 	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 10px;
+	height: 40px;
 }
 .sc_paging p {
 	font-size: 80%;
@@ -101,4 +107,5 @@
 	font-size: 80%;
 	vertical-align: middle;
 	margin: 3px;
+	height: 25px;
 }

@@ -1,25 +1,5 @@
 @charset "UTF-8";
 
-/* 	
-빠른 취합을 위해 통일해주세요
-
-1) section으로 페이지전체를 묶음
-2) section은 클래스이름 통일 
-	- 예시) home.jsp 파일 
-	- section class="home";
-3) class명 : 자신이 맡은 파일명_기능명 순으로 클래스이름 통일
-	- 예시) reply_list, header_input, detail_foodimg4, detail_table
-
-4) 공통 속성(아직 미정이긴하지만)
-	(1) section
-		- width : 1000px;
-		- box-sizing : border-box;
-		- margin: 0 auto;
-		- border: 1px solid;
- 	(2) body
-		- margin: 0 auto;
- */
-
 /* 공통 적용 */
 body {
 	margin: 0 auto;
@@ -34,21 +14,6 @@ a {
 	text-decoration: 0;
 	color: black;
 }
-
-
-/* .language-container { */
-/* 	width: 50px; */
-/* 	height: 50px; */
-/* 	overflow: hidden; */
-/* 	align-items: center; */
-/* 	box-sizing: border-box; */
-    
-/* } */
-/* .language-container:hover { */
-/* 	width: 250px; */
-/* 	cursor: pointer; */
-    
-/* } */
 
 .remote > img {
     width: 300px;
@@ -207,18 +172,22 @@ header {
 	justify-content: flex-end;
 	overflow: hidden;
 	gap:3px;
-	
+	border-radius: 3px;
     
 }
 .search input {
-    opacity: 40%;
 	width: 90%;
+	background-color: white;
+	border-radius: 3px;
+	border: 2px solid #ff7518;
+	font-size: 16px;
+	padding-left: 10px;
 }
 .search button {
     opacity: 80%;
 	border-radius: 3px;
-	border: 1px solid #d9b74b;
-	background-color: #efdb96;
+	border: 1px solid #ff7518;
+	background-color: #ff7518;
 	width: 100px;
     cursor: pointer;
 }
@@ -297,11 +266,6 @@ header {
 /* 공백용 css*/
 .blank {
 	height: 50px;
-}
-
-/* header 색상변화(800px 아래로 스크롤하면 색상 바뀜) */
-header.scrolled, .header.scrolled {
-	background-color: #bd8f4d;	/* 색상 변경해주세요 */
 }
 
 /* 위로가기 버튼의 css */
