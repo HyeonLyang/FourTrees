@@ -23,3 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     backToTop(); // 함수 호출
 });
+function back(cpath) {
+	location.href = cpath + '/myPage/bookmark';
+}

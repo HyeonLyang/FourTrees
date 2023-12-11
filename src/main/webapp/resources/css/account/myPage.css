@@ -103,14 +103,15 @@
 .headline {
     display: flex;
     height: 4%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;    
     margin: 50px 0 0;
     font-size: medium;
     font-weight: bold;
     width: 100%;    
-    border-top:1px solid #ff7f50;
-    border-bottom: 1px solid #ff7f50;
+    border-top:1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 0 10px;
 }
 
 .headline > p > a {
@@ -131,15 +132,8 @@
 	padding: 50px;
 	padding-bottom: 100px;
 }
-.headline button {
-	width: 50%;
-	height: 50px;
-	margin: 0 10px 0 0;
+.headline p{	
 	font-size: 110%;
-}
-.headline button:hover {
-	background-color: black;
-	color: yellow;
 }
 .boards {
 	margin: 40px auto;
@@ -149,7 +143,7 @@
 	
 }
 .boards th, .boards td {
-	border: 2px solid #ff7f50;
+	border: 2px solid #d7d7d7;
 	padding: 20px 20px;
     box-sizing: border-box;
     mix-blend-mode: overlay;
@@ -165,4 +159,63 @@
 }
 .myReply .boards {
 	width: 700px;
+}
+
+/* myPage/info.jsp */
+.user_info {
+	text-align: left;
+	padding: 0 240px;
+	font-size: 110%;
+}
+.board th {
+	margin: 0 10px;
+	width: 150px;
+}
+.board th,.board td {
+	padding: 10px 5px;
+}
+.board input {
+	width: 300px;
+	height: 40px;
+	font-size: 90%;
+}
+.email_msg, .phone_msg {
+	font-size: 50%;
+}
+.save_cancel button {
+	margin: 10px 0 0;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+    height: 45px;
+    font-size: 100%;
+    color: white;
+    cursor: pointer;
+}
+.save_cancel button:nth-child(1) {
+	background-color: #d7d7d7;
+}
+.save_cancel button:nth-child(2) {
+	background-color: #ff7f50;
+}
+
+/* myPage/info_delete.jsp */
+.delete_caution {
+	text-align: left;
+	padding: 0 130px;
+}
+.delete_caution h2 {
+	margin: 0;
+}
+.delete_caution ol {
+	padding: 5px 17px;
+	font-size: 110%;
+}
+.delete_caution ol li {
+	margin: 10px 0;
+}
+.delete_caution ol li h5{
+	color: #d7d7d7;
+	
 }
