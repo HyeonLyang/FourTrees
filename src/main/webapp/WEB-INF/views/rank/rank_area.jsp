@@ -7,9 +7,9 @@
 <section class="rank_detail">
 	
 	<section class="rank_detail_btns">
-		<p>부산</p>
-		<p>강원도</p>
-		<p>제주</p>
+		<p class="rank_detail_btn">부산</p>
+		<p class="rank_detail_btn">강원도</p>
+		<p class="rank_detail_btn">제주</p>
 	</section>
 	
 	<h1 class="rank_detail_title">서울 맛집 TOP10</h1>
@@ -132,7 +132,17 @@
 
 <script>
 	
+	const btnArr = document.getElementsByClassName('rank_detail_btn');
+	const areaArr = document.getElementsByClassName('rank_detail_main');
 	
+	for(let i = 0; i < btnArr.length; i++){
+
+		  btnArr[i].addEventListener('click',function(e){
+		    e.preventDefault();
+		    document.querySelector(areaArr[i + 1]).scrollIntoView(true);
+		  });
+
+		}
 	
 </script>
 	
