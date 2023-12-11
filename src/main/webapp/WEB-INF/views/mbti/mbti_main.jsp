@@ -38,7 +38,7 @@
 			</table>
 		</div>
 		<ul>
-				<li><a href="${cpath }/support/notice">MBTI테스트 하러가기</a></li>
+				<li><a href="${cpath }/mbti/mbti_research">MBTI테스트 하러가기</a></li>
 				<%-- <li><a href="${cpath }/support/FAQ">다른 유형 결과 보기</a></li>--%>
 		</ul>
 	</div>
