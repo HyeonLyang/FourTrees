@@ -74,7 +74,7 @@
 				<td>
 					<input name="upload" type="file">
 					<input name="score" type="hidden">
-					<input name="res_idx" type="hidden" value="1001">
+					<input name="res_idx" type="hidden" value="1130">
 				</td>
 			</tr>
 		</table>

@@ -71,7 +71,7 @@
 					<li>${row.content }</li>
 					<li class="name_address">
 						${row.res_name }<br>						
-						<a href="${cpath }/review/review_area?address=${row.res_address}">
+						<a href="${cpath }/review/review_area?area_name=${row.area}">
 							<b>${row.res_address }</b>
 						</a> 
 					</li>

@@ -175,7 +175,7 @@ create SEQUENCE img_seq
 create table img (
     idx         number      default img_seq.nextval,
     res_idx     number      not null,
-    img_path    clob        default 'img/이미지 없음.jpg',
+    img_path    clob        default '이미지 없음.jpg',
     
     constraint img_idx_pk primary key (idx)
 );

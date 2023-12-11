@@ -20,7 +20,7 @@ public class ReviewVO {
 	private String writer, content, img;
 	private Date visit_date, write_date;
 	private MultipartFile upload;
-	private String res_name, res_address;
+	private String res_name, res_address, area;
 	
 	public int getIdx() {
 		return idx;
@@ -93,5 +93,11 @@ public class ReviewVO {
 	}
 	public void setRes_idx(int res_idx) {
 		this.res_idx = res_idx;
-	}		
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}			
 }

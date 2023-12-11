@@ -14,8 +14,8 @@ public class RestaurantService {
 
 	@Autowired private RestaurantDAO dao;
 	
-	public List<RestaurantVO> getRestaurants() {
-		return dao.selectAll();
+	public List<RestaurantVO> getRestaurants(String area_name) {
+		return dao.selectAll(area_name);
 	}
 	
 	public RestaurantVO getResturant(int idx) {

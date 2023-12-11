@@ -39,10 +39,10 @@ public class ReviewController {
 	}
 
 	@GetMapping("/review_area")
-	public ModelAndView area() {
+	public ModelAndView area(String area_name) {
 		ModelAndView mav = new ModelAndView("review/review_area");
 
-		mav.addObject("list", rs.getRestaurants());
+		mav.addObject("list", rs.getRestaurants(area_name));
 
 		return mav;
 	}
