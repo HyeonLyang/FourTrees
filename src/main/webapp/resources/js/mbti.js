@@ -86,6 +86,6 @@ document.getElementById('mbtiForm').addEventListener('submit', function(event) {
     document.getElementById('mbtiResult').innerText = result;
     document.getElementById('resultContainer').style.display = 'block';
     
-    window.location.href = result;
+    window.location.href = "test/" + result;
 
 });
