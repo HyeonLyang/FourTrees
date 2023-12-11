@@ -13,7 +13,7 @@
 		<p OnClick="location.href ='${cpath }/restaurant/res_detail/${res.idx }'" style="cursor:pointer">
 			TOP
 		</p>
-		<p style="background-color: #FF7F50">
+		<p style="background-color: #FFDACC">
 			<a>사진</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_review/${res.idx }'" style="cursor:pointer">
