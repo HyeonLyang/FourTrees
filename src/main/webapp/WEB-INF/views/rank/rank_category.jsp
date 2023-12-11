@@ -36,6 +36,7 @@
 	</section>
 	
 	<h1>중식 맛집 TOP10</h1>
+	
 	<section class="rank_category_main">
 		
 		<ol class="rank_category_board">

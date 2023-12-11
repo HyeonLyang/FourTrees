@@ -41,7 +41,7 @@
 		</p>
 	</section>
 	
-	<h1>부산 맛집 TOP10</h1>
+	<h1 class="rank_detail_title">부산 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -70,7 +70,7 @@
 		</p>
 	</section>
 	
-	<h1>강원 맛집 TOP10</h1>
+	<h1 class="rank_detail_title">강원 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -99,7 +99,7 @@
 		</p>
 	</section>
 	
-	<h1>제주 맛집 TOP10</h1>
+	<h1 class="rank_detail_title">제주 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -133,13 +133,13 @@
 <script>
 	
 	const btnArr = document.getElementsByClassName('rank_detail_btn');
-	const areaArr = document.getElementsByClassName('rank_detail_main');
+	const areaArr = document.getElementsByClassName('rank_detail_toArea');
 	
 	for(let i = 0; i < btnArr.length; i++){
 
 		  btnArr[i].addEventListener('click',function(e){
 		    e.preventDefault();
-		    document.querySelector(areaArr[i + 1]).scrollIntoView(true);
+		    areaArr[i].scrollIntoView(true);
 		  });
 
 		}

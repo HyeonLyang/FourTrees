@@ -17,7 +17,6 @@
 .rank_detail_title{
 	margin: 0;
 	padding-bottom: 15px;
-	padding-top: 30px;
 }
 .rank_detail_main{
 	display: flex;
@@ -92,11 +91,6 @@
 }
 .rank_detail_score{
 	color: white;
-}
-.rank_detail_title{
-	margin: 0;
-	padding-bottom: 15px;
-	padding-top: 30px;
 }
 .rank_detail_toArea{
 	display: flex;
