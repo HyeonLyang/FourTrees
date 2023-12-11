@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>
+<%@ include file="../header2.jsp" %>
 <%@ include file="sup_main.jsp" %>
 
-<div class="sqare1">
-</div>
+
 <section class="notice" id="support">
 
 	<div class="notice_con">
