@@ -58,13 +58,26 @@
 	width: 1000px;
 }
 .res_detail_information td, .res_detail_information th{
-	border: 1px solid #bd8f4d;
-	font-size: 20px;
-	padding-bottom: 30px;
-	padding-top: 30px;
-}
-.res_detail_information td{
+	border: 1px solid #FFDACC;
+	font-size: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	padding-left: 10px;
+	text-align: left;
+}
+.res_detail_information th{
+	background-color: #FFDACC;
+}
+.res_detail_information p{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.res_detail_romName{
+	font-size: 12px;
+}
+#res_detail_map{
+	width: 70%;
+	height: 150px;
 }
 .res_detail_ad{
 	margin-top: 5px;

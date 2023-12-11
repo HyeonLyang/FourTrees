@@ -46,16 +46,33 @@ public class MyPageController {
 	
 	// 정보 수정
 	@PostMapping("/info")
-	public ModelAndView update(AccountVo input, HttpSession session,String userpw) {
-		ModelAndView mav = new ModelAndView("redirect:/account/logout");
+	public ModelAndView update(AccountVo input) {
+		ModelAndView mav = new ModelAndView("redirect:/account/logout");		
 		
-		input = (AccountVo) session.getAttribute("user");		
-		input.setUserpw(userpw);
-		
-		as.updteAccount(input);
+		as.updateAccount(input);
 		
 		return mav;
 	}
+	
+	// 비밀번호 변경
+	@GetMapping("/info_pw_change")
+	public void info_pw_change() {}
+	
+	@PostMapping("/info_pw_change")
+	public ModelAndView updatePW(AccountVo input, HttpSession session, String userpw) {
+		ModelAndView mav = new ModelAndView("redirect:/account/logout");
+		
+		input = (AccountVo) session.getAttribute("user");
+		input.setUserpw(userpw);				
+		
+		as.updatePW(input);
+		
+		return mav;
+	}
+	
+	// 삭제 전 주의사항 페이지
+	@GetMapping("/info_delete")
+	public void info_delete() {}
 	
 	// 정보 삭제
 	@GetMapping("/delete/{idx}")

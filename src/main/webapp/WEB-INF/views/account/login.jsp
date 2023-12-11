@@ -19,7 +19,18 @@
 				
 				<button>로그인</button>
 		</fieldset>
+		<div class="find_info">
+			<p>
+				<a href="${cpath }/account/findID">
+					아이디 찾기 |
+				</a>
+				<a href="${cpath }/account/findPW">		
+					비밀번호 찾기			
+				</a>
+			</p>											
+		</div>
 	</form>
+	
 </article>
 </body>
 </html>

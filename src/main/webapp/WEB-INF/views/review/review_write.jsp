@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp" %>
+<script src="https://cdn.tiny.cloud/1/bmpz83s4yqa4fgfuozripnlgp9hjdztmwwmpnqkfnjhs8r39/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <link rel="stylesheet" href="${cpath }/resources/css/review.css">
 <section class="review_write_main">
 	<form class="review_write_write" method="POST" enctype="multipart/form-data">
@@ -64,7 +65,9 @@
 				</td>				
 			</tr>						
 			<tr>
-				<td colspan="2"><textarea name="content"></textarea></td>
+				<td colspan="2">
+					<textarea name="content" id="content"></textarea>
+				</td>
 			</tr>
 			<tr>
 				<th>음식 사진</th>
@@ -81,16 +84,31 @@
 </section>
 <script>
 	const score = document.getElementsByName('score')[0];
-	const starpoint = document.getElementsByClassName('starpoint_box')[0];
-		
+	const starpoint = document.getElementsByClassName('starpoint_box')[0];	
+	
+	
 	starpoint.onclick = () => {
 		var star = document.querySelectorAll('.starpoint_bg')[0].clientWidth;
 		
 		score.value = star / 24;
-	}	
-			
-		
+	}
 	
+	tinymce.init({
+	    selector: '#content',
+	    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+	    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',	    
+	});
+	  
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	  let content = tinyMCE.get('content');	 
+	  console.log(content);
+	  
+	  if (content = null) {
+		  alert('dd');
+	  }
+	});
+	/* content = content.replace(/<p>/g, '').replace(/<\/p>/g, ''); */
 </script>
 </body>
 </html>

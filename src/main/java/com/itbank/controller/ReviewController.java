@@ -54,7 +54,7 @@ public class ReviewController {
 	public void write() {}
 	
 	@PostMapping("/review_write")
-	public ModelAndView write(ReviewVO input,String score) throws IOException {
+	public ModelAndView write(ReviewVO input,String score) throws Exception {
 		ModelAndView mav = new ModelAndView("redirect:/review/review");
 		
 		if (score == null) {

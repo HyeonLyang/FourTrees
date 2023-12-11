@@ -69,8 +69,8 @@
 						<b>${row.score }</b>				
 					</li>
 					<li>${row.content }</li>
-					<li>
-						${row.res_name }						
+					<li class="name_address">
+						${row.res_name }<br>						
 						<a href="${cpath }/review/review_area?address=${row.res_address}">
 							<b>${row.res_address }</b>
 						</a> 

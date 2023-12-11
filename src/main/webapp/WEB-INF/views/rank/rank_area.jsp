@@ -5,7 +5,14 @@
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 
 <section class="rank_detail">
-	<h1>서울 맛집 TOP10</h1>
+	
+	<section class="rank_detail_btns">
+		<p class="rank_detail_btn">부산</p>
+		<p class="rank_detail_btn">강원도</p>
+		<p class="rank_detail_btn">제주</p>
+	</section>
+	
+	<h1 class="rank_detail_title">서울 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -13,7 +20,7 @@
 			<li class="rank_detail_res">
 				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
-					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
 					<div class="rank_detail_rating">
@@ -21,7 +28,7 @@
 						<!-- db연결 후 width: 별점 -->
 				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
 				    	</div>
-						<b>${res.score }</b>
+						<b class="rank_detail_score">${res.score }</b>
 					</div>
 				</a>
 			</li>
@@ -42,7 +49,7 @@
 			<li class="rank_detail_res">
 				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
-					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
 					<div class="rank_detail_rating">
@@ -50,7 +57,7 @@
 						<!-- db연결 후 width: 별점 -->
 				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
 				    	</div>
-						<b>${res.score }</b>
+						<b class="rank_detail_score">${res.score }</b>
 					</div>
 				</a>
 			</li>
@@ -71,7 +78,7 @@
 			<li class="rank_detail_res">
 				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
-					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
 					<div class="rank_detail_rating">
@@ -79,7 +86,7 @@
 						<!-- db연결 후 width: 별점 -->
 				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
 				    	</div>
-						<b>${res.score }</b>
+						<b class="rank_detail_score">${res.score }</b>
 					</div>
 				</a>
 			</li>
@@ -100,7 +107,7 @@
 			<li class="rank_detail_res">
 				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
 				<a href="#" class="rank_detail_topRes">
-					<p><img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"></p>
+					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
 					<div class="rank_detail_rating">
@@ -108,7 +115,7 @@
 						<!-- db연결 후 width: 별점 -->
 				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
 				    	</div>
-						<b>${res.score }</b>
+						<b class="rank_detail_score">${res.score }</b>
 					</div>
 				</a>
 			</li>
@@ -122,6 +129,22 @@
 	</section>
 	
 </section>
+
+<script>
+	
+	const btnArr = document.getElementsByClassName('rank_detail_btn');
+	const areaArr = document.getElementsByClassName('rank_detail_main');
+	
+	for(let i = 0; i < btnArr.length; i++){
+
+		  btnArr[i].addEventListener('click',function(e){
+		    e.preventDefault();
+		    document.querySelector(areaArr[i + 1]).scrollIntoView(true);
+		  });
+
+		}
+	
+</script>
 	
 </body>
 </html>
