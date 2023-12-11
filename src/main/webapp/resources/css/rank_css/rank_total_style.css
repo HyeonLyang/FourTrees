@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .rank_total{
-	background-color: #FFE9E0;
+	/*background-color: #FFE9E0;*/
 	width: 1000px;
 	text-align: center;
 }
@@ -20,12 +20,24 @@
 }
 .rank_total_res{
 	background-color: #FFD0BF;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 15px;
-	width: 160px;
+	margin: 2px;
+	width: 195px;
+	height: 300px;
 	position: relative;
-	border-radius: 6px;
+	border-radius: 10px;
+	background: linear-gradient(
+            to bottom,
+            rgba(20, 20, 20, 0) 30%,
+            rgba(20, 20, 20, 0.25) 50%,
+            rgba(20, 20, 20, 0.5) 75%,
+            rgba(20, 20, 20, 0.75) 100%
+          ), url('../../img/ex05.jpg');
+	background-size: cover;	
+	background-position: center;
+}
+.rank_total_res p{
+	color: white;
+	margin: 3px;
 }
 .rank_total_medal{
 	position: absolute;
@@ -38,8 +50,12 @@
 	color: black;
 }
 .rank_total_img{
-	width: 150px;
+	width: 190px;
 	height: 150px;
+}
+.rank_total_block{
+	height: 202px;
+	margin: 0;
 }
 .rank_total_rating{
 	display: flex;
@@ -58,6 +74,9 @@
 	background: url(../../img/rank/star02.png);
 	width: auto;
 	height: 16px;
+}
+.rank_total_score{
+	color: white;
 }
 .rank_total_title{
 	margin: 0;
