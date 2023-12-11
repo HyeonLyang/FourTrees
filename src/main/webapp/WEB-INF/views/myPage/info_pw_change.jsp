@@ -47,7 +47,8 @@
 						required>		
 					</td>
 				</tr>
-			</table>					
+			</table>	
+			<i class="msg"></i>				
 		</div>
 		
 		<div class="save_cancel">
@@ -56,6 +57,36 @@
 		</div>
 	</form>
 </article> 
+<script>
+	let pw = document.getElementsByName('pw')[0];
+	let userpw = document.getElementsByName('userpw')[0];
+	let pw_check = document.getElementsByName('pw_check')[0];
+	let msg = document.querySelectorAll('.msg')[0];
+	
+	userpw.onblur = () => {
+		if (pw.value == userpw.value) {
+			msg.innerHTML = '전 비밀번호와 값이 같습니다';
+			msg.style.color = 'red';
+			userpw.value = '';
+			userpw.focus();
+		}
+		else {
+			msg.innerHTML = '';
+		}
+	}
+	
+	pw_check.onblur = () => {
+		if (userpw.value != pw_check.value) {
+			msg.innerHTML = '비밀번호가 다릅니다';
+			msg.style.color = 'red';
+			pw_check.value = '';
+			pw_check.focus();
+		}
+		else {
+			msg.innerHTML = '';			
+		}
+	}
+</script>
 <%@ include file="../footer.jsp" %>
 </body>
 </html>

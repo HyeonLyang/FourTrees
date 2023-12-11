@@ -28,15 +28,15 @@
 		<div class="user_info">
 			<table class="board">
 				<tr>
-					<th>회원코드</th>
-					<td><input name="idx" value="${user.idx }" readonly="readonly"
+					<th>ID</th>
+					<td><input name="userid" value="${user.userid }" readonly
 						style="background-color: #d7d7d7;"></td>										
 				</tr>
 				
 				<tr>
 					<th>이메일</th>					
 					<td>
-						<input name="email" type="email" placeholder="이메일을 입력하세요" required>
+						<input name="email" type="email" placeholder="이메일을 입력하세요" required><br>
 						<i class="email_msg"></i>					
 					</td>					
 				</tr>
@@ -44,11 +44,14 @@
 				<tr>
 					<th>전화번호</th>
 					<td>
-						<input name="phone" placeholder="휴대폰 번호를 입력해주세요" required>
+						<input name="phone" placeholder="휴대폰 번호를 입력해주세요" required><br>
 						<i class="phone_msg"></i>		
 					</td>
 				</tr>
-			</table>					
+			</table>	
+						
+			<input name="email_check" type="hidden" value="${user.email }">
+			<input name="phone_check" type="hidden" value="${user.phone }">				
 		</div>
 		
 		<div class="save_cancel">
@@ -59,8 +62,36 @@
 </article>    
 
 <script>
-	function back(cpath) {
-		location.href = cpath + '/myPage/bookmark';
+	let email = document.getElementsByName('email')[0];
+	let email_check = document.getElementsByName('email_check')[0];
+	let email_msg = document.querySelectorAll('.email_msg')[0];
+	
+	email.onblur = () => {
+		if (email.value == email_check.value) {
+			email_msg.innerHTML = '이메일이 전과 같습니다';
+			email_msg.style.color = 'red';
+			email.value = '';
+			email.focus();
+		}
+		else {
+			email_msg.innerHTML = '';			
+		}
+	}
+	
+	let phone = document.getElementsByName('phone')[0];
+	let phone_check = document.getElementsByName('phone_check')[0];
+	let phone_msg = document.querySelectorAll('.phone_msg')[0];
+	
+	phone.onblur = () => {
+		if (phone.value == phone_check.value) {
+			phone_msg.innerHTML = '번호가 전과 같습니다';
+			phone_msg.style.color = 'red';
+			phone.value = '';
+			phone.focus();
+		}
+		else {
+			phone_msg.innerHTML = '';			
+		}
 	}
 </script>
 <%@ include file="../footer.jsp" %>
