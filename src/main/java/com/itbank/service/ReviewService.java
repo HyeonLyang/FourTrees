@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.itbank.components.Paging;
+import com.itbank.model.RestaurantDAO;
 import com.itbank.model.ReviewDAO;
 import com.itbank.model.vo.ReviewVO;
 import com.jcraft.jsch.Channel;
@@ -22,6 +23,7 @@ import com.jcraft.jsch.SftpATTRS;
 public class ReviewService {
 	
 	@Autowired private ReviewDAO dao;
+	@Autowired private RestaurantDAO res_dao;
 	
 	// JSch는 mavenRepository에서 의존성 추가
 	private JSch jsch = new JSch();
@@ -41,6 +43,18 @@ public class ReviewService {
 		channel.connect();
 		// sftp로 채널을 연다
 		ChannelSftp sftpChannel = (ChannelSftp) channel;
+		
+		// 리뷰작성시 별점을 레스토랑 점수에 반영시키는 과정
+		List<Double> scoreList = dao.getResScores(input.getIdx());
+		double scoreSum = 0;
+		
+		for(double score : scoreList) {
+			scoreSum += score;
+		}
+		scoreSum += input.getScore();
+		double resScore = scoreSum / scoreList.size();
+		
+		res_dao.updateScore(resScore);
 		
 		int row = dao.insert(input);
 		String idx = dao.selectidx();
