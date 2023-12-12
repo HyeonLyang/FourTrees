@@ -40,9 +40,9 @@
 					가격 : ${row.price }원
 				</div>
 				<div class="res_holiday">
-					<c:if test="${row.holiday == '연중무휴' or row.holiday == 'x' }">					
+					<c:if test="${row.holiday == '연중무휴' }">					
 						<b style="background-color: rgb(236, 21, 21);">
-							${row.holiday }
+							연중무휴
 						</b>
 					</c:if>
 					<c:if test="${row.holiday != '연중무휴'}">					
@@ -74,7 +74,7 @@
 	
 	<div class="more_see">
 		<p>
-			<a href="${cpath }/search/sc_detail?address=서울">
+			<a href="${cpath }/search/sc_detail?address=${param.area_name}">
 				>>더보기
 			</a>
 		</p>

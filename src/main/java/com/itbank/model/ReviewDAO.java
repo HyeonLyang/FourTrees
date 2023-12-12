@@ -19,4 +19,6 @@ public interface ReviewDAO {
 
 	List<ReviewVO> selectImg();
 
+	List<ReviewVO> imgCollect(int res_idx);
+
 }

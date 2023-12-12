@@ -41,7 +41,7 @@
 				</div>				
 				<div class="slider_more">				
 				<div class="more">
-					<a href="${cpath }/review/img_popup">				
+					<a href="${cpath }/review/img_popup?img=${p.totalRestaurant }&res_idx=${row.res_idx}">				
 						<b>${p.totalRestaurant }</b><br>
 						<i>더보기></i>
 					</a>

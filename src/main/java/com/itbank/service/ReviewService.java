@@ -92,4 +92,8 @@ public class ReviewService {
 		return dao.selectReviews(idx);
 	}
 
+	public List<ReviewVO> imgCollection(int res_idx) {		
+		return dao.imgCollect(res_idx);
+	}
+
 }

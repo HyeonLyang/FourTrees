@@ -45,4 +45,11 @@
 		    order by idx
 		    fetch first 10 rows only
 	</select>
+	
+	<select id="imgCollect"
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="int">
+		select img from review
+			where res_idx = #{res_idx}
+	</select>
 </mapper>
