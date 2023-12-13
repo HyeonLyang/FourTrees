@@ -1,0 +1,56 @@
+update restaurant set area_idx = 101 
+    where address like '%강릉시%';
+
+update restaurant set area_idx = 102
+    where address like '%동해시%';
+
+update restaurant set area_idx = 103
+    where address like '%삼척시%';
+
+update restaurant set area_idx = 104 
+    where address like '%속초시%';
+
+update restaurant set area_idx = 105 
+    where address like '%원주시%';
+
+update restaurant set area_idx = 106 
+    where address like '%춘천시%';
+
+update restaurant set area_idx = 107
+    where address like '%태백시%';
+
+update restaurant set area_idx = 108
+    where address like '%부산진구%';
+
+update restaurant set area_idx = 109
+    where address like '%수영구%';
+
+update restaurant set area_idx = 110
+    where address like '%영도구%';
+
+update restaurant set area_idx = 111
+    where address like '%중구%';
+
+update restaurant set area_idx = 112
+    where address like '%해운대구%';
+
+update restaurant set area_idx = 113
+    where address like '%강서구%';
+
+update restaurant set area_idx = 114
+    where address like '%동대문구%';
+
+update restaurant set area_idx = 115
+    where address like '%마포구%';
+
+update restaurant set area_idx = 116
+    where address like '%서대문구%';
+
+update restaurant set area_idx = 117
+    where address like '%종로구%';
+
+update restaurant set area_idx = 118
+    where address like '%서귀포시%';
+
+update restaurant set area_idx = 119
+    where address like '%제주시%';

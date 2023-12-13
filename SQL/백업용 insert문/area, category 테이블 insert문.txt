@@ -1,0 +1,46 @@
+insert into category (name) values ('고기·구이');
+insert into category (name) values ('돈까스·회·일식');
+insert into category (name) values ('백반·죽·국수');
+insert into category (name) values ('분식');
+insert into category (name) values ('야식');
+insert into category (name) values ('양식');
+insert into category (name) values ('족발·보쌈');
+insert into category (name) values ('중식');
+insert into category (name) values ('찜·탕·찌개');
+insert into category (name) values ('치킨');
+insert into category (name) values ('카페·디저트');
+insert into category (name) values ('피자');
+insert into category (name) values ('한식');
+
+select res_seq.currval from dual;
+
+alter sequence res_seq increment by 1;
+
+commit;
+
+insert into area (name) values ('강원 강릉시');
+insert into area (name) values ('강원 동해시');
+insert into area (name) values ('강원 삼척시');
+insert into area (name) values ('강원 속초시');
+insert into area (name) values ('강원 원주시');
+insert into area (name) values ('강원 춘천시');
+insert into area (name) values ('강원 태백시');
+
+insert into area (name) values ('부산 부산진구');
+insert into area (name) values ('부산 수영구');
+insert into area (name) values ('부산 영도구');
+insert into area (name) values ('부산 중구');
+insert into area (name) values ('부산 해운대구');
+
+insert into area (name) values ('서울 강서구');
+insert into area (name) values ('서울 동대문구');
+insert into area (name) values ('서울 마포구');
+insert into area (name) values ('서울 서대문구');
+insert into area (name) values ('서울 종로구');
+
+insert into area (name) values ('제주 서귀포시');
+insert into area (name) values ('제주 제주시');
+
+select area_seq.currval from dual;
+
+alter sequence area_seq increment by 1;

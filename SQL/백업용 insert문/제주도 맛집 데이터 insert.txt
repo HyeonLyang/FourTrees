@@ -1,0 +1,399 @@
+-- 제갈양
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('제갈양', '제주특별자치도 제주시 한림읍 한림로 155', '064-796-9933', '고기,구이', '10:00-21:00', 1, 15000);
+
+-- 제주내리막
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('제주내리막', '제주 제주시 우정로 18 1층 제주내리막', '0507-1412-3293', '고기,구이', '12:00-23:30', 1, 25000);
+
+-- 올래국수
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('올래국수', '제주 제주시 귀아랑길 24 올래국수', '064-742-7355', '백반,죽,국수', '8:20-15:00', 1, 10000);
+
+-- 우진해장국
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('우진해장국', '제주 제주시 서사로 11', '064-757-3393', '백반,죽,국수', '6:00-22:00', 2, 10000);
+
+-- 이춘옥원조고등어쌈밥 제주애월본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('이춘옥원조고등어쌈밥 제주애월본점', '제주 제주시 애월읍 일주서로 7213', '0507-1402-9914', '백반,죽,국수', '10:00-20:30', 1, 15000);
+
+-- 제주광해 애월
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('제주광해 애월', '제주 제주시 애월읍 애월해안로 867 2층', '0507-1312-4789', '백반,죽,국수', '10:00-20:00', 1, 43000);
+
+-- 아베베베이커리
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('아베베베이커리', '제주 제주시 동문로6길 4 동문시장 12번 게이트 옆', '0507-1414-0750', '카페,디저트', '10:00-21:00', 2, 3300);
+
+-- 런던베이글뮤지엄 제주점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('런던베이글뮤지엄 제주점', '제주 제주시 구좌읍 동복로 85 제2동 1층', '없음', '카페,디저트', '8:00-18:00', 1, 5500);
+
+-- 형제도식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('형제도식당', '제주 서귀포시 일주서로 915', '064-738-3407', '찜,탕,찌개', '10:00-21:00', 1, 70000);
+
+
+-- 제주순풍해장국 본점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('제주순풍해장국 본점', '제주 제주시 진군남4길 7-8 1층', '0507-1426-9944', '백반,죽,국수', '화요일', '6:00-22:00', 1, 9000);
+
+-- 레이지펌프
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('레이지펌프', '제주 제주시 애월읍 애월북서길 32 lazypump', '0507-1325-8732', '카페,디저트', '9:00-20:00', 1, 6000);
+
+-- 색달식당중문갈치조림구이 본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('색달식당중문갈치조림구이 본점', '제주 서귀포시 예래로 255-18 1층', '0507-1321-1741', '찜,탕,찌개', '10:00-21:00', 1, 70000);
+
+-- 제주마음
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('제주마음', '제주특별자치도 제주시 원노형3길 15 1층', '0507-1329-8332', '찜,탕,찌개', '9:30-21:30', 1, 75000);
+
+-- 미영이네
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('미영이네', '제주 서귀포시 대정읍 하모항구로 42', '064-792-0077', '돈까스,회,일식', '수요일', '11:30-22:00', 1, 60000);
+
+-- 원앤온리
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('원앤온리', '제주 서귀포시 안덕면 산방로 141', '0507-1323-6186', '카페,디저트', '9:00-20:00', 1, 14000);
+
+-- 연돈
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('연돈', '제주 서귀포시 색달로 10 2층 연돈', '0507-1386-7060', '돈가스', '12:00-21:00', 1, 11000);
+
+-- 먹돌 제주본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('먹돌 제주본점', '제주 제주시 월성로 26', '0507-1405-9777', '백반,죽,국수', '9:00-20:40', 1, 10000);
+
+-- 뚱딴지 애월본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('뚱딴지 애월본점', '제주 제주시 애월읍 부룡수길 17', '0507-1370-2085', '찜,탕,찌개', '11:00-22:00', 1, '15000-120000');
+
+-- 숙성도 노형본관
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('숙성도 노형본관', '제주 제주시 원노형로 41 1층', '0507-1335-5211', '고기,구이', '11:30-21:30', 2, 21000, 'https://blog.naver.com/songmeat3555');
+
+-- 해지개
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('해지개', '제주 제주시 애월읍 애월북서길 52 . 1~2층', '0507-1358-8586', '카페,디저트', '9:00-21:00', 1, 7500, 'https://www.instagram.com/jeju_17');
+
+-- 성산 고등어쌈밥 김치찜
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('성산 고등어쌈밥 김치찜', '제주 서귀포시 성산읍 섭지코지로25번길 122-5 고등어쌈밥', '0507-1427-4944', '백반,죽,국수', '8:00-22:00', 1, 18000);
+
+-- 금돈가 제주 애월해안도로 본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('금돈가 제주 애월해안도로 본점', '제주 제주시 애월읍 가문동남길 63 1층', '0507-1396-6466', '고기,구이', '11:00-22:00', 1, 66000, 'https://www.instagram.com/jeju_kumdonga');
+
+-- 장승포식당 성산 서귀포점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('장승포식당 성산 서귀포점', '제주 서귀포시 성산읍 동류암로 32 장승포식당', '064-784-5354', '찜,탕,찌개', '2,4번째화요일', '9:00-21:00', 1, '16000-55000');
+
+-- 중문 돌담흑돼지
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('중문 돌담흑돼지', '제주 서귀포시 일주서로 909 1층', '0507-1391-4619', '고기,구이', '11:00-24:00', 1, 9800, 'https://www.instagram.com/doldamblackpork_jungmun/');
+
+-- 자매국수
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('자매국수', '제주 제주시 항골남길 46 자매국수', '064-746-2222', '백반,죽,국수', '수요일', '9:00-18:00', 1, 9000, 'https://m.smartstore.naver.com/jamae_jeju');
+
+-- 도민상회본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('도민상회본점', '제주 제주시 한림읍 한림로3길 8 도민상회본점 제주한림협재흑돼지', '0507-1334-0795', '고기,구이', '11:00-23:00', 1, '42000-66000');
+
+-- 고집돌우럭 중문점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('고집돌우럭 중문점', '제주 서귀포시 일주서로 879', '0507-1408-1540', '백반,죽,국수', '10:00-21:30', 1, '24000-33000', 'https://blog.naver.com/gozipjeju_');
+
+-- 갈치요리 전문점 뜰에
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('갈치요리 전문점 뜰에', '제주 제주시 애월읍 애월로11길 23-1', '064-799-1479', '찜,탕,찌개', '10:30-21:10', 1, 69000, 'https://www.instagram.com/jeju_hairtail/');
+
+-- 늘봄흑돼지
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('늘봄흑돼지', '제주 제주시 한라대학로 12', '064-744-9001', '고기,구이', '11:00-23:00', 1, 22000, 'https://blog.naver.com/lulumerry');
+
+
+-- 제주 도도리고기국수
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('제주 도도리고기국수', '제주 제주시 다호북길 109 1층', '0507-1407-5153', '백반,죽,국수', '10:00-20:00', 1, 10000);
+
+-- 연동 돌담흑돼지
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('연동 돌담흑돼지', '제주 제주시 연동7길 35 2층 돌담흑돼지', '0507-1389-6090', '고기,구이', '11:30-23:50', 2, 11000, 'https://www.instagram.com/doldamblackpork_jeju');
+
+-- 양대감 노형
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('양대감 노형', '제주 제주시 원노형로 36 101호,102호', '0507-1427-9593', '고기,구이', '12:00-24:00', 2, 11000, 'https://www.instagram.com/yangdaegam_jeju');
+
+-- 동문시장고기국수 금복식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('동문시장고기국수 금복식당', '제주 제주시 동문로 16', '064-757-6055', '백반,죽,국수', '8:00-18:30', 2, 8000, 'https://www.instagram.com/jeju_geumbok_1968/?igshid=MzNlNGNkZWQ4Mg%3D%3D');
+
+-- 제주도 해녀세자매
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('제주도 해녀세자매', '제주 제주시 한림읍 한림해안로 275 1층 제주도 해녀세자매', '0507-1488-0083', '찜,탕,찌개', '11:00-20:30', 1, '55000-170000', 'https://www.instagram.com/jang_hi/');
+
+-- 성산일출봉 아시횟집
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('성산일출봉 아시횟집', '제주 서귀포시 성산읍 성산등용로 19', '0507-1343-3987', '생선회', '7:00-23:00', 1, 65000, 'https://www.instagram.com/jeju._.asi/');
+
+-- 랜디스도넛 제주애월점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('랜디스도넛 제주애월점', '제주 제주시 애월읍 애월로 27-1', '0507-1458-0610', '카페,디저트', '10:00-19:00', 2, 2700);
+
+-- 새빌
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('새빌', '제주 제주시 애월읍 평화로 1529', '0507-1315-0080', '카페,디저트', '9:00-19:00', 1, 5500, 'http://www.instagram.com/saebilcafe');
+
+-- 제주오성 갈치조림
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('제주오성 갈치조림', '제주 서귀포시 중문관광로 27 제주오성 갈치조림 제주도 중문 본점', '0507-1315-3120', '해물,생선요리', '9:00-21:00', 1, '50000-200000', 'https://blog.naver.com/learning2021');
+
+-- 용두암 엄마 해장국
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('용두암 엄마 해장국', '제주 제주시 용마로 24', '0507-1411-5017', '찜,탕,찌개', '수요일', '7:00-16:00', 1, 10000);
+
+-- 한림칼국수
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('한림칼국수', '제주 제주시 한림읍 한림해안로 139', '070-8900-3339', '백반,죽,국수', '일요일', '7:00-15:00', 1, 10000, 'http://flourfood.co.kr/hallim');
+
+-- 제주부엌
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('제주부엌', '제주 제주시 원노형로 37 2층 제주부엌', '0507-1365-5645', '백반,죽,국수', '10:00-21:00', 1, 10000, 'https://www.instagram.com/@noodle_jeju');
+
+-- 해오반 함덕점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('해오반 함덕점', '제주 제주시 조천읍 조함해안로 514 2층 해오반 함덕점', '064-784-4544', '백반,죽,국수', '9:00-21:00', 2, '15000-59000');
+
+-- 우무
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('우무', '제주 제주시 한림읍 한림로 542-1', '0507-1327-0064', '카페,디저트', '9:00-20:00', 1, 6800, 'https://www.instagram.com/jeju.umu');
+
+-- 해송수산물회센타
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('해송수산물회센타', '제주 제주시 애월읍 애월로11길 23-1', '0507-1376-1662', '돈까스,회,일식', '1,3번째 수요일', '11:00-22:30', 1, 48000);
+
+-- 까망돼지 중문점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('까망돼지 중문점', '제주 서귀포시 색달중앙로 21 여미지하우스1층 까망돼지본점', '0507-1316-6543', '고기,구이', '11:00-23:00', 1, 66000, 'http://gmrehowl6543.modoo.at/');
+
+-- 노을리
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('노을리', '제주 제주시 애월읍 애월해안로 654 가동 1층', '0507-1491-5032', '카페,디저트', '9:00-21:00', 1, 6900, 'https://blog.naver.com/jejuuni33');
+
+-- 고집돌우럭 제주공항점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('고집돌우럭 제주공항점', '제주 제주시 임항로 30', '0507-1436-1008', '백반,죽,국수', '10:00-21:30', 1, '24000-33000', 'https://blog.naver.com/gozipjeju_');
+
+-- 숙성도 중문점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('숙성도 중문점', '제주 서귀포시 일주서로 966', '064-739-5213', '고기,구이', '12:00-22:00', 2, 22000, 'http://app.catchtable.co.kr/ct/shop/suksungdo_jm');
+
+-- 더클리프
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('더클리프', '제주 서귀포시 중문관광로 154-17', '0507-1312-8866', '카페,디저트', '10:00-22:00', 1, 22000, 'http://www.instagram.com/thecliffjeju');
+
+-- 바다어멍 서귀포올레시장본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('바다어멍 서귀포올레시장본점', '제주 서귀포시 명동로 45 바다어멍', '0507-1369-4542', '돈까스,회,일식', '7:00-22:00', 1, '45000-220000', 'https://seemama.modoo.at/');
+
+-- 가람돌솥밥
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('가람돌솥밥', '제주 서귀포시 중문관광로 332 가람돌솥밥', '0507-1432-1200', '백반,죽,국수', '8:00-21:00', 1, 18000);
+
+-- 고은물식당
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('고은물식당', '제주 서귀포시 안덕면 화순해안로 110 고은물식당', '0507-1428-5656', '백반,죽,국수', '수요일', '8:00-22:00', 1, '10000-55000', 'http://naver.me/5jAn8Ixm');
+
+-- 부두식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('부두식당', '제주 서귀포시 대정읍 하모항구로 62 부두식당', '064-794-1223', '백반,죽,국수', '10:00-21:30', 1, 55000, 'https://www.instagram.com/jeju_boodoo');
+
+-- 함덕 연옥
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('함덕 연옥', '제주 제주시 조천읍 조함해안로 528 2층 연옥', '010-7151-1527', '백반,죽,국수', '8:00-20:20', 1, 15000, 'https://catchtable.co.kr/yeonok');
+
+-- 수선화식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('수선화식당', '제주 제주시 한림읍 협재1길 24 (협재리)', '070-8864-5564', '양식', '11:00-20:00', 2, 19000);
+
+-- 제주미향 중문본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('제주미향 중문본점', '제주 서귀포시 천제연로 99 제주미향 중문본점', '064-738-8588', '해물,생선요리', '9:30-21:30', 1, 45000, 'http://jejumihyang.com');
+
+-- 오는정김밥
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('오는정김밥', '제주 서귀포시 동문동로 2', '064-762-8927', '분식', '일요일', '10:00-20:00', 2, 3500);
+
+-- 리보스코 화덕피자
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('리보스코 화덕피자', '제주 제주시 수목원길 27 리보스코화덕피자 연동점', '0507-1448-0906', '피자', '수요일', '11:00-21:00', 1, 27000, 'https://blog.naver.com/bosco1315');
+
+-- 안녕협재씨 제주협재점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('안녕협재씨 제주협재점', '제주 제주시 한림읍 금능길 12 1층', '0507-1347-0624', '백반,죽,국수', '9:00-16:10', 1, 17000, 'https://www.instagram.com/hihyeopjae');
+
+-- 흑돼지해물삼합
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('흑돼지해물삼합', '제주 서귀포시 태평로482번길 50', '0507-1469-3833', '고기,구이', '12:00-22:00', 1, 18000, 'https://www.instagram.com/blackpighi');
+
+-- 함덕흑돼지우돈향 함덕점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('함덕흑돼지우돈향 함덕점', '제주 제주시 조천읍 조함해안로 530 2층 우돈향', '064-782-6969', '고기,구이', '12:00-23:00', 1, '68000-98000');
+
+-- 은희네 해장국
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('은희네 해장국', '제주 제주시 고마로13길 8', '064-726-5622', '찜,탕,찌개', '목요일', '6:00-15:00', 1, 8000);
+
+-- 돈이랑 본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('돈이랑 본점', '제주 서귀포시 일주서로 953', '0507-1415-9277', '고기,구이', '11:30-24:00', 1, 10800);
+
+-- 롱플레이
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('롱플레이', '제주 제주시 구좌읍 동복로 44', '070-4489-4004', '카페,디저트', '9:00-17:00', 1, 10000, 'https://smartstore.naver.com/longplay');
+
+-- 우동카덴
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('우동카덴', '제주 제주시 조천읍 교래3길 23', '0507-1346-6263', '일식', '화,수요일', '10:00-19:00', 1, '9500-34000');
+
+-- 미향해장국 성산점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('미향해장국 성산점', '제주 서귀포시 성산읍 일출로 9 1층', '064-784-9994', '찜,탕,찌개', '화요일', '6:30-20:00', 1, 10000);
+
+-- 원담
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('원담', '제주 제주시 동광로1길 13 1층', '0507-1351-0211', '생선회', '화요일', '16:00-24:00', 1, 60000);
+
+-- 제주돔베
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('제주돔베', '제주 제주시 연북로 840', '0507-1439-3303', '백반,죽,국수', '화요일', '10:00-16:00', 1, 28000, 'https://www.instagram.com/jeju_dombe');
+
+-- 장인의집 본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('장인의집 본점', '제주 제주시 애월읍 애월로19길 31 장인의집 애월 본점', '0507-1313-1610', '백반,죽,국수', '9:00-22:00', 1, 38000, 'https://blog.naver.com/dlscjf1019');
+
+-- 해녀김밥 본점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('해녀김밥 본점', '제주 제주시 조천읍 함덕로 40 3층, 302호', '0507-1342-3005', '분식', '일요일', '9:00-17:00', 1, 9500, 'http://www.instagram.com/haenyeogimbap');
+
+-- 바다를본돼지 서귀포올레시장점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('바다를본돼지 서귀포올레시장점', '제주 서귀포시 칠십리로 123 2층', '0507-1413-1058', '고기,구이', '12:00-22:00', 1, '18000-60000', 'https://blog.naver.com/ljh6992936');
+
+-- 담다 제주협재점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('담다 제주협재점', '제주 제주시 한림읍 협재4길 8 1층', '0507-1356-0054', '백반,죽,국수', '일요일', '9:00-15:30', 1, 11000, 'https://blog.naver.com/hite9787');
+
+-- 제주 김만복김밥 본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('제주 김만복김밥 본점', '제주 제주시 오라로 41', '064-759-8582', '분식', '8:00-22:00', 1, 8500, 'http://kimmanbok.com/sub/caution.htm');
+
+-- 아줄레주
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price)
+values ('아줄레주', '제주 서귀포시 성산읍 신풍하동로19번길 59 _____마을진입시 차량 서행부탁드립니다', '0507-1411-4052', '카페,디저트', '화요일', '11:00-19:00', 1, 6000);
+
+-- 협재수우동 협재점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('협재수우동 협재점', '제주 제주시 한림읍 협재1길 11', '064-796-5830', '돈까스,회,일식', '10:30-17:00', 1, 10000);
+
+-- 흑돈쭐 제주성산일출봉점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('흑돈쭐 제주성산일출봉점', '제주 서귀포시 성산읍 성산중앙로 72', '010-4657-0525', '고기,구이', '11:00-23:00', 1, 60000);
+
+-- 오드랑베이커리
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('오드랑베이커리', '제주 제주시 조천읍 조함해안로 552-3', '064-784-5404', '베이커리', '7:00-22:00', 1, 4500, NULL);
+
+-- 델문도 비치웨이브
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('델문도 비치웨이브', '제주 제주시 조천읍 조함해안로 519-10', '064-702-0007', '카페,디저트', '7:00-24:00', 1, 7000, 'http://www.delmoondo.com/');
+
+-- 중문수두리보말칼국수
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('중문수두리보말칼국수', '제주 서귀포시 천제연로 192 1층', '064-739-1070', '백반,죽,국수', '화요일', '8:00-16:30', 2, 11000, 'http://instagram.com/suduribomal_noodle');
+
+-- 돌밭 애월고내 본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('돌밭 애월고내 본점', '제주 제주시 애월읍 애월해안로 249 1F 돝밭', '0507-1375-1255', '고기,구이', '11:30-22:00', 1, 38000, 'https://www.instagram.com/dottbat');
+
+-- 가시아방국수
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('가시아방국수', '제주 서귀포시 성산읍 섭지코지로 10', '064-783-0987', '백반,죽,국수', '10:00-20:30', 1, 35000, NULL);
+
+-- 계절식탁 함덕점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('계절식탁 함덕점', '제주 제주시 조천읍 조함해안로 510 2층', '0507-1432-6577', '백반,죽,국수', '11:30-22:00', 1, 68000, NULL);
+
+-- 우도해녀식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('우도해녀식당', '제주 제주시 우도면 우도해안길 440 우도해녀식당', '010-9090-3509', '돈까스,회,일식', '8:30-17:00', 1, 17000, 'http://woododining.modoo.at/');
+
+-- 충남식당
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('충남식당', '제주 서귀포시 솔동산로 26', '0507-1470-7034', '백반,죽,국수', '일요일', '9:00-21:00', 1, '10000-60000', NULL);
+
+-- 제주로운청해원 성산일출봉점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('제주로운청해원 성산일출봉점', '제주 서귀포시 성산읍 신양로 101 1층 제주로운 청해원', '0507-1342-7026', '돈까스,회,일식', '8:00-21:00', 1, 24000, 'http://www.instagram.com/cheong_haewon');
+
+-- 바다속고등어쌈밥 제주애월본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('바다속고등어쌈밥 제주애월본점', '제주 제주시 애월읍 일주서로 7089 1층', '0507-1479-6466', '백반,죽,국수', '8:00-21:00', 1, 34000, 'https://www.instagram.com/jeju__bada');
+
+-- 거멍국수 제주산방산점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('거멍국수 제주산방산점', '제주 서귀포시 안덕면 사계로114번길 53-14', '0507-1403-8787', '백반,죽,국수', '화요일', '8:30-19:00', 1, 12000, 'http://www.instagram.com/gmnoodles');
+
+-- 바다를본돼지 제주공항점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('바다를본돼지 제주공항점', '제주 제주시 정존15길 42 1층 바다를본돼지 제주공항점', '0507-1409-9242', '고기,구이', '12:00-22:00', 1, '8000-60000', 'https://badabon.modoo.at');
+
+-- 모루쿠다 서귀포올레시장점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('모루쿠다 서귀포올레시장점', '제주 서귀포시 태평로431번길 32 1층 모루쿠다 서귀포올레시장점', '0507-1364-1477', '돈까스,회,일식', '11:20-23:00', 1, '16000-47000', 'https://www.instagram.com/jejusujeyori/');
+
+-- 삼미횟집 제주공항점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('삼미횟집 제주공항점', '제주 제주시 도두항서5길 1', '0507-1469-6403', '돈까스,회,일식', '11:00-22:30', 1, '100000-250000', 'https://www.instagram.com/jeju_sammi');
+
+-- 둘레길 서귀포중문본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('둘레길 서귀포중문본점', '제주 서귀포시 천제연로 209-1 2층 둘레길', '0507-1379-3255', '양식', '10:00-21:30', 1, 12900, 'http://jejudullegil.modoo.at');
+
+-- 대기정
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('대기정', '제주 서귀포시 이어도로 41', '0507-1403-1041', '찜,탕,찌개', '10:30-20:30', 1, 33000, NULL);
+
+-- 착한집
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('착한집', '제주 제주시 서광로 98', '064-713-7136', '백반,죽,국수', '수요일', '11:00-21:00', 1, '69000-210000', 'https://jejugoodfish.modoo.at');
+
+-- 곱들락 함덕흑돼지
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('곱들락 함덕흑돼지', '함덕리 951-1', '064-783-0992', '고기,구이', '12:00-22:00', 1, 36000, 'https://blog.naver.com/gobdeulrak_');
+
+-- 애월항포구횟집
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('애월항포구횟집', '제주 제주시 애월읍 애월로11길 22 2층 애월항포구횟집', '0507-1332-4741', '돈까스,회,일식', '11:00-22:00', '1', '28000', NULL);
+
+-- 함덕고등어쌈밥
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('함덕고등어쌈밥', '제주 제주시 조천읍 조함해안로 530 3층', '0507-1324-2736', '찜,탕,찌개', '9:00-21:00', '1', '36000', NULL);
+
+-- 맛나식당
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('맛나식당', '제주 서귀포시 성산읍 동류암로 41', '064-782-4771', '찜,탕,찌개', '수,일', '8:30-14:00', '2', '11000', NULL);
+
+-- 해녀잠수촌
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('해녀잠수촌', '제주 제주시 서해안로 498 1층 해녀잠수촌', '0507-1398-0733', '백반,죽,국수', '8:00-15:30', 1, 15000, 'http://www.instagram.com/jamsuchon');
+
+-- 뽈살집 본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('뽈살집 본점', '제주 서귀포시 중정로91번길 41 1층', '064-763-6860', '고기,구이', '15:00-24:00', 1, 15000-69000, null);
+
+
