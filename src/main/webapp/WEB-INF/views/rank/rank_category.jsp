@@ -43,7 +43,7 @@
 		<c:forEach var="res" items="${res_list2 }" varStatus="status">
 			<li class="rank_category_res">
 				<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/medal${rank[status.index]}.png"></div>
-				<a href="#" class="rank_category_topRes">
+				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_category_topRes">
 					<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
