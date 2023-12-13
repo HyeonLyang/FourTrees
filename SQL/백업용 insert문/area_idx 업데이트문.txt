@@ -54,3 +54,9 @@ update restaurant set area_idx = 118
 
 update restaurant set area_idx = 119
     where address like '%제주시%';
+
+update restaurant set area_idx = 120
+    where address like '%영등포구%';    
+
+update restaurant set area_idx = 121
+    where address like '%강남구%';
