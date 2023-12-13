@@ -62,7 +62,7 @@
 			<br>
 			</c:forEach>
 			
-			<p OnClick="location.href ='${cpath }/review/review/${res.idx }'" 
+			<p OnClick="location.href ='${cpath }/review/review?res_idx=${res.idx }'" 
 				style="cursor:pointer" class="res_review_goTo">
 				리뷰 모아보기 ->
 			</p>

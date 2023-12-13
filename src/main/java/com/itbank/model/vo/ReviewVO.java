@@ -99,5 +99,5 @@ public class ReviewVO {
 	}
 	public void setArea(String area) {
 		this.area = area;
-	}			
+	}	
 }

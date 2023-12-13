@@ -27,14 +27,15 @@ public class ReviewController {
 
 	// 리뷰 페이지로 이동
 	@GetMapping("/review")
-	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page) {
+	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page,
+							   @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx) {
 		ModelAndView mav = new ModelAndView("review/review");
 		
-		Map<String, Object> result = rvs.getReview(page);
+		Map<String, Object> result = rvs.getReview(page,res_idx);
 		
 		mav.addObject("list", result.get("list"));
 		mav.addObject("p", result.get("p"));
-		mav.addObject("img_list", dao.selectImg());
+		mav.addObject("img_list", dao.selectImg(res_idx));
 		
 		return mav;
 	}
@@ -57,8 +58,8 @@ public class ReviewController {
 	public void write() {}
 	
 	@PostMapping("/review_write")
-	public ModelAndView write(ReviewVO input,String score) throws Exception {
-		ModelAndView mav = new ModelAndView("redirect:/review/review");
+	public ModelAndView write(ReviewVO input,String score,int res_idx, String res_name) throws Exception {
+		ModelAndView mav = new ModelAndView("redirect:/review/review?res_idx=" + res_idx);
 		
 		if (score == null) {
 			score = "0";
@@ -66,6 +67,7 @@ public class ReviewController {
 		double num = Double.parseDouble(score);
 		
 		input.setScore(num);
+		input.setRes_idx(res_idx);		
 		
 		rvs.addReview(input);
 		

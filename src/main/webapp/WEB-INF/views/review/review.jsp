@@ -16,10 +16,10 @@
 			<h4>고객님들의 직접 작성하신 따끈한 후기와 평가를 들어보세요</h4>
 		</div>
 		
-		<div>
-			<a href="${cpath }/review/review_write">			
+		<div>										
+			<a href="${cpath }/review/review_write?res_idx=${param.res_idx }">			
 				<img src="${cpath }/resources/img/review/review_write.png">
-			</a>
+			</a>	
 		</div>
 	</article>
 	
@@ -37,7 +37,7 @@
 		<div class="food_img">			
 			<c:forEach var="row" items="${img_list }">
 				<div class="slider">				
-					<img src="${cpath }/img/${row.res_idx }/${row.img }">								
+					<img src="${cpath }/img/${row.res_name }/${row.img }">								
 				</div>				
 				<div class="slider_more">				
 				<div class="more">
@@ -76,7 +76,7 @@
 						</a> 
 					</li>
 				</ul>
-			<img src="${cpath }/img/${row.res_idx }/${row.img }">
+			<img src="${cpath }/img/${row.res_name }/${row.img }">
 		</div>	
 	</c:forEach>
 	<!-- 식당 테이블 데이터 페이징 하는 곳 -->

@@ -15,7 +15,9 @@
 			left join restaurant r2
 				on r1.res_idx = r2.idx
 			left join area a
-				on r2.area_idx = a.idx
+				on r2.area_idx = a.idx			 
+			where r1.res_idx = #{res_idx}
+			order by r1.idx desc	
 			offset #{offset} rows
 			fetch first #{perCount} rows only    
 	</select>
@@ -23,6 +25,7 @@
 	<select id="getTotalReview"
 			resultType="int">
 		select count(*) from review
+			where res_idx = #{res_idx}
 	</select>
 	
 	<select id="selectReviews"
@@ -32,17 +35,24 @@
 			where res_idx = #{idx} order by idx desc		
 	</select>
 	
-	<select id="selectidx"
-			resultType="String">
-		select res_idx from review 
-			order by idx desc 
-			fetch first rows only
+	<select id="selectRes_name"
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="int">
+		select r1.res_idx, r2.name as res_name
+		    from review r1
+		    inner join restaurant r2
+		    on r1.res_idx = r2.idx
+		    where r1.res_idx = #{res_idx}
 	</select>
 	
 	<select id="selectImg"
-			resultType="com.itbank.model.vo.ReviewVO">
-		select * from review
-		    order by idx
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="int">
+		select r1.*,r2.name as res_name from review r1
+            inner join restaurant r2
+            on r1.res_idx = r2.idx
+			where r1.res_idx = #{res_idx}
+		    order by r1.idx
 		    fetch first 10 rows only
 	</select>
 	
