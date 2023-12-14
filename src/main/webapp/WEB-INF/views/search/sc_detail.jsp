@@ -161,17 +161,19 @@
     function search() {
         var address = document.getElementsByName('address')[0].value;
         var category = document.getElementsByName('category')[0].value;
+        var page = document.getElementsByName('page')[0].value;
         
         var url = "${cpath}/search/sc_detail?";
         
         if (address) {
+            url += "page=" + encodeURIComponent(page)+ "&";
             url += "address=" + encodeURIComponent(address) + "&";
         }
         
         if (category) {
+            url +=  "page=" + encodeURIComponent(page)+ "&";
             url += "category=" + encodeURIComponent(category);
         }
-        
         window.location.href = url;
     }
 

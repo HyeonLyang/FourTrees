@@ -24,9 +24,9 @@ public class SearchService {
 //	    return dao.searchAll(address, category);
 //	}
 //
-//	public List<RestaurantVO> searchHeader(String search) {
-//		return dao.searchHeader(search);
-//	}
+	public List<RestaurantVO> searchHeader(String search) {
+		return dao.searchHeader(search);
+	}
 
 
 	public Map<String, Object> getSearch(int reqPage, String address, String category) {

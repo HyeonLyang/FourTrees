@@ -23,8 +23,8 @@ public class HeaderController {
 	        ModelAndView mav = new ModelAndView();
 
 	        if (search != null && !search.isEmpty()) {
-//	            List<RestaurantVO> list = ss.searchHeader(search);
-//	            mav.addObject("list", list);
+	            List<RestaurantVO> list = ss.searchHeader(search);
+	            mav.addObject("list", list);
 	        } else {
 	            // 검색어가 없을 때의 예외 처리 또는 기본 동작 추가
 	        }
