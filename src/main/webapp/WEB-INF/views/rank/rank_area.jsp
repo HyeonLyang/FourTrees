@@ -145,6 +145,7 @@
 		  btnArr[i].addEventListener('click',function(e){
 		    e.preventDefault();
 		    areaArr[i].scrollIntoView(true);
+		    behavior: 'smooth';
 		  });
 
 		}

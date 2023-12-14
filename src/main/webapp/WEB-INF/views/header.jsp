@@ -72,7 +72,7 @@
 					<table>
 					<tr>
 						<td><a href="${cpath }/myPage/bookmark"><img src="${cpath }/resources/img/icon1.png"></a></td>
-						<td><a href="${cpath }/restaurant/res_detail/1450"><img src="${cpath }/resources/img/icon2.png"></a></td>
+						<td><a href="${cpath }/restaurant/res_detail/1001"><img src="${cpath }/resources/img/icon2.png"></a></td>
 						<td><a href="${cpath }/recommend/roulette"><img src="${cpath }/resources/img/icon3.png"></a></td>
 					</tr>
 					<tr>

@@ -49,6 +49,20 @@ public class RankController {
 		return "rank/rank_category";
 	}
 	
+	@GetMapping("/rank_categoryAJ")
+	public String rank_categoryAJ(Model model, String cate) {
+		List<Integer> rank_list = new ArrayList<>();
+		
+		for(int i = 1; i <= 10; i++) {
+			rank_list.add(i);
+		}
+		
+		model.addAttribute("rank", rank_list);
+		model.addAttribute("res_list", rs.getCateRank(cate));		
+		
+		return "rank/rank_category";
+	}
+	
 	@GetMapping("/rank_area")
 	public String rank_area(Model model) {
 		List<Integer> rank_list = new ArrayList<>();
