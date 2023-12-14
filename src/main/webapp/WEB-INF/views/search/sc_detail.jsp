@@ -53,6 +53,9 @@
 				    </select>
 			    </td>
 			</tr>
+			<tr class="sc_result">
+				<td colspan="3">( 검색어 : <%=address %>, <%=category %> / 검색 결과 : #건)</td>
+			</tr>
 				
 		</table>
 	</div>
@@ -83,20 +86,24 @@
 
 	<div class="sc_paging">
 		<ul>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>다음></li>
+			<c:if test="${p.prev }">			
+				<li><a href="${cpath }/search/sc_detail?address=<%=address %>&category=<%=category %>&page=${p.begin - 1 }">이전</a></li>
+			</c:if>
+				
+			<c:forEach var="i" begin="${p.begin }" end="${p.end }">
+				<li><a href="${cpath }/search/sc_detail?address=<%=address %>&category=<%=category %>&page=${i }">${i }</a></li>
+			</c:forEach>
+				
+			<c:if test="${p.next }">			
+				<li><a href="${cpath }/search/sc_detail?address=<%=address %>&category=<%=category %>&page=${p.end + 1 }">다음</a></li>
+			</c:if>
 		</ul>
-		<p>1-20 of 5106</p>
 	</div>
 	
 	</article>
 	
 	<article class="de_right">
-		<div id="map" style="width:900px; height:800px; position: absolute; right: 10px; bottom: 10px;"></div>
+		<div id="map"></div>
 		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bc60e67620768f95cb992d64536023b"></script>
 		<script>
 			var container = document.getElementById('map');
@@ -167,6 +174,7 @@
         
         window.location.href = url;
     }
+
 </script>
 </body>
 </html>
