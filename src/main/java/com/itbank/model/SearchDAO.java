@@ -7,16 +7,19 @@ import org.apache.ibatis.annotations.Param;
 
 import com.itbank.components.Paging;
 import com.itbank.model.vo.RestaurantVO;
+import com.itbank.model.vo.ReviewVO;
 
 public interface SearchDAO {
-
-	List<RestaurantVO> searchAll(@Param("address") String address, @Param("category") String category);
+//
+//	List<RestaurantVO> searchAll(@Param("address") String address, @Param("category") String category);
 
 	List<RestaurantVO> searchHeader(@Param("search") String search);
 
-//	List<RestaurantVO> searchPage(Paging p);
-//
-//	int getTotalSearch();
+	
+	// select count(*) from abc where search like '%word%';
+	int getTotalSearch();
+
+	List<ReviewVO> selectAll(Paging p);
 
 	
 }

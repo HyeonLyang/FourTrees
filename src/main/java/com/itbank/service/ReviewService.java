@@ -42,6 +42,7 @@ public class ReviewService {
 		}
 		scoreSum += input.getScore();
 		double resScore = scoreSum / scoreList.size();
+
 		
 		res_dao.updateScore(resScore);
 		
