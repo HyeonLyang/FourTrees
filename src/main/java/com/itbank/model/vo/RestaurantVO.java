@@ -36,8 +36,6 @@ public class RestaurantVO {
 	    	    
 		private int page;
 
-
-
 		public int getPage() {
 			return page;
 		}

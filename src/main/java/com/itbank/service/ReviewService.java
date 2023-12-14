@@ -31,7 +31,6 @@ public class ReviewService {
 		MultipartFile file = input.getUpload();
 		input.setImg(file.getOriginalFilename());
 		
-		
 		int row = dao.insert(input);
 		List<ReviewVO> list = dao.selectRes_name(input.getRes_idx());
 
@@ -43,6 +42,7 @@ public class ReviewService {
 		}
 		scoreSum += input.getScore();
 		double resScore = scoreSum / scoreList.size();
+
 		
 		res_dao.updateScore(resScore);
 		

@@ -66,7 +66,6 @@ public class Paging {
 		prev = (section != 0);
 		next = (end != totalPage);
 	}
-	
 	public Paging(int reqPage, int totalRestaurant, String address, String category) {
 		this.reqPage = reqPage;
 		this.totalRestaurant = totalRestaurant;
@@ -85,7 +84,6 @@ public class Paging {
 		prev = (section != 0);
 		next = (end != totalPage);
 	}
-	
 
 	public int getReqPage() {
 		return reqPage;
