@@ -7,6 +7,7 @@
 	<h3>${param.area_name } 근처 맛집 (6)</h3>
 
 	<div id="map" style="width:1000px; height:400px;"></div>
+
 	<!-- 여긴 식당의 정보를 나타내는 곳 -->
 	<div class="near_res">
 		<c:forEach var="row" items="${list }">
