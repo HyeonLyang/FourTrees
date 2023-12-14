@@ -1,0 +1,407 @@
+-- 강릉감자옹심 강릉본점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link, photo)
+VALUES ('강릉감자옹심 강릉본점', '강원 강릉시 토성로 171', '033-648-0340', '백반·죽·국수', '10:30 ~ 16:00', 2, '4000-9000', 'https://www.siksinhot.com/P/253867', 'KangWon_001.jpg');
+
+-- 강릉 짬뽕 순두부 동화가든
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link, photo)
+VALUES ('강릉 짬뽕 순두부 동화가든', '강원 강릉시 초당순두부길77번길 15', '033-652-9885', '백반·죽·국수', '수', '07:00 ~ 19:00', 1, '9000~10000', 'https://www.siksinhot.com/P/253961', 'KangWon_002.jpg');
+
+-- 강릉풍년갈비
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link, photo)
+VALUES ('강릉풍년갈비', '강원 강릉시 강릉대로587번길 10-5', '033-651-9245', '백반·죽·국수', '11:00 ~ 21:50', 1, '18000~20000', 'https://www.siksinhot.com/P/392145', 'KangWon_003.jpg');
+
+-- 원조강릉교동반점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link, photo)
+VALUES ('원조강릉교동반점', '강원 강릉시 강릉대로 205', '033-646-3833', '중식', '월', '10:00~18:00', 1, '8000~9000', 'https://www.siksinhot.com/P/33685', 'KangWon_004.jpg');
+
+-- 강릉 수제 어묵 고로케
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link, photo)
+VALUES ('강릉 수제 어묵 고로케', '강원 강릉시 금성로13번길 8', '010-9630-9799', '디저트', '상시', 2, '2500', 'https://www.siksinhot.com/P/873006#', 'KangWon_005.jpg');
+
+-- 강릉 빵다방
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link, photo)
+VALUES ('강릉 빵다방', '강원 강릉시 남강초교1길 24', '033-642-8807', '디저트', '월요일', '12:00~20:00', 2, '3000~4500', 'https://www.siksinhot.com/P/605481', 'KangWon_006.jpg');
+
+-- 강릉 전복 뚝배기
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link, photo)
+VALUES ('강릉 전복 뚝배기', '강원 강릉시 창해로350번길 5', '033-651-2888', '찜·탕·찌개', '08:00~21:00', 2, '13000~19000', 'https://www.siksinhot.com/P/479584', 'KangWon_007.jpg');
+
+-- 강릉 교동짬뽕
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link, photo)
+VALUES ('강릉 교동짬뽕', '강원 강릉시 하슬라로232번길 26-12', '033-655-3939', '중식', '10:00~20:30', 2, '7000~12000', 'https://www.siksinhot.com/P/324448', 'KangWon_008.jpg');
+
+-- 강릉 부성불고기 찜닭
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link, photo)
+VALUES ('강릉 부성불고기 찜닭', '강원 강릉시 옥가로 50', '033-641-3601', '찜·탕·찌개', '토/일', '09:00~21:00', 1, '20000', 'https://www.siksinhot.com/P/442546', 'KangWon_009.jpg');
+
+-- 지호한방삼계탕 강릉점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link, photo)
+VALUES ('지호한방삼계탕 강릉점', '강원 강릉시 정원로 83-9', '033-643-9255', '고기·구이', '토/일', '10:00~22:00', 2, '13000', 'https://www.siksinhot.com/P/324761', 'KangWon_010.jpg');
+
+-- 강문어화횟집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link, photo)
+VALUES ('강문어화횟집', '강원 강릉시 창해로 348', '033-653-0025', '돈까스·회·일식', '토/일', '10:30~23:00', 1, '10000 ~ 80000', 'https://www.siksinhot.com/P/254069', 'KangWon_011.jpg');
+
+-- 강릉 말미
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강릉 말미', '강원 강릉시 구정면 말미길 122-20', '033-644-7793', '양식', '11:00~21:00', 2, '16000 ~ 19000', 'https://www.siksinhot.com/P/480037');
+
+-- 강릉불고기
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강릉불고기', '강원 강릉시 강동면 풍호길 270', '033-646-6033', '고기·구이', '10:00 ~ 20:00', 1, '2000~8000', 'https://www.siksinhot.com/P/481973');
+
+-- 강릉염전조개구이
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강릉염전조개구이', '강원 강릉시 성덕포남로153번길 28', '0503-5798-2328', '백반·죽·국수', '12:00~00:00', 2, '15000', 'https://www.siksinhot.com/P/1080626');
+
+-- 강릉갈비찜
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강릉갈비찜', '강원 강릉시 위촌길 55 강릉갈비찜', '033-642-3000', '고기·구이', '11:00~21:00', 2, '9000', 'https://www.siksinhot.com/P/1179485');
+
+-- 강릉숨은고깃집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강릉숨은고깃집', '강원 강릉시 위촌길 55', '033-648-5592', '고기·구이', '12:00~22:00', 2, '4000~13000', 'https://www.siksinhot.com/P/1171584');
+
+-- 강문가
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강문가', '강원 강릉시 초당원길 17 강문가', '033-653-2622', '돈까스·회·일식', '10:00~22:30', 2, '15000', 'https://www.siksinhot.com/P/1160445');
+
+-- 와플대학 강릉중앙캠퍼스
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('와플대학 강릉중앙캠퍼스', '강원 강릉시 금성로 32-5', '033-645-4589', '디저트', '10:00 ~ 21:00', 2, '4000~7000', 'https://www.siksinhot.com/P/1116834');
+
+-- 강릉성남시장
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강릉성남시장', '강원 강릉시 중앙시장1길 16', '033-647-0006', '분식', '10:00~20:00', 2, '3500~6000', 'https://www.siksinhot.com/P/1101424');
+
+-- 강릉양꼬치
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강릉양꼬치', '강원 강릉시 옥천로19번길 32', '033-655-1357', '고기·구이', '13:00~01:00', 2, '5000~20000', 'https://www.siksinhot.com/P/970676');
+
+
+---------------------------------------------------------
+-- 동그라미해물집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('동그라미해물집', '강원 동해시 효자로 686-4', '033-522-4449', '백반·죽·국수', '11:30~20:30', 2, '14000', 'https://www.siksinhot.com/P/367088');
+
+-- 동해바다곰치곡
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('동해바다곰치곡', '강원 동해시 일출로 177', '033-532-0265', '돈까스·회·일식', '06:00~19:00', 2, '12000~30000', 'https://www.siksinhot.com/P/481990');
+
+-- 동북횟집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('동북횟집', '강원 동해시 일출로 95', '033-532-7156', '돈까스·회·일식', '08:00~21:00', 1, '12000', 'https://www.siksinhot.com/P/873945');
+
+-- 동해돌짜장
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('동해돌짜장', '강원 동해시 청운2길 64 동해돌짜장', '033-521-4555', '중식', '11:00~20:30', 2, '20000~30000', 'https://www.siksinhot.com/P/1311890');
+
+-- 모노끼동해점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('모노끼동해점', '강원 동해시 한섬로 113-3', '033-534-8872', '돈까스·회·일식', '12:00~20:00', 2, '8000~10000', 'https://www.siksinhot.com/P/626174');
+
+-- 삼거리식당
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('삼거리식당', '강원 삼척시 새천년도로 15', '033-574-2424', '백반·죽·국수', '11:00~21:00', 2, '8000~25000', 'https://www.siksinhot.com/P/266620');
+
+-- 삼정식당
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('삼정식당', '강원 삼척시 새천년도로 30 삼정식당', '033-573-3233', '돈까스·회·일식', '08:00~21:00', 1, '10000~50000', 'https://www.siksinhot.com/P/367375');
+
+-- 삼척횟집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('삼척횟집', '강원 삼척시 정하동 41-273', '033-574-5240', '돈까스·회·일식', '토/일', '10:00~22:30', 2, '12000', 'https://www.siksinhot.com/P/266618');
+
+-- 삼척해물
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('삼척해물', '강원 삼척시 남양동 7-6', '033-574-6611', '찜·탕·찌개', '토/일', '11:00~21:00', 2, '23000', 'https://www.siksinhot.com/P/266584');
+
+-- 삼척전복해물뚝배기
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('삼척전복해물뚝배기', '강원 삼척시 테마타운길 59', '033-572-9999', '백반·죽·국수', '토/일', '08:00~21:00', 2, '19000', 'https://www.siksinhot.com/P/625980');
+
+-- 만석닭강정 시장주차장점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('만석닭강정 시장주차장점', '강원 속초시 수복로 194', '1577-9042', '치킨', '토/일', '09:00~22:00', 1, '17000~19000', 'https://www.siksinhot.com/P/25409');
+
+-- 봉포머구리집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('봉포머구리집', '강원 속초시 영랑해안길 223', '033-631-2021', '돈까스·회·일식', '공휴일', '10:00~21:00', 1, '22000', 'https://www.siksinhot.com/P/254083');
+
+-- 88생선구이
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('88생선구이', '강원 속초시 중앙부두길 71', '033-633-8892', '고기·구이', '08:30~20:30', 2, '17000', 'https://www.siksinhot.com/P/254164');
+
+-- 함흥막국수
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('함흥막국수', '강원 속초시 중앙로54번길 3', '033-632-6707', '백반·죽·국수', '10:00~20:00', 2, '8000', 'https://www.siksinhot.com/P/359235');
+
+-- 단천식당
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('단천식당', '강원 속초시 아바이마을길 17', '033-632-7828', '분식', '08:00~20:30', 1, '8000', 'https://www.siksinhot.com/P/254140');
+
+-- 김영애할머니 순두부
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('김영애할머니 순두부', '강원 속초시 원암학사평길 183', '033-635-9520', '백반·죽·국수', '07:00~15:00', 1, '10000', 'https://www.siksinhot.com/P/254146');
+
+-- 이조면옥
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('이조면옥', '강원 속초시 조양동 1490-261', '033-632-3181', '백반·죽·국수', '10:30~20:00', 1, '9000~23000', 'https://www.siksinhot.com/P/254173');
+
+- 이모네식당
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('이모네식당', '강원 속초시 영랑해안6길 16', '033-637-6900', '고기·구이', '수', '10:00~19:30', 1, '35000', 'https://www.siksinhot.com/P/254167');
+
+-- 신다신
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('신다신', '강원 속초시 아바이마을길 22', '033-633-3871', '분식', '화', '10:00~20:00', 1, '9000~16000', 'https://www.siksinhot.com/P/71167');
+
+-- 감나무집 감자옹심이
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('감나무집 감자옹심이', '강원 속초시 중앙시장로 110-8', '033-633-2306', '백반·죽·국수', '화', '10:00~20:00', 1, '12000', 'https://www.siksinhot.com/P/254088');
+
+--------------------------------------------------------------------
+
+-- 춘선내
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('춘선내', '강원 속초시 청초호반로 230', '033-635-8052', '백반·죽·국수', '07:00~22:00', 1, '3000~35000', 'https://www.siksinhot.com/P/368441');
+
+-- 속초생대구
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('속초생대구', '강원 속초시 영랑해안3길 14', '033-636-9774', '백반·죽·국수', '10:00~20:00', 1, '20000~30000', 'https://www.siksinhot.com/P/359548');
+
+-- 동명항 생선숯불구이
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('동명항 생선숯불구이', '강원 속초시 동명동 513-98', '033-632-3376', '고기·구이', '화', '11:00~21:00', 1, '19000', 'https://www.siksinhot.com/P/99807');
+
+-- 함흥냉면옥
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('함흥냉면옥', '강원 속초시 청초호반로 299', '033-633-2256', '백반·죽·국수', '목', '10:30~20:30', 1, '9000', 'https://www.siksinhot.com/P/254193');
+
+-- 사돈집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('사돈집', '강원 속초시 영랑해안1길 8', '033-633-0915', '찜·탕·찌개', '목', '08:00~15:30', 1, '20000', 'https://www.siksinhot.com/P/254205');
+
+-- 후포식당
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('후포식당', '강원 속초시 중앙로108번길 22', '033-632-6738', '찜·탕·찌개', '08:30~21:00', 1, '10000~30000', 'https://www.siksinhot.com/P/367045');
+
+-- 구구집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('구구집', '강원 속초시 중앙로 341', '033-636-1888', '돈까스·회·일식', '수', '09:30~22:00', 1, '15000~20000', 'https://www.siksinhot.com/P/427984');
+
+-- 청초수물회
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('청초수물회', '강원 속초시 엑스포로 12-36', '033-635-5050', '돈까스·회·일식', '10:00~20:50', 1, '16000', 'https://www.siksinhot.com/P/254162');
+
+-- 속초어장물회
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('속초어장물회', '강원 속초시 엑스포로 31', '033-637-8833', '돈까스·회·일식', '10:00~21:30', 1, '13000~17000', 'https://www.siksinhot.com/P/359190');
+
+-- 양반댁함흥냉면
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('양반댁함흥냉면', '강원 속초시 청초호반로 302', '033-636-9999', '백반·죽·국수', '화', '10:00~20:00', 1, '9000~10000', 'https://www.siksinhot.com/P/254224');
+
+-- 2대송림순대집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('2대송림순대집', '강원 속초시 아바이마을길 12', '033-633-0340', '분식', '09:00~23:00', 2, '8000', 'https://www.siksinhot.com/P/312732');
+
+-- 중앙닭강정본점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('중앙닭강정본범', '강원 속초시 중앙로147번길 16', '033-632-3511', '치킨', '토/일', '09:00~21:00', 1, '16000', 'https://www.siksinhot.com/P/274077');
+
+-- 송도횟집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('송도횟집', '강원 속초시 중앙부두길 63', '033-633-4727', '돈까스·회·일식', '08:00~21:00', 1, '20000~30000', 'https://www.siksinhot.com/P/20545');
+
+-- 최대섭대박김밥
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('최대섭대박김밥', '강원 속초시 중앙시장로 50 영보국민주택 105호', '033-633-8093', '분식', '수', '11:00~19:00', 2, '5500', 'https://www.siksinhot.com/P/480778');
+
+-- 초당순두부
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('초당순두부', '강원 속초시 원암학사평길 104', '033-635-6612', '백반·죽·국수', '07:00~19:00', 1, '9000~20000', 'https://www.siksinhot.com/P/367042');
+
+-- 미가
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('미가', '강원 속초시 신흥2길 41', '033-635-7999', '백반·죽·국수', '08:00~20:00', 1, '7000~17000', 'https://www.siksinhot.com/P/482053');
+
+-- 속초항아리물회
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('속초항아리물회', '강원 속초시 해오름로 137', '033-635-4488', '돈까스·회·일식', '09:30~21:00', 1, '16000~22000', 'https://www.siksinhot.com/P/369461');
+
+-- 왕박골식당
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('왕박골식당', '강원 속초시 중앙로 431-1', '033-632-5524', '백반·죽·국수', '화', '09:30~19:00', 1, '8000~9000', 'https://www.siksinhot.com/P/254212');
+
+-- 대포항소라엄마 튀김순대
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('대포항소라엄마 튀김순대', '강원 속초시 대포항길 9', '0507-5798-0017', '분식', '09:00~22:00', 2, '3000~10000', 'https://www.siksinhot.com/P/254117');
+
+-- 봉브레드
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('봉브레드', '강원 속초시 동해대로 4344-1', '033-633-4826', '디저트', '목', '08:30~20:00', 1, '5700', 'https://www.siksinhot.com/P/369394');
+
+-- 진미막국수
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('진미막국수', '강원 속초시 설악금강대교로 46-1', '033-638-8294', '백반·죽·국수', '11:00~19:00', 1, '8000', 'https://www.siksinhot.com/P/370627');
+
+--------------------------------------------------------------
+
+-- 일출봉횟집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('일출봉횟집', '강원 속초시 대포동 940-6', '033-635-2222', '돈까스·회·일식', '10:30~22:00', 1, '15000~20000', 'https://www.siksinhot.com/P/367040');
+
+-- 최옥락 할머니 순두부
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('최옥락 할머니 순두부', '강원 속초시 관광로 415', '033-635-0322', '백반·죽·국수', '07:00~22:00', 1, '10000~11000', 'https://www.siksinhot.com/P/367043');
+
+-- 조롱박
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('조롱박', '강원 속초시 수복로 107-2', '033-632-4549', '분식', '일', '10:00~20:00', 1, '1200~4000', 'https://www.siksinhot.com/P/370631');
+
+-- 원조털보네토종닭
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('원조털보네토종닭', '강원 속초시 청대마을길 100', '033-636-3500', '고기·구이', '월/목','10:00~21:30', 1, '75000', 'https://www.siksinhot.com/P/367044');
+
+-- 영철네 생선구이 맛집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('영철네 생선구이 맛집', '강원 속초시 청초호반로 330', '033-637-3392', '고기·구이', '09:00~20:00', 1, '11000~20000', 'https://www.siksinhot.com/P/603261');
+
+-- 바람꽃해녀마을
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('바람꽃해녀마을', '강원 속초시 바람꽃마을길 37', '033-638-5157', '백반·죽·국수', '수', '08:30~20:00', 1, '15000~20000', 'https://www.siksinhot.com/P/575398');
+
+-- 예스닭강정
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('예스닭강정', '강원 속초시 동해대로 4018-1', '033-633-3525', '분식', '월', '11:00~21:00', 2, '15000~20000', 'https://www.siksinhot.com/P/368960');
+
+-- 타코이찌
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('타코이찌', '강원 속초시 수복로201번길 1-6', '033-635-0913', '돈까스·회·일식', '11:00~22:00', 1, '6500~13500', 'https://www.siksinhot.com/P/1172284');
+
+-- 금이야옥이야
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('금이야옥이야', '강원 속초시 새마을길 53 금이야옥이야', '033-632-5549', '백반·죽·국수', '월', '08:00~18:00', 2, '7000', 'https://www.siksinhot.com/P/1222648');
+
+-- 유진게찜
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('유진게찜', '강원 속초시 영랑해안길 81', '033-636-0410', '돈까스·회·일식', '토/일', '11:00~22:30', 2, '16000', 'https://www.siksinhot.com/P/254150');
+
+-- 화반
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('화반', '강원 속초시 관광로 439', '033-638-4001', '백반·죽·국수', '11:00~20:00', 2, '15000~18000', 'https://www.siksinhot.com/P/344138');
+
+-- 시골이모순두부
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('시골이모순두부', '강원 속초시 노학동 1015-1', '033-635-0232', '백반·죽·국수', '토/일', '07:00~19:30', 2, '8000', 'https://www.siksinhot.com/P/254236');
+
+-- 원산면옥
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('원산면옥', '강원 속초시 청학동 483-11', '033-633-8838', '백반·죽·국수', '토/일', '09:00~21:00', 2, '7000', 'https://www.siksinhot.com/P/254240');
+
+-- 명태네 황태와 코다리강정
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('명태네 황태와 코다리강정', '강원 속초시 중앙로147번길 16', '033-635-0999', '백반·죽·국수', '토/일', '09:00~19:00', 2, '17000', 'https://www.siksinhot.com/P/342002');
+
+-- 소야동치미막국수
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('소야동치미막국수', '강원 속초시 조양동 1548-7', '033-633-1228', '백반·죽·국수', '토/일', '10:30~21:00', 2, '6000', 'https://www.siksinhot.com/P/254231');
+
+-- 두메산골
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('두메산골', '강원 속초시 노학동 1006-125', '033-635-2323', '백반·죽·국수', '주중', '07:00~21:00', 2, '8000~10000', 'https://www.siksinhot.com/P/254182');
+
+-- 속초진짜순대
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('속초진짜순대', '강원 속초시 중앙로129번길 35-22', '033-636-6012', '백반·죽·국수', '09:00~21:00', 2, '17000~21000', 'https://www.siksinhot.com/P/254099');
+
+-- 대선횟집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('대선횟집', '강원 속초시 동명동 1-194', '033-635-3364', '돈까스·회·일식', '주중', '09:30~23:00', 2, '40000', 'https://www.siksinhot.com/P/254132');
+
+-- 진양횟집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('진양횟집', '강원 속초시 청초호반로 318', '033-635-9999', '돈까스·회·일식', '토/일', '09:00~22:00', 2, '15000', 'https://www.siksinhot.com/P/116002');
+
+-- 원조동해순대국
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('원조동해순대국', '강원 속초시 중앙로129번길 35-17', '033-633-1012', '찜·탕·찌개', '07:00~21:00', 1, '8000~10000', 'https://www.siksinhot.com/P/254220');
+
+------------------------------------------------------------
+
+-- 원주복추어탕
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('원주복추어탕', '강원 원주시 치악로 1748', '033-762-7989', '찜·탕·찌개', '09:00~21:00', 1, '10000~12000', 'https://www.siksinhot.com/P/273599');
+
+-- 원주칼국수
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('원주칼국수', '강원 원주시 중앙로 32', '033-764-0941', '백반·죽·국수', '토/일', '11:00~20:00', 2, '6000', 'https://www.siksinhot.com/P/498405');
+
+-- 원주장진우식당
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('원주장진우식당', '강원 원주시 감영길 28', '0503-5798-2394', '양식', '토/일', '12:00~22:00', 2, '19000', 'https://www.siksinhot.com/P/1095968');
+
+-- 홍익돈까스 원주점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('홍익돈까스 원주점', '강원 원주시 행구로 305', '033-734-4300', '돈까스·회·일식', '11:30~21:30', 1, '9500~11900', 'https://www.siksinhot.com/P/921294');
+
+-- 원주김치만두
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('원주김치만두', '강원 원주시 중앙시장길 31-2', '033-745-3848', '중식', '토/일', '07:00~20:00' 2, '5000', 'https://www.siksinhot.com/P/498287');
+
+-- 스시노백쉐프 원주혁신점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('스시노백쉐프 원주혁신점', '강원 원주시 혁신로 37-1', '033-733-5802', '돈까스·회·일식', '토/일', '11:30~22:00', 2, '10000', 'https://www.siksinhot.com/P/581747');
+
+-- 원주뚝배기짬뽕
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('원주뚝배기짬뽕', '강원 원주시 봉바위길 41', '033-744-3214', '중식', '11:00~21:00', 2, '7000~9000', 'https://www.siksinhot.com/P/574135');
+
+-- 원주뼈대있는짬뽕
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('원주뼈대있는짬뽕', '강원 원주시 봉산로 96-15', '033-734-8252', '중식', '11:30~21:00', 2, '9000', 'https://www.siksinhot.com/P/566168');
+
+-- 갈비토대왕 원주단구점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('갈비토대왕 원주단구점', '강원 원주시 남원로534번길 52', '033-762-3636', '찜·탕·찌개', '10:30~22:00', 2, '13000', 'https://www.siksinhot.com/P/566265');
+
+-- 춘천통나무집 닭갈비
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('춘천통나무집 닭갈비', '강원 춘천시 신북읍 신샘밭로 763', '033-241-5999', '고기·구이', '10:30~21:30', 1, '7000~12000', 'https://www.siksinhot.com/P/253603');
+
+-- 탑골가든
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('탑골가든', '강원 춘천시 남산면 김유정로 427-12', '033-263-5291', '고기·구이', '10:30~21:00', 1, '13000', 'https://www.siksinhot.com/P/481113');
+
+-- 삼교리동치미막국수
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('삼교리동치미막국수', '강원 춘천시 동면 춘천순환로 822', '033-242-9988', '백반·죽·국수', '토/일', '11:00~20:00', 1, '8000', 'https://www.siksinhot.com/P/324782');
+
+-- 남춘천호반닭갈비
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('남춘천호반닭갈비', '강원 춘천시 충혼길5번길 5', '033-255-9245', '고기·구이', '토/일', '10:00~22:00', 2, '10000', 'https://www.siksinhot.com/P/360049');
+
+-- 북경관
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('북경관', '강원 춘천시 근화동710-37', '033-243-3001', '중식', '11:00~20:30', 2, '6000~15000', 'https://www.siksinhot.com/P/327025');
+
+-- 화산해물찜
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('화산해물찜', '강원 춘천시 스포츠타운길 506', '033-252-6464', '백반·죽·국수', '11:00~22:00', 2, '34000', 'https://www.siksinhot.com/P/254610');
+
+-- 초막고갈두
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('초막고갈두', '강원 태백시 황지동 317', '033-553-7388', '고기·구이', '10:00~16:00', 1, '7000~10000', 'https://www.siksinhot.com/P/266628');
+
+-- 태백한우골
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('태백한우골', '강원 태백시 대학길 35', '033-554-4599', '고기·구이', '10:00~22:00', 1, '32000', 'https://www.siksinhot.com/P/266661');
+
+-- 너와집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('너와집', '강원 태백시 고원로 35', '033-553-4669', '백반·죽·국수', '11:00~20:30', 1, '15000~20000', 'https://www.siksinhot.com/P/266631');
+
+-- 산골닭집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('산골닭집', '강원 태백시 문곡소도동 122', '033-581-8988', '고기·구이', '11:00~21:00', 2, '45000', 'https://www.siksinhot.com/P/266635');

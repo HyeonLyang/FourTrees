@@ -32,148 +32,168 @@ public class RestaurantVO {
 	    private String link;     
 	    private String rom_address;
 	    private String rom_name;
-	    
+		private String area_name;
+	    	    
+		private int page;
+
+		public int getPage() {
+			return page;
+		}
+
+		public void setPage(int page) {
+			this.page = page;
+		}
+
 	    public String getRom_name() {
 			return rom_name;
 		}
 
-		public void setRom_name(String rom_name) {
-			this.rom_name = rom_name;
-		}
+	public void setRom_name(String rom_name) {
+		this.rom_name = rom_name;
+	}
 
-		public String getRom_address() {
-			return rom_address;
-		}
+	public String getRom_address() {
+		return rom_address;
+	}
 
-		public void setRom_address(String rom_address) {
-			this.rom_address = rom_address;
-		}
+	public void setRom_address(String rom_address) {
+		this.rom_address = rom_address;
+	}
 
-		public int getIdx() {
-	        return idx;
-	    }
+	public int getIdx() {
+		return idx;
+	}
 
-	    public void setIdx(int idx) {
-	        this.idx = idx;
-	    }
+	public void setIdx(int idx) {
+		this.idx = idx;
+	}
 
-	    public String getName() {
-	        return name;
-	    }
+	public String getName() {
+		return name;
+	}
 
-	    public void setName(String name) {
-	        this.name = name;
-	    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-	    public String getAddress() {
-	        return address;
-	    }
+	public String getAddress() {
+		return address;
+	}
 
-	    public void setAddress(String address) {
-	        this.address = address;
-	    }
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-	    public String getCategory() {
-	        return category;
-	    }
+	public String getCategory() {
+		return category;
+	}
 
-	    public String getRes_phone() {
-			return res_phone;
-		}
+	public String getRes_phone() {
+		return res_phone;
+	}
 
-		public void setRes_phone(String res_phone) {
-			this.res_phone = res_phone;
-		}
+	public void setRes_phone(String res_phone) {
+		this.res_phone = res_phone;
+	}
 
-		public String getOp_hour() {
-			return op_hour;
-		}
+	public String getOp_hour() {
+		return op_hour;
+	}
 
-		public void setOp_hour(String op_hour) {
-			this.op_hour = op_hour;
-		}
+	public void setOp_hour(String op_hour) {
+		this.op_hour = op_hour;
+	}
 
-		public int getPark_area() {
-			return park_area;
-		}
+	public int getPark_area() {
+		return park_area;
+	}
 
-		public void setPark_area(int park_area) {
-			this.park_area = park_area;
-		}
+	public void setPark_area(int park_area) {
+		this.park_area = park_area;
+	}
 
-		public int getView_count() {
-			return view_count;
-		}
+	public int getView_count() {
+		return view_count;
+	}
 
-		public void setView_count(int view_count) {
-			this.view_count = view_count;
-		}
+	public void setView_count(int view_count) {
+		this.view_count = view_count;
+	}
 
-		public void setCategory(String category) {
-	        this.category = category;
-	    }
+	public void setCategory(String category) {
+		this.category = category;
+	}
 
-	    public double getScore() {
-	        return score;
-	    }
+	public double getScore() {
+		return score;
+	}
 
-	    public void setScore(double score) {
-	        this.score = score;
-	    }
+	public void setScore(double score) {
+		this.score = score;
+	}
 
-	    public String getPhoto() {
-	        return photo;
-	    }
+	public String getPhoto() {
+		return photo;
+	}
 
-	    public void setPhoto(String photo) {
-	        this.photo = photo;
-	    }
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
 
-	    public String getHoliday() {
-	        return holiday;
-	    }
+	public String getHoliday() {
+		return holiday;
+	}
 
-	    public void setHoliday(String holiday) {
-	        this.holiday = holiday;
-	    }
+	public void setHoliday(String holiday) {
+		this.holiday = holiday;
+	}
 
-	    public String getOpHour() {
-	        return op_hour;
-	    }
+	public String getOpHour() {
+		return op_hour;
+	}
 
-	    public void setOpHour(String op_hour) {
-	        this.op_hour = op_hour;
-	    }
+	public void setOpHour(String op_hour) {
+		this.op_hour = op_hour;
+	}
 
-	    public int getParkArea() {
-	        return park_area;
-	    }
+	public int getParkArea() {
+		return park_area;
+	}
 
-	    public void setParkArea(int park_area) {
-	        this.park_area = park_area;
-	    }
+	public void setParkArea(int park_area) {
+		this.park_area = park_area;
+	}
 
-	    public int getViewCount() {
-	        return view_count;
-	    }
+	public int getViewCount() {
+		return view_count;
+	}
 
-	    public void setViewCount(int view_count) {
-	        this.view_count = view_count;
-	    }
+	public void setViewCount(int view_count) {
+		this.view_count = view_count;
+	}
 
-	    public String getPrice() {
-	        return price;
-	    }
+	public String getPrice() {
+		return price;
+	}
 
-	    public void setPrice(String price) {
-	        this.price = price;
-	    }
+	public void setPrice(String price) {
+		this.price = price;
+	}
 
-	    public String getLink() {
-	        return link;
-	    }
+	public String getLink() {
+		return link;
+	}
 
-	    public void setLink(String link) {
-	        this.link = link;
-	    }
+	public void setLink(String link) {
+		this.link = link;
+	}
+
+	public String getArea_name() {
+		return area_name;
+	}
+
+	public void setArea_name(String area_name) {
+		this.area_name = area_name;
+	}
+
 }
