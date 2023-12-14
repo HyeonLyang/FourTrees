@@ -1,0 +1,119 @@
+-- 스미카츠
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('스미카츠', '서울 강남구 선릉로157길 23-3 지상 1층 101호', '0507-1456-1384', 102, '11:00 - 21:00', '2', '13900', '');
+
+-- 압뚜껑 성곽길점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('압뚜껑 성곽길점', '서울 강남구 압구정로 338 1층 13호', '070-8845-7542', 101, '일', '17:00 - 02:00', '1', '16000', '');
+
+-- 솔티서울
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('솔티서울', '서울 강남구 선릉로157길 13-3 2층', '0507-1381-0354', 105, '일', '18:00 - 01:00', '2', '16000 ~ 82000', 'https://app.catchtable.co.kr/ct/shop/saltyseoul');
+
+-- 자연도소금빵in 도산
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('자연도소금빵in 도산', '서울 강남구 도산대로49길 41 1층', '02-512-2245', 111, '09:00 - 22:00', '2', '12000', '');
+
+-- 봉우이층집
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('봉우이층집', '서울 강남구 봉은사로18길 76 스타 팰리스', '0507-1395-8454', 101, '11:00 - 23:00', '2', '16000', '');
+
+-- 스시마이우 선릉역점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('스시마이우 선릉역점', '서울 강남구 선릉로93길 22', '0507-1418-8881', 102, '10:00 - 22:00', '1', '2100 ~ 13000', '');
+
+-- 어로선목로집 선릉점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('어로선목로집 선릉점', '서울 강남구 선릉로86길 10 2층', '0507-1363-5536', 105, '17:00 - 01:00', '2', '15900', 'https://www.instagram.com/urosun_seolleung/');
+
+-- 자매수산
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('자매수산', '서울 강남구 봉은사로18길 90', '0507-1309-5534', 102, '14:00 - 24:00', '2', '59000', 'https://www.instagram.com/kangnam_jamae/');
+
+-- 은행골 신사점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('은행골 신사점', '서울 강남구 강남대로152길 42 2층', '0507-1389-4992', 102, '일', '11:00 - 22:30', '1', '22000', 'https://app.catchtable.co.kr/ct/shop/eunhanggol_sinsa');
+
+-- 성씨네 삼장집
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('성씨네 삼장집', '서울 강남구 압구정로50길 28 지상1층 111호', '0507-1397-6067', 101, '', '11:30 - 05:00', '1', '16000', '');
+
+-- 세광양대창 논현점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('세광양대창 논현점', '서울 강남구 강남대로118길 12', '02-558-8484', 101, '16:30 - 02:00', '1', '19000', null);
+
+-- 스시이안앤 강남역점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('스시이안앤 강남역점', '서울 강남구 테헤란로1길 25 2층', '0507-1443-0999', 102, '11:30 - 22:00', '2', '1990', null);
+
+-- 슬로우커피
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('슬로우커피', '서울 강남구 역삼로 136 신명빌딩 1층', '0507-1339-0364', 111, '10:00 - 22:00', '2', '6000', null);
+
+-- 화주요정 압구정본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('화주요정 압구정본점', '서울 강남구 압구정로54길 4 1, 2층', '0507-1362-2189', 105, '19:00 - 04:00', '2', '32000', null);
+
+-- 순정한우정육식당 역삼점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('순정한우정육식당 역삼점', '서울 강남구 강남대로94길 69 1층', '0507-1440-9296', 101, null, '11:30 - 22:00', '1', '79000', 'https://gorillafnd.co.kr/72');
+
+-- 쿠히치 압구정점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('쿠히치 압구정점', '서울 강남구 도산대로51길 16 1층', '010-5762-2558', 102, '18:00 - 08:00', '2', '26000', null);
+
+-- 도산뚝배기
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('도산뚝배기', '서울 강남구 도산대로54길 18 1층', '0507-1358-0950', 101, '11:30 - 22:00', '1', '51000', null);
+
+-- 레뽀드라라 강남점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('레뽀드라라 강남점', '서울 강남구 테헤란로7길 22 2관 101호', '0507-1352-3177', 111, '11:00 - 21:00', '1', '23000', 'https://www.instagram.com/repos_de_lala/');
+
+-- 메리고라운드 스테이크
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('메리고라운드 스테이크', '서울 강남구 논현로175길 69 원영빌딩 1층', '0507-1384-9141', 106, '11:00 - 22:00', '1', '17000', 'https://app.catchtable.co.kr/ct/shop/merry_go_round');
+
+-- 감성타코 강남역점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('감성타코 강남역점', '서울 강남구 강남대로 406 지하1층 감성타코', '02-565-8830', 106, '11:30 - 22:00', '2', '10000', 'https://www.instagram.com/gamsungtaco/');
+
+-- 아베크 청담
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('아베크 청담', '서울 강남구 선릉로 823 1층', '0507-1368-5129', 106, '11:30 - 02:00', '1', '27000', 'https://blog.naver.com/avecque_cheongdam');
+
+-- 도톤보리 서울
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('도톤보리 서울', '서울 강남구 강남대로152길 14 지하1층', '0507-1371-1018', 105, '17:00 - 05:00', '2', '20000', 'https://app.catchtable.co.kr/ct/shop/dotonbori');
+
+-- 천향 도곡점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('천향 도곡점', '서울 강남구 논현로 166 1층', '02-574-6464', 108, '11:10 - 21:30', '1', '8000 ~ 85000', null);
+
+-- 신사만장어
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('신사만장어', '서울 강남구 도산대로1길 10', '0507-1355-9302', 101, '11:30 - 22:00', '2', '54000', 'https://blog.naver.com/kung000455');
+
+-- 진대감 선릉점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('진대감 선릉점', '서울 강남구 테헤란로70길 25 백합힐 1층', '0507-1312-1253', 101, '11:30 - 22:00', '2', '29000', 'https://gorillafnd.co.kr/');
+
+-- 낙월식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('낙월식당', '서울 강남구 선릉로86길 38 지상2층', '0507-1427-2298', 109, '11:00 - 22:30', '2', '13000', null);
+
+-- 위트앤미트 가로수길점
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('위트앤미트 가로수길점', '서울 강남구 강남대로162길 27-16 1층', '0507-1306-2396', 111, '월', '11:00 - 21:00', '1', '13000', 'https://www.instagram.com/wheat.n.meat/');
+
+-- 루위
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('루위', '서울 강남구 도산대로 211 동현빌딩 1F', '0507-1436-0018', 108, '11:30 - 22:00', '1', '50000 ~ 120000', 'https://blog.naver.com/ruyi2017');
+
+-- 어썸로즈
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('어썸로즈', '서울 강남구 압구정로10길 40 지하1층', '0507-1341-0619', 106, '11:00 - 22:00', '1', '14900', 'https://www.instagram.com/AwesomeRose_garosu/');
+
+-- 을밀대 강남점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('을밀대 강남점', '서울 강남구 테헤란로4길 46 쌍용플래티넘밸류', '02-552-1922', 103, '11:00 - 22:00', '1', '130000', 'https://www.siksinhot.com/P/131945');

@@ -1,0 +1,89 @@
+-- 3일 한우국밥
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('3일 한우국밥', '서울 영등포구 영등포동4가 68-5', '02-2678-0117', 103, '00:00 ~ 24:00', 1, '11000~18000', 'https://www.siksinhot.com/P/372915');
+
+-- 원조호수삼계탕
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('원조호수삼계탕', '서울 영등포구 도림로 276', '02-848-2440', 109, '11:00 ~ 21:30', 1, '18000', 'https://www.siksinhot.com/P/3033');
+
+-- 송죽장
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('송죽장', '서울 영등포구 문래로 203', '033-651-9245', 108, '11:00 ~ 20:00', 2, '15000 ~ 40000', 'https://www.siksinhot.com/P/252939');
+
+-- 여로집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('여로집', '서울 영등포구 영중로10길 26', '02-2678-8934', 113, '11:30 ~ 01:00', 2, '22000 ~ 43000', 'https://www.siksinhot.com/P/336785');
+
+-- 함흥냉면
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('함흥냉면', '서울 영등포구 영등포로42길 6', '02-2678-2722', 103, '11:00 ~ 22:00', 1, '12000', 'https://www.siksinhot.com/P/29951');
+
+-- 원조나주곰탕
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('원조나주곰탕', '서울 영등포구 버드나루로7길 7 카보드동우빌딩', '02-2677-5066', 109, '토/일 08:00 ~ 15:00', 2, '9000 ~ 12000', 'https://www.siksinhot.com/P/1172696');
+
+-- 막내회센타
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('막내회센타', '서울 영등포구 도신로53길 7', '02-844-6150', 102, '10:30 ~ 22:00', 2, '10000 ~ 40000', 'https://www.siksinhot.com/P/254921');
+
+-- 대문점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('대문점', '서울 영등포구 영중로10길 30', '02-2678-3256', 101, '11:30 ~ 22:00', 2, '21000 ~ 24000', 'https://www.siksinhot.com/P/253165');
+
+-- 대한옥
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('대한옥', '서울 영등포구 영등포로51길 6', '02-2633-5052', 109, '11:00 ~ 20:50', 2, '9000 ~ 21000', 'https://www.siksinhot.com/P/359818');
+
+-- 덕원
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('덕원', '서울 영등포구 버드나루로길 6', '02-2634-8663', 109, '09:00 ~ 21:00', 2, '19000 ~ 39000', 'https://www.siksinhot.com/P/252949');
+
+-- 호박집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('호박집', '서울 영등포구 영등포로 237-1 성일빌딩', '02-2634-9703', 109, '07:00 ~ 22:30', 2, '7000 ~ 20000', 'https://www.siksinhot.com/P/809936');
+
+-- 부일갈비
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('부일갈비', '서울 영등포구 영중로6길 23-8', '02-2636-9462', '101', '11:00 ~ 22:30', 2, '14000 ~ 26000', 'https://www.siksinhot.com/P/402731');
+
+-- 고에몽시즈카
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('고에몽시즈카', '서울 영등포구 국회대로50길 20 포레나 영등포 센트럴 112호 112호', '0503-5798-3843', 102, '18:30 ~ 22:00', 2, '179000', 'https://www.siksinhot.com/P/1541437');
+
+-- 중앙참치
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('중앙참치', '서울 영등포구 영등포로43길 14 1층', '02-2634-3681', 102, '일 16:30 ~ 23:00', 2, '30000 ~ 50000', 'https://www.siksinhot.com/P/383726');
+
+-- 신길동매운짬뽕
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('신길동매운짬뽕', '서울 영등포구 영등포로62길 10-1', '0503-5798-0019', 108, '13:00 ~ 23:00', 1, '3000 ~ 9000', 'https://www.siksinhot.com/P/254857');
+
+-- 즉석우동짜장
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('즉석우동짜장', '서울 영등포구 대방천로 260', '02-833-3284', 108, '11:00 ~ 20:00', 2, '4000 ~ 4500', 'https://www.siksinhot.com/P/368424');
+
+-- 전봇대곱창
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('전봇대곱창', '서울 영등포구 영등포로 369', '02-841-0131', '101', '16:00 ~ 02:00', 2, '9000 ~ 22000', 'https://www.siksinhot.com/P/402927');
+
+-- 파전닭갈비
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('파전닭갈비', '서울 영등포구 신풍로10길 2-16', '02-832-5989', '101', '11:00 ~ 23:00', 2, '12000 ~ 22000', 'https://www.siksinhot.com/P/412253');
+
+-- 나카지마 고에몽
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('나카지마 고에몽', '서울 영등포구 국회대로54길 10 아크로타워스퀘어 상가동 지하1층 39호', '0503-5798-4166', 102, '13:00 ~ 21:00', 2, '110000 ~ 150000', 'https://www.siksinhot.com/P/1193850');
+
+-- 코트야드 서울타임스퀘어 인룸다이닝
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('코트야드 서울타임스퀘어 인룸다이닝', '서울 영등포구 영중로 15 5층', '02-2638-3081', 106, '토/일 07:00 ~ 22:30', 2, '23000', 'https://www.siksinhot.com/P/253092');
+
+-- 청도양꼬치 영등포점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('청도양꼬치 영등포점', '서울 영등포구 영중로6길 23-4', '02-703-7200', 108, '15:00 ~ 03:00', 1, '11000 ~ 13000', 'https://www.siksinhot.com/P/253071');
+
+-- 뽕씨네 얼큰 수제비
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('뽕씨네 얼큰 수제비', '서울 영등포구 영중로10길 16', '02-2678-0142', 113, '토/일 10:00 ~ 22:00', 2, '6000', 'https://www.siksinhot.com/P/253034');
+
+-- 에베레스트 레스토랑
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('에베레스트 레스토랑', '서울 영등포구 경인로 838-1', '02-3667-8848', 106, '토/일 11:00 ~ 22:30', 2, '7000 ~ 13000', 'https://www.siksinhot.com/P/253001');
+
+-- 구공탄곱창 영등포점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('구공탄곱창 영등포점', '서울 영등포구 영중로10길 28-1', '02-2068-8789', '101', '15:00 ~ 20:00', 2, '10000', 'https://www.siksinhot.com/P/359281');
+
+-- 느린날의오후
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('느린날의오후', '서울 영등포구 신길동 98-14 1층', '02-845-1829', 111, '토/일 11:00 ~ 23:00', 2, '3000 ~ 5500', 'https://www.siksinhot.com/P/357754');
+
+-- 호우양꼬치 본점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('호우양꼬치 본점', '서울 영등포구 영중로10길 6 델리타운', '070-7747-9488', 108, '토/일 15:00 ~ 03:00', 2, '11000 ~ 15000', 'https://www.siksinhot.com/P/314732');
+
+-- 한신포차 영등포점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('한신포차 영등포점', '서울 영등포구 영등포동3가 3-7번지, 1층', '02-2679-0410', 113, '토/일 17:30 ~ 06:00', 2, '10000 ~ 18000', 'https://www.siksinhot.com/P/315194');
+
+-- 비둘기집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('비둘기집', '서울 영등포구 신길동 4336', '02-842-8817', '101', '토/일 11:00 ~ 00:00', 2, '6000 ~ 28000', 'https://www.siksinhot.com/P/254915');
+
+-- 순흥골 신길점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('순흥골 신길점', '서울 영등포구 신길동 3741-53', '02-848-1888', '101', '토/일 11:30 ~ 22:00', 2, '7000 ~ 13000', 'https://www.siksinhot.com/P/346774');
+
+-- 초밥오타루
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link) VALUES ('초밥오타루', '서울 영등포구 영등포동4가 148-1 1층', '02-2677-5460', 102, '11:30 ~ 22:00', 2, '15000 ~ 25000', 'https://www.siksinhot.com/P/315330');

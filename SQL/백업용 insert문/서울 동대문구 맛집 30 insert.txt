@@ -1,0 +1,122 @@
+-- 장안동 먹깨비 간장게장 해물아구찜
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('장안동 먹깨비 간장게장 해물아구찜', '서울 동대문구 장한로 92 1층', '0507-1393-2158', '찜,탕,찌개', '00:00-24:00', '1', '50000', 'https://smartstore.naver.com/meokkkae_b');
+
+-- 독립밀방 청량리
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('독립밀방 청량리', '서울 동대문구 왕산로 214 청량리역사 3층 308호', '0507-1361-3418', '양식', '11:00-22:00', '2', '21000', 'http://www.instagram.com/dongnip_millbang');
+
+-- 오마카세 오사이초밥 고려대역점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('오마카세 오사이초밥 고려대역점', '서울 동대문구 회기로2길 2 2층', '0507-1397-3755', '돈까스,회,일식', '10:30-21:30', '2', '19000', 'https://www.instagram.com/omakase542_ku');
+
+-- 서울뼈구이매운족발
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('서울뼈구이매운족발', '서울 동대문구 왕산로 274-1', '02-965-5838', '족발,보쌈', '12:00-22:00', '2', '26000', NULL);
+
+-- 남원통닭
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('남원통닭', '서울 동대문구 홍릉로1길 39', '02-968-9841', '치킨', '10:00-22:00', '2', '16000', NULL);
+
+-- 서파넓적갈비 용두점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('서파넓적갈비 용두점', '서울 동대문구 천호대로31길 16 탑빌딩 1층', '0507-1466-0726', '고기,구이', '11:00-21:00', '1', '18000', 'https://www.instagram.com/seopa_galbi');
+
+-- 최원석의 돼지한판&서해쭈꾸미
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('최원석의 돼지한판 서해쭈꾸미', '서울 동대문구 전농로 222', '0507-1365-5592', '고기,구이', '11:30-01:00', '1', '15000', 'http://www.instagram.com/pig_k.o');
+
+
+-- 경양카츠 경희대점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('경양카츠 경희대점', '서울 동대문구 회기로 146-1 1층', '0507-1368-0932', '돈까스,회,일식', '11:30-21:00', '2', '14900', NULL);
+
+-- 안동집 손칼국시
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('안동집 손칼국시', '서울 동대문구 고산자로36길 3 신관 지하1층', '02-965-3948', '백반,죽,국수', '10:00-20:00', '2', '8000', NULL);
+
+
+-- 어머니대성집
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('어머니대성집', '서울 동대문구 왕산로11길 4', '02-923-1718', '백반,죽,국수', '6:00-04:00', '1', '12000', NULL);
+
+-- 봄의정원 회기점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('봄의정원 회기점', '서울 동대문구 경희대로1길 35 봄의정원 회기점', '0507-1363-7382', '양식', '11:30-21:30', '2', '13000', 'https://www.instagram.com/spring__garden_');
+
+-- 나정순할매쭈꾸미
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('나정순할매쭈꾸미', '서울 동대문구 무학로 144', '02-928-0231', '백반,죽,국수', '11:30-21:30', '2', '15000', NULL);
+
+-- 영화장
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('영화장', '서울 동대문구 휘경로 3-8', '02-967-9595', '중식', '11:30-21:00', '2', '12000', NULL);
+
+-- 장수식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('장수식당', '서울 동대문구 망우로20길 16 1층 장수보리밥', '0507-1322-0649', '백반,죽,국수', '11:00-20:30', '1', '11000', NULL);
+
+-- READSTREET COFFEE
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('READSTREET COFFEE', '서울 동대문구 회기로 166 KB빌딩 리드스트리트 커피', '02-959-1988', '카페,디저트', '10:00-23:00', '2', '4500', NULL);
+
+-- 경통연탄돼지갈비
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('경통연탄돼지갈비', '서울 동대문구 약령서1길 34', '0507-1347-3373', '고기,구이', '11:00-21:30', '2', '15000', NULL);
+
+-- 은하곱창
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('은하곱창', '서울 동대문구 전농로15길 22 은하곱창', '0507-1403-0262', '고기,구이', '11:00-20:00', '2', '30000', NULL);
+
+-- 스타벅스 경동1960점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('스타벅스 경동1960점', '서울 동대문구 고산자로36길 3 신관 지하1층', '없음', '카페,디저트', '9:00-22:00', '2', '6300', 'http://www.starbucks.co.kr/');
+
+-- 일미간장게장
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('일미간장게장', '서울 동대문구 장한로24길 7', '02-2242-4338', '찜,탕,찌개', '00:00-24:00', '1', '75000', 'http://www.ilmicrab.co.kr/');
+
+-- 혜성칼국수
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('혜성칼국수', '서울 동대문구 왕산로 247-1', '02-967-6918', '백반,죽,국수', '월', '10:30-20:00', '2', '9000', NULL);
+
+-- 한옥정
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('한옥정', '서울 동대문구 답십리로 146-4', '02-2249-1082', '고기,구이', '일', '11:00-22:00', '2', '12000', 'http://blog.naver.com/film1945');
+
+-- BK볏집 우대갈비 장안동본점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('BK볏집 우대갈비 장안동본점', '서울 동대문구 장한로26가길 29 1층 BK볏짚 우대갈비 장안동본점', '02-2244-0092', '고기,구이', '11:30-24:00', '2', '32000', NULL);
+
+-- 레알라면
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('레알라면', '서울 동대문구 회기로25길 23-5 1층 레알라면', '0507-1311-4208', '분식', '수', '11:00-21:00', '2', '6000', 'https://youtu.be/nZWEEiSfkpQ');
+
+
+-- 도원
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('도원', '서울 동대문구 왕산로3길 12-1 1층', '0507-1345-7866', '고기,구이', '일', '16:00-23:00', '1', '16000', 'https://dowonfood1.modoo.at');
+
+-- 영동교집 장안직영점
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price)
+values ('영동교집 장안직영점', '서울 동대문구 천호대로83길 32', '02-3394-5882', '고기,구이', '11:00-24:00', '1', '16000');
+
+-- 성천 막국수
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('성천 막국수', '서울 동대문구 답십리로48나길 2', '0507-1329-5529', '백반,죽,국수', '일', '11:30-17:00', '2', '13000', NULL);
+
+-- 거복이식당
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('거복이식당', '서울 동대문구 경희대로3길 6', '0507-1373-1559', '고기,구이', '12:40-23:00', '1', '35000', 'http://www.instagram.com/geobokye_sikdang');
+
+-- 섬마을횟집
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('섬마을횟집', '서울 동대문구 홍릉로5길 8', '02-962-3766', '돈까스,회,일식', '수', '11:00-21:30', '2', '30000', NULL);
+
+-- 전농곱창싱
+insert into restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+values ('전농곱창싱', '서울 동대문구 전농로14길 14', '02-2248-6191', '고기,구이', '일', '11:00-22:00', '2', '30000', 'http://www.foodsidae.com/junnong');
+
+-- 여기가좋겠네
+insert into restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+values ('여기가좋겠네', '서울 동대문구 회기로21길 25 1층', '02-968-9112', '치킨', '10:00-24:00', 2, '13000', 'https://youtu.be/1nFKr8h0sxs');

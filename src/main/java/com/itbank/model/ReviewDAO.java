@@ -11,13 +11,15 @@ public interface ReviewDAO {
 
 	List<ReviewVO> selectAll(Paging p);
 
-	int getTotalReview();
+	int getTotalReview(int res_idx);
 
 	List<ReviewVO> selectReviews(int idx);
 
-	String selectidx();
+	List<ReviewVO> selectRes_name(int res_idx);
 
-	List<ReviewVO> selectImg();
+	List<ReviewVO> selectImg(int res_idx);
+
+	List<ReviewVO> imgCollect(int res_idx);
 
 	List<Double> getResScores(int idx);
 

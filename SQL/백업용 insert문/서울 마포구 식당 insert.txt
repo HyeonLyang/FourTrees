@@ -1,0 +1,91 @@
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('스파카 나폴리', '서울특별시 마포구 합정동 413-2', '02-326-2323', '피자', '월, 화 11:30-21:30', 2, '15000-29500', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('웨스트빌 피자', '서울시 마포구 합정동 438-4', '0507-1343-2370', '피자', '월 11:30-22:00', 2, '21800-24800', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('더피자보이즈 합정본점', '서울특별시 마포구 서교동 402-5 2층', '02-322-9896', '피자', '12:00-21:30', 2, '22000-28000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('맛이차이나', '서울특별시 마포구 상수동 321-1 2층', '010-9822-2653', '중식', '11:30-22:00', 1, '8000-60000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('연교', '서울특별시 마포구 연남동 383-95 1층', '010-5882-5112', '중식', '수 11:30-21:30', 2, '7000-12000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('복성각', '서울특별시 마포구 도화동 173', '02-703-3700', '중식', '11:00-22:00', 1, '7000-30000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('윤씨밀방', '서울특별시 마포구 서교동 411-6', '02-3143-4116', '양식', '월, 화 11:30-21:00', 2, '10000-12500', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('프리모 바치오바치', '서울특별시 마포구 서교동 346-47 2층', '02-323-0098', '양식', '11:00-23:00', 2, '6000-20000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('문', '서울특별시 마포구 연남동 385-12', '0507-1333-5097', '양식', '12:00-22:00', 2, '12000-22000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('토마 연남점', '서울특별시 마포구 연남동 568-26', '0507-1329-8064', '양식', '11:30-21:30', 2, '5000-18000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('파스치노팬스테이크', '서울특별시 마포구 서교동 358-8', '02-322-8575', '양식', '11:00-22:00', 1, '8500-16000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('광야', '서울특별시 마포구 동교동 198-5', '0507-1318-1486', '양식', '11:30-22:00', 2, '17000-75000', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('테일러커피 연남1호점', '서울특별시 마포구 연남동 224-41', '02-326-0355', '카페.디저트', '10:00-22:00', 2, '5000-7500', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('콜린', '서울특별시 마포구 서교동 403-13', '0507-1335-1119', '카페.디저트', '10:30-23:00', 2, '6200-6200', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('그레고리', '서울특별시 마포구 합정동 410-11', '02-322-9579', '카페.디저트', '13:30-23:30', 2, '5500-11200', NULL);
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('작당모의', '서울특별시 마포구 연남동 381-15', '070-8838-3815', '카페.디저트', '12:00-21:00', 2, '5800-12000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('딥블루레이크', '서울특별시 마포구 망원동 411-12', '02-333-8532', '카페.디저트', '10:00-21:30', 2, '5000-7000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('앤트러사이트 서교점', '서울특별시 마포구 서교동 475-22', '0507-1384-7650', '카페.디저트', '09:00-22:00', 2, '7000-9000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('야키토리 묵', '서울특별시 마포구 연남동 223-102', '0507-1405-2840', '돈까스.회.일식', '17:00-23:00', 2, '4000-25000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('최강금돈까스', '서울특별시 마포구 합정동 388-15', '0507-1328-3646', '돈까스.회.일식', '11:00-21:00', 2, '5000-22000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('한강껍데기', '서울특별시 마포구 망원동 416-33', '02-6083-3733', '고기.구이', '16:00-02:00', 2, '5000-20000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('행진', '서울특별시 마포구 합정동 427-5', '010-8907-9216', '고기.구이', '12:00-00:00', 2, '7000-29000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('부산갈매기', '서울시 마포구 도화동 194-18', '02-718-5462', '고기.구이', '12:00-22:50', 2, '10000-17000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('미도인 홍대', '서울특별시 마포구 서교동 366-24', '02-336-5097', '돈까스.회.일식', '11:30-21:00', 2, '4800-24800');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('마코토', '서울특별시 마포구 서교동 358-89', '0507-1329-8310', '돈까스.회.일식', '11:00-20:30', 2, '9500-21000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('바다회사랑 연남본점', '서울특별시 마포구 연남동 566-8', '02-338-0872', '돈까스.회.일식', '14:00-00:00', 2, '20000-70000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('웰빙김치찜', '서울특별시 마포구 공덕동 256-5', '02-711-1430', '백반.죽.국수', '11:00-22:00', 2, '9000-11000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('곤밥', '서울특별시 마포구 상수동 339-9', '02-336-5157', '백반.죽.국수', '16:00-24:00', 2, '6000-50000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('녹원쌈밥', '서울특별시 마포구 연남동 504-39', '02-332-9483', '백반.죽.국수', '11:30-20:40', 1, '12000-16000');
+
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price)
+VALUES ('감나무집 기사식당', '서울특별시 마포구 연남동 515-19', '02-325-8727', '백반.죽.국수', '00:00-24:00', 1, '10000-13000');
+
+
