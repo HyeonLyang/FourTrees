@@ -80,6 +80,8 @@
 		</div>	
 	</c:forEach>
 	<!-- 식당 테이블 데이터 페이징 하는 곳 -->
+	
+	<c:set var="area" value="page"></c:set>
 	<ul class="re_paging">
 		<c:if test="${p.prev }">			
 			<li><a href="${cpath }/review/review?page=${p.begin - 1 }">이전</a></li>
