@@ -26,30 +26,32 @@ public class SearchController {
 		
 	}
     
-    @GetMapping("/sc_detail")
-    public ModelAndView sc_detail(
-    	@RequestParam(value = "address", required = false) String address,
-        @RequestParam(value = "category", required = false) String category
-    ) {
-        ModelAndView mav = new ModelAndView();
-
-		List<RestaurantVO> list = ss.search(address, category);
-        mav.addObject("list", list);
-        mav.setViewName("search/sc_detail");
-        return mav;
-    }
-//	@GetMapping("/sc_detail")
-//	public ModelAndView review(@RequestParam(value = "address", required = false) String address,
-//			@RequestParam(value = "category", required = false) String category,
-//			@RequestParam(value = "page", defaultValue = "1") int page) {
-//		ModelAndView mav = new ModelAndView("search/sc_detail");
-//		
-//		Map<String, Object> result = ss.search(page);
-//		
-//		mav.addObject("list", result.get("list"));
-//		mav.addObject("p", result.get("p"));
-//		
-//		return mav;
-//	}
+//    @GetMapping("/sc_detail")
+//    public ModelAndView sc_detail(
+//    	@RequestParam(value = "address", required = false) String address,
+//        @RequestParam(value = "category", required = false) String category
+//    ) {
+//        ModelAndView mav = new ModelAndView();
+//
+//		List<RestaurantVO> list = ss.search(address, category);
+//        mav.addObject("list", list);
+//        mav.setViewName("search/sc_detail");
+//        return mav;
+//    }
+	// 리뷰 페이지로 이동
+	@GetMapping("/sc_detail")
+	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page,
+			@RequestParam(value = "address", required = false) String address,
+			@RequestParam(value = "category", required = false) String category
+			) {
+		ModelAndView mav = new ModelAndView("search/sc_detail");
+		
+		Map<String, Object> result = ss.getSearch(page, address, category);
+		
+		mav.addObject("list", result.get("list"));
+		mav.addObject("p", result.get("p"));
+		
+		return mav;
+	}
     
 }

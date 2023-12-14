@@ -2,18 +2,21 @@
 
 .sc_detail {
 	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	box-sizing: border-box;
-	height: 100%;
+	height: 602px;
 	margin: 0 auto;
+	display: flex;
 }
-
+.sc_detail article {
+	height: 100%;
+}
 /* 좌측 영역, 테이블 크기 */
 .de_left {
 	width: 40%;
 	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .de_left table {
 	width: 100%;
@@ -23,6 +26,11 @@
 	height: 50px;
 	background-color: #ff8517;
 }
+.sc_result td {
+	font-size: 12px;
+	font-weight: bold;
+}
+
 /* 좌측, 상세 검색결과 테이블 설정 */
 .de_left .sc_list td {
 	border: 1px solid;
@@ -61,16 +69,7 @@
 	box-sizing: border-box;
 	margin-bottom: 3px;
 }
-/* 우측 영역, 지도 크기 */
-.de_right {
-	width: 60%;
-	height: 100%;
-	padding: 0;
-}
-.de_right img {
-	width: 100%;
-	height: 90%;
-}
+
 /* 좌측 상단 검색 옵션 */
 .de_option td{
 	padding: 10px 15px;
@@ -85,14 +84,11 @@
 }
 /* 검색결과 페이징 */
 .sc_paging {
-	display: flex;
-	justify-content: space-between;
-	box-sizing: border-box;
-	padding: 10px;
-	height: 40px;
+	background-color: aqua;
+	height: 60px;
 }
 .sc_paging p {
-	font-size: 80%;
+	font-size: 16px;
 }
 .sc_paging ul {
 	padding: 0;
@@ -108,4 +104,17 @@
 	vertical-align: middle;
 	margin: 3px;
 	height: 25px;
+}
+/* 우측 영역, 지도 크기 */
+.de_right {
+	width: 60%;
+	height: 100%;
+	padding: 0;
+	background-color: lime;
+}
+
+/* 카카오 맵 영역 */
+#map {
+	width: 100%;
+	height: 100%;
 }
