@@ -17,26 +17,6 @@ package com.itbank.model.vo;
 		
 */
 public class RestaurantVO {
-	private int idx;
-	private String name;
-	private String address;
-	private String res_phone;
-	private String category;
-	private double score;
-	private String photo;
-	private String holiday;
-	private String op_hour;
-	private int park_area;
-	private int view_count;
-	private String price;
-	private String link;
-	private String rom_address;
-	private String rom_name;
-	private String area_name;
-
-	public String getRom_name() {
-		return rom_name;
-	}
 	  	private int idx;                	
 	    private String name;            
 	    private String address;         
@@ -52,8 +32,9 @@ public class RestaurantVO {
 	    private String link;     
 	    private String rom_address;
 	    private String rom_name;
-	    
-	    private int page;
+		private String area_name;
+	    	    
+		private int page;
 
 
 
@@ -65,7 +46,7 @@ public class RestaurantVO {
 			this.page = page;
 		}
 
-		public String getRom_name() {
+	    public String getRom_name() {
 			return rom_name;
 		}
 
