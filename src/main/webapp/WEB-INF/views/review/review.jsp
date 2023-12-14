@@ -16,10 +16,10 @@
 			<h4>고객님들의 직접 작성하신 따끈한 후기와 평가를 들어보세요</h4>
 		</div>
 		
-		<div>
-			<a href="${cpath }/review/review_write">			
+		<div>										
+			<a href="${cpath }/review/review_write?res_idx=${param.res_idx }">			
 				<img src="${cpath }/resources/img/review/review_write.png">
-			</a>
+			</a>	
 		</div>
 	</article>
 	
@@ -37,11 +37,11 @@
 		<div class="food_img">			
 			<c:forEach var="row" items="${img_list }">
 				<div class="slider">				
-					<img src="${cpath }/img/${row.res_idx }/${row.img }">								
+					<img src="${cpath }/img/${row.res_name }/${row.img }">								
 				</div>				
 				<div class="slider_more">				
 				<div class="more">
-					<a href="${cpath }/review/img_popup">				
+					<a href="${cpath }/review/img_popup?img=${p.totalRestaurant }&res_idx=${row.res_idx}">				
 						<b>${p.totalRestaurant }</b><br>
 						<i>더보기></i>
 					</a>
@@ -71,15 +71,17 @@
 					<li>${row.content }</li>
 					<li class="name_address">
 						${row.res_name }<br>						
-						<a href="${cpath }/review/review_area?address=${row.res_address}">
+						<a href="${cpath }/review/review_area?area_name=${row.area}">
 							<b>${row.res_address }</b>
 						</a> 
 					</li>
 				</ul>
-			<img src="${cpath }/img/${row.res_idx }/${row.img }">
+			<img src="${cpath }/img/${row.res_name }/${row.img }">
 		</div>	
 	</c:forEach>
 	<!-- 식당 테이블 데이터 페이징 하는 곳 -->
+	
+	<c:set var="area" value="page"></c:set>
 	<ul class="re_paging">
 		<c:if test="${p.prev }">			
 			<li><a href="${cpath }/review/review?page=${p.begin - 1 }">이전</a></li>

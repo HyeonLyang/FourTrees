@@ -32,12 +32,12 @@ body {
 	<h2>갤러리</h2>
 	<hr>
 	
-	<h4>이미지 1,313</h4>
+	<h4>이미지 (${param.img })</h4>
 	
 	<div class="img_popup_collection">
-		<c:forEach var="i" begin="1" end="24">	
+		<c:forEach var="row" items="${list }">	
 			<div class="contents">			
-				<img src="${cpath }/resources/img/review/중식.jfif">
+				<img src="${cpath }/img/${param.res_idx }/${row.img}">
 			</div>
 		</c:forEach>
 	</div>

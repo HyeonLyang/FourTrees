@@ -17,163 +17,173 @@ package com.itbank.model.vo;
 		
 */
 public class RestaurantVO {
-	  	private int idx;                	
-	    private String name;            
-	    private String address;         
-	    private String res_phone;       
-	    private String category;    
-	    private double score;       
-	    private String photo;        
-	    private String holiday;   		
-	    private String op_hour;    
-	    private int park_area;      
-	    private int view_count;    
-	    private String price;      
-	    private String link;     
-	    private String rom_address;
-	    private String rom_name;
-	    
-	    public String getRom_name() {
-			return rom_name;
-		}
+	private int idx;
+	private String name;
+	private String address;
+	private String res_phone;
+	private String category;
+	private double score;
+	private String photo;
+	private String holiday;
+	private String op_hour;
+	private int park_area;
+	private int view_count;
+	private String price;
+	private String link;
+	private String rom_address;
+	private String rom_name;
+	private String area_name;
 
-		public void setRom_name(String rom_name) {
-			this.rom_name = rom_name;
-		}
+	public String getRom_name() {
+		return rom_name;
+	}
 
-		public String getRom_address() {
-			return rom_address;
-		}
+	public void setRom_name(String rom_name) {
+		this.rom_name = rom_name;
+	}
 
-		public void setRom_address(String rom_address) {
-			this.rom_address = rom_address;
-		}
+	public String getRom_address() {
+		return rom_address;
+	}
 
-		public int getIdx() {
-	        return idx;
-	    }
+	public void setRom_address(String rom_address) {
+		this.rom_address = rom_address;
+	}
 
-	    public void setIdx(int idx) {
-	        this.idx = idx;
-	    }
+	public int getIdx() {
+		return idx;
+	}
 
-	    public String getName() {
-	        return name;
-	    }
+	public void setIdx(int idx) {
+		this.idx = idx;
+	}
 
-	    public void setName(String name) {
-	        this.name = name;
-	    }
+	public String getName() {
+		return name;
+	}
 
-	    public String getAddress() {
-	        return address;
-	    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-	    public void setAddress(String address) {
-	        this.address = address;
-	    }
+	public String getAddress() {
+		return address;
+	}
 
-	    public String getCategory() {
-	        return category;
-	    }
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-	    public String getRes_phone() {
-			return res_phone;
-		}
+	public String getCategory() {
+		return category;
+	}
 
-		public void setRes_phone(String res_phone) {
-			this.res_phone = res_phone;
-		}
+	public String getRes_phone() {
+		return res_phone;
+	}
 
-		public String getOp_hour() {
-			return op_hour;
-		}
+	public void setRes_phone(String res_phone) {
+		this.res_phone = res_phone;
+	}
 
-		public void setOp_hour(String op_hour) {
-			this.op_hour = op_hour;
-		}
+	public String getOp_hour() {
+		return op_hour;
+	}
 
-		public int getPark_area() {
-			return park_area;
-		}
+	public void setOp_hour(String op_hour) {
+		this.op_hour = op_hour;
+	}
 
-		public void setPark_area(int park_area) {
-			this.park_area = park_area;
-		}
+	public int getPark_area() {
+		return park_area;
+	}
 
-		public int getView_count() {
-			return view_count;
-		}
+	public void setPark_area(int park_area) {
+		this.park_area = park_area;
+	}
 
-		public void setView_count(int view_count) {
-			this.view_count = view_count;
-		}
+	public int getView_count() {
+		return view_count;
+	}
 
-		public void setCategory(String category) {
-	        this.category = category;
-	    }
+	public void setView_count(int view_count) {
+		this.view_count = view_count;
+	}
 
-	    public double getScore() {
-	        return score;
-	    }
+	public void setCategory(String category) {
+		this.category = category;
+	}
 
-	    public void setScore(double score) {
-	        this.score = score;
-	    }
+	public double getScore() {
+		return score;
+	}
 
-	    public String getPhoto() {
-	        return photo;
-	    }
+	public void setScore(double score) {
+		this.score = score;
+	}
 
-	    public void setPhoto(String photo) {
-	        this.photo = photo;
-	    }
+	public String getPhoto() {
+		return photo;
+	}
 
-	    public String getHoliday() {
-	        return holiday;
-	    }
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
 
-	    public void setHoliday(String holiday) {
-	        this.holiday = holiday;
-	    }
+	public String getHoliday() {
+		return holiday;
+	}
 
-	    public String getOpHour() {
-	        return op_hour;
-	    }
+	public void setHoliday(String holiday) {
+		this.holiday = holiday;
+	}
 
-	    public void setOpHour(String op_hour) {
-	        this.op_hour = op_hour;
-	    }
+	public String getOpHour() {
+		return op_hour;
+	}
 
-	    public int getParkArea() {
-	        return park_area;
-	    }
+	public void setOpHour(String op_hour) {
+		this.op_hour = op_hour;
+	}
 
-	    public void setParkArea(int park_area) {
-	        this.park_area = park_area;
-	    }
+	public int getParkArea() {
+		return park_area;
+	}
 
-	    public int getViewCount() {
-	        return view_count;
-	    }
+	public void setParkArea(int park_area) {
+		this.park_area = park_area;
+	}
 
-	    public void setViewCount(int view_count) {
-	        this.view_count = view_count;
-	    }
+	public int getViewCount() {
+		return view_count;
+	}
 
-	    public String getPrice() {
-	        return price;
-	    }
+	public void setViewCount(int view_count) {
+		this.view_count = view_count;
+	}
 
-	    public void setPrice(String price) {
-	        this.price = price;
-	    }
+	public String getPrice() {
+		return price;
+	}
 
-	    public String getLink() {
-	        return link;
-	    }
+	public void setPrice(String price) {
+		this.price = price;
+	}
 
-	    public void setLink(String link) {
-	        this.link = link;
-	    }
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
+	}
+
+	public String getArea_name() {
+		return area_name;
+	}
+
+	public void setArea_name(String area_name) {
+		this.area_name = area_name;
+	}
+
 }
