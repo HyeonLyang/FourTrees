@@ -20,4 +20,9 @@
 	
 	</select>
 	
+	<update id="updateScore"
+			parameterType="double">
+		update restaurant set score = #{resScore}
+	</update>
+	
 </mapper>

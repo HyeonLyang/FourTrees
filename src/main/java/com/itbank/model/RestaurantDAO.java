@@ -12,4 +12,6 @@ public interface RestaurantDAO {
 	
 	RestaurantVO selectOne(int idx);
 
+	void updateScore(double resScore);
+
 }
