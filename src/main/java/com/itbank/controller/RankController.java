@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.itbank.service.RankService;
@@ -50,7 +51,7 @@ public class RankController {
 	}
 	
 	@GetMapping("/rank_categoryAJ")
-	public String rank_categoryAJ(Model model, String cate) {
+	public String rank_categoryAJ(Model model, int idx) {
 		List<Integer> rank_list = new ArrayList<>();
 		
 		for(int i = 1; i <= 10; i++) {
@@ -58,9 +59,9 @@ public class RankController {
 		}
 		
 		model.addAttribute("rank", rank_list);
-		model.addAttribute("res_list", rs.getCateRank(cate));		
+		model.addAttribute("res_list", rs.getCateRank(idx));		
 		
-		return "rank/rank_category";
+		return "rank/rank_categoryAJ";
 	}
 	
 	@GetMapping("/rank_area")

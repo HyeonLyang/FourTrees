@@ -29,7 +29,7 @@ public interface RankDAO {
 	@Select("select * from restaurant where address like '%제주%' order by score fetch first 10 rows only")
 	List<RestaurantVO> selectJejuRank();
 
-	@Select("select * from restaurant where category = #{cate} order by score fetch first 10 rows only")
-	List<RestaurantVO> selectCateRank(String cate);
+	@Select("select * from restaurant where category = #{idx} order by score fetch first 10 rows only")
+	List<RestaurantVO> selectCateRank(int idx);
 
 }
