@@ -88,4 +88,18 @@ document.getElementById('mbtiForm').addEventListener('submit', function(event) {
     
     window.location.href = "test/" + result;
 
+
 });
+
+var radioButtons = document.querySelectorAll('.mb');
+
+//Add 'change' event listener to each radio button
+for (var i = 0; i < radioButtons.length; i++) {
+  radioButtons[i].addEventListener('change', function() {
+    // Check if the radio button is checked
+    if (this.checked) {
+      // If checked, scroll to y-coordinate 100
+      //window.scrollTo(0, 10 * [i]);
+    }
+  });
+}

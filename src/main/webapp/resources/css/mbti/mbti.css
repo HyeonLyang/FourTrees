@@ -105,3 +105,13 @@
     color: #007BFF;
 }
 
+.result_button {
+	left: 5px;
+    color: white;
+    background-color: indianred;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
