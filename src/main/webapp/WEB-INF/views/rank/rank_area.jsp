@@ -18,8 +18,13 @@
 		<ol class="rank_detail_board">
 		<c:forEach var="res" items="${res_seoul }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
-				<a href="#" class="rank_detail_topRes">
+				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_detail_topRes">
+					<c:if test="${rank[status.index] < 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking${rank[status.index] }.png"></div>
+					</c:if>
+					<c:if test="${rank[status.index] >= 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking4.png"></div>
+					</c:if>
 					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
@@ -41,7 +46,7 @@
 		</p>
 	</section>
 	
-	<h1>부산 맛집 TOP10</h1>
+	<h1 class="rank_detail_title">부산 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -70,7 +75,7 @@
 		</p>
 	</section>
 	
-	<h1>강원 맛집 TOP10</h1>
+	<h1 class="rank_detail_title">강원 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -99,7 +104,7 @@
 		</p>
 	</section>
 	
-	<h1>제주 맛집 TOP10</h1>
+	<h1 class="rank_detail_title">제주 맛집 TOP10</h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -133,13 +138,14 @@
 <script>
 	
 	const btnArr = document.getElementsByClassName('rank_detail_btn');
-	const areaArr = document.getElementsByClassName('rank_detail_main');
+	const areaArr = document.getElementsByClassName('rank_detail_toArea');
 	
 	for(let i = 0; i < btnArr.length; i++){
 
 		  btnArr[i].addEventListener('click',function(e){
 		    e.preventDefault();
-		    document.querySelector(areaArr[i + 1]).scrollIntoView(true);
+		    areaArr[i].scrollIntoView(true);
+		    behavior: 'smooth';
 		  });
 
 		}

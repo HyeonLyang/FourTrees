@@ -21,4 +21,7 @@ public interface ReviewDAO {
 
 	List<ReviewVO> imgCollect(int res_idx);
 
+	List<Double> getResScores(int idx);
+
+	
 }

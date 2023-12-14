@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.itbank.components.Paging;
+import com.itbank.model.RestaurantDAO;
 import com.itbank.model.ReviewDAO;
 import com.itbank.model.vo.ReviewVO;
 
@@ -21,6 +22,7 @@ import com.itbank.model.vo.ReviewVO;
 public class ReviewService {
 	
 	@Autowired private ReviewDAO dao;
+	@Autowired private RestaurantDAO res_dao;
 	
 	@Value("file:C:\\img")
 	private Resource dir;
@@ -31,6 +33,17 @@ public class ReviewService {
 		
 		int row = dao.insert(input);
 		List<ReviewVO> list = dao.selectRes_name(input.getRes_idx());
+
+		List<Double> scoreList = dao.getResScores(input.getIdx());
+		double scoreSum = 0;
+		
+		for(double score : scoreList) {
+			scoreSum += score;
+		}
+		scoreSum += input.getScore();
+		double resScore = scoreSum / scoreList.size();
+		
+		res_dao.updateScore(resScore);
 		
 		String res_name = "";
 		
