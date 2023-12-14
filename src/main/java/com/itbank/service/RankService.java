@@ -41,4 +41,8 @@ public class RankService {
 		return dao.selectJejuRank();
 	}
 
+	public Object getCateRank(String cate) {
+		return dao.selectCateRank(cate);
+	}
+
 }

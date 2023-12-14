@@ -19,4 +19,7 @@ public interface ReviewDAO {
 
 	List<ReviewVO> selectImg();
 
+	List<Double> getResScores(int idx);
+
+	
 }
