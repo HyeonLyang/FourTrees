@@ -12,7 +12,7 @@
 	<!-- 리뷰 갯수 작성 -->
 	<article class="re_title">	
 		<div class="review_textarea">
-			<h4>리뷰(${p.totalRestaurant })</h4>
+			<h4>${param.res_name } 리뷰(${p.totalRestaurant })</h4>
 			<h4>고객님들의 직접 작성하신 따끈한 후기와 평가를 들어보세요</h4>
 		</div>
 		
@@ -38,16 +38,15 @@
 			<c:forEach var="row" items="${img_list }">
 				<div class="slider">				
 					<img src="${cpath }/img/${row.res_name }/${row.img }">								
-				</div>				
-				<div class="slider_more">				
-				<div class="more">
-					<a href="${cpath }/review/img_popup?img=${p.totalRestaurant }&res_idx=${row.res_idx}">				
-						<b>${p.totalRestaurant }</b><br>
-						<i>더보기></i>
-					</a>
-				</div>
-				</div>
+				</div>												
 			</c:forEach>			
+			<div class="slider_more">				
+			<div class="more">
+				<a href="${cpath }/review/img_popup?img=${p.totalRestaurant }&res_idx=${param.res_idx}">				
+					<b>${p.totalRestaurant }</b><br>
+					<i>더보기></i>
+				</a>
+			</div>
 		</div>
 	</div>
 	
@@ -81,18 +80,18 @@
 	</c:forEach>
 	<!-- 식당 테이블 데이터 페이징 하는 곳 -->
 	
-	<c:set var="area" value="page"></c:set>
+	<c:set var="res" value="res_idx=${param.res_idx}&res_name=${param.res_name }"></c:set>	
 	<ul class="re_paging">
 		<c:if test="${p.prev }">			
-			<li><a href="${cpath }/review/review?page=${p.begin - 1 }">이전</a></li>
+			<li><a href="${cpath }/review/review?page=${p.begin - 1 }&${res }">이전</a></li>
 		</c:if>
 			
 		<c:forEach var="i" begin="${p.begin }" end="${p.end }">
-			<li><a href="${cpath }/review/review?page=${i }">${i }</a></li>
+			<li><a href="${cpath }/review/review?page=${i }&${res }">${i }</a></li>
 		</c:forEach>
 			
 		<c:if test="${p.next }">			
-			<li><a href="${cpath }/review/review?page=${p.end + 1 }">다음</a></li>
+			<li><a href="${cpath }/review/review?page=${p.end + 1 }&${res }">다음</a></li>
 		</c:if>
 	</ul>	
 	</article>

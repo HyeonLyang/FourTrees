@@ -28,7 +28,8 @@ public class ReviewController {
 	// 리뷰 페이지로 이동
 	@GetMapping("/review")
 	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page,
-							   @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx) {
+							   @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx,
+							   @RequestParam(value = "res_name", defaultValue = "강릉감자옹심 강릉본점")String res_name) {
 		ModelAndView mav = new ModelAndView("review/review");
 		
 		Map<String, Object> result = rvs.getReview(page,res_idx);
