@@ -36,13 +36,17 @@ public class ReviewService {
 
 		List<Double> scoreList = dao.getResScores(input.getIdx());
 		double scoreSum = 0;
+		double resScore = 0;
 		
-		for(double score : scoreList) {
-			scoreSum += score;
+		if(scoreList != null) {
+			for(double score : scoreList) {
+				scoreSum += score;
+			}
+			scoreSum += input.getScore();
+			resScore = scoreSum / scoreList.size();
+		}else {
+			resScore = input.getScore();
 		}
-		scoreSum += input.getScore();
-		double resScore = scoreSum / scoreList.size();
-
 		
 		res_dao.updateScore(resScore);
 		
