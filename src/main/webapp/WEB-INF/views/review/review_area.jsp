@@ -35,7 +35,7 @@
 				</div>
 				
 				<div class="res_category">
-					종류 : ${row.category }
+					종류 : ${row.category_name }
 				</div>
 				<div class="res_price">
 					가격 : ${row.price }원

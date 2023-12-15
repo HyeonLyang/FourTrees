@@ -12,12 +12,12 @@
 	<!-- 리뷰 갯수 작성 -->
 	<article class="re_title">	
 		<div class="review_textarea">
-			<h4>${param.res_name } 리뷰(${p.totalRestaurant })</h4>
+			<h4>${name } 리뷰(${p.totalRestaurant })</h4>
 			<h4>고객님들의 직접 작성하신 따끈한 후기와 평가를 들어보세요</h4>
 		</div>
 		
 		<div>										
-			<a href="${cpath }/review/review_write?res_idx=${param.res_idx }">			
+			<a href="${cpath }/review/review_write/${name }/?res_idx=${param.res_idx }">			
 				<img src="${cpath }/resources/img/review/review_write.png">
 			</a>	
 		</div>
@@ -47,8 +47,9 @@
 					<i>더보기></i>
 				</a>
 			</div>
+			</div>
 		</div>
-	</div>
+	</div>	
 	
 	<hr style="border: 2px solid black">
 	

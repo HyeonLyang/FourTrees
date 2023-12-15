@@ -1,12 +1,12 @@
 package com.itbank.controller;
 
-import java.io.IOException;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,10 +26,10 @@ public class ReviewController {
 	@Autowired private ReviewDAO dao;
 
 	// 리뷰 페이지로 이동
-	@GetMapping("/review")
+	@GetMapping("/review/{name}")
 	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page,
 							   @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx,
-							   @RequestParam(value = "res_name", defaultValue = "강릉감자옹심 강릉본점")String res_name) {
+							   @PathVariable String name) {
 		ModelAndView mav = new ModelAndView("review/review");
 		
 		Map<String, Object> result = rvs.getReview(page,res_idx);
@@ -37,6 +37,7 @@ public class ReviewController {
 		mav.addObject("list", result.get("list"));
 		mav.addObject("p", result.get("p"));
 		mav.addObject("img_list", dao.selectImg(res_idx));
+		mav.addObject("name", name);
 		
 		return mav;
 	}
@@ -55,13 +56,16 @@ public class ReviewController {
 		model.addAttribute("list", rvs.imgCollection(res_idx));
 	}
 	
-	@GetMapping("/review_write")
-	public void write() {}
+	@GetMapping("/review_write/{name}")
+	public String write(@PathVariable String name) {
+		return "review/review_write";
+	}
 	
-	@PostMapping("/review_write")
+	@PostMapping("/review_write/{name}")
 	public ModelAndView write(ReviewVO input,String score,
-							  @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx) throws Exception {
-		ModelAndView mav = new ModelAndView("redirect:/review/review?res_idx=" + res_idx);
+							  @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx,
+							  @PathVariable String name) throws Exception {
+		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}?res_idx=" + res_idx) {};
 		
 		if (score == null) {
 			score = "0";

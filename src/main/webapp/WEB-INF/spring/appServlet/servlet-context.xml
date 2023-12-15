@@ -32,6 +32,15 @@
 	
 	<context:component-scan base-package="com.itbank.controller" />
 	
-	
+	<interceptors>
+		<interceptor>
+			<mapping path="/myPage/**"/>			
+			<beans:bean id="login" class="com.itbank.interceptor.LoginInterceptor" />
+		</interceptor>
+		<interceptor>
+			<mapping path="/review/review_write/**"/>
+			<beans:bean id="review_write" class="com.itbank.interceptor.LoginInterceptor" />
+		</interceptor>
+	</interceptors>
 	
 </beans:beans>

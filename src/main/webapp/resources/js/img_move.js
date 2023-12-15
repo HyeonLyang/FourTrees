@@ -1,9 +1,8 @@
 let left = document.querySelectorAll('.left')[0];
 let right = document.querySelectorAll('.right')[0];
 let img = document.querySelectorAll('.food_img')[0];
-let count = document.querySelectorAll('.food_img')[0].childElementCount;
 
-	if (count > 5) {		
+	if (img.childElementCount > 5) {		
 		left.onclick = () => {		
 			img.animate(
 					{			

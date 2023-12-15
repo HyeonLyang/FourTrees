@@ -33,6 +33,7 @@ public class RestaurantVO {
 	    private String rom_address;
 	    private String rom_name;
 		private String area_name;
+		private String category_name;
 	    	    
 		private int page;
 
@@ -196,4 +197,11 @@ public class RestaurantVO {
 		this.area_name = area_name;
 	}
 
+	public String getCategory_name() {
+		return category_name;
+	}
+
+	public void setCategory_name(String category_name) {
+		this.category_name = category_name;
+	}	
 }
