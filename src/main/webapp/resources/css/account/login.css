@@ -68,3 +68,29 @@
 	position: absolute;
 	transform: translate(-140%, 45%);
 }
+
+/* account/find.jsp */
+.accFind {
+	
+}
+.find_header {
+	background-color: #ff7f50;
+	margin-top: 5px;
+}
+.find {		
+	display: flex;    
+    padding: 20px;    
+    width: 50%;
+    margin: 0 auto;
+}
+.find p {
+	margin: 0 50px;
+}
+.find_main {
+	background-color: gold;
+	margin: 0 auto;
+    width: 44%;
+}
+.find_main p{
+	border-bottom: 1px solid black;
+}

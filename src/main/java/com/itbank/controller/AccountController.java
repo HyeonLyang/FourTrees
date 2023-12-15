@@ -54,4 +54,7 @@ public class AccountController {
 		
 		return mav;
 	}
+	
+	@GetMapping("/find") 
+	public void find() {}
 }

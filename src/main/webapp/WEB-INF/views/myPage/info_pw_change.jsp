@@ -26,13 +26,7 @@
 		<h3>비밀번호 변경</h3>
 	
 		<div class="user_info">
-			<table class="board">
-				<tr>
-					<th>현재 비밀번호</th>
-					<td><input name="pw" type="password" value="${user.userpw }" 
-						style="background-color: #d7d7d7;" readonly></td>										
-				</tr>
-				
+			<table class="board">				
 				<tr>
 					<th>새 비밀번호</th>					
 					<td>
