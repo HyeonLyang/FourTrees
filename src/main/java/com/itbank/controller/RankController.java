@@ -60,6 +60,7 @@ public class RankController {
 		
 		model.addAttribute("rank", rank_list);
 		model.addAttribute("res_list", rs.getCateRank(idx));		
+		model.addAttribute("cate_list", rs.getCateList());
 		
 		return "rank/rank_categoryAJ";
 	}

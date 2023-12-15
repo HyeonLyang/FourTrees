@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Select;
 
+import com.itbank.model.vo.CategoryVO;
 import com.itbank.model.vo.RestaurantVO;
 
 public interface RankDAO {
@@ -28,8 +29,10 @@ public interface RankDAO {
 
 	@Select("select * from restaurant where address like '%제주%' order by score fetch first 10 rows only")
 	List<RestaurantVO> selectJejuRank();
+	
+	@Select("select * from category order by idx")
+	List<CategoryVO> selectCateAll();
 
-	@Select("select * from restaurant where category = #{idx} order by score fetch first 10 rows only")
 	List<RestaurantVO> selectCateRank(int idx);
 
 }
