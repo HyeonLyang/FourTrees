@@ -21,8 +21,11 @@
 		</fieldset>
 		<div class="find_info">
 			<p>
-				<a href="${cpath }/account/find">
-					아이디 찾기 | 비밀번호 찾기
+				<a href="${cpath }/account/findID">
+					아이디 찾기 |
+				</a>
+				<a href="${cpath }/account/findPW">		
+					비밀번호 찾기			
 				</a>				
 			</p>											
 		</div>
