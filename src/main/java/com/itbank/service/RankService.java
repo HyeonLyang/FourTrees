@@ -50,4 +50,8 @@ public class RankService {
 		return dao.selectCateAll();
 	}
 
+	public List<RestaurantVO> getAllCateRank(int idx) {
+		return dao.selectAllCateRank(idx);
+	}
+
 }

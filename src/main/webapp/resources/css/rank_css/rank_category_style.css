@@ -4,6 +4,16 @@
 	width: 1000px;
 	text-align: center;
 }
+.rank_category_btns{
+	display: flex;
+	margin: 10px;
+}
+.rank_category_btns p{
+	border: solid #FFDACC 1px;
+	padding: 9px;
+	margin: 10px;
+	border-radius: 20px;
+}
 .rank_category_title{
 	margin: 0;
 	padding-bottom: 15px;
@@ -46,8 +56,8 @@
 }
 .rank_category_medal{
 	position: absolute;
-	top: -3px;
-	left: -10px;
+	top: -64px;
+	left: 0px;
 	z-index: 100;
 }
 .rank_category_topRes{

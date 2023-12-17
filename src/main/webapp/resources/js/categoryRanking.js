@@ -9,7 +9,7 @@ function ranking(reqCate) {
 			let result = document.querySelectorAll('.rank_category_board')[0];
 			result.innerHTML = '';
 			
-			for (var res in res_list) {
+			for (let i = 0; i < 10; i++) {
 				let li = document.createElement('li');
 				log.console(res.name)
 				

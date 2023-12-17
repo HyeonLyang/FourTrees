@@ -1,7 +1,9 @@
 package com.itbank.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,6 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.itbank.model.vo.CategoryVO;
+import com.itbank.model.vo.RestaurantVO;
 import com.itbank.service.RankService;
 
 @Controller
@@ -38,14 +42,21 @@ public class RankController {
 	@GetMapping("/rank_category")
 	public String rank_category(Model model) {
 		List<Integer> rank_list = new ArrayList<>();
-		
-		for(int i = 1; i <= 10; i++) {
+		List<RestaurantVO> res_list = new ArrayList<>();
+		Map<String, Object> map = new HashMap<String, Object>();
+		for(int i = 1; i <= 5; i++) {
 			rank_list.add(i);
+		}
+		List<CategoryVO> cate_list = rs.getCateList();
+		
+		for(CategoryVO cate : cate_list) {
+			res_list = rs.getAllCateRank(cate.getIdx());
+			model.addAttribute("rank" + cate_list.indexOf(cate), res_list);
+			System.out.println(cate.getName());
 		}
 		
 		model.addAttribute("rank", rank_list);
-		model.addAttribute("res_list1", rs.getCateRank1());		// 카테고리 랭크 위쪽
-		model.addAttribute("res_list2", rs.getCateRank2());		// 카테고리 랭크 아래쪽
+		model.addAttribute("cate_list", cate_list);
 		
 		return "rank/rank_category";
 	}

@@ -35,4 +35,6 @@ public interface RankDAO {
 
 	List<RestaurantVO> selectCateRank(int idx);
 
+	List<RestaurantVO> selectAllCateRank(int idx);
+
 }
