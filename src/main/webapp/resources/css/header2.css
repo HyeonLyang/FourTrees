@@ -58,6 +58,58 @@ a {
 	align-items: center;
 	width: 80%
 } 
+.sc_con {
+	width: 50px;
+	overflow: hidden;
+	transition: width 0.5s;
+	display: flex;
+	align-items: center;
+}
+.sc_input form {
+	width: 500px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	gap:3px;
+	border-radius: 3px;
+    
+}
+.sc_input select {
+	font-size: 12px;
+	width: 60px;
+	border-radius: 10px;
+}
+.sc_input input {
+	width: 160px;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #ff7518;
+	font-size: 12px;
+	padding: 5px;
+}
+.sc_input button {
+    opacity: 80%;
+	border-radius: 3px;
+	border: 3px solid white;
+	background-color: #ff8339;
+    cursor: pointer;
+    font-weight: bold;
+	border-radius: 10px;
+	color: white;
+}
+.header2_search {
+	width: 100px;
+	height: 55px;
+	box-sizing: border-box;
+}
+.header2_search img {
+	width: 55px;
+	height: 55px;
+}
+.header2_search img:hover {
+	background-color: #ffff8d;
+}
 .language-container {
 	width: 55px;
 	height: 55px;
@@ -70,9 +122,9 @@ a {
 	cursor: pointer;
     
 }
-.language li:hover {
+.language-container img:hover {
 	border-radius: 50%;
-	background-color: #ffff8d;
+	border: 5px solid #ffff8d;
 }
 .language li {
 	box-sizing: border-box;
@@ -81,6 +133,7 @@ a {
 	width: 55px;
 	height: 55px;
 }
+
 .language {
     display:flex;
 	flex-direction: row;
@@ -90,10 +143,6 @@ a {
 	padding: 0;
 	box-sizing: border-box;
 	height: 50px;
-}
-.language img {
-	width: 45px;
-	height: 45px;
 }
 
 .logo img {
@@ -106,21 +155,18 @@ a {
 	flex-direction: row;
 	gap: 20px;
 	box-sizing: border-box;
-	padding-top: 10px;
-	padding-right: 50px;
 }
 
 /* header.jsp의 메뉴아이콘 */
-.menu > img {
+.menu img {
 	width: 50px;
 	height: 50px;
-	border-radius: 5px;
+	border-radius: 50%;
 	box-sizing: border-box;
 }
 .menu img:hover {
 	cursor: pointer;
 }
-
 .menu_container {
 	width: 50px;
 	height: 50px;
@@ -181,11 +227,6 @@ a {
 /* 공백용 css*/
 .blank {
 	height: 50px;
-}
-
-/* header 색상변화(800px 아래로 스크롤하면 색상 바뀜) */
-header.scrolled, .header.scrolled {
-	background-color: #bd8f4d;	/* 색상 변경해주세요 */
 }
 
 /* 위로가기 버튼의 css */

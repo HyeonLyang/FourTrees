@@ -17,38 +17,45 @@ package com.itbank.model.vo;
 		
 */
 public class RestaurantVO {
-	  	private int idx;                	
-	    private String name;            
-	    private String address;         
-	    private String res_phone;       
-	    private String category;    
-	    private double score;       
-	    private String photo;        
-	    private String holiday;   		
-	    private String op_hour;    
-	    private int park_area;      
-	    private int view_count;    
-	    private String price;      
-	    private String link;     
-	    private String rom_address;
-	    private String rom_name;
-		private String area_name;
-	    	    
-		private int page;
+	private int idx;
+	private String name;
+	private String address;
+	private String res_phone;
+	private String category;
+	private double score;
+	private String photo;
+	private String holiday;
+	private String op_hour;
+	private int park_area;
+	private int view_count;
+	private String price;
+	private String link;
+	private String rom_address;
+	private String rom_name;
+	private String area_name;
 
+	private int page;
+	private String cate_name;
 
+	public String getCate_name() {
+		return cate_name;
+	}
 
-		public int getPage() {
-			return page;
-		}
+	public void setCate_name(String cate_name) {
+		this.cate_name = cate_name;
+	}
 
-		public void setPage(int page) {
-			this.page = page;
-		}
+	public int getPage() {
+		return page;
+	}
 
-	    public String getRom_name() {
-			return rom_name;
-		}
+	public void setPage(int page) {
+		this.page = page;
+	}
+
+	public String getRom_name() {
+		return rom_name;
+	}
 
 	public void setRom_name(String rom_name) {
 		this.rom_name = rom_name;

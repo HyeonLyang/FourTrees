@@ -20,6 +20,32 @@
 				</div>
 				<!-- 메뉴-검색창 -->
 				<div class="menu">
+					<div class="sc_con">
+						<div class="header2_search" onclick="scOpen()" onmouseleave="scClose()">
+							<img class="sc2" onclick="toggleSearch()" src="${cpath }/resources/img/header/Search2.png">
+							<script>
+					            var sc_con = document.getElementsByClassName("sc_con")[0];
+					            var isOpen = false;
+	
+					            function toggleSearch() {
+					                isOpen = !isOpen;
+					                sc_con.style.width = isOpen ? "350px" : "50px";
+					            }
+							</script>
+						</div>
+						<!-- 검색창 -->
+						<div class="sc_input">
+							<form action="${cpath }/search/sc_detail" method="get">
+							
+							    	<select id="type">
+										<option value="address">지역</option>
+										<option value="category">카테고리</option>
+									</select>
+							        <input id="submit_type" name="address" placeholder="위치나 카테고리를 입력하세요.">
+							        <button>검색</button>
+							</form>
+						</div>
+					</div>
 					<!-- 번역아이콘 -->
 					<div class="language-container">
 						<ul class="language">

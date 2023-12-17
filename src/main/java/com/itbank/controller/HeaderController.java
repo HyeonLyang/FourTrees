@@ -1,6 +1,7 @@
 package com.itbank.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,19 +18,21 @@ import com.itbank.service.SearchService;
 public class HeaderController {
 	@Autowired private SearchService ss;
 
-    
-	 @GetMapping("/search")
-	    public ModelAndView search(@RequestParam(name = "search", required = false) String search) {
-	        ModelAndView mav = new ModelAndView();
-
-	        if (search != null && !search.isEmpty()) {
-	            List<RestaurantVO> list = ss.searchHeader(search);
-	            mav.addObject("list", list);
-	        } else {
-	            // 검색어가 없을 때의 예외 처리 또는 기본 동작 추가
-	        }
-
-	        mav.setViewName("search/sc_detail");
-	        return mav;
-	    }
+		// 리뷰 페이지로 이동
+		@GetMapping("/search")
+		public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page,
+				@RequestParam(value = "address", required = false) String address,
+				@RequestParam(value = "category", required = false) String category
+				) {
+			ModelAndView mav = new ModelAndView("search/sc_detail");
+			
+			Map<String, Object> result = ss.getSearch(page, address, category);
+			
+			mav.addObject("list", result.get("list"));
+			mav.addObject("p", result.get("p"));
+			
+			return mav;
+		}
+	 
+	 
 }

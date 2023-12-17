@@ -10,16 +10,12 @@ import com.itbank.model.vo.RestaurantVO;
 import com.itbank.model.vo.ReviewVO;
 
 public interface SearchDAO {
-//
-//	List<RestaurantVO> searchAll(@Param("address") String address, @Param("category") String category);
 
-	List<RestaurantVO> searchHeader(@Param("search") String search);
-
+	List<RestaurantVO> selectAll(Paging p);
 	
-	// select count(*) from abc where search like '%word%';
+	// select count(*) from abc;
 	int getTotalSearch();
 
-	List<ReviewVO> selectAll(Paging p);
-
+	int getTotalSearchParam(@Param("address") String address, @Param("category") String category);
 	
 }

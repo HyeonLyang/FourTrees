@@ -1,232 +1,98 @@
 @charset "UTF-8";
-#support {
-	min-height: 800px;
-}
-.sup_test {
-	margin: 20px auto;
-}
-.sup_test table {
+.art {
+	width: 1000px;
 	margin: 0 auto;
-	width: 100%;
-	border-collapse: collapse;
 }
-.sup_test td,.sup_test th {
-	border: 1px solid; 
+.headline {
+	width: 1000px;
 }
 .sup_main {
 	width: 1000px;
-	height: 200px;
-	margin: 10px auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-family: "맑은고딕";
-	font-weight: bold;
-	padding-top: 50px;
-}
-
-#sup_title {
-	font-size: 150%;
+	border: 1px solid;
+	border-radius: 15px;
+	background-color: #fda172;
+	box-shadow: 1px 1px 1px 1px black;
+	margin: 20px auto;
 	text-align: center;
-	font-family: "HY견고딕";
+	box-sizing: border-box;
+	font-weight: bolder;
 }
-
-.sup_main ul {
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
+.sup_tag a:hover {
+	color: white;
+}
+.sup_tag ul {
 	padding: 0;
+	margin: 0;
 	list-style: none;
 }
-.sup_main li {
-	cursor: pointer;
-	padding: 5px 10px;
+.sup_tag li {
+	font-size: 16px;
 }
-
-.sup_main li:hover {
-	border-bottom: 1px solid black;
+.sup_title {
+	margin-bottom: 50px;
 }
-
-
-/* notice.jsp */
-
-.notice_con {
-	box-sizing: border-box;
-	width: 100%;
+.sup_title a{
+	font-size: 24px;
+	font-weight: bold;
+}
+.sup_title a:hover {
+	color: white;
+}
+/* support - notice.jsp */
+.notice {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid;
+	border-radius: 15px;
+	background-color: #fda172;
+	text-align: center;
+	box-shadow: 1px 1px 1px 1px black;
+	padding: 20px;
+	padding-bottom: 50px;
+}
+.notice img {
+	width: 50px;
 	height: 50px;
-	overflow: hidden;
-}
-.notice tr:nth-child(1):hover {
-	background-color: #e0ffff30;
-}
-.notice_con:hover {
-	overflow: visible;
 }
 .notice table {
-	margin: 0 auto;
 	width: 800px;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
 	border-collapse: collapse;
-	box-sizing: border-box;
-}
-.notice tr {
-	padding: 5px 15px;
-	box-sizing: border-box;
-	height: 50px;
-	
-}
-.notice tr:nth-child(1) {
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
-	height: 48px;
-	box-sizing: border-box;
-}
-#notice_idx {
-	width: 70px;
-	text-align: center;
-}
-
-#notice_face {
-	widows: 50px;
-	height: 50px;
-	border-radius: 50%;
-}
-
-.notice textarea {
-	border: none;
-	resize: none;
-	width: 800px;
-	height: 200px;
-	padding: 20px;
-	box-sizing: border-box;
-}
-#notice_btns {
-	width: 70%;
-}
-
-/* QNA.jsp */
-.qna fieldset {
-	margin: 0 auto;
-	box-sizing: border-box;
-	border: 30px solid #ffffe0;
-}
-.qna table {
-	margin: 50px auto;
-	border-collapse: collapse;
-}
-.qna th, .qna td {
-	padding: 10px 15px;
-	text-align: left;
-	font-size: 120%;
-}
-.qna input {
-	width: 600px;
-	height: 30px;
-	box-sizing: border-box;
-	border-radius: 5px;
-	border: 1px solid #c0c0c0;
-	padding: 10px;
-}
-#qna_contents{
-	width: 600px;
-	height: 300px;
-	padding: 10px;
-	box-sizing: border-box;
-	resize: none;
-	border: 1px solid #c0c0c0;
-	border-radius: 5px;
-}
-.qna_button {
-	width: 200px;
-	margin: 0 auto;
-}
-.qna_button button {
-	border: 1px solid #ffffff00;
-	width: 200px;
-	border-radius: 20px;
-	height: 50px;
-	background-color: #ffff8d;
-	font-size: 120%;
-	color: black;
-}
-.qna_button button:hover {
-	cursor: pointer;
-	border: 3px solid black;
-}
-.qna .file_label {
- 	border: 1px solid #c0c0c0;
-	width: 100px;
+	margin: 20px auto;
 	border-radius: 15px;
-	height: 30px;
-	font-size: 80%;
-	text-align: center;
-	padding-top: 7px;
+}
+.notice_con {
+	width:900px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: white;
+	box-shadow: inset 1px 1px 1px 1px black;
+}
+.notice th {
+	border-bottom: 1px solid;
+}
+.notice td {
+	border-bottom: 1px solid black;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.btn {
+	width: 900px;
+	font-size: 16px;
+	text-align: right;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.btn button {
+	height: 24px;
+	background-color: blue;
+	color: white;
 	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }
-.qna .file_label:hover {
-	border: 2px solid black;
-	width: 98px;
-	height: 28px;
-}
-.qna .input {
-	display: flex;
-	flex-direction: column;
-}
-#file_input {
-	display: none;
-}
-
-.frame3{
-	width: 700px;
-	height: 330px;
-	position: absolute;
-	left: 458px;
-	top: 155px;
-	z-index: -1;
-}
-
-.sqare1 {
-	width: 50%;
-	height: 30%;
-	margin: 10px auto;
-	border: 5px double #bd8f4d;
-	position: fixed;
-	opacity: 80%;
-	display: block;
-	left: 50%;
-	top: 150px;
-    padding: 25px 0;
-    transform: translate(-50%, 0%);
-    z-index: -1;
-}
-
-.sqare2 {
-	width: 70%;
-	height: 70%;
-	margin: 10px auto;
-	border: 5px double #bd8f4d;
-	position: absolute;
-	opacity: 80%;
-	display: block;
-	left: 50%;
-	top: 150px;
-    padding: 25px 0;
-    transform: translate(-50%, 0%);
-    z-index: -1;
-}
-
-.sqare3 {
-	width: 70%;
-	height: 109%;
-	margin: 10px auto;
-	border: 5px double #bd8f4d;
-	position: absolute;
-	opacity: 80%;
-	display: block;
-	left: 50%;
-	top: 150px;
-    padding: 25px 0;
-    transform: translate(-50%, 0%);
-    z-index: -1;
+.notice_paging ul{
+	list-style: none;
+	padding: 0;
 }

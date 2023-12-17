@@ -44,12 +44,27 @@
                 <div><!-- 빈칸 space betweend 용 --></div>
                 <div class="menu">
                 	<!-- 메뉴-검색창 -->
-					<form action="${cpath }/header/search" method="get">
+					<form action="${cpath }/search/sc_detail" method="get">
+					
 					    <div class="search">
-					        <input name="search" placeholder="위치나 카테고리를 입력하세요.">
+					    	<select id="type">
+								<option value="address">지역</option>
+								<option value="category">카테고리</option>
+							</select>
+					        <input id="submit_type" name="address" placeholder="위치나 카테고리를 입력하세요.">
 					        <button>검색</button>
 					    </div>
 					</form>
+					<script>
+					    // 옵션 변경 시 이벤트 리스너 추가
+					    document.getElementById("type").addEventListener("change", function () {
+					        var type = this.value; // 선택된 옵션의 값
+					
+					        // input의 name 동적으로 변경
+					        document.getElementById("submit_type").setAttribute("name", type);
+					    });
+					</script>
+					
             		<!-- 번역아이콘 -->
                     <div class="language-container">
                         <ul class="language">

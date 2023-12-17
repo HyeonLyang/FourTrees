@@ -10,7 +10,9 @@ public class Paging {
 	private int section, begin, end;
 	private boolean prev, next;
 	
-	private String address, category;
+	private String address = "";
+	private String category = "";
+
 	
 	public String getAddress() {
 		return address;
@@ -31,7 +33,7 @@ public class Paging {
 		this.category = category;
 	}
 
-
+	public Paging() {}
 	public Paging(int reqPage, int totalRestaurant) {
 		this.reqPage = reqPage;
 		this.totalRestaurant = totalRestaurant;
@@ -72,7 +74,7 @@ public class Paging {
 		this.totalRestaurant = totalRestaurant;
 		this.address = address;
 		this.category = category;
-		
+		perCount = 5;
 		offset = (reqPage - 1) * perCount;
 		totalPage = totalRestaurant / perCount;
 		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;

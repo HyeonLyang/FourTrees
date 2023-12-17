@@ -7,15 +7,21 @@
 <section class="sc_detail">
 	<article class="de_left">
 	<div class="de_option">
+		<% 
+			String category = request.getParameter("category"); 
+			if (category==null) {
+				category = "";
+			} 
+			String address = request.getParameter("address"); 
+			if (address==null) {
+				address = "";
+			}
+		%>
+
 		<table>
 			<tr>
 				<td>지역, 장소</td>
-				<% 
-					String address = request.getParameter("address"); 
-					if (address==null) {
-						address = "";
-					}
-				%>
+
 				<td>
 					<input name="address" value="<%=address %>" placeholder="지역, 장소 검색">
 				</td>
@@ -23,12 +29,7 @@
 			</tr>
 			<tr>
 				<td>장르</td>
-				<% 
-					String category = request.getParameter("category"); 
-					if (category==null) {
-						category = "";
-					} 
-				%>
+
 				<td>
 					<input name="category" value="<%=category %>" placeholder="백반,죽,국수">
 				</td>
@@ -54,7 +55,9 @@
 			    </td>
 			</tr>
 			<tr class="sc_result">
-				<td colspan="3">( 검색어 : <%=address %>, <%=category %> / 검색 결과 : #건)</td>
+				<td colspan="3">검색어 | 지역 - ${add } | 카테고리 - ${cate } | 총 검색 맛집 : (${tt } 건) 
+				
+				</td>
 			</tr>
 				
 		</table>
@@ -72,7 +75,7 @@
 						</c:otherwise>
 					</c:choose>
 					<td>
-						<p><a href="${cpath }/restaurant/res_detail/${row.idx}">${row.name }</a>　${row.category }</p>
+						<p><a href="${cpath }/restaurant/res_detail/${row.idx}">${row.name }</a>　${row.cate_name }</p>
 						<p><hr></p>
 						<p>별점 ${row.score }</p>
 						<p>가격대  ${row.price }</p>
@@ -83,23 +86,27 @@
 			</c:forEach>
 		</table>
 	</div>
-
-	<div class="sc_paging">
-		<ul>
-			<c:if test="${p.prev }">			
-				<li><a href="${cpath }/search/sc_detail?address=<%=address %>&category=<%=category %>&page=${p.begin - 1 }">이전</a></li>
-			</c:if>
-				
-			<c:forEach var="i" begin="${p.begin }" end="${p.end }">
-				<li><a href="${cpath }/search/sc_detail?address=<%=address %>&category=<%=category %>&page=${i }">${i }</a></li>
-			</c:forEach>
-				
-			<c:if test="${p.next }">			
-				<li><a href="${cpath }/search/sc_detail?address=<%=address %>&category=<%=category %>&page=${p.end + 1 }">다음</a></li>
-			</c:if>
-		</ul>
+	<div class="sc_pagingBack">
+		<div class="sc_paging">
+			<ul>
+				<c:set var="scPath" value="${cpath }/search/sc_detail?address=${add }&category=${cate }"></c:set>
+				<li><a href="${scPath }&page=1">처음</a></li>
+				<c:if test="${p.prev }">			
+					<li><a href="${scPath }&page=${p.begin - 1 }">이전</a></li>
+				</c:if>
+					
+				<c:forEach var="i" begin="${p.begin }" end="${p.end }">
+					<li><a href="${scPath }&page=${i }">${i }</a></li>
+				</c:forEach>
+					
+				<c:if test="${p.next }">			
+					<li><a href="${scPath }&page=${p.end + 1 }">다음</a></li>
+				</c:if>
+				<li><a href="${scPath }&page=${p.totalPage }">끝</a></li>
+			</ul>
+		</div>
+		<div class="sc_page"> ${rq } page/${p.totalPage } page</div>
 	</div>
-	
 	</article>
 	
 	<article class="de_right">
@@ -161,17 +168,14 @@
     function search() {
         var address = document.getElementsByName('address')[0].value;
         var category = document.getElementsByName('category')[0].value;
-        var page = document.getElementsByName('page')[0].value;
         
         var url = "${cpath}/search/sc_detail?";
         
         if (address) {
-            url += "page=" + encodeURIComponent(page)+ "&";
             url += "address=" + encodeURIComponent(address) + "&";
         }
         
         if (category) {
-            url +=  "page=" + encodeURIComponent(page)+ "&";
             url += "category=" + encodeURIComponent(category);
         }
         window.location.href = url;
