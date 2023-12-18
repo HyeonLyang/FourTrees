@@ -1,6 +1,7 @@
 package com.itbank.service;
 
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -46,6 +47,10 @@ public class AccountService {
 	public int NewPW(AccountVo input, int etc) throws NoSuchAlgorithmException {	
 		input.setUserpw(hash.getHash(input.getUserpw()));
 		return dao.updateUserpw(input);		
+	}
+
+	public List<AccountVo> viewAccount() {		
+		return dao.selectAll();
 	}
 	
 }

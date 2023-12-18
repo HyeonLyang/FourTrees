@@ -97,6 +97,9 @@
 .pro_img h4 {
 	color: grey;
 }
+.profile_modify {
+	display: inline;
+}
 .profile_modify img {
 	margin: 15px 0 0;
 }
@@ -216,6 +219,28 @@
 	margin: 10px 0;
 }
 .delete_caution ol li h5{
-	color: #d7d7d7;
-	
+	color: #d7d7d7;	
+}
+
+/* 관리자 권한으로 연 회원 관리 테이블  */
+.boards {
+	border-collapse: collapse;
+}
+.boards th, td {
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+
+/* img 변경 페이지 */
+.myPage_img {
+	width: 70%;
+	margin: 0 auto;
+}
+.board_img {
+	border-collapse: collapse;
+	margin-top: 100px;
+}
+.board_img th, td {
+	border: 1px solid black;
+	padding: 5px 10px;
 }

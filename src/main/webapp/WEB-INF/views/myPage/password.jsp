@@ -1,18 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header2.jsp" %>    
-<link rel="stylesheet" href="${cpath }/resources/css/account/myPage.css">		
-<!-- 마이페이지 css 폴더로 보냈습니다 -->
-<section class="myPage_art">
-
-	<div class="profile">
-		<div class="pro_img">
-			<img src="${cpath }/resources/img/review/기본 프로필.jpg">
-			<div class="nick">			
-				<h3>${user.nick }</h3>
-				<h4>${user.nick }님 환영합니다</h4>
-			</div>
-		</div>		
+<%@ include file="myPage_main.jsp" %>		
 		<div class="profile_modify">
 			<a href="${cpath }/myPage/password">			
 				<img src="${cpath }/resources/img/review/review_write.png" 

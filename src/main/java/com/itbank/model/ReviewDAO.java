@@ -3,6 +3,7 @@ package com.itbank.model;
 import java.util.List;
 
 import com.itbank.components.Paging;
+import com.itbank.model.vo.AccountVo;
 import com.itbank.model.vo.ReviewVO;
 
 public interface ReviewDAO {
@@ -22,6 +23,8 @@ public interface ReviewDAO {
 	List<ReviewVO> imgCollect(int res_idx);
 
 	List<Double> getResScores(int idx);
+
+	List<ReviewVO> nickReview(AccountVo nick);
 
 	
 }

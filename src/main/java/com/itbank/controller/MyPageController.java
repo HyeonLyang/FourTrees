@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.itbank.components.SHA512;
 import com.itbank.model.vo.AccountVo;
 import com.itbank.service.AccountService;
+import com.itbank.service.ReviewService;
 
 @Controller
 @RequestMapping("/myPage")
@@ -22,6 +24,7 @@ public class MyPageController {
 	
 	@Autowired private AccountService as;
 	@Autowired private SHA512 hash;
+	@Autowired private ReviewService rvs;
 	
 	// 내 정보로 들어가기
 	@GetMapping("/password")
@@ -94,6 +97,22 @@ public class MyPageController {
 	@GetMapping("/bookmark")
 	public void bookmark() {}
 	
+	// 댓글 테이블 출력
 	@GetMapping("/myReply")
-	public void reply() {}
+	public void reply(Model model,HttpSession session) {
+		AccountVo nick = (AccountVo) session.getAttribute("user");
+		model.addAttribute("list", rvs.nickReview(nick));
+	}
+	
+	// 관리자 전용 회원 관리 페이지
+	@GetMapping("/admin")
+	public void admin(Model model) {
+		model.addAttribute("list", as.viewAccount());
+	}
+	
+	// 프로필 사진 변경하기
+	@GetMapping("/img_change")
+	public void img_change() {
+		
+	}
 }

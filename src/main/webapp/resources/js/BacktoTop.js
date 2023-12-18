@@ -26,3 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
 function back(cpath) {
 	location.href = cpath + '/myPage/bookmark';
 }
+/* 삭제할 시 한번 더 묻기 */
+function isDelete(idx, cpath, dd) {
+	let del = confirm(dd + ' 하시겠습니까?');
+	
+	if (del) {
+		location.href = cpath + '/myPage/delete/' + idx;
+	}
+}
+function isAdmin() {
+	alert('이건 관리자 계정이라서 삭제가 불가능합니다')
+}
