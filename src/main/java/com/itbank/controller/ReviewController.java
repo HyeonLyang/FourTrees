@@ -67,9 +67,6 @@ public class ReviewController {
 							  @PathVariable String name) throws Exception {
 		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}?res_idx=" + res_idx) {};
 		
-		if (score == null) {
-			score = "0";
-		}
 		double num = Double.parseDouble(score);
 		
 		input.setScore(num);

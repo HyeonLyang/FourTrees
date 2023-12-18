@@ -28,8 +28,8 @@
 		
 		<form method="post" class="pw_search">
 			<div class="input_name">			
-				<label>이름</label>
-				<input name="name" required>
+				<label>아이디</label>
+				<input name="userid" required>
 			</div>
 			<div class="input_email">			
 				<label>이메일</label>

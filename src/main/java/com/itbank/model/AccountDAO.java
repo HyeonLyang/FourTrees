@@ -35,4 +35,16 @@ public interface AccountDAO {
 			+ "where userid = #{userid}")
 	int updatePW(AccountVo input);
 
+	@Select("select userid from account where email = #{email}")
+	String selectUserid(String email);
+
+	@Select("select * from account where userid = #{userid} and email = #{email}")
+	AccountVo selectUserpw(AccountVo input);
+
+	@Update("update account "
+				+ "set "
+				+ "userpw = #{userpw} "
+			+ "where userid = #{userid} and email = #{email}")
+	int updateUserpw(AccountVo input);
+
 }

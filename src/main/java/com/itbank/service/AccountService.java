@@ -1,8 +1,11 @@
 package com.itbank.service;
 
+import java.security.NoSuchAlgorithmException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.itbank.components.SHA512;
 import com.itbank.model.AccountDAO;
 import com.itbank.model.vo.AccountVo;
 
@@ -10,6 +13,7 @@ import com.itbank.model.vo.AccountVo;
 public class AccountService {
 
 	@Autowired private AccountDAO dao;
+	@Autowired private SHA512 hash;
 	
 	public AccountVo login(AccountVo input) {
 		return dao.selectOne(input);
@@ -29,6 +33,19 @@ public class AccountService {
 
 	public int updatePW(AccountVo input) {
 		return dao.updatePW(input);
+	}
+
+	public String findAccount(String email) {
+		return dao.selectUserid(email);
+	}
+
+	public AccountVo findPW(AccountVo input, int option) {				
+		return dao.selectUserpw(input);						
+	}
+
+	public int NewPW(AccountVo input, int etc) throws NoSuchAlgorithmException {	
+		input.setUserpw(hash.getHash(input.getUserpw()));
+		return dao.updateUserpw(input);		
 	}
 	
 }
