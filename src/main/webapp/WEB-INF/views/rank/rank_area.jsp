@@ -3,7 +3,7 @@
 <%@ include file="../header2.jsp" %>
 <link href="${cpath }/resources/css/rank_css/rank_area_de_style.css" rel="stylesheet">
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
-
+<c:set var="cate" value="${cate_list }"/>
 <section class="rank_detail">
 	
 	<section class="rank_detail_btns">
@@ -52,8 +52,13 @@
 		<ol class="rank_detail_board">
 		<c:forEach var="res" items="${res_busan }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
-				<a href="#" class="rank_detail_topRes">
+				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_detail_topRes">
+					<c:if test="${rank[status.index] < 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking${rank[status.index] }.png"></div>
+					</c:if>
+					<c:if test="${rank[status.index] >= 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking4.png"></div>
+					</c:if>
 					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
@@ -81,8 +86,13 @@
 		<ol class="rank_detail_board">
 		<c:forEach var="res" items="${res_kangwon }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
-				<a href="#" class="rank_detail_topRes">
+				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_detail_topRes">
+					<c:if test="${rank[status.index] < 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking${rank[status.index] }.png"></div>
+					</c:if>
+					<c:if test="${rank[status.index] >= 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking4.png"></div>
+					</c:if>
 					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>
@@ -110,8 +120,13 @@
 		<ol class="rank_detail_board">
 		<c:forEach var="res" items="${res_jeju }" varStatus="status">
 			<li class="rank_detail_res">
-				<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/medal${rank[status.index]}.png"></div>
-				<a href="#" class="rank_detail_topRes">
+				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_detail_topRes">
+					<c:if test="${rank[status.index] < 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking${rank[status.index] }.png"></div>
+					</c:if>
+					<c:if test="${rank[status.index] >= 4}">
+						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking4.png"></div>
+					</c:if>
 					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>

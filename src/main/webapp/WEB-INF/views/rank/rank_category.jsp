@@ -47,8 +47,8 @@
 				if(i < 3){
 					li.innerHTML = 
 						'<li class="rank_category_res">' +
-							'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking' + (i + 1) + '.png">' + '</div>' +
-							'<a href="#" class="rank_category_topRes">' +
+							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_category_topRes">' +
+								'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking' + (i + 1) + '.png">' + '</div>' +
 								'<p class="rank_category_block"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
@@ -63,8 +63,8 @@
 				}else{
 					li.innerHTML = 
 						'<li class="rank_category_res">' +
-							'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
-							'<a href="#" class="rank_category_topRes">' +
+							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_category_topRes">' +
+								'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
 								'<p class="rank_category_block"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +

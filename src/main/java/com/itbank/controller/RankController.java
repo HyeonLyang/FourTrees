@@ -36,6 +36,7 @@ public class RankController {
 		
 		model.addAttribute("rank", rank_list);
 		model.addAttribute("res_list", rs.getTotalRank());
+		model.addAttribute("cate_list", rs.getCateList());
 		
 		return "rank/rank_total";
 	}
@@ -44,7 +45,6 @@ public class RankController {
 	public String rank_category(Model model) {
 		List<Integer> rank_list = new ArrayList<>();
 		List<RestaurantVO> res_list = new ArrayList<>();
-		Map<String, Object> map = new HashMap<String, Object>();
 		for(int i = 1; i <= 5; i++) {
 			rank_list.add(i);
 		}
@@ -53,7 +53,6 @@ public class RankController {
 		for(CategoryVO cate : cate_list) {
 			res_list = rs.getAllCateRank(cate.getIdx());
 			model.addAttribute("rank" + cate_list.indexOf(cate), res_list);
-			System.out.println(cate.getName());
 		}
 		
 		model.addAttribute("rank", rank_list);
@@ -100,6 +99,7 @@ public class RankController {
 		model.addAttribute("res_busan", rs.getBusanRank());
 		model.addAttribute("res_kangwon", rs.getKangwonRank());
 		model.addAttribute("res_jeju", rs.getJejuRank());
+		model.addAttribute("cate_list", rs.getCateList());
 		
 		return "rank/rank_area";
 	}
