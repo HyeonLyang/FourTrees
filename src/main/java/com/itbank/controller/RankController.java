@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.itbank.model.vo.CategoryVO;
 import com.itbank.model.vo.RestaurantVO;
@@ -62,18 +63,28 @@ public class RankController {
 	}
 	
 	@GetMapping("/rank_categoryAJ")
-	public String rank_categoryAJ(Model model, int idx) {
+	public String rank_categoryAJ(Model model) {
 		List<Integer> rank_list = new ArrayList<>();
 		
 		for(int i = 1; i <= 10; i++) {
 			rank_list.add(i);
 		}
 		
-		model.addAttribute("rank", rank_list);
-		model.addAttribute("res_list", rs.getCateRank(idx));		
+		model.addAttribute("rank", rank_list);	
 		model.addAttribute("cate_list", rs.getCateList());
 		
 		return "rank/rank_categoryAJ";
+	}
+	
+	@ResponseBody
+	@GetMapping("/gRank")
+	public List<RestaurantVO> gRank(int idx) {
+		
+		List<RestaurantVO> result = rs.getCateRank(idx);
+		System.out.println(result.get(0));
+		System.out.println(result.get(0).getIdx());
+		
+		return result;
 	}
 	
 	@GetMapping("/rank_area")

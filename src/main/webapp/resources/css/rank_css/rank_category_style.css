@@ -7,12 +7,18 @@
 .rank_category_btns{
 	display: flex;
 	margin: 10px;
+	flex-wrap: wrap;
 }
-.rank_category_btns p{
+.rank_category_btns button{
 	border: solid #FFDACC 1px;
 	padding: 9px;
 	margin: 10px;
 	border-radius: 20px;
+	background-color: #FFDACC;
+}
+.rank_category_btns button:hover{
+	background-color: #FFA280;
+	cursor: pointer;
 }
 .rank_category_title{
 	margin: 0;

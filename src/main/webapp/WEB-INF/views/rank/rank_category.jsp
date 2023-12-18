@@ -4,462 +4,108 @@
 <link href="${cpath }/resources/css/rank_css/rank_category_style.css" rel="stylesheet">
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 	<!-- css 폴더안에 정리해주세요 -->
-<c:set var="category" value="${cate_list }"/>
+<c:set var="cate" value="${cate_list }"/>
+<c:set var="res_list" value="${res_list }"/>
+
 <section class="rank_category">
 
-		<section class="rank_category_btns">
-			<c:forEach var="cate" items="${category }">
-				<p class="rank_category_btn">${cate.name }</p>
-			</c:forEach>
-		</section>
+	<p class="rank_category_btns">
+		<c:forEach var="category" items="${cate_list }">
+			<button>${category.name }</button>
+		</c:forEach>
+	</p>
 	
-		<h1 class="rank_category_title">${category[0].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
+	<h1 class="rank_category_title">${cate[0].name } 맛집 TOP10</h1>
+	
+	<section class="rank_category_main">
 		
-		<h1 class="rank_category_title">${category[1].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
+		<ol class="rank_category_board">
 		
-		<h1 class="rank_category_title">${category[2].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[3].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[4].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[5].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[6].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[7].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[8].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[9].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[10].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[11].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
-		
-		<h1 class="rank_category_title">${category[12].name } TOP10</h1>
-		<section class="rank_category_main">
-			
-			<ol class="rank_category_board">
-			<c:forEach var="res" items="${rank0}" varStatus="res_status">
-				<li></li>
-				<li class="rank_category_res">
-					<c:choose>
-						<c:when test="${res_status.index < 4 }">
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking${res_status.index + 1}.png"></div>
-						</c:when>
-						<c:otherwise>
-							<div><img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png"></div>
-						</c:otherwise>
-					</c:choose>
-					<a href="#" class="rank_category_topRes">
-						<p class="rank_category_block"><!-- <img class="rank_category_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-						<p>${res.name }</p>
-						<p>${category[0].name }</p>	
-						<div class="rank_category_rating">
-							<div class="rank_category_rate_back">
-							<!-- db연결 후 width: 별점 -->
-					    		<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>
-					    	</div>
-							<b class="rank_category_score">${res.score }</b>
-						</div>
-					</a>
-				</li>
-			</c:forEach>
-			</ol>
-			<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${category[0].name } 맛집 찾으러 가기 →</p>
-		</section>
+		</ol>
+		<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${cate[0].name } 맛집 찾으러 가기 →</p>
+	</section>
 	
 </section>	
 
-<script>
+<script type="text/javascript">
 	
-	const btnArr = document.getElementsByClassName('rank_category_btn');
-	const areaArr = document.getElementsByClassName('rank_category_title');
+	function ranking(reqCate) { 
+		
+		fetch(url + '?idx=' + reqCate, { method: 'GET' })
+		.then(response => response.json())
+		.then(data => {
+			dt = data;
+			
+			console.log(dt);
+		
+			let result = document.querySelectorAll('.rank_category_board')[0];
+			result.innerHTML = '';
+			
+			for (let i = 0; i < 10; i++) {
+				let li = document.createElement('li');
+				
+				if(i < 3){
+					li.innerHTML = 
+						'<li class="rank_category_res">' +
+							'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking' + (i + 1) + '.png">' + '</div>' +
+							'<a href="#" class="rank_category_topRes">' +
+								'<p class="rank_category_block"></p>' +
+								'<p>' + data[i].name + '</p>' +
+								'<p>' + data[i].category + '</p>' +
+								'<div class="rank_category_rating">' +
+									'<div class="rank_category_rate_back">' +
+								    	`<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>` +
+								    '</div>' +
+									'<b class="rank_category_score">' + data[i].score + '</b>' +
+								'</div>' +
+							'</a>' +
+						'</li>';
+				}else{
+					li.innerHTML = 
+						'<li class="rank_category_res">' +
+							'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
+							'<a href="#" class="rank_category_topRes">' +
+								'<p class="rank_category_block"></p>' +
+								'<p>' + data[i].name + '</p>' +
+								'<p>' + data[i].category + '</p>' +
+								'<div class="rank_category_rating">' +
+									'<div class="rank_category_rate_back">' +
+								    	`<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>` +
+								    '</div>' +
+									'<b class="rank_category_score">' + data[i].score + '</b>' +
+								'</div>' +
+							'</a>' +
+						'</li>';
+				}
+				result.appendChild(li);
+			}
+		});
+	}
 	
-	for(let i = 0; i < btnArr.length; i++){
+	
+	let btns = document.querySelectorAll('.rank_category_btns > button');
+	let url = 'gRank';
+	var dt;
+	
+	
+	ranking(101);
+	
+	btns[0].onclick = () => ranking(101);
+	btns[1].onclick = () => ranking(102);
+	btns[2].onclick = () => ranking(103);
+	btns[3].onclick = () => ranking(104);
+	btns[4].onclick = () => ranking(105);
+	btns[5].onclick = () => ranking(106);
+	btns[6].onclick = () => ranking(107);
+	btns[7].onclick = () => ranking(108);
+	btns[8].onclick = () => ranking(109);
+	btns[9].onclick = () => ranking(110);
+	btns[10].onclick = () => ranking(111);
+	btns[11].onclick = () => ranking(112);
+	btns[12].onclick = () => ranking(113);
 
-		  btnArr[i].addEventListener('click',function(e){
-		    e.preventDefault();
-		    areaArr[i].scrollIntoView(true);
-		    behavior: 'smooth';
-		  });
+	
+</script>	
 
-		}
-	
-</script>
-	
 </body>
 </html>
