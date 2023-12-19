@@ -5,17 +5,18 @@
 	box-sizing: border-box;
 	text-align: center;
 	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 0;
 }
 .home_main {
 	width: 100%;
-	box-sizing: border-box;
+	height: 100%;
+	background-color: black;
+
 }
 .home_main > img {
 	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: translate(-50%, 0%);
 }
 
 .content {
@@ -24,7 +25,6 @@
 	margin: 0 auto;
     background-color: #e2e1dd;
     box-sizing: border-box;
-    
 	height: 100%;
 }
 
@@ -37,13 +37,15 @@
     height: inherit;
     text-align: left;
     overflow: hidden;
+    position: absolute;
+    transform: translate(0%, 100%);
+    
 }
 
 .content .left .left_in {
     box-sizing: border-box;
     display: table-cell;
     vertical-align: middle;
-    padding-bottom: 80px;
 }
 
 .content .left .left_in .left_in_box {
@@ -117,23 +119,6 @@
     cursor: pointer;
 }
 
-.left .left_in .button_box {
-	width: 500px;
-	height: 50px;
-    display: flex;
-    gap: 50px;
-}
-
-.left .left_in .button_box .button_left img {
-	width: 50px;
-	height: 50px;
-}
-
-.left .left_in .button_box .button_right img {
-	width: 225px;
-	height: 50px;
-}
-
 
 
 .content .right {
@@ -141,8 +126,15 @@
 /*     background: url(/img/crazy1.jpg); */
     float: left;
     width: 50%;
-    height: inherit;
+    height: 100%;
     overflow: hidden;
+    position: absolute;
+    transform: translate(100%, 100%);
+}
+
+.right > img {
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -152,8 +144,9 @@
     background: #efefef;
     width: 100%;
 /*     padding: 50px; */
-	height: 100%;
 	margin: 0;
+	position: absolute;
+    transform: translate(0%, 100%);
 }
 
 .category .inner {
@@ -296,4 +289,10 @@ header {
 /* header 색상변화(800px 아래로 스크롤하면 색상 바뀜) */
 header.scrolled, .header.scrolled {
 	background-color: #ff7518;	/* 색상 변경해주세요 */
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+    transform: translate(0%, 1520%);
 }
