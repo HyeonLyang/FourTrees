@@ -83,27 +83,36 @@
 	height: 350px;
 }
 /* 검색결과 페이징 */
+.sc_pagingBack {
+	background-color: #FAF4EB;
+}
 .sc_paging {
-	background-color: aqua;
-	height: 60px;
+	box-sizing: border-box;
 }
-.sc_paging p {
-	font-size: 16px;
-}
+
 .sc_paging ul {
 	padding: 0;
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	margin: auto 0;
 }
 .sc_paging li {
-	border: 1px solid;
 	padding: 5px 10px;
 	text-align: center;
-	font-size: 80%;
+	font-size: 12px;
 	vertical-align: middle;
-	margin: 3px;
-	height: 25px;
+	font-weight: bold;
+}
+.sc_paging li:hover {
+	border-bottom: 1px solid;
+	font-size: 14px;
+}
+.sc_page {
+	font-size: 12px;
+	text-align: right;
+	margin: 0;
 }
 /* 우측 영역, 지도 크기 */
 .de_right {

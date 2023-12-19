@@ -68,14 +68,6 @@
 	</div>
 	
 	<div class="ad_back">
-		<article>
-			<table class="sc_total">
-				<tr>
-					<td><span>###</span>건의 맛집</td>
-					<td><span>###</span>건의 리뷰</td>
-				</tr>
-			</table>
-		</article>
 		<div>
 			<ul class="sc_ad">
 				<li><img alt="" src="${imgPath }/광고1.png"></li>
