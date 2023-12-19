@@ -36,7 +36,7 @@
 			or category like '%' || #{category} || '%'
 		</if>
 		</where>
-
+	</select>
 
 	<select id="getTotalSearchParam" resultType="int">
 	    SELECT COUNT(*) FROM restaurant r
@@ -52,5 +52,5 @@
 	        </if>
 	    </where>
 	</select>
-
+	
 </mapper>
