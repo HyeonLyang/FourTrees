@@ -19,28 +19,21 @@ import com.itbank.model.vo.ReviewVO;
 public class SearchService {
 
 	@Autowired private SearchDAO dao;
-	
-//	public List<RestaurantVO> search(String address, String category) {
-//	    return dao.searchAll(address, category);
-//	}
-//
-	public List<RestaurantVO> searchHeader(String search) {
-		return dao.searchHeader(search);
-	}
-
 
 	public Map<String, Object> getSearch(int reqPage, String address, String category) {
-		Paging p = new Paging(reqPage, dao.getTotalSearch(), address, category);
+		Paging p = new Paging(reqPage, dao.getTotalSearchParam(address, category), address, category);
 
-		List<ReviewVO> list = dao.selectAll(p);
+		List<RestaurantVO> list = dao.selectAll(p);
 		
 		Map<String, Object> result = new HashMap<>();
 		
+		result.put("rq",reqPage);
+		result.put("tt",dao.getTotalSearchParam(address, category));
 		result.put("list", list);
 		result.put("p", p);
 		
 		return result;
 	}
-	
+
 
 }
