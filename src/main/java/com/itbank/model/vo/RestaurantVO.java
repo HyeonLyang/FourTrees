@@ -47,6 +47,10 @@ public class RestaurantVO {
 		this.cate_name = cate_name;
 	}
 
+	public int getPage() {
+		return page;
+	}		
+
 	public void setPage(int page) {
 		this.page = page;
 	}
