@@ -14,8 +14,7 @@ public class Paging {
 
 	public Paging() {
 		
-  }
-	
+	}
 
 	public Paging(int reqPage, int totalRestaurant) {
 		this.reqPage = reqPage;
