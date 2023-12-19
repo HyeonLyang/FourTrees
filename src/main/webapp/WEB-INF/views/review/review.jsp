@@ -23,7 +23,7 @@
 		</div>
 	</article>
 	
-	<hr style="border: 2px solid black">
+	<hr style="border: 2px solid #ff7f50">
 	
 	<!-- 이미지 모아보는 곳 버튼을 누르면 움직인다 -->
 	<div class="img_collection">
@@ -51,7 +51,7 @@
 		</div>
 	</div>	
 	
-	<hr style="border: 2px solid black">
+	<hr style="border: 2px solid #ff7f50">
 	
 	<!-- 리뷰와 사진 로고를 보여주는 코드 -->
 	<article class="re_main">
