@@ -35,10 +35,10 @@ public class RestaurantVO {
 		private String area_name;
 
 		private String category_name;
-		private String cate_name;
   
 		private int page;
 
+		private String cate_name;
 	public String getCate_name() {
 		return cate_name;
 	}
