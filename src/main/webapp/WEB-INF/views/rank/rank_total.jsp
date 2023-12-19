@@ -13,8 +13,13 @@
 		<ol class="rank_total_board">
 		<c:forEach var="res" items="${res_list }" varStatus="status">
 			<li class="rank_total_res">
-				<div><img class="rank_total_medal" src="${cpath }/resources/img/rank/medal${rank[status.index] }.png"></div>
-				<a href="#" class="rank_total_topRes">
+				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_total_topRes">
+					<c:if test="${rank[status.index] < 4}">
+						<div><img class="rank_total_medal" src="${cpath }/resources/img/rank/rankingN${rank[status.index] }.png"></div>
+					</c:if>
+					<c:if test="${rank[status.index] >= 4}">
+						<div><img class="rank_total_medal" src="${cpath }/resources/img/rank/rankingN4.png"></div>
+					</c:if>
 					<p class="rank_total_block"><!-- <img class="rank_total_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
 					<p>${res.name }</p>
 					<p>${res.category }</p>

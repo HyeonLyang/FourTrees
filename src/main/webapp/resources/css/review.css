@@ -8,7 +8,7 @@ a {
  	text-decoration: none;
 }
 .review_main {
-	width: 100%;
+	width: 100%;		
 }
 .review {
 	margin-bottom: 100px;
@@ -31,6 +31,7 @@ a {
 .re_title img {
 	width: 50px;
 	height: 50px;
+	margin: 0 10px;		
 }
 /* 이미지 모이는 곳 */
 .img_collection {
@@ -102,13 +103,17 @@ a {
 	justify-content: space-between;
 	width: 100%;	
 	padding: 10px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #d7d7d7;
 	margin-bottom: 20px;
 }
 .main img:nth-child(1) {	
 	width: 10%;		
 	width: 60px;
 	height: 60px;
+	border-radius: 50px;
+}
+.mark button {
+	margin: 5px;
 }
 .main ul {
 	list-style: none;

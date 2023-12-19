@@ -2,10 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itbank.model.RestaurantDAO">
 	<select id="selectAll"
-			resultType="com.itbank.model.vo.RestaurantVO">
-		select * from restaurant
-			order by idx			
-			fetch first 6 rows only
+			resultType="com.itbank.model.vo.RestaurantVO"
+			parameterType="String">
+		select r.*, a.name as area_name, c.name as category_name 
+			from restaurant r
+		    left outer join area a
+		    on r.area_idx = a.idx
+            left outer join category c
+            on r.category = c.idx
+		    where a.name = #{address}    
+		    fetch first 6 rows only
 	</select>
 	
 	<select id="getTotalRestaurant"
@@ -19,5 +25,10 @@
 		select * from restaurant where idx = #{idx}
 	
 	</select>
+	
+	<update id="updateScore"
+			parameterType="double">
+		update restaurant set score = #{resScore}
+	</update>
 	
 </mapper>

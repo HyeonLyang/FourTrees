@@ -10,17 +10,25 @@
 	<select id="selectAll"
 			resultType="com.itbank.model.vo.ReviewVO"
 			parameterType="com.itbank.components.Paging">
-		select r.*, b.name as res_name, b.address as res_address from review r
-			inner join restaurant b
-			on r.res_idx = b.idx
-			order by r.idx desc
+		select r1.*, r2.name as res_name, 
+       			r2.address as res_address, a1.name as area, a2.img as acc_img
+			from review r1
+			left join restaurant r2
+				on r1.res_idx = r2.idx
+			left join area a1
+				on r2.area_idx = a1.idx			 
+            left join account a2
+                on r1.writer = a2.nick			 
+			where r1.res_idx = #{res_idx}
+			order by r1.idx desc	
 			offset #{offset} rows
-			fetch first #{perCount} rows only		
+			fetch first #{perCount} rows only    
 	</select>
 	
 	<select id="getTotalReview"
 			resultType="int">
 		select count(*) from review
+			where res_idx = #{res_idx}
 	</select>
 	
 	<select id="selectReviews"
@@ -30,17 +38,52 @@
 			where res_idx = #{idx} order by idx desc		
 	</select>
 	
-	<select id="selectidx"
-			resultType="String">
-		select res_idx from review 
-			order by idx desc 
-			fetch first rows only
+	<select id="selectRes_name"
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="int">
+		select r1.res_idx, r2.name as res_name
+		    from review r1
+		    inner join restaurant r2
+		    on r1.res_idx = r2.idx
+		    where r1.res_idx = #{res_idx}
 	</select>
 	
 	<select id="selectImg"
-			resultType="com.itbank.model.vo.ReviewVO">
-		select * from review
-		    order by idx
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="int">
+		select r1.*,r2.name as res_name from review r1
+            inner join restaurant r2
+            on r1.res_idx = r2.idx
+			where r1.res_idx = #{res_idx}
+		    order by r1.idx
 		    fetch first 10 rows only
 	</select>
+	
+	<select id="imgCollect"
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="int">
+		select img from review
+			where res_idx = #{res_idx}
+	</select>
+
+	<select id="getResScores"
+			resultType="Double"
+			parameterType="int">
+		select score from review where res_idx = #{idx}
+	</select>
+	
+	<select id="nickReview"
+			resultType="com.itbank.model.vo.ReviewVO"
+			parameterType="com.itbank.model.vo.AccountVo">
+		select r1.*,r2.name as res_name 
+		    from review r1 
+		    inner join restaurant r2
+		    on r1.res_idx = r2.idx
+		    where r1.writer = #{nick}
+	</select>
+	
+	<delete id="delete"
+			parameterType="int">
+		delete from review where idx = #{idx}
+	</delete>
 </mapper>

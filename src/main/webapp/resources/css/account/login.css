@@ -5,12 +5,10 @@
 	padding-left: 30px;		
 }
 .login_form {
-	margin: 0 auto;	
-	padding: 10px;
-	width: 50%;
-	text-align: center;	
-	border: 4px double #ff7f50;	
-	border-width: 20px 10px;
+	margin: 0 auto;		
+	width: 55%;
+	text-align: center;		
+	border-width: 30px 10px;
 }
 .login_form fieldset {
 	width: 80%;
@@ -37,7 +35,7 @@
 	border-radius: 50px;
 	margin-top: 10px;
 	padding: 10px 0;
-	background-color: #f5ba41;
+	background-color: #ff7f50;
 	color: white;
 	border-color: white;
 }
@@ -67,4 +65,84 @@
 	height: 20px;
 	position: absolute;
 	transform: translate(-140%, 45%);
+}
+
+/* account/find.jsp */
+.accFind {
+	height: 100%;
+}
+.find_header {
+	background-color: #ff7f50;
+	margin-top: 5px;
+}
+.find {		
+	display: flex;    
+    padding: 20px;    
+    width: 50%;
+    margin: 0 auto;
+}
+.find p {
+	margin: 0 50px;
+}
+.find_main {	
+	margin: 0 auto;
+    width: 44%;
+}
+.find_main h3 {
+	border-bottom: 1px solid black;
+}
+.select_main {
+	border: 1px solid black;
+    height: 18%;
+    padding: 44px 0;
+    width: 44%;
+    margin: 50px auto;    
+}
+.select_header {
+	margin: 0 45px 65px;
+}
+.select_header1 {
+	display: flex;	
+}
+.select_header1 legend{	
+	margin: 0 22px;
+}
+.select_header2 p{
+	font-size: 70%;
+	margin: 0 25px;
+}
+.select_email {
+	margin: 0 45px;
+	border-bottom: 1px solid black;
+	height: 110px;
+}
+.select_email label {
+	margin: 0 50px 0 25px;
+}
+.select_email button {
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin: 0 5px;
+}
+.input_name {
+	margin-bottom: 20px;
+}
+.input_email {
+	margin-bottom: 20px;
+}
+.select_email > .input_email label {
+	margin: 0 50px 0 8px;
+}
+.pw_search {
+	margin: 0 45px;
+	border-bottom: 1px solid black;
+	height: 140px;
+}
+.pw_search label {
+	margin: 0 50px 0 25px;
+}
+.pw_search button {
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin: 0 25px;
 }

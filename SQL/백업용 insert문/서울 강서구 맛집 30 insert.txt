@@ -1,0 +1,119 @@
+-- 징기스 강서구청점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('징기스 강서구청점', '서울특별시 강서구 화곡로58길 22-14', '02-6408-5888', '고기,구이', '토/일', '17:00~22:00', 2, '13000~14000', 'https://www.siksinhot.com/P/974856');
+
+-- 돌배기집 강서구청점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('돌배기집 강서구청점', '서울특별시 강서구 공항대로46길 47', '02-6398-0306', '고기,구이', '토/일', '11:00~07:00', 2, '9000~11000', 'https://www.siksinhot.com/P/829222');
+
+-- 치킨이즈백 강서구청점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('치킨이즈백 강서구청점', '서울특별시 강서구 까치산로 172', '02-2695-9294', '치킨', '14:00~03:00', 2, '15900~26500', 'https://www.siksinhot.com/P/1259259');
+
+-- 한신포차 강서구청점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('한신포차 강서구청점', '서울특별시 강서구 화곡6동 1115-26번지, 1층', '02-2690-1356', '야식', '토/일', '17:00~07:00', 2, '10000~18000', 'https://www.siksinhot.com/P/315163');
+
+-- 강서풍천민물장어
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('강서풍천민물장어', '서울특별시 강서구 양천로18길 9', '02-2661-1033', '돈까스,회,일식', '토/일', '10:00~23:00', 2, '6000~7000', 'https://www.siksinhot.com/P/776346');
+
+-- 강서복집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('강서복집', '서울특별시 강서구 공항대로59길 8 우현빌딩', '02-3661-6672', '돈까스,회,일식', '11:00~22:00', 1, '90000~130000', 'https://www.siksinhot.com/P/254464');
+
+-- 샤브미 강서점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('샤브미 강서점', '서울특별시 강서구 화곡로 398', '02-3664-8383', '고기,구이', '토/일', '11:30~22:00', 2, '21800~26800', 'https://www.siksinhot.com/P/254499');
+
+-- 닥터로빈 강서점
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('닥터로빈 강서점', '서울특별시 강서구 공항대로 396', '02-2693-3110', '양식', '주중', '10:00~22:00', 2, '12000', 'https://www.siksinhot.com/P/254250');
+
+-- 접시고기 강서점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('접시고기 강서점', '서울특별시 강서구 공항대로46길 25-8', '02-6403-5959', '고기,구이', '16:30~00:00', 2, '24000', 'https://www.siksinhot.com/P/997915');
+
+-- 현대옥 서울강서점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('현대옥 서울강서점', '서울특별시 강서구 화곡로 346 귀뚜라미보일러오피스텔 101호', '02-2602-0069', '백반,죽,국수', '00:00~24:00', 2, '9000', 'https://www.siksinhot.com/P/433724');
+
+-- 코끼리한상 강서직영점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('코끼리한상 강서직영점', '서울특별시 강서구 화곡로64길 50', '02-3661-2014', '족발,보쌈', '11:00~22:00', 2, '35000', 'https://www.siksinhot.com/P/979441');
+
+-- 충북식당
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('충북식당', '서울특별시 강서구 강서로45가길 9', '02-2697-1475', '고기,구이', '13:00~22:00', 2, '7000', 'https://www.siksinhot.com/P/449853');
+
+-- 오백년장어
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('오백년장어', '서울특별시 강서구 공항대로 367', '02-2668-8778', '돈까스,회,일식', '토/일', '11:30~22:00', 2, '34900', 'https://www.siksinhot.com/P/421823');
+
+-- 왕세숫대야 행복을파는집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('왕세숫대야 행복을파는집', '서울특별시 강서구 공항대로 423', '02-2668-3608', '돈까스,회,일식', '토/일', '09:00~23:00', 2, '7000~10000', 'https://www.siksinhot.com/P/436918');
+
+-- 베이징
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('베이징', '서울특별시 강서구 화곡로 118', '02-2699-7275', '중식', '토/일', '11:00~22:00', 2, '6000~8000', 'https://www.siksinhot.com/P/439598');
+
+-- 천사곱창 화곡점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('천사곱창 화곡점', '서울특별시 강서구 우장산로 124', '02-2699-3713', '고기,구이', '15:00~06:00', 2, '10900~11900', 'https://www.siksinhot.com/P/379219');
+
+-- 고양이똥
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('고양이똥', '서울특별시 강서구 공항대로59가길 13', '02-6013-1281', '양식', '토/일', '10:00~00:00', 2, '10500~13000', 'https://www.siksinhot.com/P/324137');
+
+-- 키노시타
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('키노시타', '서울특별시 강서구 등촌동 638-3 103호', '02-6961-5896', '돈까스,회,일식', '토/일', '11:00~23:00', 2, '31000', 'https://www.siksinhot.com/P/369755');
+
+-- 봄담아 등촌점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('봄담아 등촌점', '서울특별시 강서구 공항대로 202,203,204호', '02-2630-4200', '고기,구이', '11:00~22:00', 2, '13900~16900', 'https://www.siksinhot.com/P/1547196');
+
+-- 상미반상
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('상미반상', '서울특별시 강서구 강서로16길 32 화창빌딩 1층', '02-2603-0555', '한식', '09:30~22:30', 2, '8000', 'https://www.siksinhot.com/P/1139115');
+
+-- 헬로비에트
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('헬로비에트', '서울특별시 강서구 화곡로25길 25', '070-4175-0121', '백반,죽,국수', '13:00~21:00', 2, '6500', 'https://www.siksinhot.com/P/1067952');
+
+-- 감사한양
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('감사한양', '서울특별시 강서구 마곡동 로4길 23', '02-3662-9294', '고기,구이', '18:00~23:30', 2, '25000', 'https://www.siksinhot.com/P/998245');
+
+-- 말죽거리 닭발 본점
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('말죽거리 닭발 본점', '서울특별시 강서구 까치산로27길 17', '0507-1401-8070', '고기,구이', '18:00~23:50', 1, '19000', 'https://www.siksinhot.com/P/998107');
+
+-- 감성9091돼지
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('감성9091돼지', '서울특별시 강서구 공항대로 345', '02-3665-9091', '고기,구이', '13:00~23:00', 2, '15000', 'https://www.siksinhot.com/P/997959');
+
+-- 강릉엄지네꼬막집
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('강릉엄지네꼬막집', '서울특별시 강서구 공항대로 291', '02-3663-6053', '한식', '토/일', '11:00~22:00', 2, '35000', 'https://www.siksinhot.com/P/977643');
+
+-- pixxa
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('pixxa', '서울특별시 강서구 화곡로56길 33', '02-2607-9966', '피자', '18:00~03:00', 2, '24500', 'https://www.siksinhot.com/P/871773');
+
+-- 정인호 완벽한 족발
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('정인호 완벽한 족발', '서울특별시 강서구 화곡로58길 30', '02-2606-4114', '족발,보쌈', '토/일', '16:00~03:00', 2, '29000~35000', 'https://www.siksinhot.com/P/851927');
+
+-- 개성집
+INSERT INTO restaurant (name, address, res_phone, category, op_hour, park_area, price, link)
+VALUES ('개성집', '서울특별시 강서구 화곡로58길 30', '02-2602-5327', '고기,구이', '15:00~07:00', 2, '12000~13000', 'https://www.siksinhot.com/P/642255');
+
+-- 띠아낭
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('띠아낭', '서울특별시 강서구 화곡로64길 72', '070-4300-0707', '백반,죽,국수', '토/일', '11:00~21:00', 2, '8500', 'https://www.siksinhot.com/P/857347');
+
+-- 양송곱창
+INSERT INTO restaurant (name, address, res_phone, category, holiday, op_hour, park_area, price, link)
+VALUES ('양송곱창', '서울특별시 강서구 공항대로46길 56', '02-2695-3393', '고기,구이', '토/일', '16:00~04:00', 2, '11000', 'https://www.siksinhot.com/P/416935');

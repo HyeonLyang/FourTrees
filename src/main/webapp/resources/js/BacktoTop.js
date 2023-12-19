@@ -26,19 +26,21 @@ document.addEventListener('DOMContentLoaded', function() {
 function back(cpath) {
 	location.href = cpath + '/myPage/bookmark';
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    var remoteButtons = document.querySelectorAll(".remote_button");
-    var remotes = document.querySelectorAll(".remote");
-
-    remoteButtons.forEach(function(remoteButton, index) {
-        remoteButton.addEventListener("click", function () {
-            // 토글 리모트의 표시/숨김 상태 변경
-            if (remotes[index].style.display === "none" || remotes[index].style.display === "") {
-                remotes[index].style.display = "block";
-            } else {
-                remotes[index].style.display = "none";
-            }
-        });
-    });
-});
+/* 삭제할 시 한번 더 묻기 */
+function isDelete(idx, cpath, dd) {
+	let del = confirm(dd + ' 하시겠습니까?');
+	
+	if (del) {
+		location.href = cpath + '/myPage/delete/' + idx;
+	}
+}
+function isAdmin() {
+	alert('관리자 계정이라서 삭제가 불가능합니다')
+}
+function reviewDel(idx, cpath, res_idx ,name) {
+	let del = confirm('이 리뷰를 삭제 하시겠습니까?');
+	
+	if (del) {
+		location.href = cpath + '/review/delete/' + idx + '/' + name + '/' + res_idx;
+	}
+}

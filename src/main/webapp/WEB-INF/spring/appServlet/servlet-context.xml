@@ -14,7 +14,8 @@
 	
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
-	<resources mapping="/img/**" location="http://192.168.1.100/" />
+	<resources mapping="/img/**" location="file:///C:/img/" />
+	<resources mapping="/img/account/**" location="file:///C:/img/account" />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
@@ -32,6 +33,15 @@
 	
 	<context:component-scan base-package="com.itbank.controller" />
 	
-	
+	<interceptors>
+		<interceptor>
+			<mapping path="/myPage/**"/>			
+			<beans:bean id="login" class="com.itbank.interceptor.LoginInterceptor" />
+		</interceptor>
+		<interceptor>
+			<mapping path="/review/review_write/**"/>
+			<beans:bean id="review_write" class="com.itbank.interceptor.LoginInterceptor" />
+		</interceptor>
+	</interceptors>
 	
 </beans:beans>
