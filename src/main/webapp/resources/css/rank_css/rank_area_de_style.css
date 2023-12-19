@@ -45,7 +45,7 @@
             rgba(20, 20, 20, 0.25) 50%,
             rgba(20, 20, 20, 0.5) 75%,
             rgba(20, 20, 20, 0.75) 100%
-          ), url('../../img/ex05.jpg');
+          ), url('../../img/rank/ex05.jpg');
 	background-size: cover;	
 	background-position: center;
 }

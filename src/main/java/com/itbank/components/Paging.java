@@ -13,9 +13,8 @@ public class Paging {
 	private String address, category;
 
 	public Paging() {
-    
-  }
-
+		
+	}
 
 	public Paging(int reqPage, int totalRestaurant) {
 		this.reqPage = reqPage;
