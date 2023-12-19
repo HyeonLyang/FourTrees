@@ -73,7 +73,7 @@ public class Paging {
 		this.totalRestaurant = totalRestaurant;
 		this.address = address;
 		this.category = category;
-		
+		perCount = 5;
 		offset = (reqPage - 1) * perCount;
 		totalPage = totalRestaurant / perCount;
 		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
