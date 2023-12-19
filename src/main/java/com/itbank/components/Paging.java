@@ -10,63 +10,11 @@ public class Paging {
 	private int section, begin, end;
 	private boolean prev, next;
 	
-	private String address = "";
-	private String category = "";
+	private String address, category;
 
-	public Paging() {}
-	public Paging(int reqPage, int totalRestaurant) {
-		this.reqPage = reqPage;
-		this.totalRestaurant = totalRestaurant;
+	public Paging() {
 		
-		offset = (reqPage - 1) * perCount;
-		totalPage = totalRestaurant / perCount;
-		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
-		
-		section = (reqPage - 1) / perCount;
-		begin = section * perCount + 1;
-		end = (section + 1) * perCount;
-		end = (end > totalPage) ? totalPage : end;
-		
-		prev = (section != 0);
-		next = (end != totalPage);
-	}
-	
-	public Paging(int reqPage,int totalRestaurant,int res_idx) {
-		this.reqPage = reqPage;
-		this.totalRestaurant = totalRestaurant;
-		this.res_idx = res_idx;
-		
-		offset = (reqPage - 1) * perCount;
-		totalPage = totalRestaurant / perCount;
-		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
-		
-		section = (reqPage - 1) / perCount;
-		begin = section * perCount + 1;
-		end = (section + 1) * perCount;
-		end = (end > totalPage) ? totalPage : end;
-		
-		prev = (section != 0);
-		next = (end != totalPage);
-	}
-	
-	public Paging(int reqPage, int totalRestaurant, String address, String category) {
-		this.reqPage = reqPage;
-		this.totalRestaurant = totalRestaurant;
-		this.address = address;
-		this.category = category;
-		perCount = 5;
-		offset = (reqPage - 1) * perCount;
-		totalPage = totalRestaurant / perCount;
-		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
-		
-		section = (reqPage - 1) / perCount;
-		begin = section * perCount + 1;
-		end = (section + 1) * perCount;
-		end = (end > totalPage) ? totalPage : end;
-		
-		prev = (section != 0);
-		next = (end != totalPage);
-	}
+  }
 	
 	public String getAddress() {
 		return address;
@@ -87,6 +35,57 @@ public class Paging {
 		this.category = category;
 	}
 
+	public Paging(int reqPage, int totalRestaurant) {
+		this.reqPage = reqPage;
+		this.totalRestaurant = totalRestaurant;
+		
+		offset = (reqPage - 1) * perCount;
+		totalPage = totalRestaurant / perCount;
+		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
+		
+		section = (reqPage - 1) / perCount;
+		begin = section * perCount + 1;
+		end = (section + 1) * perCount;
+		end = (end > totalPage) ? totalPage : end;
+		
+		prev = (section != 0);
+		next = (end != totalPage);
+	}
+	public Paging(int reqPage,int totalRestaurant,int res_idx) {
+		this.reqPage = reqPage;
+		this.totalRestaurant = totalRestaurant;
+		this.res_idx = res_idx;
+		
+		offset = (reqPage - 1) * perCount;
+		totalPage = totalRestaurant / perCount;
+		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
+		
+		section = (reqPage - 1) / perCount;
+		begin = section * perCount + 1;
+		end = (section + 1) * perCount;
+		end = (end > totalPage) ? totalPage : end;
+		
+		prev = (section != 0);
+		next = (end != totalPage);
+	}
+	public Paging(int reqPage, int totalRestaurant, String address, String category) {
+		this.reqPage = reqPage;
+		this.totalRestaurant = totalRestaurant;
+		this.address = address;
+		this.category = category;
+		perCount = 5;
+		offset = (reqPage - 1) * perCount;
+		totalPage = totalRestaurant / perCount;
+		totalPage += (totalRestaurant % perCount == 0) ? 0 : 1;
+		
+		section = (reqPage - 1) / perCount;
+		begin = section * perCount + 1;
+		end = (section + 1) * perCount;
+		end = (end > totalPage) ? totalPage : end;
+		
+		prev = (section != 0);
+		next = (end != totalPage);
+	}
 
 	public int getReqPage() {
 		return reqPage;
@@ -175,4 +174,20 @@ public class Paging {
 	public void setRes_idx(int res_idx) {
 		this.res_idx = res_idx;
 	}		
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
 }

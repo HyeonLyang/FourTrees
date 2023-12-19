@@ -1,5 +1,7 @@
 package com.itbank.model;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
@@ -34,5 +36,23 @@ public interface AccountDAO {
 				+ "userpw = #{userpw} "
 			+ "where userid = #{userid}")
 	int updatePW(AccountVo input);
+
+	@Select("select userid from account where email = #{email}")
+	String selectUserid(String email);
+
+	@Select("select * from account where userid = #{userid} and email = #{email}")
+	AccountVo selectUserpw(AccountVo input);
+
+	@Update("update account "
+				+ "set "
+				+ "userpw = #{userpw} "
+			+ "where userid = #{userid} and email = #{email}")
+	int updateUserpw(AccountVo input);
+
+	@Select("select * from account")
+	List<AccountVo> selectAll();
+
+	@Update("update account set img = #{img} where nick = #{nick}")
+	int updateImg(AccountVo input);
 
 }
