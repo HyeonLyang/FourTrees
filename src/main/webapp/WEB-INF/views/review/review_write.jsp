@@ -8,7 +8,7 @@
 		<table class="review_table">
 			<tr>
 				<th><label for="writer">작성자</label></th>
-				<td><input name="writer" id="writer" value="${user.nick }" required></td>				
+				<td><input name="writer" id="writer" value="${user.nick }" required readonly></td>				
 			</tr>
 			<tr>
 				<th><label for="visit_date">방문일</label></th>				
@@ -72,44 +72,65 @@
 			<tr>
 				<th>음식 사진</th>
 				<td>
-					<input name="upload" type="file">
+					<input name="upload" type="file" required>
 					<input name="score" type="hidden">
-					<input name="res_idx" type="hidden" value="${param.res_idx }">
-					<input name="res_name" type="hidden" value="${param.res_name }">
+					<input name="res_idx" type="hidden" value="${res_idx }">					
 				</td>
 			</tr>
 		</table>
 		
-		<button>작성</button>		
+		<button id="write">작성</button>		
 	</form>
 </section>
 <script>
 	const score = document.getElementsByName('score')[0];
 	const starpoint = document.getElementsByClassName('starpoint_box')[0];	
 	
-	
 	starpoint.onclick = () => {
 		var star = document.querySelectorAll('.starpoint_bg')[0].clientWidth;
-		
 		score.value = star / 24;
 	}
+	
+	document.addEventListener("DOMContentLoaded", function() {
+	    var starButtons = document.querySelectorAll(".star_radio");
+	    var submitButton = document.getElementById("write"); // 대체 필요
+
+	    submitButton.addEventListener("click", function(event) {
+	        var selectedStar = Array.from(starButtons).find(button => button.checked);
+
+	        if (!selectedStar) {
+	            event.preventDefault(); // 페이지 전환을 막습니다.
+	            alert("별점을 선택해주세요.");
+	        }
+	        else {	        	
+	        }
+	    });
+	});
 	
 	tinymce.init({
 	    selector: '#content',
 	    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-	    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',	    
+	    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+	    setup: function (editor) {
+	        editor.on('init', function () {
+	            // 에디터가 초기화된 후 실행되는 코드
+	            const content = editor.getContent();
+	            const modifiedContent = content.replace(/<p>/g, '').replace(/<\/p>/g, '');
+	            console.log("TinyMCE Content:", modifiedContent);
+	        });
+	    }
 	});
-	  
 	
-	document.addEventListener('DOMContentLoaded', function () {
-	  let content = tinyMCE.get('content');	 
-	  console.log(content);
-	  
-	  if (content = null) {
-		  alert('dd');
-	  }
-	});
-	/* content = content.replace(/<p>/g, '').replace(/<\/p>/g, ''); */
+	/* if (tinymce.activeEditor) {
+		
+		const content  = tinyMCE.activeEditor.getContent();
+		content = content.replace(/<p>/g, '').replace(/<\/p>/g, '');
+		
+		console.log("TinyMCE Content:", content);
+	}
+	else {
+		console.error("TinyMCE 에디터가 아직 초기화되지 않았습니다.");
+	} */	
 </script>
 </body>
 </html>
