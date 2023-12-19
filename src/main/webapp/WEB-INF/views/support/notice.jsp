@@ -10,6 +10,7 @@
 		<a href="#"><button>관리자용 글 쓰기</button></a>
 	</div>
 	<div class="notice_con">
+				<p>게시물 수 : ${total}</p>
 		<table>
 			<tr>
 				<th>게시자</th>
@@ -18,12 +19,12 @@
 				<th>게시일</th>
 				<th>수정(권한)</th>
 			</tr>
-			<c:forEach var="row" items="${notices }">
+			<c:forEach var="row" items="${list }">
 			<tr>
-				<td>
-					<img id="notice_face" src="${cpath }/resources/img/support/기본프사.png">
-				</td>
 				<td id="notice_idx">${row.idx }</td>
+				<td>
+					<img style="border-radius: 15px;" id="notice_face" src="${cpath }/resources/img/support/기본프사.png">
+				</td>
 				<td colspan="2">${row.title }</td>
 				<td>${row.write_date }</td>
 				<td id="notice_btns">수정/제거</td>
