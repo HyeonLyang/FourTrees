@@ -5,27 +5,27 @@
 <script src="${cpath }/resources/js/home.js"></script>
 <section class="home" >
 	<div class="home_main">
-	<img src="${cpath }/resources/img/main.jpg">
+		<img src="${cpath }/resources/img/main.jpg">
 	</div>
-       <section class="content">
-           <div class="left">
-               <div class="left_in">
-                   <div class="left_in_box">
-                       <p></p>
-                       <h3>Editor's pick</h3>
-                       <p>“ 음식 마니아들이 선택한 최고의 초이스 ”</p>
-                       <div class="left_in_box_middle">
-                           크레이지카츠
-                       </div>
-                       <span>#돈까스 #마포구 #합정역 #BEST</span>
-                       <em>바삭함과 육즙이 좔좔흐르는 합정 돈카츠맛집</em>
+<section class="content">
+     <div class="left">
+           <div class="left_in">
+               <div class="left_in_box">
+                   <p></p>
+                   <h3>Editor's pick</h3>
+                   <p>“ 음식 마니아들이 선택한 최고의 초이스 ”</p>
+                   <div class="left_in_box_middle">
+                       크레이지카츠
                    </div>
-            </div>
+                   <span>#돈까스 #마포구 #합정역 #BEST</span>
+                   <em>바삭함과 육즙이 좔좔흐르는 합정 돈카츠맛집</em>
+               </div>
         </div>
-        <div class="right">
-        	<img src="${cpath }/resources/img/crazy1.jpg">
-        </div>
-    </section>
+    </div>
+    <div class="right">
+    	<img src="${cpath }/resources/img/crazy1.jpg">
+    </div>
+</section>
 
 <section class="category">
     <div class="inner">
