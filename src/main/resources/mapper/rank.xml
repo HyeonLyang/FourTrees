@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbank.model.RankDAO">
+
+	<select id="selectCateRank"
+			parameterType="int"
+			resultType="com.itbank.model.vo.RestaurantVO">
+		select r1.name as category, r2.* from category r1
+            inner join restaurant r2
+            on r1.idx = r2.category
+			where r1.idx = #{idx}
+		    order by r2.score
+		    fetch first 10 rows only
+	</select>
+
+	<select id="selectAllCateRank"
+			parameterType="int"
+			resultType="com.itbank.model.vo.RestaurantVO">
+		select r1.name as category, r2.* from category r1
+            inner join restaurant r2
+            on r1.idx = r2.category
+			where r1.idx = #{idx}
+		    order by r2.score
+		    fetch first 5 rows only
+	</select>
+
+	<select id="selectTotalRank"
+			resultType="com.itbank.model.vo.RestaurantVO">
+		select r1.name as category, r2.* from category r1
+            inner join restaurant r2
+            on r1.idx = r2.category
+		    order by r2.score
+		    fetch first 10 rows only
+	</select>
+
+	 <select id="selectAreaRank"
+	 		parameterType="String"
+	 		resultType="com.itbank.model.vo.RestaurantVO">
+	 	select r1.name as category, r2.* from category r1 
+			inner join restaurant r2  
+			on r1.idx = r2.category 
+			where r2.address like #{area} 
+			order by r2.score 
+			fetch first 10 rows only
+	 </select>
+
+
+
+
+
+
+
+</mapper>
