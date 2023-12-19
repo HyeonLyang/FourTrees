@@ -8,8 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBTI 결과</title>
 </head>
+    <div class="mbti-op">
+	    </div>
 <section class="search_main">
-    <h1>MBTI TEST PAGE</h1>
+   <h1><img src="${cpath }/resources/img/mbti/mbti.png">MBTI TEST PAGE</h1>
+    <div class="mbti-con">
+    <div class="mbti-move">
     <form id="mbtiForm">
 	    <div>
 	        <label for="EI check1">1. 밥은 혼자먹기보다는 여럿이서 먹어야 맛있다. 　</label>
@@ -100,6 +104,18 @@
         	<input type="submit" value="결과확인" style="color=white; background-color:transparent; border:0px transparent solid;">
         </article>
     </form>
+    </div>
+    </div>
+    <div><p>　</p><p>　</p>
+    </div>
+    
+    <div class="progress-bar-container">
+    <div class="progress-bar">
+        <div class="progress-indicator"></div>
+    </div>
+    <div class="progress-label"></div>
+	</div>
+    
 
     <div id="resultContainer" style="display: none;">
         <h2>당신의 MBTI 결과는...</h2>

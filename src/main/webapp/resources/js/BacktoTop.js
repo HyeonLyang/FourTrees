@@ -26,3 +26,19 @@ document.addEventListener('DOMContentLoaded', function() {
 function back(cpath) {
 	location.href = cpath + '/myPage/bookmark';
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    var remoteButtons = document.querySelectorAll(".remote_button");
+    var remotes = document.querySelectorAll(".remote");
+
+    remoteButtons.forEach(function(remoteButton, index) {
+        remoteButton.addEventListener("click", function () {
+            // 토글 리모트의 표시/숨김 상태 변경
+            if (remotes[index].style.display === "none" || remotes[index].style.display === "") {
+                remotes[index].style.display = "block";
+            } else {
+                remotes[index].style.display = "none";
+            }
+        });
+    });
+});
