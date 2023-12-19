@@ -56,4 +56,6 @@ public interface RankDAO {
 
 	List<RestaurantVO> selectAllCateRank(int idx);
 
+	List<RestaurantVO> selectAreaRank(String area);
+
 }

@@ -37,9 +37,16 @@
 			dt = data;
 			
 			console.log(dt);
-		
+			
+			let title = document.querySelectorAll('.rank_category_title')[0];
+			let goTo = document.querySelectorAll('.rank_category_toArea')[0];
 			let result = document.querySelectorAll('.rank_category_board')[0];
+			title.innerHTML = '';
+			goTo.innerHTML = '';
 			result.innerHTML = '';
+			
+			title.innerHTML = data[1].category + '맛집 TOP10';
+			goTo.innerHTML = data[1].category + '맛집 찾으러 가기';
 			
 			for (let i = 0; i < 10; i++) {
 				let li = document.createElement('li');
@@ -103,7 +110,8 @@
 	btns[10].onclick = () => ranking(111);
 	btns[11].onclick = () => ranking(112);
 	btns[12].onclick = () => ranking(113);
-
+	
+	
 	
 </script>	
 

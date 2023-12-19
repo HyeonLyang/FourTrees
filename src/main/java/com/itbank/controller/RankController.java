@@ -86,6 +86,17 @@ public class RankController {
 		return result;
 	}
 	
+	@ResponseBody
+	@GetMapping("/aRank")
+	public List<RestaurantVO> aRank(String area) {
+		
+		List<RestaurantVO> result = rs.getAreaRank(area);
+		System.out.println(result.get(0));
+		System.out.println(result.get(0).getIdx());
+		
+		return result;
+	}
+	
 	@GetMapping("/rank_area")
 	public String rank_area(Model model) {
 		List<Integer> rank_list = new ArrayList<>();

@@ -54,4 +54,8 @@ public class RankService {
 		return dao.selectAllCateRank(idx);
 	}
 
+	public List<RestaurantVO> getAreaRank(String area) {
+		return dao.selectAreaRank(area);
+	}
+
 }
