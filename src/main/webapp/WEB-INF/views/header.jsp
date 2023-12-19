@@ -102,7 +102,7 @@
 						<td><a href="${cpath }/mbti/mbti_main"><img src="${cpath }/resources/img/icon9.png"></a></td>
 					</tr>
 					<tr>
-						<td><a href="#"><img src="${cpath }/resources/img/icon10.png"></a></td>
+						<td><a href="${cpath }/photo/photo_main"><img src="${cpath }/resources/img/icon10.png"></a></td>
 						<td><a href="${cpath }/search/sc_main"><img src="${cpath }/resources/img/icon11.png"></a></td>
 						<td><a href="#"><img src="${cpath }/resources/img/icon12.png"></a></td>
 							</tr>
