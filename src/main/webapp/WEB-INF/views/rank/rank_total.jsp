@@ -3,6 +3,7 @@
 <%@ include file="../header2.jsp" %>
 <link href="${cpath }/resources/css/rank_css/rank_total_style.css" rel="stylesheet">
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
+<c:set var="cate" value="${cate_list }"/>
 <!-- css 폴더안에 정리해주세요 -->
 
 
