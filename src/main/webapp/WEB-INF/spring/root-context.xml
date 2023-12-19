@@ -38,6 +38,8 @@
 				<value>classpath:mapper/restaurant.xml</value>
  				<value>classpath:mapper/search.xml</value>
 				<value>classpath:mapper/review.xml</value>
+				<value>classpath:mapper/support.xml</value>
+				<value>classpath:mapper/rank.xml</value>
 			</list>
 		</property>
 	</bean>

@@ -38,17 +38,26 @@ public class RestaurantVO {
   
 		private int page;
 
-		public int getPage() {
-			return page;
-		}
+		private String cate_name;
+	public String getCate_name() {
+		return cate_name;
+	}
 
-		public void setPage(int page) {
-			this.page = page;
-		}
+	public void setCate_name(String cate_name) {
+		this.cate_name = cate_name;
+	}
 
-	    public String getRom_name() {
-			return rom_name;
-		}
+	public int getPage() {
+		return page;
+	}		
+
+	public void setPage(int page) {
+		this.page = page;
+	}
+
+	public String getRom_name() {
+		return rom_name;
+	}
 
 	public void setRom_name(String rom_name) {
 		this.rom_name = rom_name;
