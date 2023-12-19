@@ -7,23 +7,23 @@
 	<p>　</p>
 </div>
 </article>
-<img class="frame4" src="${cpath }/resources/img/frame.png">
 <section class="review_main">
 	<!-- 리뷰 갯수 작성 -->
 	<article class="re_title">	
 		<div class="review_textarea">
-			<h4>리뷰(${p.totalRestaurant })</h4>
+			<h4>${name } 리뷰(${p.totalRestaurant })</h4>
 			<h4>고객님들의 직접 작성하신 따끈한 후기와 평가를 들어보세요</h4>
 		</div>
 		
 		<div>										
-			<a href="${cpath }/review/review_write?res_idx=${param.res_idx }">			
-				<img src="${cpath }/resources/img/review/review_write.png">
+			<a href="${cpath }/review/review_write/${name }/${res_idx }">			
+				<img src="${cpath }/resources/img/review/review_write.png"><br>
+				<span>리뷰 쓰기</span>
 			</a>	
 		</div>
 	</article>
 	
-	<hr style="border: 2px solid black">
+	<hr style="border: 2px solid #ff7f50">
 	
 	<!-- 이미지 모아보는 곳 버튼을 누르면 움직인다 -->
 	<div class="img_collection">
@@ -38,27 +38,32 @@
 			<c:forEach var="row" items="${img_list }">
 				<div class="slider">				
 					<img src="${cpath }/img/${row.res_name }/${row.img }">								
-				</div>				
-				<div class="slider_more">				
-				<div class="more">
-					<a href="${cpath }/review/img_popup?img=${p.totalRestaurant }&res_idx=${row.res_idx}">				
-						<b>${p.totalRestaurant }</b><br>
-						<i>더보기></i>
-					</a>
-				</div>
-				</div>
+				</div>												
 			</c:forEach>			
+			<div class="slider_more">				
+			<div class="more">
+				<a href="${cpath }/review/img_popup?img=${p.totalRestaurant }&res_idx=${param.res_idx}">				
+					<b>${p.totalRestaurant }</b><br>
+					<i>더보기></i>
+				</a>
+			</div>
+			</div>
 		</div>
-	</div>
+	</div>	
 	
-	<hr style="border: 2px solid black">
+	<hr style="border: 2px solid #ff7f50">
 	
 	<!-- 리뷰와 사진 로고를 보여주는 코드 -->
 	<article class="re_main">
 	<c:forEach var="row" items="${list }">	
 		<div class="main">
 			<div class="mark">
-				<img src="${cpath }/resources/img/review/기본 프로필.jpg">
+				<img src="${cpath }/img/account/${row.acc_img }"><br>
+				<c:if test="${user.status == '관리자' or row.writer == user.nick }">				
+					<button onclick="reviewDel(${row.idx },'${cpath }','${row.res_idx }','${row.res_name }')">
+						삭제
+					</button>
+				</c:if>				
 			</div>
 				<ul>
 					<li>${row.writer }</li>
@@ -81,18 +86,18 @@
 	</c:forEach>
 	<!-- 식당 테이블 데이터 페이징 하는 곳 -->
 	
-	<c:set var="area" value="page"></c:set>
+	<c:set var="res" value="res_idx=${param.res_idx}&res_name=${param.res_name }"></c:set>	
 	<ul class="re_paging">
 		<c:if test="${p.prev }">			
-			<li><a href="${cpath }/review/review?page=${p.begin - 1 }">이전</a></li>
+			<li><a href="${cpath }/review/review?page=${p.begin - 1 }&${res }">이전</a></li>
 		</c:if>
 			
 		<c:forEach var="i" begin="${p.begin }" end="${p.end }">
-			<li><a href="${cpath }/review/review?page=${i }">${i }</a></li>
+			<li><a href="${cpath }/review/review?page=${i }&${res }">${i }</a></li>
 		</c:forEach>
 			
 		<c:if test="${p.next }">			
-			<li><a href="${cpath }/review/review?page=${p.end + 1 }">다음</a></li>
+			<li><a href="${cpath }/review/review?page=${p.end + 1 }&${res }">다음</a></li>
 		</c:if>
 	</ul>	
 	</article>

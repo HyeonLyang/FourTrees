@@ -16,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.itbank.components.Paging;
 import com.itbank.model.RestaurantDAO;
 import com.itbank.model.ReviewDAO;
+import com.itbank.model.vo.AccountVo;
 import com.itbank.model.vo.ReviewVO;
 
 @Service
@@ -66,6 +67,18 @@ public class ReviewService {
 		File dest = new File(newDir, file.getOriginalFilename());
 		file.transferTo(dest);
 		
+//		List<Double> scoreList = dao.getResScores(input.getIdx());
+//		double scoreSum = 0;
+//		
+//		for(double score : scoreList) {
+//			scoreSum += score;
+//		}
+//		scoreSum += input.getScore();
+//		double resScore = scoreSum / scoreList.size();
+//
+//		
+//		res_dao.updateScore(resScore);
+		
 		return row;
 	}
 
@@ -88,6 +101,14 @@ public class ReviewService {
 
 	public List<ReviewVO> imgCollection(int res_idx) {		
 		return dao.imgCollect(res_idx);
+	}
+
+	public List<ReviewVO> nickReview(AccountVo nick) {
+		return dao.nickReview(nick);
+	}
+
+	public int delete(int idx) {
+		return dao.delete(idx);
 	}
 
 }

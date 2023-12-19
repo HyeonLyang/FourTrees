@@ -11,6 +11,10 @@ public class Paging {
 	private boolean prev, next;
 	
 	private String address, category;
+
+	public Paging() {
+		
+  }
 	
 	public String getAddress() {
 		return address;
@@ -31,7 +35,6 @@ public class Paging {
 		this.category = category;
 	}
 
-
 	public Paging(int reqPage, int totalRestaurant) {
 		this.reqPage = reqPage;
 		this.totalRestaurant = totalRestaurant;
@@ -48,7 +51,6 @@ public class Paging {
 		prev = (section != 0);
 		next = (end != totalPage);
 	}
-	
 	public Paging(int reqPage,int totalRestaurant,int res_idx) {
 		this.reqPage = reqPage;
 		this.totalRestaurant = totalRestaurant;
@@ -172,4 +174,20 @@ public class Paging {
 	public void setRes_idx(int res_idx) {
 		this.res_idx = res_idx;
 	}		
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
 }

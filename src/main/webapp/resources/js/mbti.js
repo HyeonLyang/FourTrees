@@ -88,4 +88,34 @@ document.getElementById('mbtiForm').addEventListener('submit', function(event) {
     
     window.location.href = "test/" + result;
 
+
 });
+
+var radioButtons = document.querySelectorAll('.mb');
+var mbtimove = document.querySelector('.mbti-move');
+var position = 0;
+var progressBar = document.querySelector('.progress-indicator');
+var progressLabel = document.querySelector('.progress-label');
+
+//Add 'change' event listener to each radio button
+for (var i = 0; i < radioButtons.length; i++) {
+	  radioButtons[i].addEventListener('change', function() {
+	    // Check if the radio button is checked
+	    if (this.checked) {
+	    	// If checked, move Y-coordinate by -100px
+	    	position -= 93;
+	      mbtimove.style.transform = 'translateY(' + position + 'px)';
+	      
+	      var progressPercentage = (position / (49 * (radioButtons.length - 1))) * -100;
+          progressBar.style.width = progressPercentage + '%';
+
+          // 마지막 라디오 버튼일 때 100%로 설정
+          if (progressPercentage >= 99) {
+              progressLabel.textContent = '100%';
+              progressBar.style.width = '100%';
+          } else {
+              progressLabel.textContent = Math.round(progressPercentage) + '%';
+          }
+	    }
+	  });
+}

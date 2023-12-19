@@ -4,9 +4,12 @@
 	<select id="selectAll"
 			resultType="com.itbank.model.vo.RestaurantVO"
 			parameterType="String">
-		select r.*, a.name as area_name from restaurant r
+		select r.*, a.name as area_name, c.name as category_name 
+			from restaurant r
 		    left outer join area a
 		    on r.area_idx = a.idx
+            left outer join category c
+            on r.category = c.idx
 		    where a.name = #{address}    
 		    fetch first 6 rows only
 	</select>

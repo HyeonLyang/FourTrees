@@ -2,6 +2,8 @@ package com.itbank.model.vo;
 
 import java.sql.Date;
 
+import org.springframework.web.multipart.MultipartFile;
+
 /*
   	IDX       NOT NULL NUMBER       
 	USERID    NOT NULL VARCHAR2(50) 
@@ -15,11 +17,13 @@ import java.sql.Date;
 	GENDER    NOT NULL VARCHAR2(10) 
 	AREA      NOT NULL CLOB         
 	JOIN_DATE          DATE
+	IMG				   VARCHAR2(100)
 */
 public class AccountVo {
 	private int idx;
 	private String userid, userpw, nick, email, status;
-	private String phone, foreigner, gender, area;
+	private String phone, foreigner, gender, area, img;
+	private MultipartFile img_upload;
 	private Date birth, join_date;
 	
 	public int getIdx() {
@@ -93,5 +97,17 @@ public class AccountVo {
 	}
 	public void setJoin_date(Date join_date) {
 		this.join_date = join_date;
+	}
+	public String getImg() {
+		return img;
+	}
+	public void setImg(String img) {
+		this.img = img;
+	}
+	public MultipartFile getImg_upload() {
+		return img_upload;
+	}
+	public void setImg_upload(MultipartFile img_upload) {
+		this.img_upload = img_upload;
 	}	
 }

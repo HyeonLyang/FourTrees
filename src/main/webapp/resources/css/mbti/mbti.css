@@ -86,7 +86,7 @@
     padding-top: 50px;
     padding-bottom: 30px;
 }
-.search_main div {
+.mbti-move div {
     padding: 20px;
     background-color: #F3E2CC;
     border-radius: 30px;
@@ -105,3 +105,73 @@
     color: #007BFF;
 }
 
+.result_button {
+	left: 5px;
+    color: white;
+    background-color: #f89851;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mbti-move {
+	/*transform: translateY(-400px);*/
+	transition: transform 0.3s ease
+}
+
+.mbti-con {
+	height: 190px;
+	overflow: hidden;
+}
+
+.mbti-op {
+	width: 70%;
+	height: 50px;
+	margin: 10px auto;
+	background-color: white;
+	position: absolute;
+	opacity: 75%;
+	display: block;
+	left: 50%;
+	top: 340px;
+    padding: 25px 0;
+    transform: translate(0%, 350%);
+    transform: translate(-50%, 0%);
+    z-index: 1;
+}
+
+h1 > img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	transform: translate(-130%, -25%);
+}
+
+.progress-bar-container {
+	margin: 10px auto;
+	width: 93%;
+   	text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-indicator {
+	width: 0%;
+    height: 100%;
+    background-color: #f89851;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.progress-label {
+    font-size: 14px;
+    color: #black;
+}

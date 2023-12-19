@@ -1,18 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file="../header.jsp" %>
-<link rel="stylesheet" href="${cpath }/resources/css/account/myPage.css">
-
-<article class="myPage_art">
-	<div class="profile">
-		<div class="pro_img">
-			<img src="${cpath }/resources/img/review/기본 프로필.jpg">
-			<div class="nick">			
-				<h3>${user.nick }</h3>
-				<h4>${user.nick }님 환영합니다</h4>
-			</div>
-		</div>				
-	</div>
+<%@ include file="myPage_main.jsp" %>		
+</div>
 	
     
     <div class="headline">	    	
@@ -26,13 +15,7 @@
 		<h3>비밀번호 변경</h3>
 	
 		<div class="user_info">
-			<table class="board">
-				<tr>
-					<th>현재 비밀번호</th>
-					<td><input name="pw" type="password" value="${user.userpw }" 
-						style="background-color: #d7d7d7;" readonly></td>										
-				</tr>
-				
+			<table class="board">				
 				<tr>
 					<th>새 비밀번호</th>					
 					<td>
