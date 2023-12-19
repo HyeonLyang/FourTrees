@@ -34,6 +34,18 @@ public class ReviewService {
 		
 		int row = dao.insert(input);
 		List<ReviewVO> list = dao.selectRes_name(input.getRes_idx());
+
+		List<Double> scoreList = dao.getResScores(input.getIdx());
+		double scoreSum = 0;
+		
+		for(double score : scoreList) {
+			scoreSum += score;
+		}
+		scoreSum += input.getScore();
+		double resScore = scoreSum / scoreList.size();
+
+		
+		res_dao.updateScore(resScore);
 		
 		String res_name = "";
 		

@@ -33,8 +33,9 @@ public class RestaurantVO {
 	    private String rom_address;
 	    private String rom_name;
 		private String area_name;
+
 		private String category_name;
-	    	    
+  
 		private int page;
 
 		public int getPage() {
