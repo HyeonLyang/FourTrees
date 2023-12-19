@@ -10,12 +10,15 @@
 	<select id="selectAll"
 			resultType="com.itbank.model.vo.ReviewVO"
 			parameterType="com.itbank.components.Paging">
-		select r1.*, r2.name as res_name, r2.address as res_address, a.name as area 
+		select r1.*, r2.name as res_name, 
+       			r2.address as res_address, a1.name as area, a2.img as acc_img
 			from review r1
 			left join restaurant r2
 				on r1.res_idx = r2.idx
-			left join area a
-				on r2.area_idx = a.idx			 
+			left join area a1
+				on r2.area_idx = a1.idx			 
+            left join account a2
+                on r1.writer = a2.nick			 
 			where r1.res_idx = #{res_idx}
 			order by r1.idx desc	
 			offset #{offset} rows
@@ -79,4 +82,8 @@
 		    where r1.writer = #{nick}
 	</select>
 	
+	<delete id="delete"
+			parameterType="int">
+		delete from review where idx = #{idx}
+	</delete>
 </mapper>

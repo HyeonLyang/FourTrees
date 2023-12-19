@@ -26,10 +26,9 @@ public class ReviewController {
 	@Autowired private ReviewDAO dao;
 
 	// 리뷰 페이지로 이동
-	@GetMapping("/review/{name}")
+	@GetMapping("/review/{name}/{res_idx}")
 	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page,
-							   @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx,
-							   @PathVariable String name) {
+							   @PathVariable int res_idx, @PathVariable String name) {
 		ModelAndView mav = new ModelAndView("review/review");
 		
 		Map<String, Object> result = rvs.getReview(page,res_idx);
@@ -42,6 +41,7 @@ public class ReviewController {
 		return mav;
 	}
 
+	// 근처 맛집페이지
 	@GetMapping("/review_area")
 	public ModelAndView area(String area_name) {
 		ModelAndView mav = new ModelAndView("review/review_area");
@@ -51,21 +51,22 @@ public class ReviewController {
 		return mav;
 	}
 
+	// 리뷰 이미지 모아보기
 	@GetMapping("/img_popup")
 	public void img_popup(Model model, int res_idx) {
 		model.addAttribute("list", rvs.imgCollection(res_idx));
 	}
 	
-	@GetMapping("/review_write/{name}")
-	public String write(@PathVariable String name) {
+	// 리뷰 쓰기 페이지
+	@GetMapping("/review_write/{name}/{res_idx}")
+	public String write(@PathVariable String name, @PathVariable int res_idx) {
 		return "review/review_write";
 	}
 	
-	@PostMapping("/review_write/{name}")
+	@PostMapping("/review_write/{name}/{res_idx}")
 	public ModelAndView write(ReviewVO input,String score,
-							  @RequestParam(value = "res_idx", defaultValue = "1001")int res_idx,
-							  @PathVariable String name) throws Exception {
-		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}?res_idx=" + res_idx) {};
+							  @PathVariable int res_idx, @PathVariable String name) throws Exception {
+		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}/{res_idx}") {};
 		
 		double num = Double.parseDouble(score);
 		
@@ -73,6 +74,17 @@ public class ReviewController {
 		input.setRes_idx(res_idx);		
 		
 		rvs.addReview(input);
+		
+		return mav;
+	}
+	
+	@GetMapping("/delete/{idx}/{name}/{res_idx}")
+	public ModelAndView delete(@PathVariable int idx,@PathVariable String name,
+							   @PathVariable int res_idx) {
+		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}/{res_idx}");
+		
+		rvs.delete(idx);
+		
 		
 		return mav;
 	}

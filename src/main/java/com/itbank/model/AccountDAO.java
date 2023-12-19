@@ -52,4 +52,7 @@ public interface AccountDAO {
 	@Select("select * from account")
 	List<AccountVo> selectAll();
 
+	@Update("update account set img = #{img} where nick = #{nick}")
+	int updateImg(AccountVo input);
+
 }

@@ -2,6 +2,8 @@ package com.itbank.model.vo;
 
 import java.sql.Date;
 
+import org.springframework.web.multipart.MultipartFile;
+
 /*
   	IDX       NOT NULL NUMBER       
 	USERID    NOT NULL VARCHAR2(50) 
@@ -21,6 +23,7 @@ public class AccountVo {
 	private int idx;
 	private String userid, userpw, nick, email, status;
 	private String phone, foreigner, gender, area, img;
+	private MultipartFile img_upload;
 	private Date birth, join_date;
 	
 	public int getIdx() {
@@ -100,5 +103,11 @@ public class AccountVo {
 	}
 	public void setImg(String img) {
 		this.img = img;
-	}		
+	}
+	public MultipartFile getImg_upload() {
+		return img_upload;
+	}
+	public void setImg_upload(MultipartFile img_upload) {
+		this.img_upload = img_upload;
+	}	
 }

@@ -7,7 +7,6 @@
 	<p>　</p>
 </div>
 </article>
-<img class="frame4" src="${cpath }/resources/img/frame.png">
 <section class="review_main">
 	<!-- 리뷰 갯수 작성 -->
 	<article class="re_title">	
@@ -17,8 +16,9 @@
 		</div>
 		
 		<div>										
-			<a href="${cpath }/review/review_write/${name }/?res_idx=${param.res_idx }">			
-				<img src="${cpath }/resources/img/review/review_write.png">
+			<a href="${cpath }/review/review_write/${name }/${res_idx }">			
+				<img src="${cpath }/resources/img/review/review_write.png"><br>
+				<span>리뷰 쓰기</span>
 			</a>	
 		</div>
 	</article>
@@ -58,7 +58,12 @@
 	<c:forEach var="row" items="${list }">	
 		<div class="main">
 			<div class="mark">
-				<img src="${cpath }/resources/img/review/기본 프로필.jpg">
+				<img src="${cpath }/img/account/${row.acc_img }"><br>
+				<c:if test="${user.status == '관리자' or row.writer == user.nick }">				
+					<button onclick="reviewDel(${row.idx },'${cpath }','${row.res_idx }','${row.res_name }')">
+						삭제
+					</button>
+				</c:if>				
 			</div>
 				<ul>
 					<li>${row.writer }</li>

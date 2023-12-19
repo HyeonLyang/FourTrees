@@ -1,5 +1,6 @@
 package com.itbank.controller;
 
+import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 
 import javax.servlet.http.HttpSession;
@@ -112,7 +113,14 @@ public class MyPageController {
 	
 	// 프로필 사진 변경하기
 	@GetMapping("/img_change")
-	public void img_change() {
+	public void img_change() {}
+	
+	@PostMapping("/img_change")
+	public ModelAndView updateImage(AccountVo input) throws IOException {
+		ModelAndView mav = new ModelAndView("redirect:/account/logout");
 		
+		as.updateImg(input, 0);
+		
+		return mav;
 	}
 }

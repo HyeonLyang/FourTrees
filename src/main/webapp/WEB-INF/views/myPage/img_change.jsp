@@ -10,16 +10,17 @@
 			<tr style="height: 100px;">
 				<th>프로필사진</th>
 				<td>	
-					<img src="${cpath }/resources/img/account/${user.img}"
+					<img src="${cpath }/img/account/${user.img}"
 					style="width: 70px; height: 70px; border-radius: 50px;"><br>			
 					<input name="img_upload" type="file">
 				</td>
 			</tr>
 			<tr>
 				<th>별명</th>
-				<td><input value="${user.nick }" readonly></td>
+				<td><input name="nick" value="${user.nick }" readonly></td>
 			</tr>
 		</table>
+		<button style="margin-top: 20px;">변경</button>		
 	</form>
 </article>
 </body>

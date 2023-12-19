@@ -5,12 +5,10 @@
 	padding-left: 30px;		
 }
 .login_form {
-	margin: 0 auto;	
-	padding: 10px;
-	width: 50%;
-	text-align: center;	
-	border: 4px double #ff7f50;	
-	border-width: 20px 10px;
+	margin: 0 auto;		
+	width: 55%;
+	text-align: center;		
+	border-width: 30px 10px;
 }
 .login_form fieldset {
 	width: 80%;
@@ -37,7 +35,7 @@
 	border-radius: 50px;
 	margin-top: 10px;
 	padding: 10px 0;
-	background-color: #f5ba41;
+	background-color: #ff7f50;
 	color: white;
 	border-color: white;
 }

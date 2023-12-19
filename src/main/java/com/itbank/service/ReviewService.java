@@ -91,4 +91,8 @@ public class ReviewService {
 		return dao.nickReview(nick);
 	}
 
+	public int delete(int idx) {
+		return dao.delete(idx);
+	}
+
 }

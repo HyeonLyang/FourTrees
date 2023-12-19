@@ -26,5 +26,7 @@ public interface ReviewDAO {
 
 	List<ReviewVO> nickReview(AccountVo nick);
 
+	int delete(int idx);
+
 	
 }

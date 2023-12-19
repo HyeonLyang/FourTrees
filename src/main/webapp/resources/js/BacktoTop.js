@@ -35,5 +35,12 @@ function isDelete(idx, cpath, dd) {
 	}
 }
 function isAdmin() {
-	alert('이건 관리자 계정이라서 삭제가 불가능합니다')
+	alert('관리자 계정이라서 삭제가 불가능합니다')
+}
+function reviewDel(idx, cpath, res_idx ,name) {
+	let del = confirm('이 리뷰를 삭제 하시겠습니까?');
+	
+	if (del) {
+		location.href = cpath + '/review/delete/' + idx + '/' + name + '/' + res_idx;
+	}
 }
