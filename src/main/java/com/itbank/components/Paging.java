@@ -15,25 +15,6 @@ public class Paging {
 	public Paging() {
 		
   }
-	
-	public String getAddress() {
-		return address;
-	}
-
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-
-	public String getCategory() {
-		return category;
-	}
-
-
-	public void setCategory(String category) {
-		this.category = category;
-	}
 
 	public Paging(int reqPage, int totalRestaurant) {
 		this.reqPage = reqPage;
