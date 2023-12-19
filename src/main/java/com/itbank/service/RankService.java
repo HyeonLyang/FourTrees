@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.itbank.model.RankDAO;
+import com.itbank.model.vo.CategoryVO;
 import com.itbank.model.vo.RestaurantVO;
 
 @Service
@@ -41,8 +42,20 @@ public class RankService {
 		return dao.selectJejuRank();
 	}
 
-	public Object getCateRank(String cate) {
-		return dao.selectCateRank(cate);
+	public List<RestaurantVO> getCateRank(int idx) {
+		return dao.selectCateRank(idx);
+	}
+
+	public List<CategoryVO> getCateList() {
+		return dao.selectCateAll();
+	}
+
+	public List<RestaurantVO> getAllCateRank(int idx) {
+		return dao.selectAllCateRank(idx);
+	}
+
+	public List<RestaurantVO> getAreaRank(String area) {
+		return dao.selectAreaRank(area);
 	}
 
 }

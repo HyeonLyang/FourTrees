@@ -20,9 +20,13 @@
 	</select>
 	
 	<select id="selectOne"
+			parameterType="int"
 			resultType="com.itbank.model.vo.RestaurantVO">
 		
-		select * from restaurant where idx = #{idx}
+		select r1.name as category, r2.* from category r1
+            inner join restaurant r2
+            on r1.idx = r2.category
+			where r2.idx = #{idx}
 	
 	</select>
 	
