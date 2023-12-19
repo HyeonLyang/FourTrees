@@ -15,9 +15,9 @@ public interface SearchDAO {
 
 	List<RestaurantVO> searchHeader(@Param("search") String search);
 
-	
 	// select count(*) from abc where search like '%word%';
 	int getTotalSearch();
 
 	List<ReviewVO> selectAll(Paging p);
+
 }
