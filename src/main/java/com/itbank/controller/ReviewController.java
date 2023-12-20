@@ -80,10 +80,10 @@ public class ReviewController {
 	
 	@GetMapping("/delete/{idx}/{name}/{res_idx}")
 	public ModelAndView delete(@PathVariable int idx,@PathVariable String name,
-							   @PathVariable int res_idx) {
+							   @PathVariable int res_idx,ReviewVO input) {
 		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}/{res_idx}");
 		
-		rvs.delete(idx);
+		rvs.delete(input);
 		
 		
 		return mav;
