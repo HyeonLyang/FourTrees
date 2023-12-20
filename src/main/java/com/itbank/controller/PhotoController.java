@@ -17,7 +17,7 @@ public class PhotoController {
 	@GetMapping("/photo_main")
 	public String photo_main(Model model) {
 		
-//		model.addAttribute("img_list", ps.getImg());
+		model.addAttribute("img_list", ps.getImg());
 		
 		return "/photo/photo_main";
 	}

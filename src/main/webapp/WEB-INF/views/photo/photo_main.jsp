@@ -7,7 +7,11 @@
 
 <section class="photo_main">
 	
-	
+	<section>
+		<c:forEach var="photo" items="${img_list }">
+			<img src="${cpath }/img/${photo.res_name }/${photo.img_path }">
+		</c:forEach>
+	</section>
 	
 </section>
 	
