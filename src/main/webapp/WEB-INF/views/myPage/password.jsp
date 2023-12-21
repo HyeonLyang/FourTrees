@@ -4,7 +4,8 @@
 		<div class="profile_modify">
 			<a href="${cpath }/myPage/password">			
 				<img src="${cpath }/resources/img/review/review_write.png" 
-				style="width: 70px;">
+				style="width: 70px;"><br>
+				<span style="font-size: 15px; color: #ff7f50;">회원정보수정</span>
 			</a>
 		</div>
 	</div>
@@ -13,7 +14,10 @@
     	 <p><a href="${cpath }">홈</a></p>         
          <p><a href="${cpath }/myPage/bookmark">북마크</a></p>
          <p><a href="${cpath }/myPage/myReply">댓글</a></p>
-         <p><a href="${cpath }/support/QNA">고객센터</a></p>
+         <p><a href="${cpath }/support/sup_main">고객센터</a></p>
+         <c:if test="${user.status == '관리자' }">
+         	<p><a href="${cpath }/myPage/admin">회원 관리</a></p>
+         </c:if>
     </div>
 
 	<article class="password_input">

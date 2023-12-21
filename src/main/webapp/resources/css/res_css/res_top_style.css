@@ -6,6 +6,10 @@ body{
 .res_detail_info{
 	height: 240px;
 }
+.res_total {
+	display: flex;
+	justify-content: space-between;
+}
 .res_detail_resName1 {
 	font-size: 2.15em;
 	display: inline-block;
@@ -52,6 +56,13 @@ body{
 }
 .res_detail_re_cnt{
 	margin-right: 5px;
+}
+.review_write {
+	margin-top: 45px;
+}
+.review_write img {
+	margin: 0 10px;
+	width: 50px;
 }
 .res_detail_simIn{
 	display: inline-block;

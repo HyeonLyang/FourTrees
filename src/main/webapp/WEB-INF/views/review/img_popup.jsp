@@ -37,7 +37,7 @@ body {
 	<div class="img_popup_collection">
 		<c:forEach var="row" items="${list }">	
 			<div class="contents">			
-				<img src="${cpath }/img/${param.res_idx }/${row.img}">
+				<img src="${cpath }/img/${param.res_name }/${row.img}">
 			</div>
 		</c:forEach>
 	</div>
