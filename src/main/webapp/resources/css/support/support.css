@@ -8,38 +8,6 @@
 }
 .sup_main {
 	width: 1000px;
-<<<<<<< HEAD
-	border: 1px solid;
-	border-radius: 15px;
-	background-color: #fda172;
-	box-shadow: 1px 1px 1px 1px black;
-	margin: 20px auto;
-	text-align: center;
-	box-sizing: border-box;
-	font-weight: bolder;
-}
-.sup_tag a:hover {
-	color: white;
-}
-.sup_tag ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.sup_tag li {
-	font-size: 16px;
-}
-.sup_title {
-	margin-bottom: 50px;
-}
-.sup_title a{
-	font-size: 24px;
-	font-weight: bold;
-}
-.sup_title a:hover {
-	color: white;
-}
-=======
 	margin: 20px auto;
 	box-sizing: border-box;
 	background-color: #ffa07a;
@@ -98,56 +66,22 @@
 	padding: 15px;
 	box-sizing: border-box;
 }
->>>>>>> origin/master
 /* support - notice.jsp */
 .notice {
 	width: 1000px;
 	margin: 0 auto;
-<<<<<<< HEAD
-	border: 1px solid;
-	border-radius: 15px;
-	background-color: #fda172;
-	text-align: center;
-	box-shadow: 1px 1px 1px 1px black;
-	padding: 20px;
-	padding-bottom: 50px;
-}
-.notice img {
-	width: 50px;
-	height: 50px;
-}
-.notice table {
-	width: 800px;
-	border-collapse: collapse;
-	margin: 20px auto;
-	border-radius: 15px;
-}
-=======
 	box-sizing: border-box;
 }
 .notice_con img {
 	width: 50px;
 	height: 50px;
 }
->>>>>>> origin/master
 .notice_con {
 	width:900px;
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 10px;
 	background-color: white;
-<<<<<<< HEAD
-	box-shadow: inset 1px 1px 1px 1px black;
-}
-.notice th {
-	border-bottom: 1px solid;
-}
-.notice td {
-	border-bottom: 1px solid black;
-	padding: 10px 15px;
-	box-sizing: border-box;
-	vertical-align: middle;
-=======
 }
 .notice_con ul {
 	padding: 0;
@@ -170,7 +104,6 @@
 }
 .date {
 	font-size: 12px;
->>>>>>> origin/master
 }
 .btn {
 	width: 900px;
@@ -195,16 +128,10 @@
 	gap: 20px;
 	width: 350px;
 	margin: 0 auto;
-<<<<<<< HEAD
-	background-color: aqua;
-	text-align: center;
-	justify-content: center;
-=======
 	text-align: center;
 	justify-content: center;
 }
 .notice_paging {
 	
 	margin: 20px;
->>>>>>> origin/master
 }

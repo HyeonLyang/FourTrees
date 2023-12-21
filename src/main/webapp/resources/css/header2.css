@@ -120,6 +120,68 @@ a {
 .header2_search img:hover {
 	background-color: #ffff8d;
 }
+.sc_con {
+	width: 50px;
+	overflow: hidden;
+	transition: width 0.5s;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	border-radius: 20px;
+	background-color: white;
+}
+.sc_con img {
+	margin-top: 3px;
+}
+.sc_input form {
+	width: 500px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	gap:3px;
+	border-radius: 3px;
+    
+}
+.sc_input select {
+	font-size: 12px;
+	width: 80px;
+	border-radius: 10px;
+}
+.sc_input input {
+	width: 160px;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #ff7518;
+	font-size: 12px;
+	padding: 5px;
+}
+.sc_input button {
+    opacity: 80%;
+	border: none;
+	background-color: #ff8339;
+    cursor: pointer;
+    font-weight: bold;
+	border-radius: 10px;
+	color: white;
+	height: 25px;
+}
+.sc_input select,.sc_input input{
+	border: none;
+	background-color: white;
+}
+.header2_search {
+	width: 100px;
+	height: 55px;
+	box-sizing: border-box;
+}
+.header2_search img {
+	width: 55px;
+	height: 55px;
+}
+.header2_search img:hover {
+	background-color: #ffff8d;
+}
 .language-container {
 	width: 55px;
 	height: 55px;
@@ -127,9 +189,11 @@ a {
 	align-items: center;
 	box-sizing: border-box;
 	transition: width 0.5s;
+	transition: width 0.5s;
 }
 .language-container img:hover {
 	border-radius: 50%;
+	border: 5px solid #ffff8d;
 	border: 5px solid #ffff8d;
 }
 .language li {
@@ -138,6 +202,7 @@ a {
 	width: 55px;
 	height: 55px;
 }
+
 
 .language {
     display:flex;
@@ -166,10 +231,8 @@ a {
 .menu img {
 	width: 50px;
 	height: 50px;
-<<<<<<< HEAD
-=======
 	border-radius: 50%;
->>>>>>> origin/master
+	border-radius: 50%;
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -184,7 +247,6 @@ a {
 /* .menu_container:hover { */
 /* 	overflow: visible; */
 /* } */
-<<<<<<< HEAD
 
 /*메뉴 2 임시 테스트*/
 .sub_container {
@@ -197,10 +259,13 @@ a {
 }
 .sub_icons img {
 	box-shadow: 0;
-=======
+	transition: overflow 4s;
+}
+/* .menu_container:hover { */
+/* 	overflow: visible; */
+/* } */
 .menu_icons td {
 	padding: 15px;
->>>>>>> origin/master
 }
 .sub_icons td:hover {
 	background-color: #e1f5fe;

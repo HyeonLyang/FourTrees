@@ -4,31 +4,11 @@
 <%@ include file="sup_main.jsp" %>
 
 <section class="notice" id="support">
-<<<<<<< HEAD
-	<h1>FAQ</h1>
-=======
 	<h1 align="center">FAQ</h1>
->>>>>>> origin/master
 	<div class="btn">
 		<a href="#"><button>관리자용 글 쓰기</button></a>
 	</div>
 	<div class="notice_con">
-<<<<<<< HEAD
-		<table>
-			<tr>
-				<th>번호</th>
-				<th>글 제목</th>
-				<th>게시일</th>
-				<th>수정(권한)</th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>자주 묻는 질문 게시판입니다</td>
-				<td>2023-12-16</td>
-				<td>EDIT</td>
-			</tr>
-		</table>
-=======
 		<hr>
 		<c:forEach var="row" items="${list }">
 			<ul>
@@ -43,7 +23,6 @@
 			</ul>
 		<hr>
 		</c:forEach>
->>>>>>> origin/master
 		<div class="notice_paging">
 			<ul>
 				<c:set var="noPath" value="${cpath }/support/notice"></c:set>
