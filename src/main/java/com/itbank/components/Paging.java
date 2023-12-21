@@ -13,8 +13,13 @@ public class Paging {
 	private String address, category;
 
 	public Paging() {
+<<<<<<< HEAD
     
   }
+=======
+		
+	}
+>>>>>>> origin/master
 
 	public Paging(int reqPage, int totalRestaurant) {
 		this.reqPage = reqPage;

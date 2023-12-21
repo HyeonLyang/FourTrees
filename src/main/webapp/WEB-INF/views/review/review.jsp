@@ -42,7 +42,7 @@
 			</c:forEach>			
 			<div class="slider_more">				
 			<div class="more">
-				<a href="${cpath }/review/img_popup?img=${p.totalRestaurant }&res_idx=${param.res_idx}">				
+				<a href="${cpath }/review/img_popup?res_idx=${res_idx }&res_name=${name}&img=${p.totalRestaurant }">				
 					<b>${p.totalRestaurant }</b><br>
 					<i>더보기></i>
 				</a>

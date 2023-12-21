@@ -46,6 +46,10 @@
                 <div class="menu">
                 	<!-- 메뉴-검색창 -->
 					<form action="${cpath }/search/sc_detail" method="get">
+<<<<<<< HEAD
+=======
+					
+>>>>>>> origin/master
 					    <div class="search">
 					    	<select id="type">
 								<option value="address">지역</option>

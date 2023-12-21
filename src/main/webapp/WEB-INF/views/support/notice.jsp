@@ -5,11 +5,16 @@
 
 
 <section class="notice" id="support">
+<<<<<<< HEAD
 	<h1>NOTICE</h1>
+=======
+	<h1 style="text-align: center;	">NOTICE</h1>
+>>>>>>> origin/master
 	<div class="btn">
 		<a href="#"><button>관리자용 글 쓰기</button></a>
 	</div>
 	<div class="notice_con">
+<<<<<<< HEAD
 				<p>게시물 수 : ${total}</p>
 		<table>
 			<tr>
@@ -32,6 +37,21 @@
 			
 			</c:forEach>
 		</table>
+=======
+		<hr>
+		<c:forEach var="row" items="${list }">
+			<ul>
+				<li>
+					<p><a href="#">${row.title }</a></p>
+					<p class="date">${row.write_date }</p>
+				</li>
+			<c:if test="${user.status == '관리자' }">
+				<li id="notice_btns">수정/제거</li>
+			</c:if>
+			</ul>
+		<hr>
+		</c:forEach>
+>>>>>>> origin/master
 		<div class="notice_paging">
 			<ul>
 				<c:set var="noPath" value="${cpath }/support/notice"></c:set>

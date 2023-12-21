@@ -166,6 +166,10 @@ a {
 .menu img {
 	width: 50px;
 	height: 50px;
+<<<<<<< HEAD
+=======
+	border-radius: 50%;
+>>>>>>> origin/master
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -180,6 +184,7 @@ a {
 /* .menu_container:hover { */
 /* 	overflow: visible; */
 /* } */
+<<<<<<< HEAD
 
 /*메뉴 2 임시 테스트*/
 .sub_container {
@@ -192,6 +197,10 @@ a {
 }
 .sub_icons img {
 	box-shadow: 0;
+=======
+.menu_icons td {
+	padding: 15px;
+>>>>>>> origin/master
 }
 .sub_icons td:hover {
 	background-color: #e1f5fe;
@@ -279,7 +288,7 @@ a {
 .go-top {
   display: none;
   position: fixed;
-  right: 30px;
+  right: 150px;
   bottom: 50px;
   outline: 0;
   border: 0;

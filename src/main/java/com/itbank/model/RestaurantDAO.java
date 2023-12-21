@@ -3,6 +3,7 @@ package com.itbank.model;
 import java.util.List;
 
 import com.itbank.model.vo.RestaurantVO;
+import com.itbank.model.vo.ReviewVO;
 
 public interface RestaurantDAO {
 
@@ -12,6 +13,8 @@ public interface RestaurantDAO {
 	
 	RestaurantVO selectOne(int idx);
 
-	void updateScore(double resScore);
+	void updateScore();
+
+	void updateScore(ReviewVO input);
 
 }

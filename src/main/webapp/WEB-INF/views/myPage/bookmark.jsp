@@ -28,7 +28,7 @@
 			<th>주소</th>			
 		</tr>
 		<c:forEach var="row" begin="1001" end="1010">
-			<tr>
+			<tr>	
 				<th><input name="" type="checkbox" style="width: auto;"></th>
 				<th>${row }</th>
 				<td>루비정</td>

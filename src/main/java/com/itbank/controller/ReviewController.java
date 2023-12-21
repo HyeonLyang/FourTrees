@@ -66,7 +66,7 @@ public class ReviewController {
 	@PostMapping("/review_write/{name}/{res_idx}")
 	public ModelAndView write(ReviewVO input,String score,
 							  @PathVariable int res_idx, @PathVariable String name) throws Exception {
-		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}/{res_idx}") {};
+		ModelAndView mav = new ModelAndView("redirect:/restaurant/res_detail/{res_idx}") {};
 		
 		double num = Double.parseDouble(score);
 		
@@ -80,10 +80,10 @@ public class ReviewController {
 	
 	@GetMapping("/delete/{idx}/{name}/{res_idx}")
 	public ModelAndView delete(@PathVariable int idx,@PathVariable String name,
-							   @PathVariable int res_idx) {
-		ModelAndView mav = new ModelAndView("redirect:/review/review/{name}/{res_idx}");
+							   @PathVariable int res_idx,ReviewVO input) {
+		ModelAndView mav = new ModelAndView("redirect:/restaurant/res_detail/{res_idx}");
 		
-		rvs.delete(idx);
+		rvs.delete(input);
 		
 		
 		return mav;

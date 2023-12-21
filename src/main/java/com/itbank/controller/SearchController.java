@@ -1,5 +1,7 @@
 package com.itbank.controller;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -12,8 +14,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 import com.itbank.model.SearchDAO;
+<<<<<<< HEAD
 import com.itbank.model.vo.RestaurantVO;
 import com.itbank.service.RestaurantService;
+=======
+>>>>>>> origin/master
 import com.itbank.service.SearchService;
 
 @Controller
@@ -29,16 +34,23 @@ public class SearchController {
 		
 	}
 
+<<<<<<< HEAD
 	// 리뷰 페이지로 이동
+=======
+>>>>>>> origin/master
 	@GetMapping("/sc_detail")
-	public ModelAndView review(@RequestParam(value = "page", defaultValue = "1") int page,
+	public ModelAndView search(@RequestParam(value = "page", defaultValue = "1") int page,
 			@RequestParam(value = "address", required = false) String address,
 			@RequestParam(value = "category", required = false) String category
 			) {
 		ModelAndView mav = new ModelAndView("search/sc_detail");
 
 		Map<String, Object> result = ss.getSearch(page, address, category);
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> origin/master
 		mav.addObject("rq", result.get("rq"));
 		mav.addObject("tt", result.get("tt"));
 		mav.addObject("add", address);
