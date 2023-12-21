@@ -46,7 +46,6 @@
                 <div class="menu">
                 	<!-- 메뉴-검색창 -->
 					<form action="${cpath }/search/sc_detail" method="get">
-					
 					    <div class="search">
 					    	<select id="type">
 								<option value="address">지역</option>
@@ -76,43 +75,31 @@
                         </ul>
                     </div>
 <!-- 메뉴 버튼 -->
-<div class="menu_container">
+<div class="menu_container" onclick="toggle3()">
 	<div class="menu_button" id="menu_button">
 		<img src="${cpath }/resources/img/menu.png">
 	</div>
-	
+<script src="${cpath }/resources/js/header.js"></script>
 	<div class="menu_icons">
 		<div class="menu_scroll">
 			<div class="menu_back">
 				<div class="menu_back2"> 	
 					<table>
-					<tr>
-						<td><a href="${cpath }/myPage/bookmark"><img src="${cpath }/resources/img/icon1.png"></a></td>
-						<td><a href="${cpath }/restaurant/res_detail/1001"><img src="${cpath }/resources/img/icon2.png"></a></td>
-						<td><a href="${cpath }/recommend/roulette"><img src="${cpath }/resources/img/icon3.png"></a></td>
-					</tr>
-					<tr>
-						<td><a href="${cpath }/rank/rank_main"><img src="${cpath }/resources/img/icon4.png"></a></td>
-						<td><a href="${cpath }/review/review"><img src="${cpath }/resources/img/icon5.png"></a></td>
-						<td><a href="${cpath }/support/notice"><img src="${cpath }/resources/img/icon6.png"></a></td>
-					</tr>
-					<tr>
-						<td><a href="${cpath }/account/login"><img src="${cpath }/resources/img/icon7.png"></a></td>
-						<td><a href="${cpath }/account/signUp"><img src="${cpath }/resources/img/icon8.png"></a></td>
-						<td><a href="${cpath }/mbti/mbti_main"><img src="${cpath }/resources/img/icon9.png"></a></td>
-					</tr>
-					<tr>
-						<td><a href="#"><img src="${cpath }/resources/img/icon10.png"></a></td>
-						<td><a href="${cpath }/search/sc_main"><img src="${cpath }/resources/img/icon11.png"></a></td>
-						<td><a href="#"><img src="${cpath }/resources/img/icon12.png"></a></td>
-							</tr>
+						<tr>
+						<td><a href="${cpath }/search/sc_main"><img src="${cpath }/resources/img/header/icon1.png"></a></td>
+						<td><a href="${cpath }/rank/rank_main"><img src="${cpath }/resources/img/header/icon2.png"></a></td>
+						<td><a href="${cpath }/mbti/mbti_main"><img src="${cpath }/resources/img/header/icon3.png"></a></td>
+						<td><a href="${cpath }/recommend/roulette"><img src="${cpath }/resources/img/header/icon4.png"></a></td>
+						<td><a href="${cpath }/photo/photo_main"><img src="${cpath }/resources/img/header/icon5.png"></a></td>
+						<td><a href="${cpath }/support/sup_main"><img src="${cpath }/resources/img/header/icon6.png"></a></td>
+						
+						</tr>
 						</table>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-                    
+	</div>                    
                 </div>	
             </section>
 
