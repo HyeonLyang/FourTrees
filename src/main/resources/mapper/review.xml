@@ -69,7 +69,7 @@
 	<select id="getResScores"
 			resultType="Double"
 			parameterType="int">
-		select score from review where res_idx = #{idx}
+		select score from review where res_idx = #{res_idx}
 	</select>
 	
 	<select id="nickReview"

@@ -13,7 +13,7 @@
     	 <p><a href="${cpath }">홈</a></p>         
          <p><a href="${cpath }/myPage/bookmark">북마크</a></p>
          <p><a href="${cpath }/myPage/myReply" style="color: #ff7f50;">댓글</a></p>
-         <p><a href="${cpath }/support/QNA">고객센터</a></p>
+         <p><a href="${cpath }/support/sup_main">고객센터</a></p>
          <c:if test="${user.status == '관리자' }">
          	<p><a href="${cpath }/myPage/admin">회원 관리</a></p>
          </c:if>
@@ -29,10 +29,10 @@
 		</tr>
 		<c:forEach var="row" items="${list }">
 			<tr>			
-				<th>${row.idx }</th>
-				<td>${row.content }</td>						
+				<th style="padding: 0px 10px;">${row.idx }</th>
+				<td style="padding: 0px 40px; width: 45%;">${row.content }</td>						
 				<td>${row.res_name }</td>
-				<td>${row.write_date }</td>
+				<td style="padding: 0px 10px; width: 10%;">${row.write_date }</td>
 			</tr>
 		</c:forEach>
 	</table>

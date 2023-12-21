@@ -5,7 +5,7 @@ body {
 	padding-top: 90px;
 }
 section {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
@@ -134,7 +134,6 @@ a {
 }
 .language li {
 	box-sizing: border-box;
-	padding: 5px;
 	border-radius: 50%;
 	width: 55px;
 	height: 55px;
@@ -167,7 +166,6 @@ a {
 .menu img {
 	width: 50px;
 	height: 50px;
-	border-radius: 50%;
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -182,14 +180,57 @@ a {
 /* .menu_container:hover { */
 /* 	overflow: visible; */
 /* } */
-.menu_icons td {
-	padding: 15px;
+
+/*메뉴 2 임시 테스트*/
+.sub_container {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	transition: overflow 4s;
 }
+.sub_icons img {
+	box-shadow: 0;
+}
+.sub_icons td:hover {
+	background-color: #e1f5fe;
+	border-radius: 15px;
+}
+.sub_icons table {
+	width: 70px;
+	margin: auto;
+}
+.sub_scroll {
+	margin-top: 7px;
+	position: relative;
+	right: 180px;
+	height: 350px;
+	width: 320px;
+	padding: 0;
+}
+.sub_back {
+	/*background-color: #efdb96;*/
+	width: 630px;
+	height: 83px;
+	border-radius: 15px;
+	padding: 10px;
+}
+.sub_back2 {
+	background-color: efefef;
+	border-radius: 15px;
+}
+.sub_back2 img {
+	width: 65px;
+	height: 65px;
+}
+
+/*메뉴 2 종료 */
+
 .menu_icons img {
 	box-shadow: 0;
 }
 .menu_icons td:hover {
-	padding: 15px;
 	background-color: #e1f5fe;
 	border-radius: 15px;
 }
@@ -200,25 +241,25 @@ a {
 .menu_scroll {
 	margin-top: 15px;
 	position: relative;
-	right: 220px;
+	right: 460px;
 	height: 350px;
 	width: 320px;
 	padding: 0;
 }
 .menu_back {
-	background-color: #efdb96;
-	width: 280px;
-	height: 350px;
+	/*background-color: #efdb96;*/
+	width: 630px;
+	height: 83px;
 	border-radius: 15px;
 	padding: 10px;
 }
 .menu_back2 {
-	background-color: white;
+	background-color: #efefef;
 	border-radius: 15px;
 }
 .menu_back2 img {
-	width: 45px;
-	height: 45px;
+	width: 60px;
+	height: 60px;
 }
 .menu_login {
 	list-style: none;

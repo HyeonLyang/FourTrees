@@ -7,20 +7,30 @@
 	<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 
 	<section class="res_detail_info">
-		<div class="res_detail_basicInfo">
-			<p class="res_detail_resName1">${res.name }</p>
-			<p class="res_detail_resName2">${res.rom_name }</p>
-		</div>
-		<div class="res_detail_re">
-			<div class="res_detail_rate_back">
-			<!-- db연결 후 width: 별점 -->
-	    		<span style="width: ${star_rating}%" class="res_detail_rate_front"></span>
-	    	</div>
-			<p class="res_detail_score">${res.score }</p>
-			<img class="res_detail_re_cnt" src="${cpath }/resources/img/restaurant/re_cnt.png">
-			<h5 class="res_detail_re_cnt">215 개</h5>
-			<img class="res_detail_bookmark" src="${cpath }/resources/img/restaurant/bookmark1.png">
-			<h5 class="res_detail_bookmark">22755 명</h5>
+		<div class="res_total">		
+			<div class="res_info">		
+				<div class="res_detail_basicInfo">
+					<p class="res_detail_resName1">${res.name }</p>
+					<p class="res_detail_resName2">${res.rom_name }</p>
+				</div>
+				<div class="res_detail_re">
+					<div class="res_detail_rate_back">
+					<!-- db연결 후 width: 별점 -->
+			    		<span style="width: ${star_rating}%" class="res_detail_rate_front"></span>
+			    	</div>
+					<p class="res_detail_score">${res.score }</p>
+					<img class="res_detail_re_cnt" src="${cpath }/resources/img/restaurant/re_cnt.png">
+					<h5 class="res_detail_re_cnt">215 개</h5>
+					<img class="res_detail_bookmark" src="${cpath }/resources/img/restaurant/bookmark1.png">
+					<h5 class="res_detail_bookmark">22755 명</h5>
+				</div>
+			</div>
+			<div class="review_write">
+				<a href="${cpath }/review/review_write/${res.name }/${res.idx }">			
+					<img src="${cpath }/resources/img/review/review_write.png"><br>
+					<span>리뷰 쓰기</span>
+				</a>	
+			</div>
 		</div>
 		<hr class="res_detail_hr">
 		<div class="res_detail_simpleInfo">

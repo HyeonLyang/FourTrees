@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itbank.model.SearchDAO">
+  
 	<select id="selectAll"
 		resultType="com.itbank.model.vo.RestaurantVO"
 		parameterType="com.itbank.components.Paging">
@@ -36,9 +37,7 @@
 			or category like '%' || #{category} || '%'
 		</if>
 		</where>
-	
 	</select>	
-
 
 	<select id="getTotalSearchParam" resultType="int">
 	    SELECT COUNT(*) FROM restaurant r
@@ -54,63 +53,5 @@
 	        </if>
 	    </where>
 	</select>
-	
-	<select id="searchHeader" resultType="com.itbank.model.vo.RestaurantVO">
-	    SELECT * FROM restaurant
-	    WHERE
-	    <!-- 검색어(search)가 주소(address) 또는 카테고리(category)에 포함되는 경우 -->
-	    <if test="search != null and search != ''">
-	        <!-- 주소 또는 카테고리 중 하나라도 포함되는 경우 -->
-	        <if test="search != null and search != ''">
-	            address LIKE '%' || #{search} || '%'
-	        </if>
-	
-	        <if test="search != null and search != ''">
-	            <if test="search != null and search != ''"> OR </if>
-	            category LIKE '%' || #{search} || '%'
-	        </if>
-	    </if>
-	</select>
-	
-	
-<!-- 	<select id="searchPage" resultType="com.itbank.model.vo.RestaurantVO"  -->
-<!-- 	parameterType="com.itbank.components.Paging"> -->
-<!-- 	    SELECT * FROM ( -->
-<!-- 	        SELECT -->
-<!-- 	            ROWNUM AS rnum, -->
-<!-- 	            r.* -->
-<!-- 	        FROM ( -->
-<!-- 	            SELECT -->
-<!-- 	                row_number() OVER (ORDER BY view_count) AS rnum, -->
-<!-- 	                * -->
-<!-- 	            FROM restaurant -->
-<!-- 	            WHERE -->
-<!-- 	                검색어(search)가 주소(address) 또는 카테고리(category)에 포함되는 경우 -->
-<!-- 	                <if test="search != null and search != ''"> -->
-<!-- 	                    주소 또는 카테고리 중 하나라도 포함되는 경우 -->
-<!-- 	                    <if test="address != null and address != ''"> -->
-<!-- 	                        address LIKE '%' || #{search} || '%' -->
-<!-- 	                    </if> -->
-<!-- 	                    <if test="category != null and category != ''"> -->
-<!-- 	                        <if test="address != null and address != ''"> OR </if> -->
-<!-- 	                        category LIKE '%' || #{search} || '%' -->
-<!-- 	                    </if> -->
-<!-- 	                </if> -->
-<!-- 	        ) r -->
-<!-- 	    ) WHERE rnum BETWEEN #{offset} AND #{offset + perCount - 1} -->
-<!-- 	</select> -->
-	
-<!-- 	<select id="getTotalSearch" resultType="int"> -->
-<!-- 		    검색어(search)가 주소(address) 또는 카테고리(category)에 포함되는 경우 -->
-<!--     	<if test="search != null and search != ''"> -->
-<!--         주소 또는 카테고리 중 하나라도 포함되는 경우 -->
-<!--         <if test="address != null and address != ''"> -->
-<!--             address LIKE '%' || #{search} || '%' -->
-<!--         </if> -->
-<!--         <if test="category != null and category != ''"> -->
-<!--             <if test="address != null and address != ''"> OR </if> -->
-<!--             category LIKE '%' || #{search} || '%' -->
-<!--         </if> -->
-<!--     </if>		 -->
-<!-- 	</select> -->
+
 </mapper>

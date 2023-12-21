@@ -8,14 +8,15 @@
 }
 .sup_main {
 	width: 1000px;
-	border: 1px solid;
-	border-radius: 15px;
-	background-color: #fda172;
-	box-shadow: 1px 1px 1px 1px black;
 	margin: 20px auto;
-	text-align: center;
 	box-sizing: border-box;
-	font-weight: bolder;
+	background-color: #ffa07a;
+	height: 100px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 80px;
 }
 .sup_tag a:hover {
 	color: white;
@@ -28,37 +29,52 @@
 .sup_tag li {
 	font-size: 16px;
 }
-.sup_title {
-	margin-bottom: 50px;
-}
 .sup_title a{
 	font-size: 24px;
 	font-weight: bold;
-}
-.sup_title a:hover {
 	color: white;
+}
+.sup_search {
+	width: 300px;
+	height: 50px;
+	background-color: white;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.sup_search input {
+	width: 200px;
+	height: 30px;
+	border: none;
+	border-radius: 15px;
+}
+.sup_search img {
+	width: 30px;
+	height: 30px;
+}
+.sup_link {
+	width: 150px;
+	height: 50px;
+	color: white;
+	background-color: #ff7f50;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px;
+	box-sizing: border-box;
 }
 /* support - notice.jsp */
 .notice {
 	width: 1000px;
 	margin: 0 auto;
-	border: 1px solid;
-	border-radius: 15px;
-	background-color: #fda172;
-	text-align: center;
-	box-shadow: 1px 1px 1px 1px black;
-	padding: 20px;
-	padding-bottom: 50px;
+	box-sizing: border-box;
 }
-.notice img {
+.notice_con img {
 	width: 50px;
 	height: 50px;
-}
-.notice table {
-	width: 800px;
-	border-collapse: collapse;
-	margin: 20px auto;
-	border-radius: 15px;
 }
 .notice_con {
 	width:900px;
@@ -66,16 +82,28 @@
 	box-sizing: border-box;
 	padding: 10px;
 	background-color: white;
-	box-shadow: inset 1px 1px 1px 1px black;
 }
-.notice th {
-	border-bottom: 1px solid;
+.notice_con ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	list-style: none;
 }
-.notice td {
-	border-bottom: 1px solid black;
+.notice_con li {
 	padding: 10px 15px;
-	box-sizing: border-box;
-	vertical-align: middle;
+} 
+.notice hr {
+	padding: 0;
+	margin: 0;
+}
+.notice p {
+	margin: 0;
+	padding: 0;
+}
+.date {
+	font-size: 12px;
 }
 .btn {
 	width: 900px;
@@ -100,7 +128,10 @@
 	gap: 20px;
 	width: 350px;
 	margin: 0 auto;
-	background-color: aqua;
 	text-align: center;
 	justify-content: center;
+}
+.notice_paging {
+	
+	margin: 20px;
 }

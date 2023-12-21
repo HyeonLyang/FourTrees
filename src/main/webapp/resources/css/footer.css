@@ -5,7 +5,8 @@
 footer {
   margin: 0 auto;
   background: #ff7518;
-  margin-top: 100px;
+  position: absolute;
+  transform: translate(0%, 1520%);
 }
 
 footer .footer_in {
