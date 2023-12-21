@@ -43,5 +43,4 @@ function reviewDel(idx, cpath, res_idx ,name) {
 	if (del) {
 		location.href = cpath + '/review/delete/' + idx + '/' + name + '/' + res_idx;
 	}
-
 }
