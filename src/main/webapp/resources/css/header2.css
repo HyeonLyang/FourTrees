@@ -244,7 +244,6 @@ a {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	transition: overflow 4s;
 }
 
 /*메뉴 2 임시 테스트*/
@@ -254,16 +253,11 @@ a {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	transition: overflow 4s;
 }
 .sub_icons img {
 	box-shadow: 0;
-	transition: overflow 4s;
 }
 
-/* .menu_container:hover { */
-/* 	overflow: visible; */
-/* } */
 .menu_icons td {
 	padding: 15px;
 }
@@ -284,7 +278,7 @@ a {
 	padding: 0;
 }
 .sub_back {
-	/*background-color: #efdb96;*/
+/* 	background-color: #efdb96; */
 	width: 630px;
 	height: 83px;
 	border-radius: 15px;
@@ -295,8 +289,8 @@ a {
 	border-radius: 15px;
 }
 .sub_back2 img {
-	width: 75px;
-	height: 75px;
+	width: 65px;
+	height: 65px;
 }
 
 /*메뉴 2 종료 */

@@ -53,35 +53,6 @@
 							<img src="${cpath }/resources/img/menu.png">
 						</div>
 
-<!-- 						<div class="menu_icons"> -->
-<!-- 							<div class="menu_scroll"> -->
-<!-- 								<div class="menu_back"> -->
-<!-- 									<div class="menu_back2"> -->
-<!-- 										<table> -->
-<!-- 											<tr> -->
-<%-- 												<td><a href="${cpath }/search/sc_main"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon1.png"></a></td> --%>
-<%-- 												<td><a href="${cpath }/rank/rank_main"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon2.png"></a></td> --%>
-<%-- 												<td><a href="${cpath }/mbti/mbti_main"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon3.png"></a></td> --%>
-<%-- 												<td><a href="${cpath }/recommend/roulette"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon4.png"></a></td> --%>
-<%-- 												<td><a href="${cpath }/photo/photo_main"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon5.png"></a></td> --%>
-<%-- 												<td><a href="${cpath }/support/sup_main"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon6.png"></a></td> --%>
-<%-- 												<td><a href="${cpath }/account/login"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon7.png"></a></td> --%>
-<%-- 												<td><a href="${cpath }/account/signUp"><img --%>
-<%-- 														src="${cpath }/resources/img/header/icon8.png"></a></td> --%>
-<!-- 											</tr> -->
-<!-- 										</table> -->
-<!-- 									</div> -->
-<!-- 								</div> -->
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
 				<div class="sub_container">
 					<div class="sub_icons">
 							<div class="sub_scroll">
