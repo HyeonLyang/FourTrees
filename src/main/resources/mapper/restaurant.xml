@@ -31,8 +31,8 @@
 	</select>
 	
 	<update id="updateScore"
-			parameterType="double">
-		update restaurant set score = #{resScore}
+			parameterType="com.itbank.model.vo.ReviewVO">
+		update restaurant set score = #{score} where idx = #{res_idx}
 	</update>
 	
 </mapper>

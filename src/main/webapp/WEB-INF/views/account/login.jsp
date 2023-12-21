@@ -15,7 +15,7 @@
 			<legend>로그인</legend>
 				<p><input name="userid" placeholder="ID" required></p>
 				<p><input name="userpw" type="password" placeholder="PW" required></p>
-				<p><input name="login_check" type="checkbox">로그인 상태 유지</p>
+				<p><input name="login_check" type="checkbox" value="checked" >아이디 기억하기</p>
 				
 				<button>로그인</button>
 		</fieldset>

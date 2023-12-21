@@ -29,13 +29,21 @@ public class AccountController {
 	public void login() {}
 	
 	@PostMapping("/login")
-	public ModelAndView login(AccountVo input, HttpSession session) {
+	public ModelAndView login(AccountVo input, HttpSession session,
+							 @RequestParam(name = "login_check", required = false) String login_check) {
 		ModelAndView mav = new ModelAndView("redirect:/");
 		
 		input = as.login(input);
 		
 		if (input != null) {			
 			session.setAttribute("user", input);			
+		}
+		
+		if("checked".equals(login_check)) {
+			System.out.println("체크");
+		}
+		else {
+			System.out.println("not 체크");
 		}
 		
 		return mav;

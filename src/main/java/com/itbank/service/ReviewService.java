@@ -35,7 +35,7 @@ public class ReviewService {
 		int row = dao.insert(input);
 		List<ReviewVO> list = dao.selectRes_name(input.getRes_idx());
 
-		List<Double> scoreList = dao.getResScores(input.getIdx());
+		List<Double> scoreList = dao.getResScores(input.getRes_idx());
 		double scoreSum = 0;
 		double resScore = 0;
 		
@@ -43,13 +43,17 @@ public class ReviewService {
 			for(double score : scoreList) {
 				scoreSum += score;
 			}
-			scoreSum += input.getScore();
 			resScore = scoreSum / scoreList.size();
-		}else {
+			resScore = Math.round(resScore * 10) / 10.0 ;
+		}	
+		else {
 			resScore = input.getScore();
-		}
+		}		
+		input.setScore(resScore);
 		
-		res_dao.updateScore(resScore);
+		
+		
+		res_dao.updateScore(input);
 		
 		String res_name = "";
 		
@@ -66,18 +70,6 @@ public class ReviewService {
 		
 		File dest = new File(newDir, file.getOriginalFilename());
 		file.transferTo(dest);
-		
-//		List<Double> scoreList = dao.getResScores(input.getIdx());
-//		double scoreSum = 0;
-//		
-//		for(double score : scoreList) {
-//			scoreSum += score;
-//		}
-//		scoreSum += input.getScore();
-//		double resScore = scoreSum / scoreList.size();
-//
-//		
-//		res_dao.updateScore(resScore);
 		
 		return row;
 	}
@@ -107,8 +99,28 @@ public class ReviewService {
 		return dao.nickReview(nick);
 	}
 
-	public int delete(int idx) {
-		return dao.delete(idx);
+	public int delete(ReviewVO input) {
+		int row = dao.delete(input.getIdx());
+		
+		List<Double> scoreList = dao.getResScores(input.getRes_idx());
+		double scoreSum = 0;
+		double resScore = 0;
+		
+		if(scoreList != null) {
+			for(double score : scoreList) {
+				scoreSum += score;
+			}
+			resScore = scoreSum / scoreList.size();
+			resScore = Math.round(resScore * 10) / 10.0 ;
+		}	
+		else {
+			resScore = input.getScore();
+		}		
+		input.setScore(resScore);
+		
+		res_dao.updateScore(input);
+		
+		return row;
 	}
 
 }
