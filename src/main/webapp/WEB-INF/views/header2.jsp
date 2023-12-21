@@ -62,9 +62,26 @@
 											<tr>
 												<td><a href="${cpath }/search/sc_main"><img
 														src="${cpath }/resources/img/header/icon1.png"></a></td>
+												<td><a href="${cpath }/search/sc_main"><img
+														src="${cpath }/resources/img/header/icon1.png"></a></td>
 											</tr>
 											<tr>
 												<td><a href="${cpath }/rank/rank_main"><img
+														src="${cpath }/resources/img/header/icon2.png"></a></td>
+											</tr>
+											<tr>
+												<td><a href="${cpath }/mbti/mbti_main"><img
+														src="${cpath }/resources/img/header/icon3.png"></a></td>
+											</tr>
+											<tr>
+												<td><a href="${cpath }/recommend/roulette"><img
+														src="${cpath }/resources/img/header/icon4.png"></a></td>
+											</tr>
+											<tr>
+												<td><a href="${cpath }/photo/photo_main"><img
+														src="${cpath }/resources/img/header/icon5.png"></a></td>
+											</tr>
+											<tr>
 														src="${cpath }/resources/img/header/icon2.png"></a></td>
 											</tr>
 											<tr>
