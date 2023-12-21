@@ -48,5 +48,24 @@ public class SearchController {
 		return mav;
 	}
 	
+	@GetMapping("/sc_detail_test")
+	public ModelAndView search_test(@RequestParam(value = "page", defaultValue = "1") int page,
+			@RequestParam(value = "address", required = false) String address,
+			@RequestParam(value = "category", required = false) String category
+			) {
+		ModelAndView mav = new ModelAndView("search/sc_detail_test");
+
+		Map<String, Object> result = ss.getSearch(page, address, category);
+		
+		mav.addObject("rq", result.get("rq"));
+		mav.addObject("tt", result.get("tt"));
+		mav.addObject("add", address);
+		mav.addObject("cate", category);
+		mav.addObject("list", result.get("list"));
+		mav.addObject("p", result.get("p"));
+		
+		return mav;
+	}
+	
     
 }
