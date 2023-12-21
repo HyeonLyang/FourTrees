@@ -46,10 +46,7 @@
                 <div class="menu">
                 	<!-- 메뉴-검색창 -->
 					<form action="${cpath }/search/sc_detail" method="get">
-<<<<<<< HEAD
-=======
 					
->>>>>>> origin/master
 					    <div class="search">
 					    	<select id="type">
 								<option value="address">지역</option>
@@ -64,16 +61,6 @@
 					        <button>검색</button>
 					    </div>
 					</form>
-					<script>
-					    // 옵션 변경 시 이벤트 리스너 추가
-					    document.getElementById("type").addEventListener("change", function () {
-					        var type = this.value; // 선택된 옵션의 값
-					
-					        // input의 name 동적으로 변경
-					        document.getElementById("submit_type").setAttribute("name", type);
-					    });
-					</script>
-					
 					<script>
 					    // 옵션 변경 시 이벤트 리스너 추가
 					    document.getElementById("type").addEventListener("change", function () {

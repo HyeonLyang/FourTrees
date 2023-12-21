@@ -2,8 +2,6 @@ package com.itbank.controller;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -39,7 +37,6 @@ public class SearchController {
 			@RequestParam(value = "category", required = false) String category
 			) {
 		ModelAndView mav = new ModelAndView("search/sc_detail");
-
 
 		Map<String, Object> result = ss.getSearch(page, address, category);
 		
