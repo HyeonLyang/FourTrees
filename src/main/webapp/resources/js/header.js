@@ -1,22 +1,10 @@
-	// javascript - html 선택하는 방법
-	$(window).on('scroll',function(){
-        if($(window).scrollTop()){
-            $('header').addClass('active');
-        }else{
-            $('header').removeClass('active');
-        }
-    });
-	
-	
-    // scroll 하면 생기는 이벤트 리스너 
-    // -> 800만큼 스크롤하면 classList의 속성을 더해준다(css에 추가하면 적용됨)
-    window.addEventListener('scroll', function() {
-        var header = document.querySelector('header');
-        var scrollY = window.scrollY;
+/* 헤더 메뉴아이콘 토글 */
+var menu_container = document.getElementsByClassName("menu_container")[0];
+var sub_container = document.getElementsByClassName("sub_container")[0];
+var isOpen = false;
 
-        if (scrollY >= 800) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+function toggle3() {
+    isOpen = !isOpen;
+    menu_container.style.overflow = isOpen ? "visible" : "hidden";
+    sub_container.style.overflow = isOpen ? "visible" : "hidden";
+}

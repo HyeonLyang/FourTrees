@@ -61,7 +61,9 @@
 	box-sizing: border-box;
 }
 
-.mbti_result table, tr, td {
+.mbti_result table, 
+.mbti_result tr, 
+.mbti_result td {
 	padding: 10px;
 	border: white;
 }
@@ -134,7 +136,7 @@
 	opacity: 75%;
 	display: block;
 	left: 50%;
-	top: 340px;
+	top: 320px;
     padding: 25px 0;
     transform: translate(0%, 350%);
     transform: translate(-50%, 0%);
