@@ -37,6 +37,8 @@
 		</if>
 		</where>
 	</select>
+	
+	</select>	
 
 	<select id="getTotalSearchParam" resultType="int">
 	    SELECT COUNT(*) FROM restaurant r
@@ -51,5 +53,22 @@
 	            r.category IN (SELECT idx FROM category WHERE name LIKE '%' || #{category} || '%')
 	        </if>
 	    </where>
+	</select>
+
+	<select id="searchHeader" resultType="com.itbank.model.vo.RestaurantVO">
+	    SELECT * FROM restaurant
+	    WHERE
+	    <!-- 검색어(search)가 주소(address) 또는 카테고리(category)에 포함되는 경우 -->
+	    <if test="search != null and search != ''">
+	        <!-- 주소 또는 카테고리 중 하나라도 포함되는 경우 -->
+	        <if test="search != null and search != ''">
+	            address LIKE '%' || #{search} || '%'
+	        </if>
+	
+	        <if test="search != null and search != ''">
+	            <if test="search != null and search != ''"> OR </if>
+	            category LIKE '%' || #{search} || '%'
+	        </if>
+	    </if>
 	</select>
 </mapper>
