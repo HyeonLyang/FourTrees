@@ -82,7 +82,9 @@
 											<tr>
 												<td><a href="${cpath }/support/sup_main"><img
 														src="${cpath }/resources/img/header/icon6.png"></a></td>
+														src="${cpath }/resources/img/header/icon6.png"></a></td>
 											</tr>
+											<c:if test="${empty user }">
 											<c:if test="${empty user }">
 											<tr>
 												<td><a href="${cpath }/account/login"><img
@@ -93,9 +95,19 @@
 											<tr>
 												<td><a href="${cpath }/myPage/bookmark"><img
 														src="${cpath }/resources/img/header/icon10.png"></a></td>
+														src="${cpath }/resources/img/header/icon9.png"></a></td>
 											</tr>
 											</c:if>
+											<c:if test="${not empty user }"> 
 											<tr>
+												<td><a href="${cpath }/myPage/bookmark"><img
+														src="${cpath }/resources/img/header/icon10.png"></a></td>
+											</tr>
+											</c:if>
+											</c:if>
+											<tr>
+												<td><a href="${cpath }/account/signUp"><img
+														src="${cpath }/resources/img/header/icon8.png"></a></td>
 												<td><a href="${cpath }/account/signUp"><img
 														src="${cpath }/resources/img/header/icon8.png"></a></td>
 											</tr>
@@ -104,6 +116,7 @@
 								</div>
 							</div>
 						</div>
+								</div>
 								</div>
 				</div>
 			</section>
