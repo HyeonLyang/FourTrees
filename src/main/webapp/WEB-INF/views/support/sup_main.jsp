@@ -40,9 +40,16 @@
 </article>
 <section class="sup_main">
 	<div>
-		<p class="sup_title">
-			<a href="${cpath }/support/sup_main">SUPPORT</a>
-		</p>
+		<div class="sup_title"><a href="${cpath }/support/sup_main">고객센터</a></div>
+	</div>
+	<div>
+		<div class="sup_search">
+			<input placeholder="세부 검색">
+			<a href="${cpath }/support/search"><img src="${cpath }/resources/img/support/btn.png"></a>
+		</div>
+	</div>
+	<div>
+		<div class="sup_link">1:1 문의하기</div>
 	</div>
 </section>
 
