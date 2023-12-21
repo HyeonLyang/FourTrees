@@ -24,7 +24,15 @@ public class SupportController {
 	}
 	
 	@GetMapping("/FAQ")
-	public void FAQ()	{
+	public ModelAndView FAQ(@RequestParam(value = "page", defaultValue = "1") int page,
+			   @RequestParam(value = "idx", defaultValue = "1")int idx)	{
+		ModelAndView mav = new ModelAndView("support/FAQ");
+		Map<String, Object> result = ss.getNotice(page, idx);
+		
+		mav.addObject("total", result.get("total"));
+		mav.addObject("list", result.get("list"));
+		mav.addObject("p", result.get("p"));
+		return mav;
 	}
 	@GetMapping("/notice")
 	public ModelAndView notice(@RequestParam(value = "page", defaultValue = "1") int page,

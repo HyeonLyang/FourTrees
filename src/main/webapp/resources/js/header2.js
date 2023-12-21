@@ -1,3 +1,12 @@
+
+// 옵션 변경 시 이벤트 리스너 추가
+document.getElementById("type").addEventListener("change", function () {
+	var type = this.value; // 선택된 옵션의 값
+	
+	// input의 name 동적으로 변경
+	document.getElementById("submit_type").setAttribute("name", type);
+});
+
 /* 헤더2 검색창 토글 */
 var sc_con = document.getElementsByClassName("sc_con")[0];
 var isOpen = false;
