@@ -13,7 +13,7 @@
 		<p class="rank_detail_btn">제주</p>
 	</section>
 	
-	<h1 class="rank_detail_title">서울 맛집 TOP10</h1>
+	<h1 class="rank_detail_title"></h1>
 	<section class="rank_detail_main">
 		
 		<ol class="rank_detail_board">
@@ -22,109 +22,7 @@
 		<p class="rank_detail_toArea" 
 			OnClick="location.href ='#'" 
 			style="cursor:pointer">
-			지도에서 맛집 찾기 →
-		</p>
-	</section>
-	
-	<h1 class="rank_detail_title">부산 맛집 TOP10</h1>
-	<section class="rank_detail_main">
-		
-		<ol class="rank_detail_board">
-		<c:forEach var="res" items="${res_busan }" varStatus="status">
-			<li class="rank_detail_res">
-				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_detail_topRes">
-					<c:if test="${rank[status.index] < 4}">
-						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking${rank[status.index] }.png"></div>
-					</c:if>
-					<c:if test="${rank[status.index] >= 4}">
-						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking4.png"></div>
-					</c:if>
-					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-					<p>${res.name }</p>
-					<p>${res.category }</p>
-					<div class="rank_detail_rating">
-						<div class="rank_detail_rate_back">
-						<!-- db연결 후 width: 별점 -->
-				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
-				    	</div>
-						<b class="rank_detail_score">${res.score }</b>
-					</div>
-				</a>
-			</li>
-		</c:forEach>
-		</ol>
-		<p class="rank_detail_toArea" 
-			OnClick="location.href ='#'" 
-			style="cursor:pointer">
-			지도에서 맛집 찾기 →
-		</p>
-	</section>
-	
-	<h1 class="rank_detail_title">강원 맛집 TOP10</h1>
-	<section class="rank_detail_main">
-		
-		<ol class="rank_detail_board">
-		<c:forEach var="res" items="${res_kangwon }" varStatus="status">
-			<li class="rank_detail_res">
-				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_detail_topRes">
-					<c:if test="${rank[status.index] < 4}">
-						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking${rank[status.index] }.png"></div>
-					</c:if>
-					<c:if test="${rank[status.index] >= 4}">
-						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking4.png"></div>
-					</c:if>
-					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-					<p>${res.name }</p>
-					<p>${res.category }</p>
-					<div class="rank_detail_rating">
-						<div class="rank_detail_rate_back">
-						<!-- db연결 후 width: 별점 -->
-				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
-				    	</div>
-						<b class="rank_detail_score">${res.score }</b>
-					</div>
-				</a>
-			</li>
-		</c:forEach>
-		</ol>
-		<p class="rank_detail_toArea" 
-			OnClick="location.href ='#'" 
-			style="cursor:pointer">
-			지도에서 맛집 찾기 →
-		</p>
-	</section>
-	
-	<h1 class="rank_detail_title">제주 맛집 TOP10</h1>
-	<section class="rank_detail_main">
-		
-		<ol class="rank_detail_board">
-		<c:forEach var="res" items="${res_jeju }" varStatus="status">
-			<li class="rank_detail_res">
-				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_detail_topRes">
-					<c:if test="${rank[status.index] < 4}">
-						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking${rank[status.index] }.png"></div>
-					</c:if>
-					<c:if test="${rank[status.index] >= 4}">
-						<div><img class="rank_detail_medal" src="${cpath }/resources/img/rank/ranking4.png"></div>
-					</c:if>
-					<p class="rank_detail_block"><!-- <img class="rank_detail_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-					<p>${res.name }</p>
-					<p>${res.category }</p>
-					<div class="rank_detail_rating">
-						<div class="rank_detail_rate_back">
-						<!-- db연결 후 width: 별점 -->
-				    		<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>
-				    	</div>
-						<b class="rank_detail_score">${res.score }</b>
-					</div>
-				</a>
-			</li>
-		</c:forEach>
-		</ol>
-		<p class="rank_detail_toArea" 
-			OnClick="location.href ='#'" 
-			style="cursor:pointer">
-			지도에서 맛집 찾기 →
+			
 		</p>
 	</section>
 	
@@ -173,7 +71,7 @@
 					li.innerHTML = 
 						'<li class="rank_detail_res">' +
 							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_detail_topRes">' +
-								'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
+								'<div>' + '<img class="rank_detail_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
 								'<p class="rank_detail_block"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
@@ -192,15 +90,15 @@
 	}
 	
 	
-	let btns = document.querySelectorAll('.rank_detail_btns > button');
+	let btns = document.querySelectorAll('.rank_detail_btns > p');
 	let url = 'aRank';
 	var dt;
 	
 	
-	ranking(101);
+	ranking("서울");
 	
-	btns[0].onclick = () => ranking('서울');
-	btns[1].onclick = () => ranking('부산');
+	btns[0].onclick = () => ranking("서울");
+	btns[1].onclick = () => ranking("부산");
 	btns[2].onclick = () => ranking('강원');
 	btns[3].onclick = () => ranking('제주');
 	

@@ -32,11 +32,11 @@
 	<section class="res_detail_select">
 		<div class="res_detail_container">
 			<article>
-			<img src="${cpath }/resources/img/ex01.jpg" />
-			<img src="${cpath }/resources/img/ex02.png" />
-			<img src="${cpath }/resources/img/ex03.jpg" />
-			<img src="${cpath }/resources/img/ex04.jpg" />
-			<img src="${cpath }/resources/img/ex05.jpg" />
+			<img src="${cpath }/resources/img/rank/ex01.jpg" />
+			<img src="${cpath }/resources/img/rank/ex02.png" />
+			<img src="${cpath }/resources/img/rank/ex03.jpg" />
+			<img src="${cpath }/resources/img/rank/ex04.jpg" />
+			<img src="${cpath }/resources/img/rank/ex05.jpg" />
 			</article>	
 		</div>
 	</section>
