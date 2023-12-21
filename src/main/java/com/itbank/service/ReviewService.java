@@ -121,29 +121,6 @@ public class ReviewService {
 		res_dao.updateScore(input);
 		
 		return row;
-
-	public int delete(ReviewVO input) {
-		int row = dao.delete(input.getIdx());
-		
-		List<Double> scoreList = dao.getResScores(input.getRes_idx());
-		double scoreSum = 0;
-		double resScore = 0;
-		
-		if(scoreList != null) {
-			for(double score : scoreList) {
-				scoreSum += score;
-			}
-			resScore = scoreSum / scoreList.size();
-			resScore = Math.round(resScore * 10) / 10.0 ;
-		}	
-		else {
-			resScore = input.getScore();
-		}		
-		input.setScore(resScore);
-		
-		res_dao.updateScore(input);
-		
-		return row;
 	}
 
 }
