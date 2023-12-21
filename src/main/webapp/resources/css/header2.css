@@ -181,6 +181,12 @@ a {
 }
 .header2_search img:hover {
 	background-color: #ffff8d;
+	box-sizing: border-box;
+	transition: width 0.5s;
+}
+.language-container img:hover {
+	border-radius: 50%;
+	border: 5px solid #ffff8d;
 }
 .language-container {
 	width: 55px;
@@ -240,9 +246,6 @@ a {
 	flex-direction: column;
 	transition: overflow 4s;
 }
-/* .menu_container:hover { */
-/* 	overflow: visible; */
-/* } */
 
 /*메뉴 2 임시 테스트*/
 .sub_container {
@@ -257,6 +260,7 @@ a {
 	box-shadow: 0;
 	transition: overflow 4s;
 }
+
 /* .menu_container:hover { */
 /* 	overflow: visible; */
 /* } */

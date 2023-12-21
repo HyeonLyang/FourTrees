@@ -24,8 +24,6 @@ public class SearchController {
 	
 	@Autowired private SearchDAO dao;
 	
-	@Autowired private SearchDAO dao;
-	
 	@GetMapping("/sc_main")
 	public void sc_main() {
 		
@@ -40,10 +38,6 @@ public class SearchController {
 
 		Map<String, Object> result = ss.getSearch(page, address, category);
 		
-		mav.addObject("rq", result.get("rq"));
-		mav.addObject("tt", result.get("tt"));
-		mav.addObject("add", address);
-		mav.addObject("cate", category);
 		mav.addObject("rq", result.get("rq"));
 		mav.addObject("tt", result.get("tt"));
 		mav.addObject("add", address);

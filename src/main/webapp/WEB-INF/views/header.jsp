@@ -53,11 +53,6 @@
 								<option value="category">카테고리</option>
 							</select>
 					        <input id="submit_type" name="address" placeholder="위치나 카테고리를 입력하세요.">
-					    	<select id="type">
-								<option value="address">지역</option>
-								<option value="category">카테고리</option>
-							</select>
-					        <input id="submit_type" name="address" placeholder="위치나 카테고리를 입력하세요.">
 					        <button>검색</button>
 					    </div>
 					</form>

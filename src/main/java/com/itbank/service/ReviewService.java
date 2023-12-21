@@ -121,6 +121,7 @@ public class ReviewService {
 		res_dao.updateScore(input);
 		
 		return row;
+
 	public int delete(ReviewVO input) {
 		int row = dao.delete(input.getIdx());
 		

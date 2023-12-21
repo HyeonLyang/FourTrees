@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 
 // 옵션 변경 시 이벤트 리스너 추가
 document.getElementById("type").addEventListener("change", function () {
@@ -9,7 +8,7 @@ document.getElementById("type").addEventListener("change", function () {
 	document.getElementById("submit_type").setAttribute("name", type);
 });
 
->>>>>>> origin/master
+
 /* 헤더2 검색창 토글 */
 var sc_con = document.getElementsByClassName("sc_con")[0];
 var isOpen = false;
@@ -30,26 +29,11 @@ function toggle2() {
 
 /* 헤더2 메뉴아이콘 토글 */
 var menu_container = document.getElementsByClassName("menu_container")[0];
-<<<<<<< HEAD
 var sub_container = document.getElementsByClassName("sub_container")[0];
-=======
->>>>>>> origin/master
 var isOpen = false;
 
 function toggle3() {
     isOpen = !isOpen;
     menu_container.style.overflow = isOpen ? "visible" : "hidden";
-<<<<<<< HEAD
     sub_container.style.overflow = isOpen ? "visible" : "hidden";
-=======
->>>>>>> origin/master
 }
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
