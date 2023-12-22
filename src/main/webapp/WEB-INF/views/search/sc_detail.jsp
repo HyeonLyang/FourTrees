@@ -142,15 +142,14 @@ document.addEventListener("DOMContentLoaded", function() {
     nameElements.forEach(function(element) {
     	names.push(element.textContent.trim());
     });
-    // 이름과 주소 정보를 콘솔에 출력 또는 원하는 작업 수행
-    console.log(addresses);
-    console.log(names);
- 	
+    
+    
+    
     // 지도 초기화 및 마커 표시 스크립트
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = {
             center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-            level: 10 // 지도의 확대 레벨
+            level: 11 // 지도의 확대 레벨
         };  
 
     // 지도를 생성합니다    
@@ -159,8 +158,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // 주소-좌표 변환 객체를 생성합니다
     var geocoder = new kakao.maps.services.Geocoder();
 
-    // 각 주소에 대한 마커를 표시합니다
-    addresses.forEach(function(address) {
+    // 각 주소에 대한 마커를 표시하는 함수
+    function displayMarker(address, name) {
         // 주소로 좌표를 검색합니다
         geocoder.addressSearch(address, function(result, status) {
             // 정상적으로 검색이 완료됐으면 
@@ -173,16 +172,23 @@ document.addEventListener("DOMContentLoaded", function() {
                     position: coords
                 });
 
-                // 인포윈도우로 장소에 대한 설명을 표시합니다
+                // 인포윈도우로 동적으로 내용을 표시합니다
                 var infowindow = new kakao.maps.InfoWindow({
-                    content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>'
+                    content: '<div style="width:150px;text-align:center;padding:6px 2px;">' + name + '</div>'
                 });
+
+                // 특정 이벤트(예: 페이지 로딩 시)에 인포윈도우를 열어둘 수 있습니다.
                 infowindow.open(map, marker);
 
                 // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
                 map.setCenter(coords);
             } 
         });
+    }
+
+    // 각 주소에 대한 마커를 표시
+    addresses.forEach(function(address, index) {
+        displayMarker(address, names[index]);
     });
 });
 </script>
