@@ -26,11 +26,11 @@ public class SearchService {
 
 		List<RestaurantVO> list = dao.selectAll(p);
 		
-		for(RestaurantVO row : list) {
-			Geocoder geo = new Geocoder();
-			
-			geo.geocoding(row.getAddress());
-		}
+//		for(RestaurantVO row : list) {
+//			Geocoder geo = new Geocoder();
+//			
+//			geo.geocoding(row.getAddress());
+//		}
 		
 		Map<String, Object> result = new HashMap<>();
 		

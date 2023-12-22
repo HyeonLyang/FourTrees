@@ -28,13 +28,16 @@ public class RankController {
 	
 	@GetMapping("/rank_total")
 	public String rank_total(Model model) {
-		List<Integer> rank_list = new ArrayList<>();
-		
-		for(int i = 1; i <= 10; i++) {
-			rank_list.add(i);
+		List<String> nameList = new ArrayList<String>();
+		List<String> addressList = new ArrayList<String>();
+		for(RestaurantVO row : rs.getTotalRank()) {
+			nameList.add(row.getName());
+			addressList.add(row.getAddress());
 		}
 		
-		model.addAttribute("rank", rank_list);
+		System.out.println(nameList.get(0));
+		model.addAttribute("name_list", nameList);
+		model.addAttribute("address_list", addressList);
 		model.addAttribute("res_list", rs.getTotalRank());
 		model.addAttribute("cate_list", rs.getCateList());
 		

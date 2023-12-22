@@ -59,13 +59,7 @@
 		<c:set var="add" value="${list }"></c:set>
 		<p>${add[0].address }</p>
 		<p>${add[1].address }</p>
-	<script>
-		console.log(add);
-		var addArr = [];
-			for(var i=0; i<2; i++) {
-				addArr.push('${add[i].address}');
-			}
-	</script>
+	
 		<div class="sc_list">
 			<table>
 				<c:forEach var="row" items="${list }">
@@ -131,44 +125,80 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bc60e67620768f95cb992d64536023b&libraries=services"></script>
 <script>
 
-	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-		mapOption = {
-		    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-		    level: 5 // 지도의 확대 레벨
-		};  
-
-	//지도를 생성합니다    
-	var map = new kakao.maps.Map(mapContainer, mapOption); 
-
-	//주소-좌표 변환 객체를 생성합니다
+	var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+	mapOption = {
+	  center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+	  level: 3 // 지도의 확대 레벨
+	};
+	
+	// 지도를 생성합니다
+	var map = new kakao.maps.Map(mapContainer, mapOption);
+	
+	// 주소-좌표 변환 객체를 생성합니다
 	var geocoder = new kakao.maps.services.Geocoder();
 	
-
-	//주소로 좌표를 검색합니다
-	for (i=0; i < addArr.length; i++) {
-		geocoder.addressSearch(addArr[i], function(result, status) {
+	var positions = [
+	{
+	title: '${add[0].name}',
+	address: '${add[0].address}'
+	},
+	{
+	title: '생태연못',
+	address: '경기 남양주시 조안면 능내리 50'
+	},
+	{
+	title: '근린공원',
+	address: '경기 남양주시 별내면 청학로68번길 40'
+	}
+	];
 	
-			// 정상적으로 검색이 완료됐으면 
-			 if (status === kakao.maps.services.Status.OK) {
-			
-			    var coords = new kakao.maps.LatLng(result[i].y, result[i].x);
-			
-			    // 결과값으로 받은 위치를 마커로 표시합니다
-			    var marker = new kakao.maps.Marker({
-			        map: map,
-			        position: coords
-			    });
-			
-			    // 인포윈도우로 장소에 대한 설명을 표시합니다
-			    var infowindow = new kakao.maps.InfoWindow({
-			        content: '<div style="width:150px;text-align:center;padding:6px 0;">'+addArr[i]+'</div>'
-			    });
-			    infowindow.open(map, marker);
-			
-		// 	    // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-		// 	    map.setCenter(coords);
-			} 
-		});
+	for(var i in '${add}'){
+		positions.push({
+			title: '${add[i].name}',
+			address: '${add[i].address}'
+		})
+	}
+	
+	console.log(positions);
+	
+	// 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
+	var bounds = new kakao.maps.LatLngBounds(); //추가한 코드
+	
+	positions.forEach(function (position) {
+	// 주소로 좌표를 검색합니다
+	geocoder.addressSearch(position.address, function(result, status) {
+	
+	// 정상적으로 검색이 완료됐으면
+	if (status === kakao.maps.services.Status.OK) {
+	
+	var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+	
+	// 결과값으로 받은 위치를 마커로 표시합니다
+	var marker = new kakao.maps.Marker({
+	map: map,
+	position: coords
+	});
+	marker.setMap(map); //추가한 코드
+	
+	// LatLngBounds 객체에 좌표를 추가합니다
+	bounds.extend(coords); //추가한 코드, 현재 코드에서 좌표정보는 point[i]가 아닌 coords이다.
+	
+	// 인포윈도우로 장소에 대한 설명을 표시합니다
+	var infowindow = new kakao.maps.InfoWindow({
+	content: '<div style="width:150px;text-align:center;padding:6px 0;">' + position.title + '</div>'
+	});
+	infowindow.open(map, marker);
+	
+	// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+	// map.setCenter(coords); //제거한 코드
+	setBounds(); //추가한 코드
+	}
+	});
+	});
+	function setBounds() { //추가한 함수
+	// LatLngBounds 객체에 추가된 좌표들을 기준으로 지도의 범위를 재설정합니다
+	// 이때 지도의 중심좌표와 레벨이 변경될 수 있습니다
+	map.setBounds(bounds);
 	}
 
 </script>
