@@ -56,16 +56,7 @@
 
 			</table>
 		</div>
-		<c:set var="add" value="${list }"></c:set>
-		<p>${add[0].address }</p>
-		<p>${add[1].address }</p>
-	<script>
-		console.log(add);
-		var addArr = [];
-			for(var i=0; i<2; i++) {
-				addArr.push('${add[i].address}');
-			}
-	</script>
+
 		<div class="sc_list">
 			<table>
 				<c:forEach var="row" items="${list }">
