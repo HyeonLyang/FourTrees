@@ -60,7 +60,7 @@
 		<div class="sc_list">
 			<table>
 				<c:forEach var="row" items="${list }">
-					<tr>
+					<tr class="trtr">
 						<c:choose>
 							<c:when test="${not empty row.photo}">
 								<td class="row_photo"><img src="${row.photo}"></td>
@@ -71,7 +71,9 @@
 						</c:choose>
 						<td>
 							<p>
-								<a href="${cpath }/restaurant/res_detail/${row.idx}">${row.name }</a>
+								<a href="${cpath }/restaurant/res_detail/${row.idx}">
+									<span class="resname">${row.name }</span>
+								</a>
 								${row.cate_name }
 							</p>
 							<p>
@@ -79,7 +81,7 @@
 							</p>
 							<p>별점 ${row.score }</p>
 							<p>가격대 ${row.price }</p>
-							<p>주소 ${row.address }</p>
+							<p>주소 <span class="add">${row.address }</span></p>
 							<p>휴일 ${row.holiday }</p>
 						</td>
 					</tr>
@@ -122,46 +124,67 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bc60e67620768f95cb992d64536023b&libraries=services"></script>
 <script>
 
-	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-		mapOption = {
-		    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-		    level: 5 // 지도의 확대 레벨
-		};  
+document.addEventListener("DOMContentLoaded", function() {
+    // "add" 클래스를 가진 요소들을 모두 선택
+    var addressElements = document.querySelectorAll(".add");
+    // 주소 정보를 저장할 배열
+    var addresses = [];
+    
+    // "resname" 클래스 요소들 모두 선택
+    var nameElements = document.querySelectorAll(".resname");
+    var names = [];
+    
+    // 각 요소의 텍스트를 배열에 추가
+    addressElements.forEach(function(element) {
+        addresses.push(element.textContent.trim());
+    });
+    // 상호명도 배열에 추가
+    nameElements.forEach(function(element) {
+    	names.push(element.textContent.trim());
+    });
+    // 이름과 주소 정보를 콘솔에 출력 또는 원하는 작업 수행
+    console.log(addresses);
+    console.log(names);
+ 	
+    // 지도 초기화 및 마커 표시 스크립트
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 10 // 지도의 확대 레벨
+        };  
 
-	//지도를 생성합니다    
-	var map = new kakao.maps.Map(mapContainer, mapOption); 
+    // 지도를 생성합니다    
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-	//주소-좌표 변환 객체를 생성합니다
-	var geocoder = new kakao.maps.services.Geocoder();
-	
+    // 주소-좌표 변환 객체를 생성합니다
+    var geocoder = new kakao.maps.services.Geocoder();
 
-	//주소로 좌표를 검색합니다
-	for (i=0; i < addArr.length; i++) {
-		geocoder.addressSearch(addArr[i], function(result, status) {
-	
-			// 정상적으로 검색이 완료됐으면 
-			 if (status === kakao.maps.services.Status.OK) {
-			
-			    var coords = new kakao.maps.LatLng(result[i].y, result[i].x);
-			
-			    // 결과값으로 받은 위치를 마커로 표시합니다
-			    var marker = new kakao.maps.Marker({
-			        map: map,
-			        position: coords
-			    });
-			
-			    // 인포윈도우로 장소에 대한 설명을 표시합니다
-			    var infowindow = new kakao.maps.InfoWindow({
-			        content: '<div style="width:150px;text-align:center;padding:6px 0;">'+addArr[i]+'</div>'
-			    });
-			    infowindow.open(map, marker);
-			
-		// 	    // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
-		// 	    map.setCenter(coords);
-			} 
-		});
-	}
+    // 각 주소에 대한 마커를 표시합니다
+    addresses.forEach(function(address) {
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch(address, function(result, status) {
+            // 정상적으로 검색이 완료됐으면 
+            if (status === kakao.maps.services.Status.OK) {
+                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
 
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new kakao.maps.Marker({
+                    map: map,
+                    position: coords
+                });
+
+                // 인포윈도우로 장소에 대한 설명을 표시합니다
+                var infowindow = new kakao.maps.InfoWindow({
+                    content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>'
+                });
+                infowindow.open(map, marker);
+
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+            } 
+        });
+    });
+});
 </script>
 </section>
 
