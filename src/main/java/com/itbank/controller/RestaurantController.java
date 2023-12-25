@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.itbank.service.AccountService;
+import com.itbank.service.BookmarkService;
+import com.itbank.service.PhotoService;
 import com.itbank.service.RestaurantService;
 import com.itbank.service.ReviewService;
 
@@ -17,18 +19,24 @@ public class RestaurantController {
 
 	@Autowired private RestaurantService rs;
 	@Autowired private ReviewService rvs;
-	@Autowired private AccountService as;
+	@Autowired private BookmarkService bs;
+	@Autowired private PhotoService ps;
 
 	@GetMapping("/res_detail/{idx}")
 	public String detail(@PathVariable int idx, Model model) {
-
+		int cnt = rvs.getReviews(idx).size();
+		
+		model.addAttribute("bmk_cnt", bs.getBookmarkCnt(idx));
 		model.addAttribute("res", rs.getResturant(idx));
+		model.addAttribute("rev_cnt", cnt);
 
 		return "restaurant/res_detail";
 	}
 
 	@GetMapping("/res_img/{idx}")
 	public String res_img(@PathVariable int idx, Model model) {
+
+		model.addAttribute("photo_list", ps.getPhotoList(idx));
 		model.addAttribute("res", rs.getResturant(idx));
 
 		return "restaurant/res_img";

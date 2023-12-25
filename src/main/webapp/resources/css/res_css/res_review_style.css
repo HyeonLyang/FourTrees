@@ -58,14 +58,14 @@
 	background-color: #FFDACC;
 }
 .res_review_rate_back{
-	background: url(../../img/star01.png) no-repeat;
+	background: url(../../img/restaurant/star01.png) no-repeat;
 	width: 250px;
 	height: 50px;
 	position: relative;
 }
 .res_review_rate_front{
 	position: absolute;
-	background: url(../../img/star02.png);
+	background: url(../../img/restaurant/star02.png);
 	width: auto;
 	height: 50px;
 }

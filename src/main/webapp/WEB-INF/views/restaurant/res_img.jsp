@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header2.jsp" %>	<!-- 헤더 추가 -->
 <link href="${cpath }/resources/css/res_css/res_img_style.css" rel="stylesheet"> <!-- css적용 -->
-	
+
 <section class="res_img">
 
 <%@ include file="res_header.jsp" %>
@@ -29,30 +29,12 @@
 		<section class="res_img_con">
 			<h4 class="res_img_title">최근 리뷰의 사진</h4>
 			<section class="res_img_list">
-				<div>
-					<img src="${cpath }/resources/img/reImg1.png">
-					<p class="res_img_writer">(by 꿀꺽)</p>
-				</div>
-				<div>
-					<img src="${cpath }/resources/img/reImg2.jpg">
-					<p class="res_img_writer">(by 꿀꺽)</p>
-				</div>
-				<div>
-					<img src="${cpath }/resources/img/reImg2.jpg">
-					<p class="res_img_writer">(by 꿀꺽)</p>
-				</div>
-				<div>
-					<img src="${cpath }/resources/img/reImg2.jpg">
-					<p class="res_img_writer">(by 꿀꺽)</p>
-				</div>
-				<div>
-					<img src="${cpath }/resources/img/reImg2.jpg">
-					<p class="res_img_writer">(by 꿀꺽)</p>
-				</div>
-				<div>
-					<img src="${cpath }/resources/img/reImg2.jpg">
-					<p class="res_img_writer">(by 꿀꺽)</p>
-				</div>
+				<c:forEach var="photo" items="${photo_list }">
+					<div>
+						<img src="${cpath }/img/${photo.res_name}/${photo.img_path}">
+						<p class="res_img_writer">(by ${photo.nick })</p>
+					</div>
+				</c:forEach>
 			</section>
 			<p OnClick="location.href ='${cpath}/photo/photo_main'" style="cursor:pointer" class="res_img_toImgBoard">
 				사진 전체보기 ->

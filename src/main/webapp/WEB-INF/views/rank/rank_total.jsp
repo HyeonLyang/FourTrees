@@ -12,28 +12,25 @@
 	<section class="rank_total_main">
 		
 		<ol class="rank_total_board">
-		<c:forEach var="res" items="${res_list }" varStatus="status">
-			<li class="rank_total_res">
-				<a href="${cpath }/restaurant/res_detail/${res.idx}" class="rank_total_topRes">
-					<c:if test="${rank[status.index] < 4}">
-						<div><img class="rank_total_medal" src="${cpath }/resources/img/rank/rankingN${rank[status.index] }.png"></div>
-					</c:if>
-					<c:if test="${rank[status.index] >= 4}">
-						<div><img class="rank_total_medal" src="${cpath }/resources/img/rank/rankingN4.png"></div>
-					</c:if>
-					<p class="rank_total_block"><!-- <img class="rank_total_img" src="${cpath }/resources/img/ex05.jpg"> --></p>
-					<p>${res.name }</p>
-					<p>${res.category }</p>
-					<div class="rank_total_rating">
-						<div class="rank_total_rate_back">
-						<!-- db연결 후 width: 별점 -->
-				    		<span style="width: ${star_rating}%" class="rank_total_rate_front"></span>
-				    	</div>
-						<b class="rank_total_score">${res.score }</b>
-					</div>
-				</a>
-			</li>
-		</c:forEach>
+		<c:forEach var="res" items="${res_list}" varStatus="status">
+		    <li class="rank_total_res">
+		        <a href="${cpath}/restaurant/res_detail/${res.idx}" class="rank_total_topRes">
+		            <div>
+		                <img class="rank_total_medal" src="${cpath}/resources/img/rank/ranking${status.index < 4 ? status.index + 1 : 4}.png">
+		            </div>
+		            <p class="rank_total_block"></p>
+		            <p>${res.name}</p>
+		            <p>${res.category}</p>
+		            <div class="rank_total_rating">
+		                <div class="rank_total_rate_back">
+		                    <!-- db연결 후 width: 별점 -->
+		                    <span style="width: ${star_rating}%" class="rank_total_rate_front"></span>
+		                </div>
+		                <b class="rank_total_score">${res.score}</b>
+		            </div>
+		        </a>
+		    </li>
+</c:forEach>
 		</ol>
 		<p class="rank_total_toArea" 
 			OnClick="location.href ='#'" 

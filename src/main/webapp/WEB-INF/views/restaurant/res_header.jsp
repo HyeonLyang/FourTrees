@@ -5,6 +5,8 @@
     
     <c:set var="parking" value="${res.park_area  == 1 ? '주차가능' : '주차불가'}"/>
 	<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
+	<c:set var="rev_cnt" value="${rev_cnt }"/>
+	<c:set var="bmk_cnt" value="${bmk_cnt }"/>
 
 	<section class="res_detail_info">
 		<div class="res_total">		
@@ -20,9 +22,9 @@
 			    	</div>
 					<p class="res_detail_score">${res.score }</p>
 					<img class="res_detail_re_cnt" src="${cpath }/resources/img/restaurant/re_cnt.png">
-					<h5 class="res_detail_re_cnt">215 개</h5>
+					<h5 class="res_detail_re_cnt">${rev_cnt } 개</h5>
 					<img class="res_detail_bookmark" src="${cpath }/resources/img/restaurant/bookmark1.png">
-					<h5 class="res_detail_bookmark">22755 명</h5>
+					<h5 class="res_detail_bookmark">${bmk_cnt } 명</h5>
 				</div>
 			</div>
 			<div class="review_write">
