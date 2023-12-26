@@ -6,7 +6,15 @@
 <link rel="stylesheet"
 	href="${cpath }/resources/css/search_css/sc_detail.css">
 <c:set var="imgPath" value="${cpath }/resources/img/search"></c:set>
+<!-- head 태그 내에 추가하세요. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-nanum@1.0.0/css/font-nanum.min.css">
 
+<!-- body 내에서 원하는 요소에 적용하세요. -->
+<style>
+    body {
+        font-family: 'Nanum Gothic', sans-serif; /* 네이버 폰트의 글꼴명으로 변경하세요. */
+    }
+</style>
 <section class="sc_detail">
 	<article class="de_left">
 		<div class="de_option">
@@ -37,17 +45,10 @@
 				</tr>
 				<tr>
 					<td>필터</td>
-					<td><label for="sort">정렬</label> <select>
-							<option value="sort">기본</option>
-							<option value="sort_view">조회수 순</option>
-							<option value="sort_rp">댓글순</option>
-							<option value="sort_star">별점순</option>
-							<option value="sort_book">별점순</option>
-					</select> <label>주차장</label> <select>
-							<option value="parking">전체</option>
-							<option value="can-pk">주차 가능</option>
-							<option value="cant-pk">주차 불가능</option>
-					</select></td>
+					<td class="filter">
+						<a href="${cpath }/search/sc_view">조회수</a>
+						<a href="${cpath }/search/sc_score">별점</a>
+					</td>
 				</tr>
 				<tr class="sc_result">
 					<td colspan="3">검색어 | 지역 - ${add } | 카테고리 - ${cate } | 총 검색 맛집
@@ -146,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = {
             center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-            level: 8 // 지도의 확대 레벨
+            level: 6 // 지도의 확대 레벨
         };  
 
     // 지도를 생성합니다    
@@ -184,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // 인포윈도우로 동적으로 내용을 표시합니다
                 var infowindow = new kakao.maps.InfoWindow({
-                    content: '<div style="width:150px;text-align:center;padding:6px 2px;">' + name + '</div>'
+                    content: '<div style="width:150px;text-align:center;padding:3px; font-size:12px;">' + name + '</div>'
                 });
 
                 // 특정 이벤트(예: 페이지 로딩 시)에 인포윈도우를 열어둘 수 있습니다.

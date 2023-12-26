@@ -19,8 +19,6 @@ public class SearchController {
 
 	@Autowired private SearchService ss;
 	
-	@Autowired private SearchDAO dao;
-	
 	@GetMapping("/sc_main")
 	public void sc_main() {
 		
