@@ -22,7 +22,7 @@
 		<ol class="rank_category_board">
 		
 		</ol>
-		<p class="rank_category_toArea" OnClick="location.href ='#'" style="cursor:pointer">내 지역의 ${cate[0].name } 맛집 찾으러 가기 →</p>
+		<p class="rank_category_toArea" OnClick="location.href ='${cpath}/search/sc_detail?address='" style="cursor:pointer">내 지역의 ${cate[0].name } 맛집 찾으러 가기 →</p>
 	</section>
 	
 </section>	
@@ -110,6 +110,7 @@
 	btns[10].onclick = () => ranking(111);
 	btns[11].onclick = () => ranking(112);
 	btns[12].onclick = () => ranking(113);
+	btns[13].onclick = () => ranking(114);
 	
 	
 	

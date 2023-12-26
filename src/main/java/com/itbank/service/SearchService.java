@@ -20,7 +20,7 @@ public class SearchService {
 		Paging p = new Paging(reqPage, dao.getTotalSearchParam(address, category), address, category);
 
 		List<RestaurantVO> list = dao.selectAll(p);
-		
+	
 		Map<String, Object> result = new HashMap<>();
 		
 		result.put("rq",reqPage);
