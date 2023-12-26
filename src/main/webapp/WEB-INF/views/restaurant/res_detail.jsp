@@ -31,13 +31,7 @@
 <div class="res_detail_main">
 	<section class="res_detail_select">
 		<div class="res_detail_container">
-			<article>
-			<img src="${cpath }/resources/img/rank/ex01.jpg" />
-			<img src="${cpath }/resources/img/rank/ex02.png" />
-			<img src="${cpath }/resources/img/rank/ex03.jpg" />
-			<img src="${cpath }/resources/img/rank/ex04.jpg" />
-			<img src="${cpath }/resources/img/rank/ex05.jpg" />
-			</article>	
+			<img src="${cpath }/img/${res.name }/${res.photo }" />
 		</div>
 	</section>
 	<aside class="res_detail_ad">

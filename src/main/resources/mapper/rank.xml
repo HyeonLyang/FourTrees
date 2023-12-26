@@ -9,7 +9,7 @@
             inner join restaurant r2
             on r1.idx = r2.category
 			where r1.idx = #{idx}
-		    order by r2.score
+		    order by r2.score desc
 		    fetch first 10 rows only
 	</select>
 
@@ -20,7 +20,7 @@
             inner join restaurant r2
             on r1.idx = r2.category
 			where r1.idx = #{idx}
-		    order by r2.score
+		    order by r2.score desc
 		    fetch first 5 rows only
 	</select>
 
@@ -29,7 +29,7 @@
 		select r1.name as category, r2.* from category r1
             inner join restaurant r2
             on r1.idx = r2.category
-		    order by r2.score
+		    order by r2.score desc
 		    fetch first 10 rows only
 	</select>
 
@@ -40,7 +40,7 @@
 			inner join restaurant r2  
 			on r1.idx = r2.category 
 			where r2.address like '%' || #{area} || '%' 
-			order by r2.score 
+			order by r2.score desc
 			fetch first 10 rows only
 	 </select>
 

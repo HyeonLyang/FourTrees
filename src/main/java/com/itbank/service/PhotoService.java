@@ -16,5 +16,9 @@ public class PhotoService {
 	public List<PhotoVO> getImg() {
 		return dao.selectAll();
 	}
+
+	public List<PhotoVO> getPhotoList(int idx) {
+		return dao.selectResPhoto(idx);
+	}
 	
 }
