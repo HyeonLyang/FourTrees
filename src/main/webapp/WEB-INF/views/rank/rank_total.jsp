@@ -33,7 +33,7 @@
 </c:forEach>
 		</ol>
 		<p class="rank_total_toArea" 
-			OnClick="location.href ='#'" 
+			OnClick="location.href ='${cpath}/search/sc_detail?address='" 
 			style="cursor:pointer">
 			지도에서 맛집 찾기 →
 		</p>

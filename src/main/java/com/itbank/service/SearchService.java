@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.itbank.components.Geocoder;
 import com.itbank.components.Paging;
 import com.itbank.model.SearchDAO;
 import com.itbank.model.vo.RestaurantVO;
@@ -25,13 +24,7 @@ public class SearchService {
 		Paging p = new Paging(reqPage, dao.getTotalSearchParam(address, category), address, category);
 
 		List<RestaurantVO> list = dao.selectAll(p);
-		
-//		for(RestaurantVO row : list) {
-//			Geocoder geo = new Geocoder();
-//			
-//			geo.geocoding(row.getAddress());
-//		}
-		
+	
 		Map<String, Object> result = new HashMap<>();
 		
 		result.put("rq",reqPage);
