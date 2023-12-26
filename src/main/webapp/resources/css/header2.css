@@ -126,7 +126,7 @@ a {
 	overflow: hidden;
 	align-items: center;
 	box-sizing: border-box;
-	transition: width 0.5s;
+	transition: width 0.3s;
 }
 .language-container img:hover {
 	border-radius: 50%;
@@ -175,7 +175,6 @@ a {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	transition: overflow 4s;
 }
 /* .menu_container:hover { */
 /* 	overflow: visible; */
