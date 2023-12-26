@@ -20,15 +20,28 @@
 		
 		</ol>
 		<p class="rank_detail_toArea" 
-			OnClick="location.href ='#'" 
 			style="cursor:pointer">
-			
 		</p>
 	</section>
 	
 </section>
 
 <script type="text/javascript">
+
+function goToAreaPage(reqArea) {
+    let destination = ''; // 이동할 페이지의 주소
+    if (reqArea === '서울') {
+        destination = '${cpath}/search/sc_detail?address=서울'; // 서울 페이지 주소
+    } else if (reqArea === '부산') {
+        destination = '${cpath}/search/sc_detail?address=부산'; // 부산 페이지 주소
+    } else if (reqArea === '강원') {
+        destination = '${cpath}/search/sc_detail?address=강원'; // 강원도 페이지 주소
+    } else if (reqArea === '제주') {
+        destination = '${cpath}/search/sc_detail?address=제주'; // 제주 페이지 주소
+    }
+    location.href = destination; // 해당 페이지로 이동
+}
+	
 	function ranking(reqArea) { 
 		
 		fetch(url + '?area=' + reqArea, { method: 'GET' })
@@ -90,6 +103,10 @@
 				}
 				result.appendChild(li);
 			}
+			goTo.innerHTML = reqArea + '맛집 찾으러 가기';
+	        goTo.addEventListener('click', function () {
+	            goToAreaPage(reqArea); // 해당 지역 페이지로 이동
+	        });
 		});
 	}
 	
@@ -108,22 +125,6 @@
 	
 </script>
 
-<!-- <script>
-		
-		const btnArr = document.getElementsByClassName('rank_detail_btn');
-		const areaArr = document.getElementsByClassName('rank_detail_toArea');
-		
-		for(let i = 0; i < btnArr.length; i++){
-	
-			  btnArr[i].addEventListener('click',function(e){
-			    e.preventDefault();
-			    areaArr[i].scrollIntoView(true);
-			    behavior: 'smooth';
-			  });
-	
-			}
-		
-	</script> -->	
-	
+
 </body>
 </html>

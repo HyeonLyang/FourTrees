@@ -26,8 +26,8 @@ public class RestaurantController {
 	public String detail(@PathVariable int idx, Model model) {
 		int cnt = rvs.getReviews(idx).size();
 		
-		model.addAttribute("bmk_cnt", bs.getBookmarkCnt(idx));
 		model.addAttribute("res", rs.getResturant(idx));
+		model.addAttribute("bmk_cnt", bs.getBookmarkCnt(idx));
 		model.addAttribute("rev_cnt", cnt);
 
 		return "restaurant/res_detail";
@@ -35,24 +35,36 @@ public class RestaurantController {
 
 	@GetMapping("/res_img/{idx}")
 	public String res_img(@PathVariable int idx, Model model) {
-
+		int cnt = rvs.getReviews(idx).size();
+		
 		model.addAttribute("photo_list", ps.getPhotoList(idx));
 		model.addAttribute("res", rs.getResturant(idx));
+		model.addAttribute("bmk_cnt", bs.getBookmarkCnt(idx));
+		model.addAttribute("rev_cnt", cnt);
 
 		return "restaurant/res_img";
 	}
 
 	@GetMapping("/res_review/{idx}")
 	public String res_review(@PathVariable int idx, Model model) {
+		int cnt = rvs.getReviews(idx).size();
+		
 		model.addAttribute("res", rs.getResturant(idx));
 		model.addAttribute("reviews", rvs.getReviews(idx));
+		model.addAttribute("photo_list", ps.getPhotoList(idx));
+		model.addAttribute("bmk_cnt", bs.getBookmarkCnt(idx));
+		model.addAttribute("rev_cnt", cnt);
 
 		return "restaurant/res_review";
 	}
 
 	@GetMapping("res_map/{idx}")
 	public String res_map(@PathVariable int idx, Model model) {
+		int cnt = rvs.getReviews(idx).size();
+		
 		model.addAttribute("res", rs.getResturant(idx));
+		model.addAttribute("bmk_cnt", bs.getBookmarkCnt(idx));
+		model.addAttribute("rev_cnt", cnt);
 
 		return "restaurant/res_map";
 	}

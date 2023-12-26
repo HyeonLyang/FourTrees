@@ -28,6 +28,14 @@
 </section>	
 
 <script type="text/javascript">
+
+	function hideSpecificButtons() {
+	    const btnsToHide = [4, 6, 9, 11, 12, 13]; // 숨길 버튼 번호 목록
+	    const btns = document.querySelectorAll('.rank_category_btns > button');
+	    btnsToHide.forEach(btnNumber => {
+	        btns[btnNumber].style.display = 'none'; // 숨김 처리
+	    });
+	}
 	
 	function ranking(reqCate) { 
 		
@@ -87,9 +95,21 @@
 				}
 				result.appendChild(li);
 			}
+			
+			hideSpecificButtons(); // 특정 버튼들 숨김 처리
+
+	        goTo.innerHTML = '내 지역의 ${cate[0].name} 맛집 찾으러 가기 →';
+	        goTo.addEventListener('click', function () {
+	            // 현재 선택된 카테고리의 페이지로 이동
+	            goToCategoryPage(dt[1].category); // dt에는 현재 선택된 카테고리의 정보가 있어야 합니다.
+	        });
 		});
 	}
 	
+	function goToCategoryPage(address) {
+        // address에 해당하는 페이지로 이동
+        location.href = '${cpath}/search/sc_detail?category=' + address;
+    }
 	
 	let btns = document.querySelectorAll('.rank_category_btns > button');
 	let url = 'gRank';
