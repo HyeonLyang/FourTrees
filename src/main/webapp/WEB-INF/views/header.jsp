@@ -72,7 +72,7 @@
 					</script>
 					
             		<!-- 번역아이콘 -->
-                    <div class="language-container">
+                    <div class="language-container" onclick="toggle2()">
                         <ul class="language">
                             <li><img src="${cpath }/resources/img/lang_kor.png"></li>
                             <li><img src="${cpath }/resources/img/lang_usa.png"></li>
