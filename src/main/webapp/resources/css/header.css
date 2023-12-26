@@ -91,12 +91,10 @@ header {
 	overflow: hidden;
 	align-items: center;
 	box-sizing: border-box;
-}
-.language-container:hover {
-	width: 300px;
 	cursor: pointer;
-    
+	transition: width 0.3s;
 }
+
 .language li:hover {
 	border-radius: 50%;
 	background-color: #ffff8d;
