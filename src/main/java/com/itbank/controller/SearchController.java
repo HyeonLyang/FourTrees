@@ -1,8 +1,5 @@
 package com.itbank.controller;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +18,6 @@ import com.itbank.service.SearchService;
 public class SearchController {
 
 	@Autowired private SearchService ss;
-	
-	@Autowired private SearchDAO dao;
 	
 	@GetMapping("/sc_main")
 	public void sc_main() {

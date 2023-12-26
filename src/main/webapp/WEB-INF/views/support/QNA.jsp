@@ -12,7 +12,7 @@
 		    <td><input placeholder="현재 사용중인 아이디를 입력해주세요"></td>
 		  </tr>
 		  <tr>
-		    <th>이메일 주소(필수)</th>
+		    <th>이메일(필수)</th>
 		    <td><input placeholder="연락 받으실 이메일 주소를 입력해주세요"></td>
 		  </tr>
 		  <tr>
@@ -23,14 +23,10 @@
 		    <th>첨부파일</th>
 		    <td class="input">
 		    	<input type="file" id="file_input">
-		    	<label for="file_input" class="file_label">파일 선택</label>
 		    </td>
 		  </tr>
 		</table>
-		<div class="qna_button">
-			<button>입력완료</button>
-		</div>
+		<div class="qna_button"><a>이메일 보내기</a></div>
 	</fieldset>
-
 </section>
 <%@ include file="../footer.jsp" %>

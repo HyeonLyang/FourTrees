@@ -6,26 +6,6 @@
 
 
 <article class="art">
-	<div class="profile">
-		<div class="pro_img">
-			<a href="${cpath }/myPage/img_change">			
-				<img src="${cpath }/img/account/${user.img}"><br>
-				<span>프로필 사진 변경</span>
-			</a>
-			<!-- <input name="upload" type="file" value="+"> --> 
-			<div class="nick">			
-				<h3>${user.nick } (${user.status })</h3>
-				<h4>${user.nick }님 환영합니다</h4>
-			</div>
-		</div>		
-		<div class="profile_modify">
-			<a href="${cpath }/myPage/password">			
-				<img src="${cpath }/resources/img/review/review_write.png" 
-				style="width: 70px;"><br>
-				<span style="font-size: 15px">회원정보수정</span>
-			</a>
-		</div>
-	</div>
 	
     <div class="headline">
     	 <p><a href="${cpath }">홈</a></p>         
@@ -57,7 +37,7 @@
 		</div>
 	</div>
 	<div>
-		<div class="sup_link">1:1 문의하기</div>
+		<div class="sup_link"><a href="${cpath }/support/QNA">1:1 문의하기</a></div>
 	</div>
 </section>
 

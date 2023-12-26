@@ -4,16 +4,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.itbank.components.Paging;
 import com.itbank.model.SearchDAO;
 import com.itbank.model.vo.RestaurantVO;
-import com.itbank.model.vo.ReviewVO;
 
 @Service
 public class SearchService {
