@@ -6,15 +6,7 @@
 <link rel="stylesheet"
 	href="${cpath }/resources/css/search_css/sc_detail.css">
 <c:set var="imgPath" value="${cpath }/resources/img/search"></c:set>
-<!-- head 태그 내에 추가하세요. -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-nanum@1.0.0/css/font-nanum.min.css">
 
-<!-- body 내에서 원하는 요소에 적용하세요. -->
-<style>
-    body {
-        font-family: 'Nanum Gothic', sans-serif; /* 네이버 폰트의 글꼴명으로 변경하세요. */
-    }
-</style>
 <section class="sc_detail">
 	<article class="de_left">
 		<div class="de_option">

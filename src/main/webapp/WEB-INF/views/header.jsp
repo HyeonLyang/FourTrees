@@ -10,6 +10,12 @@
 <title>MZ(맛집) in Korea</title>
 <link rel="stylesheet" href="${cpath }/resources/css/header.css">
 <script src="${cpath }/resources/js/BacktoTop.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-nanum@1.0.0/css/font-nanum.min.css">
+<style>
+    body {
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+</style>
 </head>
 <body>
 <section class="header">
