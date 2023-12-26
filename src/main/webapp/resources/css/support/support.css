@@ -135,3 +135,37 @@
 	
 	margin: 20px;
 }
+.qna table {
+	width: 800px;
+	margin: 0 auto;
+}
+.qna table th, .qna table td {
+	
+}
+.qna input, .qna textarea {
+	width: 400px;
+}
+.qna textarea {
+	height: 250px;
+}
+.qna_button {
+	width: 300px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #ff7518;
+	border-radius: 15px;
+	height: 30px;
+	margin-top: 20px;
+}
+.qna_button a{
+	border: none;
+	width: 300px;
+	cursor: pointer;
+	border-radius: 15px;
+	text-align: center;
+	padding-top: 5px;
+	color: white;
+	font-weight: bold;
+}

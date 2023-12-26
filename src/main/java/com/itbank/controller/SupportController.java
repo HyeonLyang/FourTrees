@@ -12,6 +12,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.itbank.service.SupportService;
 
+
+
 @Controller
 @RequestMapping("/support")
 public class SupportController {
@@ -45,8 +47,8 @@ public class SupportController {
 		mav.addObject("p", result.get("p"));
 		return mav;
 	}
+
 	@GetMapping("/QNA")
-	public void QNA()	{
-		
+	public void qna() {
 	}
 }
