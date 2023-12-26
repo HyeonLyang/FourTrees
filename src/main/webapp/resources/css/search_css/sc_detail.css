@@ -30,7 +30,12 @@
 	font-size: 12px;
 	font-weight: bold;
 }
-
+.filter a {
+	font-size: 12px;
+	padding: 5px;
+	border: 1px solid;
+	border-radius: 15px;
+}
 /* 좌측, 상세 검색결과 테이블 설정 */
 .de_left .sc_list td {
 	border: 1px solid;
