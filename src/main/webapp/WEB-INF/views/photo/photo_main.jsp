@@ -7,6 +7,8 @@
 
 <section class="photo_main">
 	
+	<h1 class="photo_main_title">최근 리뷰 이미지</h1>
+	
 	<section class="photo_main_con">
 		<ol class="photo_main_list">
 			<c:forEach var="photo" items="${img_list }">
@@ -44,10 +46,17 @@
 	}
 	});
 	
-	//모달 닫기
+	// 모달 닫기 - 모달 외부 클릭 시 닫기
+	window.addEventListener('click', function(event) {
+	    if (event.target === modal) {
+	        modal.style.display = "none";
+	    }
+	});
+
+	// 닫기 버튼 클릭 시 모달 닫기
 	closeButton.onclick = function() {
-	modal.style.display = "none";
-	}
+	    modal.style.display = "none";
+	};
 
 </script>
 	
