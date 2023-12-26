@@ -290,9 +290,3 @@ header {
 header.scrolled, .header.scrolled {
 	background-color: #ff7518;	/* 색상 변경해주세요 */
 }
-
-footer {
-	width: 100%;
-	position: absolute;
-    transform: translate(0%, 1520%);
-}

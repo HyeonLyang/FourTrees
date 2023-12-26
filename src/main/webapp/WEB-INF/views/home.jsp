@@ -38,13 +38,13 @@
 		<div class="menu">
 		    <div class="cate1">
 		        <img src="${cpath }/resources/img/c_location.jpg">
-	        	<a href="#" style="background-image: 
+	        	<a href="${cpath }/search/sc_main" style="background-image: 
 	        		url('${cpath}/resources/img/opacity.png');">
 		        	<span data-hover="BREAD" 
 		        	style="background: 
 		        	url('${cpath}/resources/img/arrow.png') 
 		        	right center no-repeat;">
-		        	장소로 분류
+		        	장소별로 검색
 		        	</span>
 	        	</a>
 		    </div>
@@ -52,7 +52,7 @@
 	    <div class="cate23">	
 		    <div class="cate2">
 		        <img src="${cpath }/resources/img/c_rank.jpg">
-		        <a href="#" style="background-image: 
+		        <a href="${cpath }/rank/rank_main" style="background-image: 
 		        	url('${cpath}/resources/img/opacity.png');">
 			        <span data-hover="BREAD"
 			        style="background: 
@@ -62,13 +62,13 @@
 	        	</a>
 		    </div>
 		    <div class="cate3">
-		        <img src="${cpath }/resources/img/c_thema.jpg">
-		        <a href="#" style="background-image: 
+		        <img src="${cpath }/resources/img/header/mbti.jpg">
+		        <a href="${cpath }/mbti/mbti_main" style="background-image: 
 		        	url('${cpath}/resources/img/opacity.png');">
 			        <span data-hover="BREAD"
 			        style="background: 
 		        	url('${cpath}/resources/img/arrow.png') 
-		        	right center no-repeat;">테마별로 검색
+		        	right center no-repeat;">MBTI에 맞는 음식 찾기
 	        	</span>
 	        	</a>
 		    </div>
@@ -76,12 +76,12 @@
 		    
 		    <div class="cate4">
 		        <img src="${cpath }/resources/img/c_menu.jpg">
-			        <a href="#" style="background-image: 
+			        <a href="${cpath }/photo/photo_main" style="background-image: 
 		        		url('${cpath}/resources/img/opacity.png');">
 				        <span data-hover="BREAD"
 				        style="background: 
 			        	url('${cpath}/resources/img/arrow.png') 
-			        	right center no-repeat;">메뉴별로 검색
+			        	right center no-repeat;">사진 게시판
 			        	</span>
 		        	</a>
 		    </div>
