@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header2.jsp" %>
 <link href="${cpath }/resources/css/rank_css/rank_area_de_style.css" rel="stylesheet">
-<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
+
 <c:set var="cate" value="${cate_list }"/>
 <section class="rank_detail">
 	
@@ -36,6 +36,7 @@
 		.then(data => {
 			dt = data;
 			
+			
 			console.log(dt);
 			
 			let title = document.querySelectorAll('.rank_detail_title')[0];
@@ -50,6 +51,9 @@
 			
 			for (let i = 0; i < 10; i++) {
 				let li = document.createElement('li');
+				let star_rating = data[i].score / 5 * 100;
+				
+				console.log(star_rating);
 				
 				if(i < 3){
 					li.innerHTML = 
@@ -61,7 +65,7 @@
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_detail_rating">' +
 									'<div class="rank_detail_rate_back">' +
-								    	`<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>` +
+									'<span style="width:' + star_rating + '%" class="rank_detail_rate_front"></span>' +
 								    '</div>' +
 									'<b class="rank_detail_score">' + data[i].score + '</b>' +
 								'</div>' +
@@ -77,7 +81,7 @@
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_detail_rating">' +
 									'<div class="rank_detail_rate_back">' +
-								    	`<span style="width: ${star_rating}%" class="rank_detail_rate_front"></span>` +
+									'<span style="width:' + star_rating + '%" class="rank_detail_rate_front"></span>' +
 								    '</div>' +
 									'<b class="rank_detail_score">' + data[i].score + '</b>' +
 								'</div>' +

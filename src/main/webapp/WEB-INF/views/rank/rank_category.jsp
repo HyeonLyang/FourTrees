@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header2.jsp" %>
 <link href="${cpath }/resources/css/rank_css/rank_category_style.css" rel="stylesheet">
-<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
+
 	<!-- css 폴더안에 정리해주세요 -->
 <c:set var="cate" value="${cate_list }"/>
 <c:set var="res_list" value="${res_list }"/>
@@ -50,6 +50,7 @@
 			
 			for (let i = 0; i < 10; i++) {
 				let li = document.createElement('li');
+				let star_rating = data[i].score / 5 * 100;
 				
 				if(i < 3){
 					li.innerHTML = 
@@ -61,7 +62,7 @@
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_category_rating">' +
 									'<div class="rank_category_rate_back">' +
-								    	`<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>` +
+								    	'<span style="width:' + star_rating + '%" class="rank_category_rate_front"></span>' +
 								    '</div>' +
 									'<b class="rank_category_score">' + data[i].score + '</b>' +
 								'</div>' +
@@ -77,7 +78,7 @@
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_category_rating">' +
 									'<div class="rank_category_rate_back">' +
-								    	`<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>` +
+									'<span style="width:' + star_rating + '%" class="rank_category_rate_front"></span>' +
 								    '</div>' +
 									'<b class="rank_category_score">' + data[i].score + '</b>' +
 								'</div>' +
