@@ -35,13 +35,6 @@
 					<td><input name="category" value="<%=category%>"
 						placeholder="백반,죽,국수"></td>
 				</tr>
-				<tr>
-					<td>필터</td>
-					<td class="filter">
-						<a href="${cpath }/search/sc_view">조회수</a>
-						<a href="${cpath }/search/sc_score">별점</a>
-					</td>
-				</tr>
 				<tr class="sc_result">
 					<td colspan="3">검색어 | 지역 - ${add } | 카테고리 - ${cate } | 총 검색 맛집
 						: (${tt } 건)</td>
