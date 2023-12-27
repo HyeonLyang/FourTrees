@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.itbank.service.AccountService;
 import com.itbank.service.BookmarkService;
 import com.itbank.service.PhotoService;
-import com.itbank.service.BookmarkService;
-import com.itbank.service.PhotoService;
 import com.itbank.service.RestaurantService;
 import com.itbank.service.ReviewService;
 
@@ -21,8 +19,6 @@ public class RestaurantController {
 
 	@Autowired private RestaurantService rs;
 	@Autowired private ReviewService rvs;
-	@Autowired private BookmarkService bs;
-	@Autowired private PhotoService ps;
 	@Autowired private BookmarkService bs;
 	@Autowired private PhotoService ps;
 
