@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header2.jsp" %>
 <link href="${cpath }/resources/css/rank_css/rank_category_style.css" rel="stylesheet">
-<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
+
 	<!-- css 폴더안에 정리해주세요 -->
 <c:set var="cate" value="${cate_list }"/>
 <c:set var="res_list" value="${res_list }"/>
@@ -28,6 +28,14 @@
 </section>	
 
 <script type="text/javascript">
+
+	function hideSpecificButtons() {
+	    const btnsToHide = [4, 6, 9, 11, 12, 13]; // 숨길 버튼 번호 목록
+	    const btns = document.querySelectorAll('.rank_category_btns > button');
+	    btnsToHide.forEach(btnNumber => {
+	        btns[btnNumber].style.display = 'none'; // 숨김 처리
+	    });
+	}
 	
 	function ranking(reqCate) { 
 		
@@ -50,18 +58,19 @@
 			
 			for (let i = 0; i < 10; i++) {
 				let li = document.createElement('li');
+				let star_rating = data[i].score / 5 * 100;
 				
 				if(i < 3){
 					li.innerHTML = 
 						'<li class="rank_category_res">' +
 							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_category_topRes">' +
 								'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking' + (i + 1) + '.png">' + '</div>' +
-								'<p class="rank_category_block"></p>' +
+								'<p class="rank_category_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/' + data[i].photo +'"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_category_rating">' +
 									'<div class="rank_category_rate_back">' +
-								    	`<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>` +
+								    	'<span style="width:' + star_rating + '%" class="rank_category_rate_front"></span>' +
 								    '</div>' +
 									'<b class="rank_category_score">' + data[i].score + '</b>' +
 								'</div>' +
@@ -72,12 +81,12 @@
 						'<li class="rank_category_res">' +
 							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_category_topRes">' +
 								'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
-								'<p class="rank_category_block"></p>' +
+								'<p class="rank_category_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/' + data[i].photo +'"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_category_rating">' +
 									'<div class="rank_category_rate_back">' +
-								    	`<span style="width: ${star_rating}%" class="rank_category_rate_front"></span>` +
+									'<span style="width:' + star_rating + '%" class="rank_category_rate_front"></span>' +
 								    '</div>' +
 									'<b class="rank_category_score">' + data[i].score + '</b>' +
 								'</div>' +
@@ -86,9 +95,21 @@
 				}
 				result.appendChild(li);
 			}
+			
+			hideSpecificButtons(); // 특정 버튼들 숨김 처리
+
+	        goTo.innerHTML = '내 지역의 ${cate[0].name} 맛집 찾으러 가기 →';
+	        goTo.addEventListener('click', function () {
+	            // 현재 선택된 카테고리의 페이지로 이동
+	            goToCategoryPage(dt[1].category); // dt에는 현재 선택된 카테고리의 정보가 있어야 합니다.
+	        });
 		});
 	}
 	
+	function goToCategoryPage(address) {
+        // address에 해당하는 페이지로 이동
+        location.href = '${cpath}/search/sc_detail?category=' + address;
+    }
 	
 	let btns = document.querySelectorAll('.rank_category_btns > button');
 	let url = 'gRank';

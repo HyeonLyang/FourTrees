@@ -47,6 +47,36 @@
 	</section>
 
 </section>
-	
+
+<script>
+    // 모달 열기 함수
+    function openModal(imgSrc) {
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        
+        const img = document.createElement('img');
+        img.src = imgSrc;
+        img.classList.add('modal-content');
+
+        modal.appendChild(img);
+        document.body.appendChild(modal);
+
+        // 모달 외부 클릭 시 모달 닫기
+        modal.addEventListener('click', () => {
+            modal.remove();
+        });
+    }
+
+    // 이미지를 클릭했을 때 모달 열기
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.res_img_list img');
+        images.forEach(image => {
+            image.addEventListener('click', function () {
+                openModal(this.src);
+            });
+        });
+    });
+</script>
+
 </body>
 </html>

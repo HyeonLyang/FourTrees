@@ -46,6 +46,7 @@ public class RankController {
 		
 		for(CategoryVO cate : cate_list) {
 			res_list = rs.getAllCateRank(cate.getIdx());
+			
 			model.addAttribute("rank" + cate_list.indexOf(cate), res_list);
 		}
 		

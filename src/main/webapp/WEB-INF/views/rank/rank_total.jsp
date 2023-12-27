@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header2.jsp" %>
 <link href="${cpath }/resources/css/rank_css/rank_total_style.css" rel="stylesheet">
-<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 <c:set var="cate" value="${cate_list }"/>
 <!-- css 폴더안에 정리해주세요 -->
 
@@ -13,12 +12,13 @@
 		
 		<ol class="rank_total_board">
 		<c:forEach var="res" items="${res_list}" varStatus="status">
+		    <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 		    <li class="rank_total_res">
 		        <a href="${cpath}/restaurant/res_detail/${res.idx}" class="rank_total_topRes">
 		            <div>
 		                <img class="rank_total_medal" src="${cpath}/resources/img/rank/ranking${status.index < 4 ? status.index + 1 : 4}.png">
 		            </div>
-		            <p class="rank_total_block"></p>
+		            <p class="rank_total_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/${res.photo}"></p>
 		            <p>${res.name}</p>
 		            <p>${res.category}</p>
 		            <div class="rank_total_rating">

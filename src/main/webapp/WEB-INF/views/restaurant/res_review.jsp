@@ -55,8 +55,11 @@
 					<p>${review.content }</p>
 				</div>
 				<div class="res_review_reImg">
-					<img src="${cpath }/resources/img/reImg1.png">
-					<img src="${cpath }/resources/img/reImg2.jpg">
+					<c:forEach var="photo" items="${photo_list }">
+						<c:if test="${photo.rev_idx == review.idx}">
+							<img src="${cpath }/img/${photo.res_name}/${photo.img_path}">
+						</c:if>
+					</c:forEach>
 				</div>
 			</article>
 			<br>

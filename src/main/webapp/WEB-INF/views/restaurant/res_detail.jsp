@@ -31,7 +31,7 @@
 <div class="res_detail_main">
 	<section class="res_detail_select">
 		<div class="res_detail_container">
-			<img src="${cpath }/img/${res.name }/${res.photo }" />
+			<img src="${cpath }/resources/img/restaurant/res_repImg/${res.photo }" />
 		</div>
 	</section>
 	<aside class="res_detail_ad">
