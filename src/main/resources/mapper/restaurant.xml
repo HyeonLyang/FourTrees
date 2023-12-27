@@ -10,7 +10,8 @@
 		    on r.area_idx = a.idx
             left outer join category c
             on r.category = c.idx
-		    where a.name = #{address}    
+		    where a.name = #{address} 
+		    order by r.score desc   
 		    fetch first 6 rows only
 	</select>
 	

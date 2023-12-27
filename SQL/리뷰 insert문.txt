@@ -1,0 +1,412 @@
+-- 고기·구이
+
+-- 1322 서대문골목 서대포집
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>맛있었어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_서대문골목_서대포집_리뷰 1.jpg', 1322);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>음식의 풍미는 정말 일품이었습니다. 특히, 서대문골목 서대포집의 특별한 소스는 여운이 길게 남았어요. 또한, 서비스도 친절하고 분위기도 좋아 다음에 또 방문하고 싶은 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_서대문골목_서대포집_리뷰 2.jpg', 1322);
+
+-- 1323 서대문꼼잠어
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>음식이 정말 맛있었어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_서대문꼼잠어_리뷰 1.jpg', 1323);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>다양한 종류의 꼼장어를 맛볼 수 있는 서대문꼼잠어는 정말 맛집 중의 맛집입니다. 신선한 재료와 정교한 조리로 인해 음식의 맛 또한 최고 수준이었습니다. 다음에 또 방문하고 싶은 곳이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_서대문꼼잠어_리뷰 2.jpg', 1323);
+
+-- 1327 하남돼지집 서대문역점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>서비스가 좋았어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_하남돼지집_서대문역점_리뷰 1.jpg', 1327);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>하남돼지집의 돼지고기는 정말 신선하고 맛있었습니다. 특히, 고기의 식감과 부드러운 맛이 기억에 남네요. 분위기도 아늑하고 서비스도 친절해서 만족스러운 식사였습니다. 또 가고 싶은 맛집입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_하남돼지집_서대문역점_리뷰 2.jpg', 1327);
+
+-- 1348 양꽃 신촌점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>분위기가 좋아서 다음에 또 방문할게요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_양꽃_신촌점_리뷰 1.jpg', 1348);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>양꽃 신촌점은 정말 분위기가 좋은 곳이었습니다. 음식 뿐만 아니라 실내 디자인도 마음에 들었어요. 메뉴의 다양성과 퀄리티도 좋아서 다음에 또 방문할 계획입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_양꽃_신촌점_리뷰 2.jpg', 1348);
+
+-- 1328 원조부안집 서대문점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>가격대비 만족스러웠어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_원조부안집_서대문점_리뷰 1.jpg', 1328);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>원조부안집 서대문점은 가격대비 정말 만족스러운 곳이었습니다. 특히, 전통적인 부안요리의 맛을 느낄 수 있어 좋았어요. 분위기도 고즈넉하고 음식의 퀄리티도 뛰어나서 다시 방문하고 싶은 식당입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_원조부안집_서대문점_리뷰 2.jpg', 1328);
+
+=====================================================================================
+
+-- 1010 지호한방삼계탕 강릉점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>맛있었어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_지호한방삼계탕 강릉점_리뷰 1.jpg', 1010);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>한방삼계탕의 특유의 깊은 맛과 감칠맛이 일품이었습니다. 또한, 서비스도 친절하고 분위기도 좋아 다음에 또 방문하고 싶은 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_지호한방삼계탕 강릉점_리뷰 2.jpg', 1010);
+
+-- 1013 강릉불고기
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>음식이 정말 맛있었어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉불고기_리뷰 1.jpg', 1013);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>불고기의 진한 풍미와 고기의 식감이 정말 좋았습니다. 가격대비 만족스러운 식사였고, 분위기도 좋아서 또 방문하고 싶은 곳이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉불고기_리뷰 2.jpg', 1013);
+
+-- 1015 강릉갈비찜
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>분위기가 좋아서 다음에 또 방문할게요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉갈비찜_리뷰 1.jpg', 1015);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>갈비찜은 정말 부드럽고 맛있었습니다. 특히, 양념이 고기와 참 잘 어울려서 맛이 일품이었어요. 분위기도 아늑해서 가족 또는 친구와 함께 즐길 수 있는 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉갈비찜_리뷰 2.jpg', 1015);
+
+-- 1016 강릉숨은고깃집
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>서비스가 좋았어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉숨은고깃집_리뷰 1.jpg', 1016);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>숨은고깃집은 정말 맛있는 음식과 아늑한 분위기가 매력적이었습니다. 특히, 직접 만든 소스가 고기와 참 잘 어울려서 맛이 더욱 돋보였어요. 다음에 또 방문할 예정입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉숨은고깃집_리뷰 2.jpg', 1016);
+
+-- 1020 강릉양꼬치
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>가격대비 만족스러웠어요!</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉양꼬치_리뷰 1.jpg', 1020);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>양꼬치는 정말 신선하고 맛있었습니다. 특히, 다양한 소스와 함께 먹으니 더욱 맛있었습니다. 가격대비 만족스러운 식사였고, 다음에 또 방문하고 싶은 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉양꼬치_리뷰 2.jpg', 1020);
+
+======================================================================
+-- 백반·죽·국수
+
+-- 1001 강릉감자옹심 강릉본점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>맛있는 감자옹심을 즐길 수 있는 강릉감자옹심 강릉본점. 분위기와 서비스도 좋아서 자주 방문하게 되는 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉감자옹심 강릉본점_리뷰 1.jpg', 1001);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>다양한 감자 요리를 즐길 수 있는데, 특히 감자옹심은 정말 맛있습니다. 매번 다른 메뉴를 시도해보는 재미가 있는 곳이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉감자옹심 강릉본점_리뷰 2.jpg', 1001);
+
+-- 1002 강릉 짬뽕 순두부 동화가든
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>짬뽕과 순두부의 조합이 일품인 강릉 짬뽕 순두부 동화가든. 정갈한 맛과 신선한 재료로 만든 요리들이 맛있게 기억에 남네요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 짬뽕 순두부 동화가든_리뷰 1.jpg', 1002);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>동화가든은 짬뽕과 순두부의 특별한 조합을 선보이는데, 그 맛은 일품입니다. 가족들과 함께하는 식사에 딱인 곳이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 짬뽕 순두부 동화가든_리뷰 2.jpg', 1002);
+
+-- 1003 강릉풍년갈비
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>감동적인 육질과 정갈한 맛을 선사하는 강릉풍년갈비. 식사 후에는 여운이 오래 간답니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉풍년갈비_리뷰 1.jpg', 1003);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>풍년갈비의 고기는 정말 신선하고 부드럽습니다. 정갈한 음식과 아늑한 분위기가 매력적인 곳이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉풍년갈비_리뷰 2.jpg', 1003);
+
+-- 1014 강릉염전조개구이
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>신선한 조개와 특별한 양념으로 즐기는 강릉염전조개구이. 정갈한 맛이 일품이었습니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉염전조개구이_리뷰 1.jpg', 1014);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>염전조개구이는 신선한 조개와 특별한 양념이 잘 어울려 정말 맛있었습니다. 매번 다른 맛을 경험할 수 있는 곳이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉염전조개구이_리뷰 2.jpg', 1014);
+-- 1034 함흥막국수
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>맛있는 함흥막국수를 즐길 수 있는 곳이에요. 시원한 국물과 탱글탱글한 면이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_함흥막국수_리뷰 1.jpg', 1034);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>막국수의 국물이 정말 깔끔하고 면의 식감이 좋아서 자주 방문하는 곳이에요. 막국수를 좋아하는 사람에게 추천합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_함흥막국수_리뷰 2.jpg', 1034);
+
+-- 1036 김영애할머니 순두부
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>김영애할머니 순두부는 정갈한 맛이 일품이에요. 신선한 재료와 정성이 느껴지는 맛으로 많은 사람들이 찾는 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_김영애할머니 순두부_리뷰 1.jpg', 1036);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>순두부 전문점에서 느낄 수 있는 진한 순두부의 맛과 향이 일품입니다. 정갈한 음식을 좋아하는 사람에게 추천합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_김영애할머니 순두부_리뷰 2.jpg', 1036);
+
+-- 1037 이조면옥
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>이조면옥은 면요리를 즐길 수 있는 전통적인 식당입니다. 정갈하고 깔끔한 맛이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_이조면옥_리뷰 1.jpg', 1037);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>면요리를 좋아하는 사람들에게 추천할 만한 곳이에요. 여러 종류의 면요리를 즐길 수 있어서 다양한 맛을 살펴볼 수 있어요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_이조면옥_리뷰 2.jpg', 1037);
+
+-- 1040 감나무집 감자옹심이
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>감나무집은 특별한 감자요리를 즐길 수 있는 곳입니다. 신선한 감자옹심이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_감나무집 감자옹심이_리뷰 1.jpg', 1040);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>감자를 활용한 다양한 요리를 즐길 수 있는 감나무집. 특히 감자옹심이 맛있어서 자주 찾게 되는 곳이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_감나무집 감자옹심이_리뷰 2.jpg', 1040);
+
+-- 1041 춘선내
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>춘선내는 속초에서 맛볼 수 있는 다양한 음식을 즐길 수 있는 곳이에요. 신선한 재료와 정갈한 맛이 매력적입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_춘선내_리뷰 1.jpg', 1041);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>다양한 음식을 한 자리에서 즐길 수 있는 춘선내. 특히 속초의 맛을 느낄 수 있는 맛집 중 하나입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_춘선내_리뷰 2.jpg', 1041);
+
+-- 1042 속초생대구
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>속초에서 맛볼 수 있는 신선한 대구요리를 즐길 수 있는 속초생대구. 정갈한 음식과 맛있는 대구요리가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_속초생대구_리뷰 1.jpg', 1042);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>대구의 신선한 맛을 느낄 수 있는 속초생대구. 정갈하게 차려진 음식과 아늑한 분위기가 매력적입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_속초생대구_리뷰 2.jpg', 1042);
+
+==================================================================================
+-- 야식
+
+-- 1130 훈혁
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>부산 부산진구에 위치한 훈혁은 고급스러운 분위기와 함께 맛있는 음식을 즐길 수 있는 곳입니다. 정갈한 음식과 세련된 분위기가 매력적이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '부산 부산진구_훈혁_리뷰 1.jpg', 1130);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>훈혁에서는 특별한 날 혹은 소중한 사람과 함께하는 식사에 어울리는 다양한 메뉴를 즐길 수 있어요. 서비스와 음식의 퀄리티가 뛰어나 많은 이들이 찾는 식당입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '부산 부산진구_훈혁_리뷰 2.jpg', 1130);
+
+-- 1203 솔티서울
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강남구 솔티서울은 현대적이고 세련된 분위기의 레스토랑입니다. 다양한 메뉴와 음료를 즐길 수 있어 모임이나 소규모 연회에도 좋아요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_솔티서울_리뷰 1.jpg', 1203);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>솔티서울에서는 정갈한 음식과 아름다운 음식의 조화를 즐길 수 있어요. 특히 분위기가 뛰어나 데이트에도 좋은 식당입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_솔티서울_리뷰 2.jpg', 1203);
+
+-- 1207 어로선목로집 선릉점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>어로선목로집 선릉점은 신선한 해산물과 다양한 해물 요리를 즐길 수 있는 곳입니다. 선릉에서 특별한 맛을 느낄 수 있는 곳 중 하나에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_어로선목로집 선릉점_리뷰 1.jpg', 1207);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>해산물을 즐기는 데에 특화된 어로선목로집 선릉점. 정갈한 맛과 색다른 해물 요리를 즐길 수 있는 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_어로선목로집 선릉점_리뷰 2.jpg', 1207);
+
+-- 1214 화주요정 압구정본점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>화주요정 압구정본점은 정갈하고 고급스러운 분위기의 중식당입니다. 다양한 중국 요리를 맛볼 수 있어요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_화주요정 압구정본점_리뷰 1.jpg', 1214);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>압구정본점에서는 정갈한 중식을 즐길 수 있어 모임이나 가족 외식에도 좋아요. 맛과 서비스 모두 만족스러웠던 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_화주요정 압구정본점_리뷰 2.jpg', 1214);
+
+-- 1222 도톤보리 서울
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>도톤보리 서울은 일본 음식을 즐길 수 있는 레스토랑입니다. 도톤보리의 정취를 느낄 수 있어요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_도톤보리 서울_리뷰 1.jpg', 1222);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>일본 음식을 좋아하는 이들에게 추천하는 도톤보리 서울. 신선한 재료와 정갈한 맛으로 손님들에게 인기가 많은 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_도톤보리 서울_리뷰 2.jpg', 1222);
+
+-- 1234 한신포차 강서구청점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>한신포차 강서구청점은 맛있는 안주와 소맥을 즐길 수 있는 곳입니다. 분위기도 좋고 다양한 술 메뉴가 매력적이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_한신포차 강서구청점_리뷰 1.jpg', 1234);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>한신포차는 강서구청점에서는 특별한 분위기와 함께 술과 안주를 즐길 수 있는 곳입니다. 소맥이 맛있게 어울리는 곳 중 하나에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_한신포차 강서구청점_리뷰 2.jpg', 1234);
+
+==========================================================================================
+-- 족발·보쌈
+
+-- 1241 코끼리한상 강서직영점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>서울 강서구에 위치한 코끼리한상 강서직영점은 족발과 보쌈 전문점으로, 푸짐한 양과 고소한 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_코끼리한상 강서직영점_리뷰 1.jpg', 1241);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강서직영점에서는 코끼리한상의 대표 메뉴들을 맛볼 수 있는데, 특히 족발은 부드럽고 고소한 맛이 일품입니다. 양도 푸짐해서 가족이나 단체 모임에 좋아요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_코끼리한상 강서직영점_리뷰 2.jpg', 1241);
+
+-- 1257 정인호 완벽한 족발
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>정인호 완벽한 족발은 그 이름처럼 완벽한 맛을 자랑하는 곳입니다. 쫄깃한 식감과 특제 양념이 어우러진 맛은 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_정인호 완벽한 족발_리뷰 1.jpg', 1257);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>완벽한 족발에서는 정성스럽게 준비된 다양한 족발 요리를 즐길 수 있어요. 양념과 고기의 조화가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_정인호 완벽한 족발_리뷰 2.jpg', 1257);
+
+-- 1264 서울뼈구이매운족발
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>서울뼈구이매운족발은 매콤한 맛과 특제 양념이 가미된 족발로, 증강된 맛으로 많은 이들에게 사랑받고 있습니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_서울뼈구이매운족발_리뷰 1.jpg', 1264);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>매운족발에서는 서울뼈구이의 특제 양념이 더해져 맛있는 족발을 즐길 수 있어요. 쫄깃한 식감과 매콤한 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_서울뼈구이매운족발_리뷰 2.jpg', 1264);
+
+-- 1321 본가서대문족발
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>본가서대문족발은 서대문에서 오랜 전통을 자랑하는 맛집으로, 고소하고 매콤한 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_본가서대문족발_리뷰 1.jpg', 1321);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>서대문에서 유명한 족발 맛집인 본가서대문족발은 정통의 맛을 지향하고 있습니다. 쫄깃한 식감과 특제 양념이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_본가서대문족발_리뷰 2.jpg', 1321);
+
+====================================================================================
+-- 찜·탕·찌개
+
+-- 1325 아빠곰탕 서대문구역점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>아빠곰탕 서대문구역점은 감칠맛 나는 곰탕으로 유명한 식당입니다. 정갈하고 깔끔한 맛으로 손님들에게 사랑받고 있어요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_아빠곰탕 서대문구역점_리뷰 1.jpg', 1325);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>서대문구역점에서는 아빠곰탕의 다양한 종류를 즐길 수 있는데, 특히 감칠맛 가득한 국물과 고기는 일품입니다. 간단한 한끼 식사로 좋아요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_아빠곰탕 서대문구역점_리뷰 2.jpg', 1325);
+
+-- 1329 한옥집김치찜 본점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>한옥집김치찜 본점은 정통 김치찜 요리로 손님들의 입맛을 사로잡고 있는 곳입니다. 신선한 재료와 정성이 느껴지는 맛이 특징이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_한옥집김치찜 본점_리뷰 1.jpg', 1329);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>한옥집김치찜 본점에서는 김치찜뿐만 아니라 다양한 전통 음식을 맛볼 수 있어요. 정갈한 한식 요리를 즐기고 싶을 때 추천합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_한옥집김치찜 본점_리뷰 2.jpg', 1329);
+
+-- 1340 월순철판동태찜
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>월순철판동태찜은 신선한 동태와 정갈한 양념이 어우러진 요리로 소개되고 있어요. 특히 동태찜의 풍미가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_월순철판동태찜_리뷰 1.jpg', 1340);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>월순철판동태찜에서는 정갈한 한상 요리를 맛볼 수 있어요. 신선한 재료와 정성이 느껴지는 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_월순철판동태찜_리뷰 2.jpg', 1340);
+
+-- 1343 대성이네
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>대성이네는 특제 양념에 찍어 먹는 족발로 유명한 곳입니다. 쫄깃하고 맛있는 족발은 술안주로 딱입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_대성이네_리뷰 1.jpg', 1343);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>대성이네에서는 특제 양념이 가미된 족발을 맛볼 수 있어요. 족발의 특유의 고소한 맛과 부드러운 식감이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_대성이네_리뷰 2.jpg', 1343);
+
+-- 1346 풍년닭도리탕 신촌점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>풍년닭도리탕 신촌점은 매콤한 닭도리탕으로 소문난 곳입니다. 푸짐하고 맛있는 닭 요리를 즐길 수 있어요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_풍년닭도리탕 신촌점_리뷰 1.jpg', 1346);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>신촌점에서는 풍년닭도리탕의 매콤한 맛과 닭의 풍미를 즐길 수 있어요. 닭의 특유의 고소한 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_풍년닭도리탕 신촌점_리뷰 2.jpg', 1346);
+
+-- 1007 강릉 전복 뚝배기
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강릉 전복 뚝배기는 신선한 전복과 정갈한 양념이 어우러진 맛있는 음식으로 손님들을 매료시키고 있습니다. 특히 뚝배기에서 나오는 향긋한 향이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 전복 뚝배기_리뷰 1.jpg', 1007);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>전복 뚝배기에서는 신선한 강릉 전복을 사용해 정성스럽게 만든 음식들이 특징입니다. 고소하고 풍부한 맛이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 전복 뚝배기_리뷰 2.jpg', 1007);
+
+-- 1009 강릉 부성불고기 찜닭
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강릉 부성불고기 찜닭은 부드럽고 쫄깃한 닭고기와 특제 양념으로 만들어진 찜닭으로, 강릉의 맛을 전하고 있습니다. 특히 매콤한 맛이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 부성불고기 찜닭_리뷰 1.jpg', 1009);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>부성불고기 찜닭에서는 정갈한 찜닭의 맛을 느낄 수 있어요. 특제 양념이 가미된 닭고기는 한 입 먹을 때마다 맛있는 향이 퍼져나옵니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 부성불고기 찜닭_리뷰 2.jpg', 1009);
+
+-- 1045 사돈집
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>사돈집은 속초에서 유명한 고기 요리 전문점으로, 신선한 재료와 정성스러운 조리로 손님들을 매료시키고 있어요. 특히 육질이 부드럽고 고소한 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_사돈집_리뷰 1.jpg', 1045);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>속초의 사돈집에서는 정갈하고 고급스러운 분위기 속에서 고기를 즐길 수 있어요. 특히 소고기의 신선한 맛이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_사돈집_리뷰 2.jpg', 1045);
+
+-- 1046 후포식당
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>후포식당은 속초의 전통적인 맛을 즐길 수 있는 식당으로, 신선한 해산물과 특제 양념이 어우러진 요리로 손님들에게 인기를 끌고 있어요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_후포식당_리뷰 1.jpg', 1046);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>후포식당에서는 다양한 해산물 요리를 맛볼 수 있어요. 특히 신선한 해산물과 정갈한 양념이 어우러져 고급스러운 맛을 선사합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_후포식당_리뷰 2.jpg', 1046);
+
+-- 1081 원조동해순대국
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>원조동해순대국은 속초에서 오랜 전통을 자랑하는 맛집으로, 고기의 풍부한 맛과 깔끔한 국물이 특징입니다. 특히 순대의 식감이 일품이에요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_원조동해순대국_리뷰 1.jpg', 1081);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>원조동해순대국에서는 정갈하고 고소한 국물이 특징이에요. 신선한 재료와 정성스러운 조리로 손님들에게 맛과 건강을 선사합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 속초시_원조동해순대국_리뷰 2.jpg', 1081);
+
+===============================================================================
+-- 카페·디저트
+
+-- 1344 에뚜왈 신촌점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>에뚜왈 신촌점은 고급스러운 분위기 속에서 즐길 수 있는 디저트 전문점으로, 다양한 디저트와 음료가 손님들을 매료시키고 있어요. 특히 예쁜 디저트와 향긋한 커피로 유명합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_에뚜왈 신촌점_리뷰 1.jpg', 1344);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>신촌에 위치한 에뚜왈 신촌점에서는 예쁜 디저트와 함께 특별한 시간을 보낼 수 있어요. 특히 분위기 있는 인테리어가 고객들에게 인기를 끌고 있습니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_에뚜왈 신촌점_리뷰 2.jpg', 1344);
+
+-- 1345 헤이진
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>헤이진은 서대문구에서 인기 있는 카페로, 특히 아늑한 분위기와 다양한 음료가 손님들에게 사랑을 받고 있어요. 특히 커피의 향과 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_헤이진_리뷰 1.jpg', 1345);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>헤이진은 서대문구에서 분위기 좋은 카페로 소문난 곳입니다. 아늑한 공간에서 특별한 시간을 보낼 수 있어요. 다양한 음료 메뉴도 매력적입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_헤이진_리뷰 2.jpg', 1345);
+
+-- 1347 베베베 신촌점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>베베베 신촌점은 신촌에서 유명한 디저트 카페로, 다양한 종류의 디저트와 음료가 손님들의 입맛을 사로잡고 있어요. 특히 예쁜 디저트로 유명합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_베베베 신촌점_리뷰 1.jpg', 1347);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>신촌에 위치한 베베베 신촌점에서는 다양한 종류의 예쁜 디저트와 음료를 즐길 수 있어요. 특히 고급스러운 분위기가 매력적입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_베베베 신촌점_리뷰 2.jpg', 1347);
+
+-- 1350 리히트
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>리히트는 서대문구에서 인기 있는 디저트 카페로, 다양한 스위트 메뉴와 음료가 손님들에게 사랑을 받고 있어요. 특히 예쁜 디저트로 소문난 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_리히트_리뷰 1.jpg', 1350);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>서대문구에서 알려진 리히트는 예쁜 디저트와 아름다운 카페 분위기로 손님들을 매료시키고 있어요. 특히 커피와 함께 즐길 수 있는 다양한 디저트가 특별한 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_리히트_리뷰 2.jpg', 1350);
+
+-- 1005 강릉 수제 어묵 고로케
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강릉 수제 어묵 고로케는 신선한 어묵과 바삭한 튀김 옷으로 손님들을 매료시키고 있어요. 특히 고로케의 특제 소스가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 수제 어묵 고로케_리뷰 1.jpg', 1005);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강릉의 수제 어묵 고로케는 바삭한 식감과 풍부한 맛으로 손님들을 사로잡고 있어요. 특히 신선한 어묵을 사용해 만든 메뉴가 자랑입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 수제 어묵 고로케_리뷰 2.jpg', 1005);
+
+-- 1006 강릉 빵다방
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강릉 빵다방은 신선한 재료로 만든 다양한 종류의 빵으로 손님들의 입맛을 사로잡고 있어요. 특히 디저트와 커피의 조화가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 빵다방_리뷰 1.jpg', 1006);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강릉 빵다방은 다양한 종류의 빵으로 손님들을 매료시키고 있어요. 특히 아침이나 오후의 티타임에 잘 어울리는 메뉴들이 특별한 곳입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_강릉 빵다방_리뷰 2.jpg', 1006);
+
+-- 1018 와플대학 강릉중앙캠퍼스
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>와플대학 강릉중앙캠퍼스는 신선한 재료로 만든 바삭한 와플이 특별한 곳으로, 손님들에게 사랑받고 있어요. 특히 다양한 토핑과 소스가 맛의 다양성을 더해줍니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_와플대학 강릉중앙캠퍼스_리뷰 1.jpg', 1018);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>와플대학 강릉중앙캠퍼스는 다양한 토핑과 소스로 와플을 즐길 수 있는 곳으로, 바삭한 식감과 달콤한 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '강원 강릉시_와플대학 강릉중앙캠퍼스_리뷰 2.jpg', 1018);
+
+-- 1275 READSTREET COFFEE
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>READSTREET COFFEE는 동대문구에서 인기 있는 카페로, 특히 신선한 원두와 특별한 블렌딩으로 만든 커피가 손님들을 사로잡고 있어요. 편안한 분위기도 매력적입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 동대문구_READSTREET COFFEE_리뷰 1.jpg', 1275);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>동대문구의 READSTREET COFFEE는 특별한 블렌딩으로 만든 커피와 아늑한 분위기가 특징인 곳입니다. 특히 다양한 음료와 디저트가 손님들에게 사랑받고 있어요.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 동대문구_READSTREET COFFEE_리뷰 2.jpg', 1275);
+
+-- 1278 스타벅스 경동1960점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>스타벅스 경동1960점은 전통적인 분위기와 함께 다양한 종류의 커피로 손님들을 매료시키고 있어요. 특히 스타벅스만의 고유한 분위기가 느껴지는 매장입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 동대문구_스타벅스 경동1960점_리뷰 1.jpg', 1278);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>경동1960점의 스타벅스는 특별한 분위기와 다양한 커피로 손님들을 매료시키고 있어요. 특히 유명한 음료와 디저트가 특별한 맛을 선사합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 동대문구_스타벅스 경동1960점_리뷰 2.jpg', 1278);
+
+-- 1204 자연도소금빵in 도산
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>자연도소금빵in 도산은 강남구에서 소문난 빵집으로, 신선한 재료와 정성스러운 손길로 만든 빵이 손님들을 사로잡고 있어요. 특히 자연도소금의 특별한 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_자연도소금빵in 도산_리뷰 1.jpg', 1204);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>도산의 자연도소금빵은 정갈한 맛과 신선한 재료의 조화로 손님들에게 맛의 경험을 선사하고 있어요. 특히 다양한 종류의 빵이 매력적입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강남구_자연도소금빵in 도산_리뷰 2.jpg', 1204);
+
+=================================================================================
+-- 한식
+
+-- 1250 상미반상
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>상미반상은 영등포구에서 소문난 음식점으로, 신선한 재료와 정성스러운 조리로 만든 요리가 손님들을 사로잡고 있어요. 특히 다양한 메뉴와 특별한 소스가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_상미반상_리뷰 1.jpg', 1250);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>영등포구의 상미반상은 특별한 음식과 아늑한 분위기로 손님들을 매료시키고 있어요. 특히 정성 가득한 조리로 만든 요리가 특별한 맛을 선사합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_상미반상_리뷰 2.jpg', 1250);
+
+-- 1255 강릉엄지네꼬막집
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>강릉엄지네꼬막집은 신선한 꼬막과 다양한 해물로 만든 맛있는 음식으로 손님들에게 사랑받고 있어요. 특히 얼큰하고 매운 맛이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_강릉엄지네꼬막집_리뷰 1.jpg', 1255);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>영등포구의 강릉엄지네꼬막집은 특별한 꼬막 요리로 손님들의 입맛을 사로잡고 있어요. 신선한 해물과 특제 소스가 어우러져 특별한 맛을 선사합니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 강서구_강릉엄지네꼬막집_리뷰 2.jpg', 1255);
+
+-- 1342 담산 신촌본점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>담산 신촌본점은 신선한 재료와 정성스러운 요리로 손님들을 매료시키고 있어요. 특히 각종 한식 메뉴와 다양한 반상이 매력적입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_담산 신촌본점_리뷰 1.jpg', 1342);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>영등포구의 담산 신촌본점은 특별한 한식 요리로 손님들에게 다채로운 맛의 세계를 선사하고 있어요. 신선한 재료와 정성이 느껴지는 맛집입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 서대문구_담산 신촌본점_리뷰 2.jpg', 1342);
+
+-- 1354 여로집
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>여로집은 특별한 음식과 아늑한 분위기로 손님들을 매료시키고 있어요. 특히 다양한 해물과 특제 소스가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 영등포구_여로집_리뷰 1.jpg', 1354);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>영등포구의 여로집은 신선한 해물과 정성가득한 조리로 만든 음식이 손님들에게 특별한 맛을 선사하고 있어요. 특히 푸짐한 반상이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 영등포구_여로집_리뷰 2.jpg', 1354);
+
+-- 1372 뽕씨네 얼큰 수제비
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>뽕씨네 얼큰 수제비는 신선한 재료와 정성스러운 요리로 손님들을 매료시키고 있어요. 특히 각종 수제비 메뉴가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 영등포구_뽕씨네 얼큰 수제비_리뷰 1.jpg', 1372);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>영등포구의 뽕씨네 얼큰 수제비는 특별한 수제비 요리로 손님들에게 특별한 맛을 선사하고 있어요. 정갈한 맛과 아늑한 분위기가 자랑입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 영등포구_뽕씨네 얼큰 수제비_리뷰 2.jpg', 1372);
+
+-- 1377 한신포차 영등포점
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>한신포차 영등포점은 특별한 분위기와 다양한 안주로 손님들을 매료시키고 있어요. 특히 소맥과 함께 즐기는 맛있는 음식이 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 영등포구_한신포차 영등포점_리뷰 1.jpg', 1377);
+
+INSERT INTO review (writer, content, visit_date, score, img, res_idx)
+VALUES ('JohnD', '<p>영등포구의 한신포차는 특별한 분위기와 다양한 안주로 손님들을 사로잡고 있어요. 특히 소맥과 함께 하는 분위기가 일품입니다.</p>', SYSDATE - DBMS_RANDOM.VALUE * 365, ROUND((DBMS_RANDOM.VALUE * 9) + 1) * 0.5, '서울 영등포구_한신포차 영등포점_리뷰 2.jpg', 1377);

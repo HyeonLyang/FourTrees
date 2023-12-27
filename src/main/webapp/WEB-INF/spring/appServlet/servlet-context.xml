@@ -31,9 +31,41 @@
 		<beans:property name="defaultEncoding" value="utf-8"/>
 	</beans:bean>
 	
+	<!-- Configures the message source for i18n -->
+	<beans:bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<beans:property name="basenames"
+			value="classpath:messages" />
+		<beans:property name="defaultEncoding" value="UTF-8" />
+		<beans:property name="fallbackToSystemLocale"
+			value="false" />
+		<beans:property name="cacheSeconds" value="-1" /> <!-- 캐시 끄기 -->
+	</beans:bean>
+
+	<beans:bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<beans:property name="defaultLocale" value="ko" />
+		<!-- 기본 언어는 한국어로 하겠다 (ex, value="en" 으로 넣으면 영어가 기본 언어로 지정되어 'messages_en.properties' 
+			에있는 MSG로 다국어 처리를 함) -->
+	</beans:bean>
+
+	<!-- 언어 정보 파라미터로 받기 설정 -->
+	<beans:bean id="localeChangeInterceptor"
+		class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+		<beans:property name="paramName" value="lang" />
+	</beans:bean>
+	
 	<context:component-scan base-package="com.itbank.controller" />
 	
 	<interceptors>
+		<interceptor>
+			<mapping path="/**" /> <!-- 해당 경로 설정 -->
+			<beans:bean id="localeChangeInterceptor2"
+				class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+				<beans:property name="paramName" value="lang" />
+			</beans:bean>
+		</interceptor>
+	
 		<interceptor>
 			<mapping path="/myPage/**"/>			
 			<beans:bean id="login" class="com.itbank.interceptor.LoginInterceptor" />
