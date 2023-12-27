@@ -72,7 +72,7 @@
 			<tr>
 				<th>음식 사진</th>
 				<td>
-					<input name="upload" type="file" required>
+					<input name="upload" type="file">
 					<input name="score" type="hidden">
 					<input name="res_idx" type="hidden" value="${res_idx }">					
 				</td>

@@ -127,7 +127,7 @@
 											</c:if>
 											<c:if test="${not empty user }"> 
 											<tr>
-												<td><a href="${cpath }/myPage/logout"><img
+												<td><a href="${cpath }/account/logout"><img
 														src="${cpath }/resources/img/header/icon10.png"></a></td>
 											</tr>
 											</c:if>

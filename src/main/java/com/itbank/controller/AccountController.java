@@ -39,13 +39,6 @@ public class AccountController {
 			session.setAttribute("user", input);			
 		}
 		
-		if("checked".equals(login_check)) {
-			System.out.println("체크");
-		}
-		else {
-			System.out.println("not 체크");
-		}
-		
 		return mav;
 	}
 	

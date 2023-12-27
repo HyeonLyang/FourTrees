@@ -12,11 +12,11 @@
 		<c:forEach var="row" items="${list }">
 			<div class="res_item">
 				<div class="res_img">
-					<img src="${cpath }/resources/img/review/중식.jfif">
+					<img src="${cpath }/resources/img/식당 대표 이미지/${row.photo }">
 				</div>				
 				<div class="res_info1">
 					<div class="res_name">					
-						<b>${row.name }</b>
+						<b class="resname">${row.name }</b>
 					</div>
 					
 					<div class="res_park">					
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 				<div class="res_address">
-					${row.address }			
+					<span class="add">${row.address }</span>			
 				</div>
 				
 				<div class="res_category">
@@ -92,27 +92,87 @@
 		</svg>
 	</button>
 </article>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bc60e67620768f95cb992d64536023b"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8bc60e67620768f95cb992d64536023b&libraries=services"></script>
 <script>
-	var container = document.getElementById('map');
-	var options = {
-		center: new kakao.maps.LatLng(35.166966, 129.132976),
-		level: 3
-	};
-	var map = new kakao.maps.Map(container, options);
-	
-	// 마커가 표시될 위치입니다 
-	var markerPosition  = new kakao.maps.LatLng(35.166966, 129.132976); 
-	// 마커를 생성합니다
-	var marker = new kakao.maps.Marker({
-		    position: markerPosition
-	});
+document.addEventListener("DOMContentLoaded", function() {
+    // "add" 클래스를 가진 요소들을 모두 선택
+    var addressElements = document.querySelectorAll(".add");
+    // 주소 정보를 저장할 배열
+    var addresses = [];
+    
+    // "resname" 클래스 요소들 모두 선택
+    var nameElements = document.querySelectorAll(".resname");
+    var names = [];
+    
+    // 각 요소의 텍스트를 배열에 추가
+    addressElements.forEach(function(element) {
+        addresses.push(element.textContent.trim());
+    });
+    // 상호명도 배열에 추가
+    nameElements.forEach(function(element) {
+    	names.push(element.textContent.trim());
+    });
+    
+    // 지도 초기화 및 마커 표시 스크립트
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 6 // 지도의 확대 레벨
+        };  
 
-	// 마커가 지도 위에 표시되도록 설정합니다
-	marker.setMap(map);
+    // 지도를 생성합니다    
+    var map = new kakao.maps.Map(mapContainer, mapOption);      
+    
+    // ================지도 컨트롤러==================
+   	// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+    var mapTypeControl = new kakao.maps.MapTypeControl();
 
-	// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
-	// marker.setMap(null);   
+    // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+    // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+    // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+    var zoomControl = new kakao.maps.ZoomControl();
+    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+    
+   
+    // 주소-좌표 변환 객체를 생성합니다
+    var geocoder = new kakao.maps.services.Geocoder();
+
+    // 각 주소에 대한 마커를 표시하는 함수
+    function displayMarker(address, name) {
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch(address, function(result, status) {
+            // 정상적으로 검색이 완료됐으면 
+            if (status === kakao.maps.services.Status.OK) {
+                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new kakao.maps.Marker({
+                    map: map,
+                    position: coords
+                });
+
+                // 인포윈도우로 동적으로 내용을 표시합니다
+                var infowindow = new kakao.maps.InfoWindow({
+                    content: '<div style="width:150px;text-align:center;padding:3px; font-size:12px;">' + name + '</div>'
+                });
+
+                // 특정 이벤트(예: 페이지 로딩 시)에 인포윈도우를 열어둘 수 있습니다.
+                infowindow.open(map, marker);
+
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+            } 
+        });
+    }
+
+    // 각 주소에 대한 마커를 표시
+    addresses.forEach(function(address, index) {
+        displayMarker(address, names[index]);
+    });    
+  
+});
 </script>
 </body>
 </html>
