@@ -18,7 +18,7 @@
 		            <div>
 		                <img class="rank_total_medal" src="${cpath}/resources/img/rank/ranking${status.index < 4 ? status.index + 1 : 4}.png">
 		            </div>
-		            <p class="rank_total_block"></p>
+		            <p class="rank_total_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/${res.photo}"></p>
 		            <p>${res.name}</p>
 		            <p>${res.category}</p>
 		            <div class="rank_total_rating">

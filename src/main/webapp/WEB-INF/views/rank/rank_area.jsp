@@ -6,7 +6,7 @@
 <c:set var="cate" value="${cate_list }"/>
 <section class="rank_detail">
 	
-	<section class="rank_detail_btns">
+	<section class="rank_detail_btns" style="padding: ">
 		<p class="rank_detail_btn">서울</p>
 		<p class="rank_detail_btn">부산</p>
 		<p class="rank_detail_btn">강원도</p>
@@ -73,7 +73,7 @@ function goToAreaPage(reqArea) {
 						'<li class="rank_detail_res">' +
 							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_detail_topRes">' +
 								'<div>' + '<img class="rank_detail_medal" src="${cpath}/resources/img/rank/ranking' + (i + 1) + '.png">' + '</div>' +
-								'<p class="rank_detail_block"></p>' +
+								'<p class="rank_detail_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/' + data[i].photo +'"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_detail_rating">' +
@@ -89,7 +89,7 @@ function goToAreaPage(reqArea) {
 						'<li class="rank_detail_res">' +
 							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_detail_topRes">' +
 								'<div>' + '<img class="rank_detail_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
-								'<p class="rank_detail_block"></p>' +
+								'<p class="rank_detail_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/' + data[i].photo +'"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_detail_rating">' +

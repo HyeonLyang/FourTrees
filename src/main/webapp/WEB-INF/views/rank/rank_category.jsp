@@ -65,7 +65,7 @@
 						'<li class="rank_category_res">' +
 							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_category_topRes">' +
 								'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking' + (i + 1) + '.png">' + '</div>' +
-								'<p class="rank_category_block"></p>' +
+								'<p class="rank_category_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/' + data[i].photo +'"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_category_rating">' +
@@ -81,7 +81,7 @@
 						'<li class="rank_category_res">' +
 							'<a href="${cpath }/restaurant/res_detail/' + data[i].idx + '" class="rank_category_topRes">' +
 								'<div>' + '<img class="rank_category_medal" src="${cpath}/resources/img/rank/ranking4.png">' + '</div>' +
-								'<p class="rank_category_block"></p>' +
+								'<p class="rank_category_block"><img class="rank_detail_resImg" src="${cpath}/resources/img/restaurant/res_repImg/' + data[i].photo +'"></p>' +
 								'<p>' + data[i].name + '</p>' +
 								'<p>' + data[i].category + '</p>' +
 								'<div class="rank_category_rating">' +
