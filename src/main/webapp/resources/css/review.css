@@ -119,6 +119,7 @@ a {
 	list-style: none;
 	padding: 0;
 	margin-right: 250px;
+	width: 300px;
 }
 .main ul div {
 	width: 121px;
@@ -133,6 +134,9 @@ a {
 }
 .name_address {
 	width: 300px;
+}
+.main ul li:nth-child(3) {		
+	width: 100%;
 }
 .main ul li:nth-child(4) {
 	margin-top: 20px;

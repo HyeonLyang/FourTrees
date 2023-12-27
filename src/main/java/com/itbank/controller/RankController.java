@@ -75,8 +75,8 @@ public class RankController {
 	public List<RestaurantVO> gRank(int idx) {
 		
 		List<RestaurantVO> result = rs.getCateRank(idx);
-		System.out.println(result.get(0));
-		System.out.println(result.get(0).getIdx());
+//		System.out.println(result.get(0));
+//		System.out.println(result.get(0).getIdx());
 		
 		return result;
 	}
@@ -86,8 +86,8 @@ public class RankController {
 	public List<RestaurantVO> aRank(String area) {
 		
 		List<RestaurantVO> result = rs.getAreaRank(area);
-		System.out.println(result.get(0));
-		System.out.println(result.get(0).getIdx());
+//		System.out.println(result.get(0));
+//		System.out.println(result.get(0).getIdx());
 		
 		return result;
 	}
