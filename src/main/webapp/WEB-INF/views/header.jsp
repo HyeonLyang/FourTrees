@@ -2,12 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <c:set var="cpath" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8">
 <title>MZ(맛집) in Korea</title>
 <link rel="stylesheet" href="${cpath }/resources/css/header.css">
 <script src="${cpath }/resources/js/BacktoTop.js"></script>
@@ -48,7 +47,7 @@
             </section>
             
             <section class="header-bottom">
-                <p>"<spring:message code="Translate" text="default text" />"</p>
+                <p>"한국의 맛집여행, 레스토랑 가이드"</p>
                 <div><!-- 빈칸 space betweend 용 --></div>
                 <div class="menu">
                 	<!-- 메뉴-검색창 -->
@@ -74,13 +73,13 @@
 					
             		<!-- 번역아이콘 -->
                     <div class="language-container" onclick="toggle2()">
-					    <ul class="language">
-					        <li><a href="<c:url value="/?lang=ko" />"><img src="${cpath }/resources/img/lang_kor.png"></a></li>
-					        <li><a href="<c:url value="/?lang=en" />"><img src="${cpath }/resources/img/lang_usa.png"></a></li>
-					        <li><a href="<c:url value="/?lang=jp" />"><img src="${cpath }/resources/img/jang_jap.png"></a></li>
-					        <li><a href="<c:url value="/?lang=zh" />"><img src="${cpath }/resources/img/lang_cha.png"></a></li>
-					    </ul>
-					</div>
+                        <ul class="language">
+                            <li><img src="${cpath }/resources/img/lang_kor.png"></li>
+                            <li><img src="${cpath }/resources/img/lang_usa.png"></li>
+                            <li><img src="${cpath }/resources/img/jang_jap.png"></li>
+                            <li><img src="${cpath }/resources/img/lang_cha.png"></li>
+                        </ul>
+                    </div>
 <!-- 메뉴 버튼 -->
 <div class="menu_container" onclick="toggle3()">
 	<div class="menu_button" id="menu_button">
