@@ -13,6 +13,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.itbank.components.AwsS3;
 import com.itbank.components.Paging;
 import com.itbank.model.RestaurantDAO;
 import com.itbank.model.ReviewDAO;
@@ -24,11 +25,13 @@ public class ReviewService {
 	
 	@Autowired private ReviewDAO dao;
 	@Autowired private RestaurantDAO res_dao;
+	@Autowired private AwsS3 awsS3;
 	
 	@Value("file:C:\\img")
 	private Resource dir;
 
 	public int addReview(ReviewVO input) throws IOException {
+		awsS3 = AwsS3.getInstance();
 		MultipartFile file = input.getUpload();
 		input.setImg(file.getOriginalFilename());
 		
@@ -50,9 +53,7 @@ public class ReviewService {
 			resScore = input.getScore();
 		}		
 		input.setScore(resScore);
-		
-		
-		
+						
 		res_dao.updateScore(input);
 		
 		String res_name = "";
@@ -60,17 +61,22 @@ public class ReviewService {
 		for(ReviewVO r : list) {
 			res_name = r.getRes_name(); 
 		}
+		
+		String key = file.getOriginalFilename();
 				
 		File newDir = new File(dir.getFile(), res_name);
 		
 		if (newDir.exists() == false) {			
 			newDir.mkdir();
-			
-		}				
-		
-		File dest = new File(newDir, file.getOriginalFilename());
-		file.transferTo(dest);
-		
+			File dest = new File(newDir, key);
+			file.transferTo(dest);
+			awsS3.upload(dest, key, res_name, 1);
+		}								
+		else {
+			File dest = new File(newDir, key);
+			file.transferTo(dest);
+			awsS3.upload(dest, key, res_name, 1);
+		}
 		return row;
 	}
 

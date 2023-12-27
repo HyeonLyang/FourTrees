@@ -11,6 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.itbank.components.AwsS3;
 import com.itbank.components.SHA512;
 import com.itbank.model.AccountDAO;
 import com.itbank.model.vo.AccountVo;
@@ -20,6 +21,7 @@ public class AccountService {
 
 	@Autowired private AccountDAO dao;
 	@Autowired private SHA512 hash;
+	@Autowired private AwsS3 awsS3;			
 	
 	@Value("file:C:\\img\\account")
 	private Resource dir;
@@ -62,13 +64,18 @@ public class AccountService {
 	}
 
 	public int updateImg(AccountVo input, int add) throws IOException {
+		awsS3 = AwsS3.getInstance();
+		System.out.println(awsS3);
 		MultipartFile file = input.getImg_upload();
 		input.setImg(file.getOriginalFilename());		
 		
 		int row = dao.updateImg(input);
+		String key = file.getOriginalFilename();				
 		
-		File dest = new File(dir.getFile(), file.getOriginalFilename());
+		File dest = new File(dir.getFile(), key);
 		file.transferTo(dest);
+				
+		awsS3.upload(dest, key, "account",0);
 		
 		return row;
 	}
