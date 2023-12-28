@@ -12,7 +12,7 @@
 		<c:forEach var="row" items="${list }">
 			<div class="res_item">
 				<div class="res_img">
-					<img src="${cpath }/resources/img/식당 대표 이미지/${row.photo }">
+					<img src="${cpath }/resources/img/restaurant/res_repImg/${row.photo }">
 				</div>				
 				<div class="res_info1">
 					<div class="res_name">					

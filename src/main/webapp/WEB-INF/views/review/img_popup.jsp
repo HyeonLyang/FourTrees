@@ -13,8 +13,7 @@ body {
 }
 .img_popup_collection {
 	border: 1px solid black;	
-	width: 100%;
-	height: 100px;	
+	width: 100%;	
 	display: flex;
 	flex-flow : wrap;
 }
@@ -37,7 +36,7 @@ body {
 	<div class="img_popup_collection">
 		<c:forEach var="row" items="${list }">	
 			<div class="contents">			
-				<img src="${cpath }/img/${param.res_name }/${row.img}">
+				<img src="${cpath }/img/restaurant/${param.res_name }/${row.img}">
 			</div>
 		</c:forEach>
 	</div>
