@@ -2,8 +2,10 @@ package com.itbank.components;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.IOException;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
@@ -58,31 +60,17 @@ public class AwsS3 {
 	    }
 
 	   // upload 메서드 | 단일 파일 업로드
-	   public void upload(File file, String key, String folderName, int option) {
-		   ObjectListing newDir = null;
-		   
-		   // 프로필 업로드시
-		   if (option == 0) {			   
-			   newDir = s3Client.listObjects(bucket, folderName);
-		   }
-		   // 리뷰 이미지 업로드시
-		   else if (option == 1) {
-			   folderName = "restaurant/" + folderName;
-			   newDir = s3Client.listObjects(bucket, folderName);
-		   }
-		   
-		   System.out.println(newDir.getObjectSummaries().isEmpty());
-		   
-		   if (newDir.getObjectSummaries().isEmpty()) {
-			   System.out.println("폴더가 없습니다");
-			   createFolder(bucket, folderName);
-			   uploadToS3(new PutObjectRequest(this.bucket, folderName + "/" + key, file));
-		   }
-		   else {
-			   System.out.println(folderName + "가 있습니다");
-			   // 파일 구별자를 `/`로 설정(\->/) 이게 기존에 / 였어
-			   uploadToS3(new PutObjectRequest(this.bucket, folderName + "/" + key, file));
-		   }
+	   public void upload(MultipartFile file, String key, String folderName, int option) throws IOException {		   	  
+		   ObjectMetadata objectMetadata = new ObjectMetadata();		  
+
+		    if (option == 1) {
+		        folderName = "restaurant/" + folderName;		        
+		    }		 
+
+		    createFolder(bucket, folderName);
+
+		    uploadToS3(new PutObjectRequest(bucket, folderName + "/" + key,
+		            file.getInputStream(), objectMetadata));
 	   }
 
 	   // upload 메서드 | MultipartFile을 사용할 경우

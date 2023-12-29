@@ -1,15 +1,11 @@
 package com.itbank.service;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -25,15 +21,14 @@ public class ReviewService {
 	
 	@Autowired private ReviewDAO dao;
 	@Autowired private RestaurantDAO res_dao;
-	@Autowired private AwsS3 awsS3;
-	
-	@Value("file:C:\\img")
-	private Resource dir;
+	@Autowired private AwsS3 awsS3;	
 
 	public int addReview(ReviewVO input) throws IOException {
 		awsS3 = AwsS3.getInstance();
 		MultipartFile file = input.getUpload();
-		input.setImg(file.getOriginalFilename());
+		String key = file.getOriginalFilename();
+		
+		input.setImg(key);
 		
 		int row = dao.insert(input);
 		List<ReviewVO> list = dao.selectRes_name(input.getRes_idx());
@@ -62,21 +57,9 @@ public class ReviewService {
 			res_name = r.getRes_name(); 
 		}
 		
-		String key = file.getOriginalFilename();
+		System.out.println(res_name);
 				
-		File newDir = new File(dir.getFile(), res_name);
-		
-		if (newDir.exists() == false) {			
-			newDir.mkdir();
-			File dest = new File(newDir, key);
-			file.transferTo(dest);
-			awsS3.upload(dest, key, res_name, 1);
-		}								
-		else {
-			File dest = new File(newDir, key);
-			file.transferTo(dest);
-			awsS3.upload(dest, key, res_name, 1);
-		}
+		awsS3.upload(file, key, res_name, 1);
 		return row;
 	}
 

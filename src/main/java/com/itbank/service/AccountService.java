@@ -1,6 +1,5 @@
 package com.itbank.service;
 
-import java.io.File;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
@@ -21,9 +20,9 @@ public class AccountService {
 
 	@Autowired private AccountDAO dao;
 	@Autowired private SHA512 hash;
-	@Autowired private AwsS3 awsS3;			
+	@Autowired private AwsS3 awsS3;	
 	
-	@Value("file:C:\\img\\account")
+	@Value("https://ha-bucket222.s3.ap-northeast-2.amazonaws.com/")
 	private Resource dir;
 	
 	public AccountVo login(AccountVo input) {
@@ -64,18 +63,14 @@ public class AccountService {
 	}
 
 	public int updateImg(AccountVo input, int add) throws IOException {
-		awsS3 = AwsS3.getInstance();
-		System.out.println(awsS3);
+		awsS3 = AwsS3.getInstance();		
 		MultipartFile file = input.getImg_upload();
 		input.setImg(file.getOriginalFilename());		
 		
 		int row = dao.updateImg(input);
-		String key = file.getOriginalFilename();				
-		
-		File dest = new File(dir.getFile(), key);
-		file.transferTo(dest);
+		String key = file.getOriginalFilename();								
 				
-		awsS3.upload(dest, key, "account",0);
+		awsS3.upload(file, key, "account",0);
 		
 		return row;
 	}
