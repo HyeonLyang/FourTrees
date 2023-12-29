@@ -17,6 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.itbank.components.SHA512;
 import com.itbank.model.vo.AccountVo;
 import com.itbank.service.AccountService;
+import com.itbank.service.BookmarkService;
 import com.itbank.service.ReviewService;
 
 @Controller
@@ -26,6 +27,7 @@ public class MyPageController {
 	@Autowired private AccountService as;
 	@Autowired private SHA512 hash;
 	@Autowired private ReviewService rvs;
+	@Autowired private BookmarkService bs;
 	
 	// 내 정보로 들어가기
 	@GetMapping("/password")
@@ -96,7 +98,10 @@ public class MyPageController {
 	
 	// 찜한 테이블 출력
 	@GetMapping("/bookmark")
-	public void bookmark() {}
+	public void bookmark(Model model,HttpSession session) {
+		AccountVo nick = (AccountVo) session.getAttribute("user");
+		model.addAttribute("list", bs.getBookmark(nick));
+	}
 	
 	// 댓글 테이블 출력
 	@GetMapping("/myReply")

@@ -21,18 +21,14 @@
     
 	<h3>북마크</h3>
 	<table class="boards">
-		<tr>
-			<th>삭제</th>
-			<th>번호</th>
+		<tr>			
 			<th>가게명</th>
 			<th>주소</th>			
 		</tr>
-		<c:forEach var="row" begin="1001" end="1010">
-			<tr>	
-				<th><input name="" type="checkbox" style="width: auto;"></th>
-				<th>${row }</th>
-				<td>루비정</td>
-				<td>서울 동작구 한남대로 120번길</td>			
+		<c:forEach var="row" items="${list }">
+			<tr>					
+				<th>${row.res_name }</th>
+				<td>${row.res_address }</td>						
 			</tr>
 		</c:forEach>
 	</table>
