@@ -10,27 +10,27 @@
 	</div>
 </div>
 	<div class="headline">
-    	 <p><a href="${cpath }">홈</a></p>         
-         <p><a href="${cpath }/myPage/bookmark">북마크</a></p>
-         <p><a href="${cpath }/myPage/myReply">댓글</a></p>
-         <p><a href="${cpath }/support/sup_main">고객센터</a></p>
+    	 <p><a href="${cpath }"><spring:message code="mypage.headline1" text="default text" /></a></p>         
+         <p><a href="${cpath }/myPage/bookmark"><spring:message code="mypage.headline2" text="default text" /></a></p>
+         <p><a href="${cpath }/myPage/myReply"><spring:message code="mypage.headline3" text="default text" /></a></p>
+         <p><a href="${cpath }/support/sup_main"><spring:message code="mypage.headline4" text="default text" /></a></p>
          <c:if test="${user.status == '관리자' }">
-         	<p><a href="${cpath }/myPage/admin" style="color: #ff7f50;">회원 관리</a></p>
+         	<p><a href="${cpath }/myPage/admin" style="color: #ff7f50;"><spring:message code="mypage.headline6" text="default text" /></a></p>
          </c:if>
     </div>
-	<h3>여기는 관리자 전용입니다(회원 정보 삭제 가능)</h3>
+	<h3><spring:message code="mypage.headline5" text="default text" /></h3>
 	
 	<div class="AccountManage">
 		<table class="boards">	
 			<tr>
-				<th>ID</th>
-				<th>닉네임</th>
-				<th>이메일</th>
-				<th>계정 권한</th>
-				<th>생일</th>
-				<th>전화번호</th>
-				<th>가입일</th>
-				<th>삭제</th>
+				<th><spring:message code="signup.input1" text="default text" /></th>
+				<th><spring:message code="signup.input3" text="default text" /></th>
+				<th><spring:message code="signup.input4" text="default text" /></th>
+				<th><spring:message code="mypage.admin1" text="default text" /></th>
+				<th><spring:message code="mypage.admin2" text="default text" /></th>
+				<th><spring:message code="signup.input5" text="default text" /></th>
+				<th><spring:message code="mypage.admin3" text="default text" /></th>
+				<th><spring:message code="bookmark1" text="default text" /></th>
 			</tr>	
 		<c:forEach var="row" items="${list }">
 			<tr>
@@ -43,12 +43,12 @@
 				<td>${row.join_date }</td>
 				<c:if test="${row.status == '관리자' }">				
 					<td>
-						<button onclick="isAdmin()">클릭</button>
+						<button onclick="isAdmin()"><spring:message code="mypage.admin4" text="default text" /></button>
 					</td>
 				</c:if>
 				<c:if test="${row.status == '게스트' }">				
 					<td>
-						<button onclick="isDelete(${row.idx },'${cpath }', '삭제')">클릭</button>
+						<button onclick="isDelete(${row.idx },'${cpath }', '삭제')"><spring:message code="mypage.admin4" text="default text" /></button>
 					</td>
 				</c:if>
 			</tr>

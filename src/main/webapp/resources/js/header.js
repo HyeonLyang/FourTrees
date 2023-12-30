@@ -4,7 +4,7 @@ var isOpen = false;
 
 function toggle2() {
     isOpen = !isOpen;
-    languageContainer.style.width = isOpen ? "300px" : "55px";
+    languageContainer.style.width = isOpen ? "350px" : "55px";
 }
 
 /* 헤더 메뉴아이콘 토글 */

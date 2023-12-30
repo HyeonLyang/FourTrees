@@ -7,7 +7,7 @@
 <section class="notice" id="support">
 	<h1 style="text-align: center;	">NOTICE</h1>
 	<div class="btn">
-		<a href="#"><button>관리자용 글 쓰기</button></a>
+		<a href="#"><button><spring:message code="support.main1" text="default text" /></button></a>
 	</div>
 	<div class="notice_con">
 		<hr>
@@ -18,7 +18,7 @@
 					<p class="date">${row.write_date }</p>
 				</li>
 			<c:if test="${user.status == '관리자' }">
-				<li id="notice_btns">수정/제거</li>
+				<li id="notice_btns"><spring:message code="support.main2" text="default text" /></li>
 			</c:if>
 			</ul>
 		<hr>
@@ -27,7 +27,7 @@
 			<ul>
 				<c:set var="noPath" value="${cpath }/support/notice"></c:set>
 				<c:if test="${p.prev }">			
-					<li><a href="${noPath }?page=${p.begin - 1 }">이전</a></li>
+					<li><a href="${noPath }?page=${p.begin - 1 }"><spring:message code="support.main3" text="default text" /></a></li>
 				</c:if>
 					
 				<c:forEach var="i" begin="${p.begin }" end="${p.end }">
@@ -35,7 +35,7 @@
 				</c:forEach>
 					
 				<c:if test="${p.next }">			
-					<li><a href="${noPath }?page=${p.end + 1 }">다음</a></li>
+					<li><a href="${noPath }?page=${p.end + 1 }"><spring:message code="support.main4" text="default text" /></a></li>
 				</c:if>
 			</ul>
 		</div>

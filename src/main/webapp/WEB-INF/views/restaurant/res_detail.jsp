@@ -15,13 +15,13 @@
 			<a>TOP</a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_img/${res.idx }'" style="cursor:pointer">
-			사진
+			<spring:message code="res.detail1" text="default text" />
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_review/${res.idx }'" style="cursor:pointer">
-			리뷰
+			<spring:message code="res.detail2" text="default text" />
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_map/${res.idx }'" style="cursor:pointer">
-			확대지도
+			<spring:message code="res.detail3" text="default text" />
 		</p>
 
 	</section>
@@ -40,26 +40,26 @@
 </div>
 	<section class="res_detail_detail">
 	<hr class="res_detail_hr">
-	<h3>점포 정보(상세)</h3>
+	<h3><spring:message code="res.main" text="default text" /></h3>
 	
 	<table class="res_detail_information">
 		<tr>
-			<th>가게 이름</th>
+			<th><spring:message code="res.list1" text="default text" /></th>
 			<td>
 				<p>${res.name }</p>
 				<p class="res_detail_romName">${res.rom_name }</p>
 			</td>
 		</tr>
 		<tr>
-			<th>카테고리</th>
+			<th><spring:message code="res.list2" text="default text" /></th>
 			<td>${res.category }</td>
 		</tr>
 		<tr>
-			<th>전화번호</th>
+			<th><spring:message code="res.list3" text="default text" /></th>
 			<td>${res.res_phone }</td>
 		</tr>
 		<tr>
-			<th>주소</th>
+			<th><spring:message code="res.list4" text="default text" /></th>
 			<td>
 				<p>${res.address }</p>
 				<p>${res.rom_address }</p>
@@ -69,19 +69,19 @@
 			</td>
 		</tr>
 		<tr>
-			<th>영업시간</th>
+			<th><spring:message code="res.list5" text="default text" /></th>
 			<td>${res.op_hour }</td>
 		</tr>
 		<tr>
-			<th>예산</th>
+			<th><spring:message code="res.list6" text="default text" /></th>
 			<td>${res.price }</td>
 		</tr>
 		<tr>
-			<th>주차장</th>
+			<th><spring:message code="res.list7" text="default text" /></th>
 			<td>${parking }</td>
 		</tr>
 		<tr>
-			<th>홈페이지</th>
+			<th><spring:message code="res.list8" text="default text" /></th>
 			<td><a href="${res.link }" target="_blank">${res.link }</a></td>
 		</tr>
 	</table>

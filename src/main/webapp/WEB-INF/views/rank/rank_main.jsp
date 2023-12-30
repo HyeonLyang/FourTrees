@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <c:set var="cpath" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html>
@@ -17,9 +18,9 @@
 <section class="rank_main">
 
 	 <section class="rank_main_top">
-	 	<p class="rank_main_options" OnClick="location.href ='${cpath}/rank/rank_total'" style="cursor:pointer">전국 맛집 랭킹</p>
-	 	<p class="rank_main_options" OnClick="location.href ='${cpath}/rank/rank_category'" style="cursor:pointer">카테고리별 랭킹</p>
-	 	<p class="rank_main_options" OnClick="location.href ='${cpath}/rank/rank_area'" style="cursor:pointer">지역별 랭킹</p>
+	 	<p class="rank_main_options" OnClick="location.href ='${cpath}/rank/rank_total'" style="cursor:pointer"><spring:message code="rank.main1" text="default text" /></p>
+	 	<p class="rank_main_options" OnClick="location.href ='${cpath}/rank/rank_category'" style="cursor:pointer"><spring:message code="rank.main2" text="default text" /></p>
+	 	<p class="rank_main_options" OnClick="location.href ='${cpath}/rank/rank_area'" style="cursor:pointer"><spring:message code="rank.main3" text="default text" /></p>
 	 </section>
 	
 </section>

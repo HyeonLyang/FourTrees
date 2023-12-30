@@ -8,25 +8,25 @@
 	<fieldset>
 		<table>
 		  <tr>
-		    <th>아이디(선택)</th>
-		    <td><input placeholder="현재 사용중인 아이디를 입력해주세요"></td>
+		    <th><spring:message code="support.main12" text="default text" /></th>
+		    <td><input placeholder="<spring:message code="support.main13" text="default text" />"></td>
 		  </tr>
 		  <tr>
-		    <th>이메일(필수)</th>
-		    <td><input placeholder="연락 받으실 이메일 주소를 입력해주세요"></td>
+		    <th><spring:message code="support.main14" text="default text" /></th>
+		    <td><input placeholder="<spring:message code="support.main15" text="default text" />"></td>
 		  </tr>
 		  <tr>
-		    <th>문의 내용</th>
-		    <td><textarea placeholder="구체적인 내용을 기재해 주세요." id="qna_contents"></textarea></td>
+		    <th><spring:message code="support.main16" text="default text" /></th>
+		    <td><textarea placeholder="<spring:message code="support.main17" text="default text" />" id="qna_contents"></textarea></td>
 		  </tr>
 		  <tr>
-		    <th>첨부파일</th>
+		    <th><spring:message code="support.main18" text="default text" /></th>
 		    <td class="input">
 		    	<input type="file" id="file_input">
 		    </td>
 		  </tr>
 		</table>
-		<div class="qna_button"><a>이메일 보내기</a></div>
+		<div class="qna_button"><a><spring:message code="support.main19" text="default text" /></a></div>
 	</fieldset>
 </section>
 <%@ include file="../footer.jsp" %>

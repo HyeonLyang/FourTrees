@@ -12,19 +12,19 @@
 <article class="login">
 	<form class="login_form" method="POST">
 		<fieldset>
-			<legend>로그인</legend>
-				<p><input name="userid" placeholder="ID" required></p>
-				<p><input name="userpw" type="password" placeholder="PW" required></p>				
+			<legend><spring:message code="login.title" text="default text" /></legend>
+				<p><input name="userid" placeholder="<spring:message code="login.input1" text="default text" />" required></p>
+				<p><input name="userpw" type="password" placeholder="<spring:message code="login.input2" text="default text" />" required></p>				
 				
-				<button>로그인</button>
+				<button><spring:message code="login.title" text="default text" /></button>
 		</fieldset>
 		<div class="find_info">
 			<p>
 				<a href="${cpath }/account/findID">
-					아이디 찾기 |
+					<spring:message code="login.menu1" text="default text" /> |
 				</a>
 				<a href="${cpath }/account/findPW">		
-					비밀번호 찾기			
+					<spring:message code="login.menu2" text="default text" />		
 				</a>				
 			</p>											
 		</div>
