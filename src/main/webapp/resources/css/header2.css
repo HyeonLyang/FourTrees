@@ -32,9 +32,10 @@ a {
 }
 .header-title, .header-title a {
 	width: 100%;
-	font-size: 18px;
+	font-size: 14px;
 	color: white;
 	font-style: italic;
+	font-weight: bold;
 }
 .header-title {
 	padding-left: 30px;
