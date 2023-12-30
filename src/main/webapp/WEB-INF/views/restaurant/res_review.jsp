@@ -38,7 +38,7 @@
 			<c:set var="review_rating" value="${review.score / 5 * 100 }"/>
 			<article class="res_review_list">
 				<div class="res_review_pro">
-					<img src="${cpath }/resources/img/profile.PNG">
+					<img src="${cpath }/img/account/${review.acc_img }" style="border-radius: 50px;">
 					<p>
 						${review.writer }
 					</p>

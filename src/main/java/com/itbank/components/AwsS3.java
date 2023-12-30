@@ -62,12 +62,18 @@ public class AwsS3 {
 	   // upload 메서드 | 단일 파일 업로드
 	   public void upload(MultipartFile file, String key, String folderName, int option) throws IOException {		   	  
 		   ObjectMetadata objectMetadata = new ObjectMetadata();		  
-
-		    if (option == 1) {
-		        folderName = "restaurant/" + folderName;		        
-		    }		 
-
-		    createFolder(bucket, folderName);
+		   
+		   ObjectListing newDir = null;
+		   
+		   // 리뷰 이미지 업로드시
+		   if (option == 1) {
+			   folderName = "restaurant/" + folderName;
+		   }
+		   newDir = s3Client.listObjects(bucket, folderName);
+		   
+		   if(newDir.getObjectSummaries().isEmpty()) {			   
+			   createFolder(bucket, folderName);
+		   }
 
 		    uploadToS3(new PutObjectRequest(bucket, folderName + "/" + key,
 		            file.getInputStream(), objectMetadata));
