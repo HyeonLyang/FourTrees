@@ -7,10 +7,10 @@
 <section class="rank_detail">
 	
 	<section class="rank_detail_btns" style="padding: ">
-		<p class="rank_detail_btn">서울</p>
-		<p class="rank_detail_btn">부산</p>
-		<p class="rank_detail_btn">강원도</p>
-		<p class="rank_detail_btn">제주</p>
+		<p class="rank_detail_btn"><spring:message code="rank.area1" text="default text" /></p>
+		<p class="rank_detail_btn"><spring:message code="rank.area2" text="default text" /></p>
+		<p class="rank_detail_btn"><spring:message code="rank.area3" text="default text" /></p>
+		<p class="rank_detail_btn"><spring:message code="rank.area4" text="default text" /></p>
 	</section>
 	
 	<h1 class="rank_detail_title"></h1>
@@ -59,8 +59,8 @@ function goToAreaPage(reqArea) {
 			goTo.innerHTML = '';
 			result.innerHTML = '';
 			
-			title.innerHTML = reqArea + '맛집 TOP10';
-			goTo.innerHTML = reqArea + '맛집 찾으러 가기';
+			title.innerHTML = reqArea + '<spring:message code="rank.detail1" text="default text" />';
+			goTo.innerHTML = reqArea + '<spring:message code="rank.detail2" text="default text" />';
 			
 			for (let i = 0; i < 10; i++) {
 				let li = document.createElement('li');
@@ -103,7 +103,7 @@ function goToAreaPage(reqArea) {
 				}
 				result.appendChild(li);
 			}
-			goTo.innerHTML = reqArea + '맛집 찾으러 가기';
+			goTo.innerHTML = reqArea + '<spring:message code="rank.detail2" text="default text" />';
 	        goTo.addEventListener('click', function () {
 	            goToAreaPage(reqArea); // 해당 지역 페이지로 이동
 	        });
@@ -116,12 +116,12 @@ function goToAreaPage(reqArea) {
 	var dt;
 	
 	
-	ranking("서울");
+	ranking("<spring:message code="rank.area1" text="default text" />");
 	
-	btns[0].onclick = () => ranking("서울");
-	btns[1].onclick = () => ranking("부산");
-	btns[2].onclick = () => ranking('강원');
-	btns[3].onclick = () => ranking('제주');
+	btns[0].onclick = () => ranking("<spring:message code="rank.area1" text="default text" />");
+	btns[1].onclick = () => ranking("<spring:message code="rank.area2" text="default text" />");
+	btns[2].onclick = () => ranking('<spring:message code="rank.area3" text="default text" />');
+	btns[3].onclick = () => ranking('<spring:message code="rank.area4" text="default text" />');
 	
 </script>
 

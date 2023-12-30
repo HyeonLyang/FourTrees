@@ -7,15 +7,15 @@
 	<form class="review_write_write" method="POST" enctype="multipart/form-data">
 		<table class="review_table">
 			<tr>
-				<th><label for="writer">작성자</label></th>
+				<th><label for="writer"><spring:message code="review.write1" text="default text" /></label></th>
 				<td><input name="writer" id="writer" value="${user.nick }" required readonly></td>				
 			</tr>
 			<tr>
-				<th><label for="visit_date">방문일</label></th>				
+				<th><label for="visit_date"><spring:message code="review.write2" text="default text" /></label></th>				
 				<td><input name="visit_date" type="date" required></td>				
 			</tr>
 			<tr>
-				<th><label for="score">별점</label></th>				
+				<th><label for="score"><spring:message code="review.write3" text="default text" /></label></th>				
 				<td>
 					<div class="starpoint_wrap">
 		        		<div class="starpoint_box">
@@ -70,7 +70,7 @@
 				</td>
 			</tr>
 			<tr>
-				<th>음식 사진</th>
+				<th><spring:message code="review.write4" text="default text" /></th>
 				<td>
 					<input name="upload" type="file">
 					<input name="score" type="hidden">
@@ -79,7 +79,7 @@
 			</tr>
 		</table>
 		
-		<button id="write">작성</button>		
+		<button id="write"><spring:message code="review.write5" text="default text" /></button>		
 	</form>
 </section>
 <script>

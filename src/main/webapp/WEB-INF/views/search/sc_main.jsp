@@ -11,58 +11,145 @@
 	<div class="sc_back">
 		<div  class="sc_title">
 			<div>
-				<h1>전국의 맛집 찾기</h1>
+				<h1><spring:message code="sc.main1" text="default text" /></h1>
 			</div>
 		</div>
 		<div class="sc_area">
 			<div>
-				<h3><a href="${moveDetail }=서울">지역명으로 찾기</a></h3>
+				<h3><a href="${moveDetail }=서울"><spring:message code="sc.main2" text="default text" /></a></h3>
 				<hr>
 			</div>
 			<div>
-				<ul class="sc_img1">
-					<li><a href="${moveDetail }=서울"><img src="${imgPath }/서울전경.jpg"></a></li>
-					<li><a href="${moveDetail }=부산"><img src="${imgPath }/부산전경.jpg"></a></li>
-				</ul>
+			    <ul class="sc_img1">
+			        <li class="city-item">
+			            <a href="${moveDetail }=서울">
+			                <img src="${imgPath }/back1.png">
+			                <span class="city-text"><spring:message code="search.lo1" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=부산">
+			                <img src="${imgPath }/back2.png">
+			                <span class="city-text"><spring:message code="search.lo2" text="default text" /></span>
+			            </a>
+			        </li>
+			    </ul>
 			</div>
 			<div>
-				<ul class="sc_img2">
-					<li><a href="${moveDetail }=제주"><img src="${imgPath }/제주전경.jpg"></a></li>
-					<li><a href="${moveDetail }=강원"><img src="${imgPath }/강원도전경.jpg"></a></li>
-					<li><a href="${moveDetail }=서울"><img src="${imgPath }/경주명소.jpg"></a></li>
-				</ul>
+			    <ul class="sc_img2">
+			        <li class="city-item">
+			            <a href="${moveDetail }=제주">
+			                <img src="${imgPath }/back3.png">
+			                <span class="city-text"><spring:message code="search.lo3" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=강원도">
+			                <img src="${imgPath }/back4.png">
+			                <span class="city-text"><spring:message code="search.lo4" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=경주">
+			                <img src="${imgPath }/back5.png">
+			                <span class="city-text"><spring:message code="search.lo5" text="default text" /></span>
+			            </a>
+			        </li>
+			    </ul>
 			</div>
 		</div>
 		<div class="sc_area" id="sc_cate">
 			<div>
-				<h3><a href="${moveDetail2 }=백반">카테고리별로 찾기</a></h3>
+				<h3><a href="${moveDetail2 }=백반"><spring:message code="sc.main3" text="default text" /></a></h3>
 				<hr>
 			</div>
 			<div>
-				<ul class="sc_img2">
-					<li><a href="${moveDetail2 }=백반"><img src="${imgPath }/백반.png"></a></li>
-					<li><a href="${moveDetail2 }=고기"><img src="${imgPath }/고기.jpg"></a></li>
-					<li><a href="${moveDetail2 }=찌개"><img src="${imgPath }/찌개.jpg"></a></li>
-				</ul>
+			    <ul class="sc_img2">
+			        <li class="city-item">
+			            <a href="${moveDetail }=백반">
+			                <img src="${imgPath }/food1.png">
+			                <span class="city-text2"><spring:message code="search.food1" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=고기">
+			                <img src="${imgPath }/food2.png">
+			                <span class="city-text"><spring:message code="search.food2" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=찌개">
+			                <img src="${imgPath }/food3.png">
+			                <span class="city-text"><spring:message code="search.food3" text="default text" /></span>
+			            </a>
+			        </li>
+			    </ul>
 			</div>
 			<div>
-				<ul class="sc_img2">
-					<li><a href="${moveDetail2 }=양식"><img src="${imgPath }/양식.jpg"></a></li>
-					<li><a href="${moveDetail2 }=패스트"><img src="${imgPath }/패스트푸드.jpg"></a></li>
-					<li><a href="${moveDetail2 }=분식"><img src="${imgPath }/분식.jpg"></a></li>
-				</ul>
+			    <ul class="sc_img2">
+			        <li class="city-item">
+			            <a href="${moveDetail }=양식">
+			                <img src="${imgPath }/food4.png">
+			                <span class="city-text"><spring:message code="search.food4" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=패스트푸드">
+			                <img src="${imgPath }/food5.png">
+			                <span class="city-text2"><spring:message code="search.food5" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=분식">
+			                <img src="${imgPath }/food6.png">
+			                <span class="city-text"><spring:message code="search.food6" text="default text" /></span>
+			            </a>
+			        </li>
+			    </ul>
 			</div>
 			<div>
-				<ul class="sc_img2">
-					<li><a href="${moveDetail2 }=치킨"><img src="${imgPath }/남원통닭.jpg"></a></li>
-					<li><a href="${moveDetail2 }=일식"><img src="${imgPath }/일식.jpg"></a></li>
-					<li><a href="${moveDetail2 }=중식"><img src="${imgPath }/중식.jpg"></a></li>
-				</ul>
-				<ul class="sc_img2">
-					<li><a href="${moveDetail2 }=카페"><img src="${imgPath }/카페.jpg"></a></li>
-					<li><img src="${imgPath }/일식.jpg"></li>
-					<li><img src="${imgPath }/중식.jpg"></li>
-				</ul>
+			    <ul class="sc_img2">
+			        <li class="city-item">
+			            <a href="${moveDetail }=치킨">
+			                <img src="${imgPath }/food7.png">
+			                <span class="city-text"><spring:message code="search.food7" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=일식">
+			                <img src="${imgPath }/food8.png">
+			                <span class="city-text"><spring:message code="search.food8" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=중식">
+			                <img src="${imgPath }/food9.png">
+			                <span class="city-text"><spring:message code="search.food9" text="default text" /></span>
+			            </a>
+			        </li>
+			    </ul>
+			</div>
+			<div>
+			    <ul class="sc_img2">
+			        <li class="city-item">
+			            <a href="${moveDetail }=카페">
+			                <img src="${imgPath }/food10.png">
+			                <span class="city-text"><spring:message code="search.food10" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=디저트">
+			                <img src="${imgPath }/food11.png">
+			                <span class="city-text"><spring:message code="search.food11" text="default text" /></span>
+			            </a>
+			        </li>
+			        <li class="city-item">
+			            <a href="${moveDetail }=술집">
+			                <img src="${imgPath }/food12.png">
+			                <span class="city-text"><spring:message code="search.food12" text="default text" /></span>
+			            </a>
+			        </li>
+			    </ul>
 			</div>
 		</div>
 	</div>

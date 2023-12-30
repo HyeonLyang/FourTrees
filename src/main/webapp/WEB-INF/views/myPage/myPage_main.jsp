@@ -7,12 +7,12 @@
 		<div class="pro_img">
 			<a href="${cpath }/myPage/img_change">			
 				<img src="${cpath }/img/account/${user.img}"><br>
-				<span>프로필 사진 변경</span>
+				<span><spring:message code="mypage1" text="default text" /></span>
 			</a>
 			<!-- <input name="upload" type="file" value="+"> --> 
 			<div class="nick">			
 				<h3>${user.nick } (${user.status })</h3>
-				<h4>${user.nick }님 환영합니다</h4>
+				<h4>${user.nick }<spring:message code="mypage2" text="default text" /></h4>
 			</div>
 		</div>		
 		

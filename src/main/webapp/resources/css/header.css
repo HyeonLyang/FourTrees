@@ -233,7 +233,7 @@ header {
 .menu_scroll {
 	margin-top: 15px;
 	position: relative;
-	right: 420px;
+	right: 350px;
 	height: 200px;
 	width: 320px;
 	height: 300px;
@@ -241,19 +241,33 @@ header {
 }
 .menu_back {
 	/*background-color: #efefef;*/
-	width: 480px;
+	width: 430px;
 	height: 83px;
 	border-radius: 15px;
-	padding: 10px;
 }
 .menu_back2 {
 	background-color: #efefef;
 	opacity: 100%;
 	border-radius: 15px;
+	text-align: center;
 }
 .menu_back2 img {
-	width: 75px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
+}
+.menu_back2 td {
+	padding: 10px;
+}
+.menu_back2 td > a{
+	border-spacing: 0px;
+	font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+.menu_back2 td > a > h5 {
+	margin: 0;
 }
 .menu_login {
 	list-style: none;

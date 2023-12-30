@@ -3,26 +3,26 @@
 <%@ include file="myPage_main.jsp" %>				
 </div>    
     <div class="headline" style="margin-bottom: 40px;">	    	
-		<p><a href="${cpath }/myPage/info">회원정보변경</a></p>
-		<p><a href="${cpath }/myPage/info_pw_change">비밀번호변경</a></p>
-		<p><a href="${cpath }/myPage/info_delete" style="color: #ff7f50;">회원탈퇴</a></p>     
+		<p><a href="${cpath }/myPage/info"><spring:message code="mypage.delete1" text="default text" /></a></p>
+		<p><a href="${cpath }/myPage/info_pw_change"><spring:message code="mypage.delete2" text="default text" /></a></p>
+		<p><a href="${cpath }/myPage/info_delete" style="color: #ff7f50;"><spring:message code="mypage.delete3" text="default text" /></a></p>     
     </div>
 
 	<form class="myPage_UD" method="POST">
 		<div class="delete_caution">
-			<h2>회원 탈퇴 신청 시 아래 사항을 반드시 확인해주세요.</h2>
+			<h2><spring:message code="mypage.delete4" text="default text" /></h2>
 			
 			<ol>
 				<li>
-					<b>해당 휴대폰번호로 30일간 재가입 불가능</b>
-					<h5>회원탈퇴를 신청하시면 해당 닉네임은 즉시 탈퇴 처리되며 
-					기존에 사용하던 휴대폰번호로는 30일 동안 재가입이 불가합니다.</h5>
+					<b><spring:message code="mypage.delete5" text="default text" /></b>
+					<h5><spring:message code="mypage.delete6" text="default text" />
+					<spring:message code="mypage.delete7" text="default text" /></h5>
 				</li>
 				<li>
-					<b>회원정보 및 게시물 삭제</b>
+					<b><spring:message code="mypage.delete8" text="default text" /></b>
 					<h5>
-						회원탈퇴 즉시 아래에 해당하는 개인정보가 삭제됩니다.<br>
-						개인정보 : 이메일 계정, 비밀번호, 휴대폰번호, 생일, 성별 정보 삭제
+						<spring:message code="mypage.delete9" text="default text" /><br>
+						<spring:message code="mypage.delete10" text="default text" />
 					</h5>
 				</li>
 			</ol>							

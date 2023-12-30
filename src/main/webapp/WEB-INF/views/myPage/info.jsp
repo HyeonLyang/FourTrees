@@ -3,35 +3,35 @@
 <%@ include file="myPage_main.jsp" %>					
 </div>
     <div class="headline">	    	
-		<p><a href="${cpath }/myPage/info" style="color: #ff7f50;">회원정보변경</a></p>
-		<p><a href="${cpath }/myPage/info_pw_change">비밀번호변경</a></p>
-		<p><a href="${cpath }/myPage/info_delete">회원탈퇴</a></p>     
+		<p><a href="${cpath }/myPage/info" style="color: #ff7f50;"><spring:message code="mypage.delete1" text="default text" /></a></p>
+		<p><a href="${cpath }/myPage/info_pw_change"><spring:message code="mypage.delete2" text="default text" /></a></p>
+		<p><a href="${cpath }/myPage/info_delete"><spring:message code="mypage.delete3" text="default text" /></a></p>     
     </div>
 
 	<form class="myPage_UD" method="POST">
 
-		<h3>내정보</h3>
+		<h3><spring:message code="mypage.delete1" text="default text" /></h3>
 		
 		<div class="user_info">
 			<table class="board">
 				<tr>
-					<th>ID</th>
+					<th><spring:message code="signup.input1" text="default text" /></th>
 					<td><input name="userid" value="${user.userid }" readonly
 						style="background-color: #d7d7d7;"></td>										
 				</tr>
 				
 				<tr>
-					<th>이메일</th>					
+					<th><spring:message code="signup.input4" text="default text" /></th>					
 					<td>
-						<input name="email" type="email" placeholder="이메일을 입력하세요" required><br>
+						<input name="email" type="email" placeholder="<spring:message code="mypage.info1" text="default text" />" required><br>
 						<i class="email_msg"></i>					
 					</td>					
 				</tr>
 				
 				<tr>
-					<th>전화번호</th>
+					<th><spring:message code="signup.input5" text="default text" /></th>
 					<td>
-						<input name="phone" placeholder="휴대폰 번호를 입력해주세요" required><br>
+						<input name="phone" placeholder="<spring:message code="mypage.info2" text="default text" />" required><br>
 						<i class="phone_msg"></i>		
 					</td>
 				</tr>
@@ -42,8 +42,8 @@
 		</div>
 		
 		<div class="save_cancel">
-			<button type="button" onclick="back('${cpath }')">취소</button>
-			<button>저장</button>
+			<button type="button" onclick="back('${cpath }')"><spring:message code="mypage.pw6" text="default text" /></button>
+			<button><spring:message code="mypage.pw7" text="default text" /></button>
 		</div>
 	</form>
 </article>    
@@ -55,7 +55,7 @@
 	
 	email.onblur = () => {
 		if (email.value == email_check.value) {
-			email_msg.innerHTML = '이메일이 전과 같습니다';
+			email_msg.innerHTML = '<spring:message code="mypage.info3" text="default text" />';
 			email_msg.style.color = 'red';
 			email.value = '';
 			email.focus();
@@ -71,7 +71,7 @@
 	
 	phone.onblur = () => {
 		if (phone.value == phone_check.value) {
-			phone_msg.innerHTML = '번호가 전과 같습니다';
+			phone_msg.innerHTML = '<spring:message code="mypage.info4" text="default text" />';
 			phone_msg.style.color = 'red';
 			phone.value = '';
 			phone.focus();

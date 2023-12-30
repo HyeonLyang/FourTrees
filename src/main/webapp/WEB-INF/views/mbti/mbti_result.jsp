@@ -9,8 +9,8 @@
 			<p class="m_result"><img src="${cpath }/resources/img/mbti/${result}.jpg"></p>
 		</div>
 		<ul>
-				<li><a href="${cpath }/mbti/mbti_research">MBTI테스트 하러가기</a></li>
-				<li><a href="${cpath }/mbti/mbti_main">다른 유형 결과 보기</a></li>
+				<li><a href="${cpath }/mbti/mbti_research"><spring:message code="mbti2" text="default text" /></a></li>
+				<li><a href="${cpath }/mbti/mbti_main"><spring:message code="mbti3" text="default text" /></a></li>
 		</ul>
 	</div>
 </section>

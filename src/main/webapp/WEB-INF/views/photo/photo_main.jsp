@@ -7,7 +7,7 @@
 
 <section class="photo_main">
 	
-	<h1 class="photo_main_title">최근 리뷰 이미지</h1>
+	<h1 class="photo_main_title"><spring:message code="photo.main" text="default text" /></h1>
 	
 	<section class="photo_main_con">
 		<ol class="photo_main_list">
