@@ -37,7 +37,7 @@
 		<div class="food_img">			
 			<c:forEach var="row" items="${img_list }">
 				<div class="slider">				
-					<img src="${cpath }/img/${row.res_name }/${row.img }">								
+					<img src="${cpath }/img/restaurant/${row.res_name }/${row.img }">								
 				</div>												
 			</c:forEach>			
 			<div class="slider_more">				
@@ -81,7 +81,7 @@
 						</a> 
 					</li>
 				</ul>
-			<img src="${cpath }/img/${row.res_name }/${row.img }">
+			<img src="${cpath }/img/restaurant/${row.res_name }/${row.img }">
 		</div>	
 	</c:forEach>
 	<!-- 식당 테이블 데이터 페이징 하는 곳 -->

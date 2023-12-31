@@ -14,8 +14,8 @@
 	
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
-	<resources mapping="/img/**" location="file:///C:/img/" />
-	<resources mapping="/img/account/**" location="file:///C:/img/account" />
+	<resources mapping="/img/**" location="https://uploadmz.s3.ap-northeast-2.amazonaws.com/" />
+	<resources mapping="/img/account/**" location="https://uploadmz.s3.ap-northeast-2.amazonaws.com/account/" />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
