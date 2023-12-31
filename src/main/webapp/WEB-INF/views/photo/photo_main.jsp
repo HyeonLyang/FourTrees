@@ -12,6 +12,9 @@
 	<section class="photo_main_con">
 		<ol class="photo_main_list">
 			<c:forEach var="photo" items="${img_list }">
+				<c:if test="${photo == null }">
+					<p>등록된 사진이 없습니다.</p>
+				</c:if>
 					<li class="photo_main_rev">
 						<img src="${cpath }/img/${photo.res_name }/${photo.img_path }">
 						<p>by ${photo.nick }</p>
