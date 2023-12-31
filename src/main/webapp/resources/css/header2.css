@@ -198,11 +198,11 @@ a {
 	border-radius: 15px;
 }
 .sub_icons table {
-	width: 70px;
+	width: 100px;
 	margin: auto;
 }
 .sub_scroll {
-	margin-top: 7px;
+	margin-top: 15px;
 	position: relative;
 	right: 180px;
 	height: 350px;
@@ -221,8 +221,24 @@ a {
 	border-radius: 15px;
 }
 .sub_back2 img {
-	width: 65px;
-	height: 65px;
+	width: 40px;
+	height: 40px;
+	display: block;
+    margin: 0 auto;
+}
+.sub_back2 td {
+	padding: 10px;
+}
+.sub_back2 td > a{
+	border-spacing: 0px;
+	font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+.sub_back2 td > a > h5 {
+	margin: 0;
 }
 
 /*메뉴 2 종료 */
@@ -257,10 +273,7 @@ a {
 	background-color: #efefef;
 	border-radius: 15px;
 }
-.menu_back2 img {
-	width: 60px;
-	height: 60px;
-}
+
 .menu_login {
 	list-style: none;
 	display: flex;

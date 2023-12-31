@@ -11,6 +11,7 @@ import java.sql.Date;
 public class BookmarkVO {
 	
 	private int idx, acc_idx, res_idx;
+	private String res_name,res_address;
 	private Date mark_date;
 	
 	private String res_name;  // 가게 이름을 저장할 필드 추가
@@ -54,7 +55,16 @@ public class BookmarkVO {
 	public void setMark_date(Date mark_date) {
 		this.mark_date = mark_date;
 	}
-	
-	
-	
+	public String getRes_name() {
+		return res_name;
+	}
+	public void setRes_name(String res_name) {
+		this.res_name = res_name;
+	}
+	public String getRes_address() {
+		return res_address;
+	}
+	public void setRes_address(String res_address) {
+		this.res_address = res_address;
+	}	
 }

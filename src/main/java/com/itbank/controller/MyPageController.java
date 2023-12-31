@@ -18,6 +18,7 @@ import com.itbank.components.SHA512;
 import com.itbank.model.vo.AccountVo;
 import com.itbank.service.AccountService;
 import com.itbank.service.BookmarkService;
+import com.itbank.service.BookmarkService;
 import com.itbank.service.ReviewService;
 
 @Controller
@@ -27,6 +28,7 @@ public class MyPageController {
 	@Autowired private AccountService as;
 	@Autowired private SHA512 hash;
 	@Autowired private ReviewService rvs;
+	@Autowired private BookmarkService bs;
 	@Autowired private BookmarkService bs;
 	
 	// 내 정보로 들어가기

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="${cpath }/resources/css/review.css">
 
 <article class="review_map">	
-	<h3>${param.area_name } 근처 맛집 (6)</h3>
+	<h3>${param.area_name } <spring:message code="review.area1" text="default text" /> (6)</h3>
 
 	<div id="map" style="width:1000px; height:400px;"></div>
 	<!-- 여긴 식당의 정보를 나타내는 곳 -->
@@ -12,7 +12,7 @@
 		<c:forEach var="row" items="${list }">
 			<div class="res_item">
 				<div class="res_img">
-					<img src="${cpath }/resources/img/식당 대표 이미지/${row.photo }">
+					<img src="${cpath }/resources/img/restaurant/res_repImg/${row.photo }">
 				</div>				
 				<div class="res_info1">
 					<div class="res_name">					
@@ -31,18 +31,19 @@
 				</div>
 				<div class="res_address">
 					<span class="add">${row.address }</span>			
+					<span class="add">${row.address }</span>			
 				</div>
 				
 				<div class="res_category">
-					종류 : ${row.category_name }
+					<spring:message code="review.area2" text="default text" /> : ${row.category_name }
 				</div>
 				<div class="res_price">
-					가격 : ${row.price }원
+					<spring:message code="review.area3" text="default text" /> : ${row.price }원
 				</div>
 				<div class="res_holiday">
 					<c:if test="${row.holiday == '연중무휴' }">					
 						<b style="background-color: rgb(236, 21, 21);">
-							연중무휴
+							<spring:message code="review.area4" text="default text" />
 						</b>
 					</c:if>
 					<c:if test="${row.holiday != '연중무휴'}">					
@@ -75,7 +76,7 @@
 	<div class="more_see">
 		<p>
 			<a href="${cpath }/search/sc_detail?address=${param.area_name}">
-				>>더보기
+				<spring:message code="review.area5" text="default text" />
 			</a>
 		</p>
 	</div>

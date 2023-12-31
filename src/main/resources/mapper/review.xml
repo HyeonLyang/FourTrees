@@ -34,8 +34,11 @@
 	<select id="selectReviews"
 			resultType="com.itbank.model.vo.ReviewVO"
 			parameterType="int">
-		select * from review 
-			where res_idx = #{idx} order by idx desc		
+		select r.*,a.img as acc_img from review r
+		    left outer join account a
+		    on r.writer = a.nick
+		    where r.res_idx = #{idx} 
+		    order by r.idx desc	
 	</select>
 	
 	<select id="selectRes_name"
