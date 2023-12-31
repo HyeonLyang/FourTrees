@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="myPage_main.jsp" %>
+
 	<div class="profile_modify">
 		<a href="${cpath }/myPage/password">			
 			<img src="${cpath }/resources/img/review/review_write.png" 
@@ -19,16 +20,23 @@
          </c:if>
     </div>
     
-	<h3><spring:message code="mypage.headline2" text="default text" /></h3>
-	<table class="boards">									
-		<tr>			
-			<th><spring:message code="mypage.bookmark3" text="default text" /></th>
-			<th><spring:message code="mypage.bookmark4" text="default text" /></th>			
+	<h3 style="text-align: left;">
+		<img width="15px;" height="20px;" margin="10px;" src="${cpath }/resources/img/support/북마크.jpg">
+		북마크
+	</h3>
+	<table class="boards">
+		<tr>
+			<th>삭제</th>
+			<th>번호</th>
+			<th>가게명</th>
+			<th>주소</th>			
 		</tr>
-		<c:forEach var="row" items="${list }">
+		<c:forEach var="row" items="${marklist }">
 			<tr>	
-				<th>${row.res_name }</th>
-				<td>${row.res_address }</td>						
+				<th><input name="" type="checkbox" style="width: auto;"></th>
+				<th>${row.idx }</th>
+				<td><a href="${cpath }/restaurant/res_detail/${row.res_idx}">${row.res_name }</a></td>
+				<td>${row.res_address }</td>			
 			</tr>
 		</c:forEach>
 	</table>

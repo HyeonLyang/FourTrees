@@ -21,9 +21,12 @@
 			    		<span style="width: ${star_rating}%" class="res_detail_rate_front"></span>
 			    	</div>
 					<p class="res_detail_score">${res.score }</p>
-					<img class="res_detail_re_cnt" src="${cpath }/resources/img/restaurant/re_cnt.png">
+						<img class="res_detail_re_cnt" src="${cpath }/resources/img/restaurant/re_cnt.png">
 					<h5 class="res_detail_re_cnt">${rev_cnt } 개</h5>
-					<img class="res_detail_bookmark" src="${cpath }/resources/img/restaurant/bookmark1.png">
+					<!-- 북마크 추가 -->
+					<a href="${cpath }/bookmark/add?idx=${res.idx}">
+						<img class="res_detail_bookmark" src="${cpath }/resources/img/restaurant/bookmark1.png">
+					</a>
 					<h5 class="res_detail_bookmark">${bmk_cnt } 명</h5>
 				</div>
 			</div>

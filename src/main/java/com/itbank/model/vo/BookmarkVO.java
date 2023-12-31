@@ -13,6 +13,8 @@ public class BookmarkVO {
 	private int idx, acc_idx, res_idx;
 	private String res_name,res_address;
 	private Date mark_date;
+    
+	
 	public int getIdx() {
 		return idx;
 	}
