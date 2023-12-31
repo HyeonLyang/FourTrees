@@ -3,7 +3,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <link href="${cpath }/resources/css/res_css/res_top_style.css" rel="stylesheet"> <!-- res 공통 css적용 -->
     
-    <c:set var="parking" value="${res.park_area  == 1 ? '<spring:message code="res.head1" text="default text" />' : '<spring:message code="res.head2" text="default text" />'}"/>
+    <c:choose>
+    <c:when test="${res.park_area == 1}">
+        <c:set var="parking"><spring:message code="res.head1" text="default text" /></c:set>
+    </c:when>
+    <c:otherwise>
+        <c:set var="parking"><spring:message code="res.head2" text="default text" /></c:set>
+    </c:otherwise>
+</c:choose>
 	<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 	<c:set var="rev_cnt" value="${rev_cnt }"/>
 	<c:set var="bmk_cnt" value="${bmk_cnt }"/>
