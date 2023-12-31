@@ -5,30 +5,38 @@
 		<a href="${cpath }/myPage/password">			
 			<img src="${cpath }/resources/img/review/review_write.png" 
 			style="width: 70px;"><br>
-			<span style="font-size: 15px">회원정보수정</span>
+			<span style="font-size: 15px"><spring:message code="mypage3" text="default text" /></span>
 		</a>
 	</div>
 </div>	
     <div class="headline">
-    	 <p><a href="${cpath }">홈</a></p>         
-         <p><a href="${cpath }/myPage/bookmark" style="color: #ff7f50;">북마크</a></p>
-         <p><a href="${cpath }/myPage/myReply">댓글</a></p>
-         <p><a href="${cpath }/support/sup_main">고객센터</a></p>
+    	 <p><a href="${cpath }"><spring:message code="mypage.headline1" text="default text" /></a></p>         
+         <p><a href="${cpath }/myPage/bookmark" style="color: #ff7f50;"><spring:message code="mypage.headline2" text="default text" /></a></p>
+         <p><a href="${cpath }/myPage/myReply"><spring:message code="mypage.headline3" text="default text" /></a></p>
+         <p><a href="${cpath }/support/sup_main"><spring:message code="mypage.headline4" text="default text" /></a></p>
          <c:if test="${user.status == '관리자' }">
-         	<p><a href="${cpath }/myPage/admin">회원 관리</a></p>
+         	<p><a href="${cpath }/myPage/admin"><spring:message code="mypage.headline6" text="default text" /></a></p>
          </c:if>
     </div>
     
-	<h3>북마크</h3>
+	<h3><spring:message code="mypage.headline2" text="default text" /></h3>
 	<table class="boards">
 		<tr>			
 			<th>가게명</th>
 			<th>주소</th>			
+		</tr>								
+		<tr>
+			<th><spring:message code="mypage.bookmark1" text="default text" /></th>
+			<th><spring:message code="mypage.bookmark2" text="default text" /></th>
+			<th><spring:message code="mypage.bookmark3" text="default text" /></th>
+			<th><spring:message code="mypage.bookmark4" text="default text" /></th>			
 		</tr>
 		<c:forEach var="row" items="${list }">
-			<tr>					
+			<tr>	
 				<th>${row.res_name }</th>
-				<td>${row.res_address }</td>						
+				<td>${row.res_address }</td>
+				<td><spring:message code="mypage.bookmark.example1" text="default text" /></td>
+				<td><spring:message code="mypage.bookmark.example2" text="default text" /></td>			
 			</tr>
 		</c:forEach>
 	</table>

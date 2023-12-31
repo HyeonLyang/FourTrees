@@ -7,7 +7,7 @@
 
 
 <section class="rank_total">
-	<h1 class="rank_total_title">평점 높은 전국 맛집 TOP10</h1>
+	<h1 class="rank_total_title"><spring:message code="rank.detail5" text="default text" /></h1>
 	<section class="rank_total_main">
 		
 		<ol class="rank_total_board">
@@ -35,7 +35,7 @@
 		<p class="rank_total_toArea" 
 			OnClick="location.href ='${cpath}/search/sc_detail?address='" 
 			style="cursor:pointer">
-			지도에서 맛집 찾기 →
+			<spring:message code="rank.detail6" text="default text" />
 		</p>
 	</section>
 	

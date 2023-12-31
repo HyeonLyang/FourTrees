@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <c:set var="cpath" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html>
@@ -28,10 +29,10 @@ body {
 <title>popup</title>
 </head>
 <body>
-	<h2>갤러리</h2>
+	<h2><spring:message code="popup1" text="default text" /></h2>
 	<hr>
 	
-	<h4>이미지 (${param.img })</h4>
+	<h4><spring:message code="popup2" text="default text" /> (${param.img })</h4>
 	
 	<div class="img_popup_collection">
 		<c:forEach var="row" items="${list }">	

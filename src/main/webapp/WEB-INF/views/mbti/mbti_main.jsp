@@ -7,7 +7,7 @@
 <section class="mbti_main">
 	<div>
 		<p id="mbti_test">
-			<a href="${cpath }/support/sup_main">음식으로 확인하는 MBTI</a>
+			<a href="${cpath }/support/sup_main"><spring:message code="mbti1" text="default text" /></a>
 		</p>
 		
 		<div class="mbti_result"> 	
@@ -39,7 +39,7 @@
 			</table>
 		</div>
 		<ul>
-				<li><a href="${cpath }/mbti/mbti_research">MBTI테스트 하러가기</a></li>
+				<li><a href="${cpath }/mbti/mbti_research"><spring:message code="mbti2" text="default text" /></a></li>
 				<%-- <li><a href="${cpath }/support/FAQ">다른 유형 결과 보기</a></li>--%>
 		</ul>
 	</div>

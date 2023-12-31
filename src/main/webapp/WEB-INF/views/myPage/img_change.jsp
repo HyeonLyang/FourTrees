@@ -3,12 +3,12 @@
 <%@ include file="../header2.jsp" %>
 <link rel="stylesheet" href="${cpath }/resources/css/account/myPage.css">
 <article class="myPage_img">
-	<h3>프로필 사진 수정</h3>
+	<h3><spring:message code="mypage.imgchange.title" text="default text" /></h3>
 	
 	<form method="POST" enctype="multipart/form-data">	
 		<table class="board_img">
 			<tr style="height: 100px;">
-				<th>프로필사진</th>
+				<th><spring:message code="mypage.imgchange1" text="default text" /></th>
 				<td>	
 					<img src="${cpath }/img/account/${user.img}"
 					style="width: 70px; height: 70px; border-radius: 50px;"><br>			
@@ -16,11 +16,11 @@
 				</td>
 			</tr>
 			<tr>
-				<th>별명</th>
+				<th><spring:message code="mypage.imgchange2" text="default text" /></th>
 				<td><input name="nick" value="${user.nick }" readonly></td>
 			</tr>
 		</table>
-		<button style="margin-top: 20px;">변경</button>		
+		<button style="margin-top: 20px;"><spring:message code="mypage.imgchange3" text="default text" /></button>		
 	</form>
 </article>
 </body>

@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <link href="${cpath }/resources/css/res_css/res_top_style.css" rel="stylesheet"> <!-- res 공통 css적용 -->
     
-    <c:set var="parking" value="${res.park_area  == 1 ? '주차가능' : '주차불가'}"/>
+    <c:set var="parking" value="${res.park_area  == 1 ? '<spring:message code="res.head1" text="default text" />' : '<spring:message code="res.head2" text="default text" />'}"/>
 	<c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 	<c:set var="rev_cnt" value="${rev_cnt }"/>
 	<c:set var="bmk_cnt" value="${bmk_cnt }"/>
@@ -30,7 +30,7 @@
 			<div class="review_write">
 				<a href="${cpath }/review/review_write/${res.name }/${res.idx }">			
 					<img src="${cpath }/resources/img/review/review_write.png"><br>
-					<span>리뷰 쓰기</span>
+					<span><spring:message code="res.head3" text="default text" /></span>
 				</a>	
 			</div>
 		</div>
@@ -39,8 +39,8 @@
 			<h5 class="res_detail_simIn">${res.address} |</h5>
 			<h5 class="res_detail_simIn">${res.category }</h5>
 		</div>
-		<h5 class="res_detail_simInT">예산 : ${res.price }</h5>
-		<h5 class="res_detail_simInT">정기휴일 : ${res.holiday }</h5>
+		<h5 class="res_detail_simInT"><spring:message code="res.head4" text="default text" /> : ${res.price }</h5>
+		<h5 class="res_detail_simInT"><spring:message code="res.head5" text="default text" /> : ${res.holiday }</h5>
 	</section>
 		
 	<!-- ▲ 점포 상세 상단 공통부분 -->

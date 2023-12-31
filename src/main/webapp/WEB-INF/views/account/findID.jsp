@@ -5,35 +5,35 @@
 <article class="accFind">	
 	<div class="find_header">	
 		<div class="find">
-			<p style="color: yellow;">아이디 찾기</p>
-			<p>비밀번호 찾기</p>
+			<p style="color: yellow;"><spring:message code="account.find1" text="default text" /></p>
+			<p><spring:message code="account.find2" text="default text" /></p>
 		</div>	
 	</div>
 	
 	<div class="find_main">
-		<h3>아이디 찾기</h3>
+		<h3><spring:message code="account.find1" text="default text" /></h3>
 		<h4>${ID }</h4>		
 		
-		<p>아이디를 찾는 방법을 선택해주세요</p>
+		<p><spring:message code="account.find3" text="default text" /></p>
 	</div>	
 	
 	<div class="select_main">
 		<div class="select_header">
 			<div class="select_header1">							
-				<legend>회원정보에 등록한 이메일로 인증</legend> 		
+				<legend><spring:message code="account.find4" text="default text" /></legend> 		
 			</div>		
 			<div class="select_header2">			
-				<p>회원정보에 등록한 이메일과 입력한 이메일이 같아야, 아이디를 알려줄 수 있습니다</p>
+				<p><spring:message code="account.find5" text="default text" /></p>
 			</div>
 		</div>
 		
 		<form method="post" class="select_email">			
 			<div class="input_email">			
-				<label>이메일</label>
+				<label><spring:message code="account.find6" text="default text" /></label>
 				<input name="email" type="email" required>
 			</div>
 			
-			<button>찾기</button>
+			<button><spring:message code="account.find7" text="default text" /></button>
 		</form>				
 	</div>
 </article>

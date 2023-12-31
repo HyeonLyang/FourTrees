@@ -5,28 +5,28 @@
 	
     
     <div class="headline">	    	
-		<p><a href="${cpath }/myPage/info">회원정보변경</a></p>
-		<p><a href="${cpath }/myPage/info_pw_change" style="color: #ff7f50;">비밀번호변경</a></p>
-		<p><a href="${cpath }/myPage/info_delete">회원탈퇴</a></p>     
+		<p><a href="${cpath }/myPage/info"><spring:message code="mypage.delete1" text="default text" /></a></p>
+		<p><a href="${cpath }/myPage/info_pw_change" style="color: #ff7f50;"><spring:message code="mypage.delete2" text="default text" /></a></p>
+		<p><a href="${cpath }/myPage/info_delete"><spring:message code="mypage.delete3" text="default text" /></a></p>     
     </div>
 
 	<form class="myPage_UD" method="POST">
 	
-		<h3>비밀번호 변경</h3>
+		<h3><spring:message code="mypage.pw1" text="default text" /></h3>
 	
 		<div class="user_info">
 			<table class="board">				
 				<tr>
-					<th>새 비밀번호</th>					
+					<th><spring:message code="mypage.pw2" text="default text" /></th>					
 					<td>
-						<input name="userpw" type="password" placeholder="변경하실 새 비밀번호를 입력하세요" required>				
+						<input name="userpw" type="password" placeholder="<spring:message code="mypage.pw3" text="default text" />" required>				
 					</td>					
 				</tr>
 				
 				<tr>
-					<th>새 비밀번호 확인</th>
+					<th><spring:message code="mypage.pw4" text="default text" /></th>
 					<td>
-						<input name="pw_check" type="password" placeholder="새 비밀번호를 다시 한 번 입력하세요" 
+						<input name="pw_check" type="password" placeholder="<spring:message code="mypage.pw5" text="default text" />" 
 						required>		
 					</td>
 				</tr>
@@ -35,8 +35,8 @@
 		</div>
 		
 		<div class="save_cancel">
-			<button type="button" onclick="back('${cpath }')">취소</button>
-			<button>저장</button>
+			<button type="button" onclick="back('${cpath }')"><spring:message code="mypage.pw6" text="default text" /></button>
+			<button><spring:message code="mypage.pw7" text="default text" /></button>
 		</div>
 	</form>
 </article> 
@@ -48,7 +48,7 @@
 	
 	userpw.onblur = () => {
 		if (pw.value == userpw.value) {
-			msg.innerHTML = '전 비밀번호와 값이 같습니다';
+			msg.innerHTML = '<spring:message code="mypage.pw8" text="default text" />';
 			msg.style.color = 'red';
 			userpw.value = '';
 			userpw.focus();
@@ -60,7 +60,7 @@
 	
 	pw_check.onblur = () => {
 		if (userpw.value != pw_check.value) {
-			msg.innerHTML = '비밀번호가 다릅니다';
+			msg.innerHTML = '<spring:message code="mypage.pw9" text="default text" />';
 			msg.style.color = 'red';
 			pw_check.value = '';
 			pw_check.focus();

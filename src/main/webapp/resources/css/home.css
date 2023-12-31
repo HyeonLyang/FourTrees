@@ -186,7 +186,7 @@ div > div.cate1 > a {
     padding-right: 35px;
 }
 
-div > * > a > span {
+.pont {
     color: #ddd;
     font-weight: bold;
     font-size: 20px;
