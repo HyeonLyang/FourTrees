@@ -1,13 +1,11 @@
 package com.itbank.service;
 
 import java.util.List;
-
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.itbank.model.BookmarkDAO;
+import com.itbank.model.vo.AccountVo;
 import com.itbank.model.vo.BookmarkVO;
 
 @Service
@@ -38,6 +36,5 @@ public class BookmarkService {
 	public List<BookmarkVO> BookResAll() {
         return dao.selectAllWithRestaurantInfo();
     }
-	
-	
+
 }

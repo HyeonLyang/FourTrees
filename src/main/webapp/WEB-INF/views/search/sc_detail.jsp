@@ -28,7 +28,7 @@
 					<td><input name="address" value="<%=address%>"
 						placeholder="<spring:message code="sc.detail2" text="default text" />"></td>
 					<td rowspan="3"><img id="sci" src="${cpath }/resources/img/search/sc_icon.png" onclick="search()">
-						<button onclick="search()"><spring:message code="sc.detail3" text="default text" /></button></td>
+						</td>
 				</tr>
 				<tr>
 					<td><spring:message code="sc.detail4" text="default text" /></td>

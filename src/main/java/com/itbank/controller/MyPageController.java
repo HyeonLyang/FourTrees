@@ -18,7 +18,6 @@ import com.itbank.components.SHA512;
 import com.itbank.model.vo.AccountVo;
 import com.itbank.service.AccountService;
 import com.itbank.service.BookmarkService;
-import com.itbank.service.BookmarkService;
 import com.itbank.service.ReviewService;
 
 @Controller
