@@ -27,7 +27,8 @@
 
 					<td><input name="address" value="<%=address%>"
 						placeholder="<spring:message code="sc.detail2" text="default text" />"></td>
-					<td rowspan="3"><button onclick="search()"><spring:message code="sc.detail3" text="default text" /></button></td>
+					<td rowspan="3"><img id="sci" src="${cpath }/resources/img/search/sc_icon.png" onclick="search()">
+						</td>
 				</tr>
 				<tr>
 					<td><spring:message code="sc.detail4" text="default text" /></td>
@@ -48,7 +49,7 @@
 					<tr class="trtr">
 						<c:choose>
 							<c:when test="${not empty row.photo}">
-								<td class="row_photo"><img src="${row.photo}"></td>
+								<td class="row_photo"><img src="${cpath}/resources/img/restaurant/res_repImg/${row.photo}"></td>
 							</c:when>
 							<c:otherwise>
 								<td class="row_photo"><img src="${imgPath}/이미지없음.jpg"></td>
