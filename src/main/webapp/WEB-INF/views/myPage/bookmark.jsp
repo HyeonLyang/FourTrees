@@ -27,7 +27,7 @@
 			<th><spring:message code="mypage.bookmark3" text="default text" /></th>
 			<th><spring:message code="mypage.bookmark4" text="default text" /></th>			
 		</tr>
-		<c:forEach var="row" begin="1001" end="1010">
+		<c:forEach var="row" items="${list }">
 			<tr>	
 				<th><input name="" type="checkbox" style="width: auto;"></th>
 				<th>${row }</th>
