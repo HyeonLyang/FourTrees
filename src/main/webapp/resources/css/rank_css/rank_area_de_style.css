@@ -112,7 +112,7 @@
 }
 /* 이게 남아있으면 아직 원본 이후 */
 .rank_detail_res {
-  background-color: rgba(255, 215, 0, 0.1);
+  background-color: #FFD1B3;
   margin: 2px;
   width: 195px;
   height: 300px;
