@@ -32,12 +32,12 @@
 	</div>
 	<div>
 		<div class="sup_search">
-			<input placeholder="<a href="${cpath }/support/sup_main"><spring:message code="sc.detail3" text="default text" />">
+			<input placeholder="<spring:message code="sc.detail3" text="default text" />">
 			<a href="${cpath }/support/search"><img src="${cpath }/resources/img/support/btn.png"></a>
 		</div>
 	</div>
 	<div>
-		<div class="sup_link"><a href="${cpath }/support/QNA"><a href="${cpath }/support/sup_main"><spring:message code="support.main20" text="default text" /></a></div>
+		<div class="sup_link"><a href="${cpath }/support/QNA"><spring:message code="support.main20" text="default text" /></a></div>
 	</div>
 </section>
 
