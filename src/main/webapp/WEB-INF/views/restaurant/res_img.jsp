@@ -14,20 +14,20 @@
 			TOP
 		</p>
 		<p style="background-color: #FFDACC">
-			<a>사진</a>
+			<a><spring:message code="res.detail1" text="default text" /></a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_review/${res.idx }'" style="cursor:pointer">
-			리뷰
+			<spring:message code="res.detail2" text="default text" />
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_map/${res.idx }'" style="cursor:pointer">
-			확대지도
+			<spring:message code="res.detail3" text="default text" />
 		</p>
 
 	</section>
 	
 	<section class="res_img_main">
 		<section class="res_img_con">
-			<h4 class="res_img_title">최근 리뷰의 사진</h4>
+			<h4 class="res_img_title"><spring:message code="res.img1" text="default text" /></h4>
 			<section class="res_img_list">
 				<c:forEach var="photo" items="${photo_list }">
 					<div>
@@ -37,7 +37,7 @@
 				</c:forEach>
 			</section>
 			<p OnClick="location.href ='${cpath}/photo/photo_main'" style="cursor:pointer" class="res_img_toImgBoard">
-				사진 전체보기 ->
+				<spring:message code="res.img2" text="default text" />
 			</p>
 		</section>
 		<aside>

@@ -14,13 +14,13 @@
 			TOP
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_img/${res.idx }'" style="cursor:pointer">
-			사진
+			<spring:message code="res.detail1" text="default text" />
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_review/${res.idx }'" style="cursor:pointer">
-			리뷰
+			<spring:message code="res.detail2" text="default text" />
 		</p>
 		<p style="background-color: #FFDACC">
-			<a>확대지도</a>
+			<a><spring:message code="res.detail3" text="default text" /></a>
 		</p>
 
 	</section>
@@ -35,7 +35,7 @@
 			</section>
 			<table class="res_map_txt">
 				<tr>
-					<th>주소</th>
+					<th><spring:message code="res.list4" text="default text" /></th>
 					<td>
 						<p>${res.name }</p>
 						<p class="res_map_romAdd">${res.rom_name }</p>

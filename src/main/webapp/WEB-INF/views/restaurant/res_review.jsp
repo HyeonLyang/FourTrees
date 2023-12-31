@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header2.jsp" %>	<!-- 헤더 추가 -->
 <link href="${cpath }/resources/css/res_css/res_review_style.css" rel="stylesheet"> <!-- css적용 -->
-<c:set var="parking" value="${res.park_area  == 1 ? '주차가능' : '주차불가'}"/>
+<c:set var="parking" value="${res.park_area  == 1 ? '<spring:message code="res.head1" text="default text" />' : '<spring:message code="res.head2" text="default text" />'}"/>
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 <section class="res_review">
 
@@ -15,13 +15,13 @@
 			TOP
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_img/${res.idx }'" style="cursor:pointer">
-			사진
+			<spring:message code="res.detail1" text="default text" />
 		</p>
 		<p style="background-color: #FFDACC">
-			<a>리뷰</a>
+			<a><spring:message code="res.detail2" text="default text" /></a>
 		</p>
 		<p OnClick="location.href ='${cpath }/restaurant/res_map/${res.idx }'" style="cursor:pointer">
-			확대지도
+			<spring:message code="res.detail3" text="default text" />
 		</p>
 
 	</section>
@@ -32,7 +32,7 @@
 		<section class="res_review_con">
 			
 			<c:if test="${empty reviews }">
-				<p>등록된 리뷰가 없습니다</p>	
+				<p><spring:message code="res.review1" text="default text" /></p>	
 			</c:if>
 			<c:forEach var="review" items="${reviews }">
 			<c:set var="review_rating" value="${review.score / 5 * 100 }"/>
@@ -51,7 +51,7 @@
 		    		${review.score }
 				</div>
 				<div class="res_review_content">
-					<p style="font-size: 12px">방문일 : ${review.visit_date }</p>
+					<p style="font-size: 12px"><spring:message code="res.review2" text="default text" /> : ${review.visit_date }</p>
 					<p>${review.content }</p>
 				</div>
 				<div class="res_review_reImg">
@@ -67,7 +67,7 @@
 			
 			<p OnClick="location.href ='${cpath }/review/review/${res.name }/${res.idx }'" 
 				style="cursor:pointer" class="res_review_goTo">
-				리뷰 모아보기 ->
+				<spring:message code="res.review3" text="default text" />
 			</p>
 			
 		</section>

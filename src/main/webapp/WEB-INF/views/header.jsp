@@ -28,11 +28,11 @@
                 <c:if test="${empty user }">				
 					<div class="top-menu1">
 						<a href="${cpath }/account/signUp">
-						<img src="${cpath }/resources/img/signup.png"> signUp</a>
+						<img src="${cpath }/resources/img/signup.png"> <spring:message code="header.signup" text="default text" /></a>
 					</div>
 					<div class="top-menu2">
 						<a href="${cpath }/account/login">
-						<img src="${cpath }/resources/img/login.png"> logIn</a>
+						<img src="${cpath }/resources/img/login.png"> <spring:message code="header.login" text="default text" /></a>
 					</div>
 				</c:if>
 				 <c:if test="${not empty user }">                
@@ -42,24 +42,24 @@
 					</div>
 					<div class="top-menu2">
 						<a href="${cpath }/account/logout">
-						<img src="${cpath }/resources/img/login.png"> logout</a>
+						<img src="${cpath }/resources/img/login.png"> <spring:message code="header.logout" text="default text" /></a>
 					</div>
                 </c:if>
             </section>
             
             <section class="header-bottom">
-                <p>"<spring:message code="Translate" text="default text" />"</p>
+                <p>"<spring:message code="header.title" text="default text" />"</p>
                 <div><!-- 빈칸 space betweend 용 --></div>
                 <div class="menu">
                 	<!-- 메뉴-검색창 -->
 					<form action="${cpath }/search/sc_detail" method="get">
 					    <div class="search">
 					    	<select id="type">
-								<option value="address">지역</option>
-								<option value="category">카테고리</option>
+								<option value="address"><spring:message code="header.search1-1" text="default text" /></option>
+								<option value="category"><spring:message code="header.search1-2" text="default text" /></option>
 							</select>
-					        <input id="submit_type" name="address" placeholder="위치나 카테고리를 입력하세요.">
-					        <button>검색</button>
+					        <input id="submit_type" name="address" placeholder="<spring:message code="header.search2" text="default text" />">
+					        <button><spring:message code="header.search3" text="default text" /></button>
 					    </div>
 					</form>
 					<script>
@@ -75,10 +75,11 @@
             		<!-- 번역아이콘 -->
                     <div class="language-container" onclick="toggle2()">
 					    <ul class="language">
-					        <li><a href="<c:url value="/?lang=ko" />"><img src="${cpath }/resources/img/lang_kor.png"></a></li>
-					        <li><a href="<c:url value="/?lang=en" />"><img src="${cpath }/resources/img/lang_usa.png"></a></li>
-					        <li><a href="<c:url value="/?lang=jp" />"><img src="${cpath }/resources/img/jang_jap.png"></a></li>
-					        <li><a href="<c:url value="/?lang=zh" />"><img src="${cpath }/resources/img/lang_cha.png"></a></li>
+					    	<li><img src="${cpath }/resources/img/header/trans.png"></a></li>
+					        <li><a href="<c:url value="?lang=ko" />"><img src="${cpath }/resources/img/lang_kor.png"></a></li>
+					        <li><a href="<c:url value="?lang=en" />"><img src="${cpath }/resources/img/lang_usa.png"></a></li>
+					        <li><a href="<c:url value="?lang=jp" />"><img src="${cpath }/resources/img/jang_jap.png"></a></li>
+					        <li><a href="<c:url value="?lang=zh" />"><img src="${cpath }/resources/img/lang_cha.png"></a></li>
 					    </ul>
 					</div>
 <!-- 메뉴 버튼 -->
@@ -93,13 +94,12 @@
 				<div class="menu_back2"> 	
 					<table>
 						<tr>
-						<td><a href="${cpath }/search/sc_main"><img src="${cpath }/resources/img/header/icon1.png"></a></td>
-						<td><a href="${cpath }/rank/rank_main"><img src="${cpath }/resources/img/header/icon2.png"></a></td>
-						<td><a href="${cpath }/mbti/mbti_main"><img src="${cpath }/resources/img/header/icon3.png"></a></td>
-						<td><a href="${cpath }/recommend/roulette"><img src="${cpath }/resources/img/header/icon4.png"></a></td>
-						<td><a href="${cpath }/photo/photo_main"><img src="${cpath }/resources/img/header/icon5.png"></a></td>
-						<td><a href="${cpath }/support/sup_main"><img src="${cpath }/resources/img/header/icon6.png"></a></td>
-						
+						<td><a href="${cpath }/search/sc_main"><img src="${cpath }/resources/img/header/head1.png"><h5><spring:message code="header.menu1" text="default text" /></h5></a></td>
+						<td><a href="${cpath }/rank/rank_main"><img src="${cpath }/resources/img/header/head2.png"><h5><spring:message code="header.menu2" text="default text" /></h5></a></td>
+						<td><a href="${cpath }/mbti/mbti_main"><img src="${cpath }/resources/img/header/head3.png"><h5><spring:message code="header.menu3" text="default text" /></h5></a></td>
+						<td><a href="${cpath }/recommend/roulette"><img src="${cpath }/resources/img/header/head4.png"><h5><spring:message code="header.menu4" text="default text" /></h5></a></td>
+						<td><a href="${cpath }/photo/photo_main"><img src="${cpath }/resources/img/header/head5.png"><h5><spring:message code="header.menu5" text="default text" /></h5></a></td>
+						<td><a href="${cpath }/support/sup_main"><img src="${cpath }/resources/img/header/head6.png"><h5><spring:message code="header.menu6" text="default text" /></h5></a></td>
 						</tr>
 						</table>
 					</div>

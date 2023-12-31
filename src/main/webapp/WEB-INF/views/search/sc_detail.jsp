@@ -23,20 +23,20 @@
 
 			<table>
 				<tr>
-					<td>지역, 장소</td>
+					<td><spring:message code="sc.detail1" text="default text" /></td>
 
 					<td><input name="address" value="<%=address%>"
-						placeholder="지역, 장소 검색"></td>
-					<td rowspan="3"><button onclick="search()">상세검색</button></td>
+						placeholder="<spring:message code="sc.detail2" text="default text" />"></td>
+					<td rowspan="3"><button onclick="search()"><spring:message code="sc.detail3" text="default text" /></button></td>
 				</tr>
 				<tr>
-					<td>장르</td>
+					<td><spring:message code="sc.detail4" text="default text" /></td>
 
 					<td><input name="category" value="<%=category%>"
-						placeholder="백반,죽,국수"></td>
+						placeholder="<spring:message code="sc.detail5" text="default text" />"></td>
 				</tr>
 				<tr class="sc_result">
-					<td colspan="3">검색어 | 지역 - ${add } | 카테고리 - ${cate } | 총 검색 맛집
+					<td colspan="3"><spring:message code="sc.detail6" text="default text" />${add }<spring:message code="sc.detail7" text="default text" />${cate }<spring:message code="sc.detail8" text="default text" />
 						: (${tt } 건)</td>
 				</tr>
 			</table>
@@ -64,10 +64,10 @@
 							<p>
 							<hr>
 							</p>
-							<p>별점 ${row.score }</p>
-							<p>가격대 ${row.price }</p>
-							<p>주소 <span class="add">${row.address }</span></p>
-							<p>휴일 ${row.holiday }</p>
+							<p><spring:message code="sc.detail9" text="default text" /> ${row.score }</p>
+							<p><spring:message code="sc.detail10" text="default text" />${row.price }</p>
+							<p><spring:message code="sc.detail11" text="default text" /> <span class="add">${row.address }</span></p>
+							<p><spring:message code="sc.detail12" text="default text" /> ${row.holiday }</p>
 						</td>
 					</tr>
 				</c:forEach>
@@ -79,9 +79,9 @@
 				<ul>
 					<c:set var="scPath"
 						value="${cpath }/search/sc_detail?address=${add }&category=${cate }"></c:set>
-					<li><a href="${scPath }&page=1">처음</a></li>
+					<li><a href="${scPath }&page=1"><spring:message code="sc.detail13" text="default text" /></a></li>
 					<c:if test="${p.prev }">
-						<li><a href="${scPath }&page=${p.begin - 1 }">이전</a></li>
+						<li><a href="${scPath }&page=${p.begin - 1 }"><spring:message code="sc.detail14" text="default text" /></a></li>
 					</c:if>
 
 					<c:forEach var="i" begin="${p.begin }" end="${p.end }">
@@ -89,9 +89,9 @@
 					</c:forEach>
 
 					<c:if test="${p.next }">
-						<li><a href="${scPath }&page=${p.end + 1 }">다음</a></li>
+						<li><a href="${scPath }&page=${p.end + 1 }"><spring:message code="sc.detail15" text="default text" /></a></li>
 					</c:if>
-					<li><a href="${scPath }&page=${p.totalPage }">끝</a></li>
+					<li><a href="${scPath }&page=${p.totalPage }"><spring:message code="sc.detail16" text="default text" /></a></li>
 				</ul>
 			</div>
 			<div class="sc_page">${rq } page/${p.totalPage } page</div>

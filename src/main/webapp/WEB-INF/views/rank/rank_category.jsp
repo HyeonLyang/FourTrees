@@ -15,14 +15,14 @@
 		</c:forEach>
 	</p>
 	
-	<h1 class="rank_category_title">${cate[0].name } 맛집 TOP10</h1>
+	<h1 class="rank_category_title">${cate[0].name } <spring:message code="rank.detail1" text="default text" /></h1>
 	
 	<section class="rank_category_main">
 		
 		<ol class="rank_category_board">
 		
 		</ol>
-		<p class="rank_category_toArea" OnClick="location.href ='${cpath}/search/sc_detail?address='" style="cursor:pointer">내 지역의 ${cate[0].name } 맛집 찾으러 가기 →</p>
+		<p class="rank_category_toArea" OnClick="location.href ='${cpath}/search/sc_detail?address='" style="cursor:pointer"><spring:message code="rank.detail3" text="default text" /> ${cate[0].name } <spring:message code="rank.detail4" text="default text" /> →</p>
 	</section>
 	
 </section>	
@@ -53,8 +53,8 @@
 			goTo.innerHTML = '';
 			result.innerHTML = '';
 			
-			title.innerHTML = data[1].category + '맛집 TOP10';
-			goTo.innerHTML = data[1].category + '맛집 찾으러 가기';
+			title.innerHTML = data[1].category + '<spring:message code="rank.detail1" text="default text" />';
+			goTo.innerHTML = data[1].category + '<spring:message code="rank.detail2" text="default text" />';
 			
 			for (let i = 0; i < 10; i++) {
 				let li = document.createElement('li');
