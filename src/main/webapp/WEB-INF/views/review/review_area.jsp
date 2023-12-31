@@ -31,7 +31,6 @@
 				</div>
 				<div class="res_address">
 					<span class="add">${row.address }</span>			
-					<span class="add">${row.address }</span>			
 				</div>
 				
 				<div class="res_category">
