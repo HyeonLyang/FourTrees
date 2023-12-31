@@ -96,11 +96,14 @@ public class MyPageController {
 		return mav;
 	}
 	
-	// 찜한 테이블 출력
+	// 북마크 체크 테이블 출력
 	@GetMapping("/bookmark")
-	public void bookmark(Model model,HttpSession session) {
-		AccountVo nick = (AccountVo) session.getAttribute("user");
-		model.addAttribute("list", bs.getBookmark(nick));
+	public ModelAndView bookmark(HttpSession session) {
+		AccountVo userid = (AccountVo) session.getAttribute("user");
+		ModelAndView mav = new ModelAndView();
+//		mav.addObject("marklist", bs.BookmarkAll());
+		mav.addObject("marklist", bs.BookResAll());  // 북마크정보+레스토랑 정보
+		return mav;
 	}
 	
 	// 댓글 테이블 출력

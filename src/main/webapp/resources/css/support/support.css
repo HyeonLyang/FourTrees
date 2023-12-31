@@ -169,3 +169,17 @@
 	color: white;
 	font-weight: bold;
 }
+fieldset {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+	box-sizing: border-box;
+}
+fieldset input {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+fieldset textarea{
+	padding: 5px;
+}
