@@ -81,7 +81,7 @@
 				        <span data-hover="BREAD"
 				        style="background: 
 			        	url('${cpath}/resources/img/arrow.png') 
-			        	right center no-repeat;"><spring:message code="section2-4" text="default text" />
+			        	right center no-repeat;"><spring:message code="section2-4" text="default text" />	
 			        	</span>
 		        	</a>
 		    </div>
