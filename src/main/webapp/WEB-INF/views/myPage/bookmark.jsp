@@ -20,23 +20,15 @@
     </div>
     
 	<h3><spring:message code="mypage.headline2" text="default text" /></h3>
-	<table class="boards">
+	<table class="boards">									
 		<tr>			
-			<th>가게명</th>
-			<th>주소</th>			
-		</tr>								
-		<tr>
-			<th><spring:message code="mypage.bookmark1" text="default text" /></th>
-			<th><spring:message code="mypage.bookmark2" text="default text" /></th>
 			<th><spring:message code="mypage.bookmark3" text="default text" /></th>
 			<th><spring:message code="mypage.bookmark4" text="default text" /></th>			
 		</tr>
 		<c:forEach var="row" items="${list }">
 			<tr>	
 				<th>${row.res_name }</th>
-				<td>${row.res_address }</td>
-				<td><spring:message code="mypage.bookmark.example1" text="default text" /></td>
-				<td><spring:message code="mypage.bookmark.example2" text="default text" /></td>			
+				<td>${row.res_address }</td>						
 			</tr>
 		</c:forEach>
 	</table>
