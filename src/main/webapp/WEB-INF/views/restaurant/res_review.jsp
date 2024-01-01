@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../header2.jsp" %>	<!-- 헤더 추가 -->
 <link href="${cpath }/resources/css/res_css/res_review_style.css" rel="stylesheet"> <!-- css적용 -->
-<c:set var="parking" value="${res.park_area  == 1 ? '<spring:message code="res.head1" text="default text" />' : '<spring:message code="res.head2" text="default text" />'}"/>
 <c:set var="star_rating" value="${res.score / 5 * 100 }"/>
 <section class="res_review">
 
