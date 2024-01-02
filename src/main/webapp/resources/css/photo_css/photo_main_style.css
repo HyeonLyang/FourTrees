@@ -14,6 +14,9 @@
     text-align: center;
     color: #333;
 }
+.photo_main_list {
+	display: flex;
+}
 /* 각 이미지 아이템 */
 .photo_main_rev {
     margin: 10px;
