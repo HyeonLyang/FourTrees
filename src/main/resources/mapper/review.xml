@@ -89,4 +89,10 @@
 			parameterType="int">
 		delete from review where idx = #{idx}
 	</delete>
+	
+	<insert id="insertImg"
+			parameterType="com.itbank.model.vo.ReviewVO">
+		insert into img (rev_idx,img_path) 
+			values (#{idx}, #{img})
+	</insert>
 </mapper>
