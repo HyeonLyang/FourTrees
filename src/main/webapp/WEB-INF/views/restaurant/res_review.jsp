@@ -56,7 +56,7 @@
 				<div class="res_review_reImg">
 					<c:forEach var="photo" items="${photo_list }">
 						<c:if test="${photo.rev_idx == review.idx}">
-							<img src="${cpath }/img/${photo.res_name}/${photo.img_path}">
+							<img src="${cpath }/img/restaurant/${photo.res_name}/${photo.img_path}">
 						</c:if>
 					</c:forEach>
 				</div>

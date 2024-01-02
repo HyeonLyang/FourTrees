@@ -16,7 +16,7 @@
 					<p>등록된 사진이 없습니다.</p>
 				</c:if>
 					<li class="photo_main_rev">
-						<img src="${cpath }/img/${photo.res_name }/${photo.img_path }">
+						<img src="${cpath }/img/restaurant/${photo.res_name }/${photo.img_path }">
 						<p>by ${photo.nick }</p>
 					</li>
 			</c:forEach>

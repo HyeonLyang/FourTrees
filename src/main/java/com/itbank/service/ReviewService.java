@@ -33,6 +33,7 @@ public class ReviewService {
 		int row = dao.insert(input);
 		List<ReviewVO> list = dao.selectRes_name(input.getRes_idx());
 
+		// 리뷰 작성 시 작성한 별점 점수를 추가해 평균내서 레스토랑 별점 업데이트 하기 구문 
 		List<Double> scoreList = dao.getResScores(input.getRes_idx());
 		double scoreSum = 0;
 		double resScore = 0;
@@ -51,13 +52,12 @@ public class ReviewService {
 						
 		res_dao.updateScore(input);
 		
+		// aws s3 버킷에 올림
 		String res_name = "";
 		
 		for(ReviewVO r : list) {
 			res_name = r.getRes_name(); 
-		}
-		
-		System.out.println(res_name);
+		}				
 				
 		awsS3.upload(file, key, res_name, 1);
 		return row;

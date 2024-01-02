@@ -28,5 +28,5 @@ public interface ReviewDAO {
 
 	int delete(int idx);
 
-	
+	int insertImg(ReviewVO input);
 }

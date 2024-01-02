@@ -31,7 +31,7 @@
 			<section class="res_img_list">
 				<c:forEach var="photo" items="${photo_list }">
 					<div>
-						<img src="${cpath }/img/${photo.res_name}/${photo.img_path}">
+						<img src="${cpath }/img/restaurant/${photo.res_name}/${photo.img_path}">
 						<p class="res_img_writer">(by ${photo.nick })</p>
 					</div>
 				</c:forEach>
